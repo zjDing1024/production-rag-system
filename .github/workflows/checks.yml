@@ -32,3 +32,5 @@ jobs:
           cmp results/day1-evaluation.json build/evaluation.json
           python -m rag_foundation query 'test client live server' -k 3 > build/query-output.json
           cmp examples/query-output.json build/query-output.json
+          python examples/evaluate_service.py > build/service-development.json
+          cmp results/service-development.json build/service-development.json

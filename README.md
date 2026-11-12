@@ -78,3 +78,23 @@ docs/               设计、来源阅读与实验边界
 倒排索引构建线性扫描 token，单次检索访问匹配 posting 后对候选块排序。当前数据太小，不能外推规模或生产延迟；本机暖查询计量与方法见[报告](docs/day1-report.md)。
 
 下一步：增加独立审阅的难例与同义改写，比较词法/向量/混合检索，加入段落感知切分与去重，再研究带引用的生成、证据不足时拒答、文档更新及服务边界。当前未实现 embedding、reranker、LLM、权限分区、增量索引、HTTP API 或线上部署。
+
+## 2026-11-13：可运行本地检索服务
+
+零模型费用、零新增依赖；此版本仍是 **retrieval-only**，不是生成式 RAG。
+
+```bash
+PYTHONPATH=src python -m rag_foundation.service --port 8000
+# 另一终端：
+curl -s http://127.0.0.1:8000/health
+curl -s http://127.0.0.1:8000/retrieve -H 'Content-Type: application/json' \
+  -d '{"query":"Flask 的测试客户端需要启动真实服务器吗？","k":5}'
+PYTHONPATH=src python examples/evaluate_service.py > build/service-development.json
+cmp results/service-development.json build/service-development.json
+```
+
+响应包含原始/扩展查询、显式中文词典替换、未翻译中文标志、语料词汇覆盖率、原文引用与定位；`answer=null`，`answerability=unverified`。默认启用词典及覆盖门，可用 `expand_zh=false` / `gate=false` 做消融。
+
+已见22题开发集：原始BM25 Hit@5=17/18；词典18/18；加覆盖门18/18，4个不可答题全部无返回。**这是针对已知失败的开发修复，不是独立测试，也不是100%拒答准确率**。`What is my secret key?` 仍返回候选，说明词汇覆盖不能判断可答性。详见[服务协议与实验](docs/service-report.md)。
+
+仅绑定127.0.0.1，单请求处理，3秒socket超时，8192字节body/1000字符query/最多10片段。标准库HTTP服务不适合生产公网部署；无认证、多租户隔离、TLS、负载/并发验证。需要这些之前不可改成公网服务。

@@ -1,0 +1,1046 @@
+{
+  "chunks_sha256": "de8a54066e25aa135724924ebae09e960884bbfc292429d0324e62320140b9de",
+  "generator": null,
+  "question_sha256": "30b677b040466b3636cfd3182ef110924444d70e0a1a6feb368079b3809d28ca",
+  "scope": "seen development set; glossary and gate not independently validated",
+  "variants": {
+    "baseline": {
+      "answerable_abstained": 0,
+      "hit@5": 0.9444444444444444,
+      "rows": [
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+            "99eb663b7fbad9567cd42faa8627997a86014badd1dfc9772b8b25d528b96965",
+            "4890e7569434d705b6edfe66e151127ecc71ee35a9948be515f170fbc0aa9fc1",
+            "4afa2bd8a6490ae6a6b68309ceebe03851d8e90dc391a23eb64485c4d30efc1d",
+            "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9"
+          ],
+          "coverage": 0.8333333333333334,
+          "hit@5": true,
+          "id": "q01",
+          "missing_terms": [
+            "accept"
+          ],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "a8e4833e1768b54154af6f15b6fc593938091c31fcbfb66314b752d1d3d09c52",
+            "a1ecd831380e5012f1f76ec92c5195813179531b40b0bffd06fd85894f12b30d",
+            "cf5210d2f96762e619ccca4ae2897d4e8a02d5a305c7f6e2a4cfae1f99bbd7d3",
+            "ecccf07797bc891a6e195d5a3647074c847863ad3eb73b842c515477d08f267b",
+            "c7e082e8b03c192d73bb59c430981f2507780f4eff16a67e3b7ec99949f776ad"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q02",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "c7e082e8b03c192d73bb59c430981f2507780f4eff16a67e3b7ec99949f776ad",
+            "29d4f9a361abd5fa4f15a8dcc3ec0e5a1055b9dbb3b6fd65a99627151503f7d6",
+            "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+            "8e109862bda675ba2e67447c0cc09a64b50360106461869bf965f9f5aab51877",
+            "ca93533baa472344597348145a78d056807ebdcc67f73005b21ee0fc6cf90895"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q03",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "8e109862bda675ba2e67447c0cc09a64b50360106461869bf965f9f5aab51877",
+            "0ad1a9ff59b1d6323fb84a8481bed82ea803871ab06b37a73072b9a4e683c933",
+            "7a865ee9269cc55855dd0e01b5519e6dbeb369772f40f5402ba6aa84a72b73b9",
+            "a1ecd831380e5012f1f76ec92c5195813179531b40b0bffd06fd85894f12b30d",
+            "b4bda0f7333f88a362b75f359296ee6b80b8ccc1f35dd833c5073249ed334083"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q04",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "a86ad676882a5d331a9874ea7fce826222e994a14105ebdc9d990057b2caca60",
+            "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+            "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+            "11cc490be91dcaee33e948331a5153a6bd39088244cf1fea25673df1d87946ae",
+            "237ee193eeb3f01deb3bccedb500eca5f1461e3076854fccf935be8039ef480a"
+          ],
+          "coverage": 0.75,
+          "hit@5": true,
+          "id": "q05",
+          "missing_terms": [
+            "existing",
+            "rotating"
+          ],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "2ca6e131afb3468a70515873c1c073bb0633950e9b85d24a954bba08a2e60a6f",
+            "9872c7e03b564b0d08bdf7a8dd8aeca34169d53f3a1cd3f555430c68b2fbe494",
+            "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+            "d32260d9f19d3e9c08e2720aade0062fe037235c75f962b45a4c8e24f9f08fea",
+            "89243a750eb704a7130659dc7301c95f4f2e9f9379496a89e855c10fd8d012b1"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q06",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "92a592b397588809b6df383b95400026d2dbacb66d9832ba517b25c85d15f3ed",
+            "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+            "ca93533baa472344597348145a78d056807ebdcc67f73005b21ee0fc6cf90895",
+            "cf5210d2f96762e619ccca4ae2897d4e8a02d5a305c7f6e2a4cfae1f99bbd7d3",
+            "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q07",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+            "c11da45b9626fd230cb87d6e6bf86de05db859deba2ed31ef20e9d26da0b890b",
+            "ecccf07797bc891a6e195d5a3647074c847863ad3eb73b842c515477d08f267b",
+            "ec88afd4463c4f5c4b7bed123a588adb424d8e2b9c1c4dc450e71d1b06470369",
+            "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q08",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+            "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9",
+            "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+            "c11da45b9626fd230cb87d6e6bf86de05db859deba2ed31ef20e9d26da0b890b",
+            "11cc490be91dcaee33e948331a5153a6bd39088244cf1fea25673df1d87946ae"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q09",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa",
+            "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+            "b77c1c68b826e849e14b15303030638d81952c3b45bdc63481c9f648c0a1e491",
+            "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+            "8d73902c4ed720e73c697f28ef7857c7ab49b2af0d9567b6bf60678466561092"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q10",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "cd14030f9c4193c48f3a77419af034e4f27181792071c77c8f2e4546a6199e3b",
+            "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+            "305f5bd3562d93a38706a082f1546229353223e956695dba9e6c5a2135f64c6d",
+            "69bccaa7588853589ece169e21001d937f31d56a6f8fb48a7297ee24bf8b4bb7",
+            "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q11",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+            "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+            "e3a3d805b82848f5e014248b9f1a90dc3a76f28594a8fbaab266ab62b09c5e7d",
+            "2afc3095bbf641a90b1215649ae66649baea0a0eaeec6ebebfc17fa95cd2cdd3",
+            "cd14030f9c4193c48f3a77419af034e4f27181792071c77c8f2e4546a6199e3b"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q12",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "305f5bd3562d93a38706a082f1546229353223e956695dba9e6c5a2135f64c6d",
+            "4afa2bd8a6490ae6a6b68309ceebe03851d8e90dc391a23eb64485c4d30efc1d",
+            "0bbd6416389ee555c33abe547ec93d213c43f32e63946bc54ec3172c18107b5d",
+            "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97",
+            "2d35129bb942cafe646ab416b5c2d6542ce7fa124887819ea8367fd88ac95edd"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q13",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "dc15014c53e62071d58b9be79c7b3a744ab369d5be4fd0df22a8427cac611777",
+            "b77c1c68b826e849e14b15303030638d81952c3b45bdc63481c9f648c0a1e491",
+            "d93cd2faa28c2c0dc37e33ae317a2686ba8374a5fa3a266066adc662a93110b1",
+            "d3f5874c2503bc6c0f891520ca67e7160c34bdefbbad974c4bb9e102b7a06e99",
+            "578b3d94c57a2086b2c9d3cbf2fba4eaa09ba6bbe4a246b5967707240358ba33"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q14",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "d93cd2faa28c2c0dc37e33ae317a2686ba8374a5fa3a266066adc662a93110b1",
+            "d3f5874c2503bc6c0f891520ca67e7160c34bdefbbad974c4bb9e102b7a06e99",
+            "0bbd6416389ee555c33abe547ec93d213c43f32e63946bc54ec3172c18107b5d",
+            "4d96bfbe1eafde65ba3551f8f3ed8a9e9e7ac719922d2d17f594abf89d98495e",
+            "5996298a40e6bfc6bbf7c2ac77e6343a0432ea9a6d475233aeb904f9481df570"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q15",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "1678ee9a8d83872969078bd9376fb75eeaac49b74fbf9898e15bf6f4870ace13",
+            "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778",
+            "8f941ce56169e2df5cd52a9d83153a4bf7422e170258b9b4a2695e4f359966bc",
+            "1f8a54c95004163af2db316548ab30062ca247dd47a7244a39076c49f21733f4",
+            "7a865ee9269cc55855dd0e01b5519e6dbeb369772f40f5402ba6aa84a72b73b9"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q16",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "d45cf11139473aea84dec8d6d072d6bf76e90a4a6dfe3db53a6ea5f76ce0ccb4",
+            "d32260d9f19d3e9c08e2720aade0062fe037235c75f962b45a4c8e24f9f08fea",
+            "2d35129bb942cafe646ab416b5c2d6542ce7fa124887819ea8367fd88ac95edd",
+            "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97",
+            "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q17",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "ecccf07797bc891a6e195d5a3647074c847863ad3eb73b842c515477d08f267b",
+            "cf5210d2f96762e619ccca4ae2897d4e8a02d5a305c7f6e2a4cfae1f99bbd7d3",
+            "f0ece727e1048c675b71552b8ed0111f51f62fc841477039b8b9fd97d22874fe",
+            "4afa2bd8a6490ae6a6b68309ceebe03851d8e90dc391a23eb64485c4d30efc1d",
+            "18d5e982743e2667eef52aa9b5254568ad1908537e4615d4000bd7c7baccd6b1"
+          ],
+          "coverage": 0.0,
+          "hit@5": false,
+          "id": "q18",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": false,
+          "chunk_ids": [
+            "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+            "69bccaa7588853589ece169e21001d937f31d56a6f8fb48a7297ee24bf8b4bb7",
+            "1e5bbca8347b5cfc82afd71e3b112e1c81a2f22beb0a0baf69147f609de31bf6",
+            "11cc490be91dcaee33e948331a5153a6bd39088244cf1fea25673df1d87946ae",
+            "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90"
+          ],
+          "coverage": 0.2,
+          "hit@5": false,
+          "id": "q19",
+          "missing_terms": [
+            "device",
+            "gpu",
+            "kubernetes",
+            "plugin"
+          ],
+          "status": "candidates"
+        },
+        {
+          "answerable": false,
+          "chunk_ids": [
+            "6aa7a1bf371ef5b09ced8df345c6d5847c5f890eafb25b72720ae31487e4167d",
+            "89243a750eb704a7130659dc7301c95f4f2e9f9379496a89e855c10fd8d012b1",
+            "8f941ce56169e2df5cd52a9d83153a4bf7422e170258b9b4a2695e4f359966bc",
+            "cbbe2f21f3dc0d943a91ebc1588ef82a1f092b8e8b60c055c93b9267e79dc867",
+            "cf5210d2f96762e619ccca4ae2897d4e8a02d5a305c7f6e2a4cfae1f99bbd7d3"
+          ],
+          "coverage": 0.5,
+          "hit@5": false,
+          "id": "q20",
+          "missing_terms": [
+            "release",
+            "today"
+          ],
+          "status": "candidates"
+        },
+        {
+          "answerable": false,
+          "chunk_ids": [],
+          "coverage": 0.0,
+          "hit@5": false,
+          "id": "q21",
+          "missing_terms": [
+            "blorptastic",
+            "neutrinoquux",
+            "zqxv"
+          ],
+          "status": "abstained"
+        },
+        {
+          "answerable": false,
+          "chunk_ids": [
+            "d45cf11139473aea84dec8d6d072d6bf76e90a4a6dfe3db53a6ea5f76ce0ccb4",
+            "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778",
+            "6aa7a1bf371ef5b09ced8df345c6d5847c5f890eafb25b72720ae31487e4167d",
+            "237ee193eeb3f01deb3bccedb500eca5f1461e3076854fccf935be8039ef480a",
+            "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97"
+          ],
+          "coverage": 0.4,
+          "hit@5": false,
+          "id": "q22",
+          "missing_terms": [
+            "malaysia",
+            "plan",
+            "price"
+          ],
+          "status": "candidates"
+        }
+      ],
+      "unanswerable_nonempty": 3
+    },
+    "glossary": {
+      "answerable_abstained": 0,
+      "hit@5": 1.0,
+      "rows": [
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+            "99eb663b7fbad9567cd42faa8627997a86014badd1dfc9772b8b25d528b96965",
+            "4890e7569434d705b6edfe66e151127ecc71ee35a9948be515f170fbc0aa9fc1",
+            "4afa2bd8a6490ae6a6b68309ceebe03851d8e90dc391a23eb64485c4d30efc1d",
+            "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9"
+          ],
+          "coverage": 0.8333333333333334,
+          "hit@5": true,
+          "id": "q01",
+          "missing_terms": [
+            "accept"
+          ],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "a8e4833e1768b54154af6f15b6fc593938091c31fcbfb66314b752d1d3d09c52",
+            "a1ecd831380e5012f1f76ec92c5195813179531b40b0bffd06fd85894f12b30d",
+            "cf5210d2f96762e619ccca4ae2897d4e8a02d5a305c7f6e2a4cfae1f99bbd7d3",
+            "ecccf07797bc891a6e195d5a3647074c847863ad3eb73b842c515477d08f267b",
+            "c7e082e8b03c192d73bb59c430981f2507780f4eff16a67e3b7ec99949f776ad"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q02",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "c7e082e8b03c192d73bb59c430981f2507780f4eff16a67e3b7ec99949f776ad",
+            "29d4f9a361abd5fa4f15a8dcc3ec0e5a1055b9dbb3b6fd65a99627151503f7d6",
+            "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+            "8e109862bda675ba2e67447c0cc09a64b50360106461869bf965f9f5aab51877",
+            "ca93533baa472344597348145a78d056807ebdcc67f73005b21ee0fc6cf90895"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q03",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "8e109862bda675ba2e67447c0cc09a64b50360106461869bf965f9f5aab51877",
+            "0ad1a9ff59b1d6323fb84a8481bed82ea803871ab06b37a73072b9a4e683c933",
+            "7a865ee9269cc55855dd0e01b5519e6dbeb369772f40f5402ba6aa84a72b73b9",
+            "a1ecd831380e5012f1f76ec92c5195813179531b40b0bffd06fd85894f12b30d",
+            "b4bda0f7333f88a362b75f359296ee6b80b8ccc1f35dd833c5073249ed334083"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q04",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "a86ad676882a5d331a9874ea7fce826222e994a14105ebdc9d990057b2caca60",
+            "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+            "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+            "11cc490be91dcaee33e948331a5153a6bd39088244cf1fea25673df1d87946ae",
+            "237ee193eeb3f01deb3bccedb500eca5f1461e3076854fccf935be8039ef480a"
+          ],
+          "coverage": 0.75,
+          "hit@5": true,
+          "id": "q05",
+          "missing_terms": [
+            "existing",
+            "rotating"
+          ],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "2ca6e131afb3468a70515873c1c073bb0633950e9b85d24a954bba08a2e60a6f",
+            "9872c7e03b564b0d08bdf7a8dd8aeca34169d53f3a1cd3f555430c68b2fbe494",
+            "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+            "d32260d9f19d3e9c08e2720aade0062fe037235c75f962b45a4c8e24f9f08fea",
+            "89243a750eb704a7130659dc7301c95f4f2e9f9379496a89e855c10fd8d012b1"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q06",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "92a592b397588809b6df383b95400026d2dbacb66d9832ba517b25c85d15f3ed",
+            "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+            "ca93533baa472344597348145a78d056807ebdcc67f73005b21ee0fc6cf90895",
+            "cf5210d2f96762e619ccca4ae2897d4e8a02d5a305c7f6e2a4cfae1f99bbd7d3",
+            "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q07",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+            "c11da45b9626fd230cb87d6e6bf86de05db859deba2ed31ef20e9d26da0b890b",
+            "ecccf07797bc891a6e195d5a3647074c847863ad3eb73b842c515477d08f267b",
+            "ec88afd4463c4f5c4b7bed123a588adb424d8e2b9c1c4dc450e71d1b06470369",
+            "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q08",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+            "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9",
+            "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+            "c11da45b9626fd230cb87d6e6bf86de05db859deba2ed31ef20e9d26da0b890b",
+            "11cc490be91dcaee33e948331a5153a6bd39088244cf1fea25673df1d87946ae"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q09",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa",
+            "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+            "b77c1c68b826e849e14b15303030638d81952c3b45bdc63481c9f648c0a1e491",
+            "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+            "8d73902c4ed720e73c697f28ef7857c7ab49b2af0d9567b6bf60678466561092"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q10",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "cd14030f9c4193c48f3a77419af034e4f27181792071c77c8f2e4546a6199e3b",
+            "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+            "305f5bd3562d93a38706a082f1546229353223e956695dba9e6c5a2135f64c6d",
+            "69bccaa7588853589ece169e21001d937f31d56a6f8fb48a7297ee24bf8b4bb7",
+            "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q11",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+            "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+            "e3a3d805b82848f5e014248b9f1a90dc3a76f28594a8fbaab266ab62b09c5e7d",
+            "2afc3095bbf641a90b1215649ae66649baea0a0eaeec6ebebfc17fa95cd2cdd3",
+            "cd14030f9c4193c48f3a77419af034e4f27181792071c77c8f2e4546a6199e3b"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q12",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "305f5bd3562d93a38706a082f1546229353223e956695dba9e6c5a2135f64c6d",
+            "4afa2bd8a6490ae6a6b68309ceebe03851d8e90dc391a23eb64485c4d30efc1d",
+            "0bbd6416389ee555c33abe547ec93d213c43f32e63946bc54ec3172c18107b5d",
+            "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97",
+            "2d35129bb942cafe646ab416b5c2d6542ce7fa124887819ea8367fd88ac95edd"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q13",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "dc15014c53e62071d58b9be79c7b3a744ab369d5be4fd0df22a8427cac611777",
+            "b77c1c68b826e849e14b15303030638d81952c3b45bdc63481c9f648c0a1e491",
+            "d93cd2faa28c2c0dc37e33ae317a2686ba8374a5fa3a266066adc662a93110b1",
+            "d3f5874c2503bc6c0f891520ca67e7160c34bdefbbad974c4bb9e102b7a06e99",
+            "578b3d94c57a2086b2c9d3cbf2fba4eaa09ba6bbe4a246b5967707240358ba33"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q14",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "d93cd2faa28c2c0dc37e33ae317a2686ba8374a5fa3a266066adc662a93110b1",
+            "d3f5874c2503bc6c0f891520ca67e7160c34bdefbbad974c4bb9e102b7a06e99",
+            "0bbd6416389ee555c33abe547ec93d213c43f32e63946bc54ec3172c18107b5d",
+            "4d96bfbe1eafde65ba3551f8f3ed8a9e9e7ac719922d2d17f594abf89d98495e",
+            "5996298a40e6bfc6bbf7c2ac77e6343a0432ea9a6d475233aeb904f9481df570"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q15",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "1678ee9a8d83872969078bd9376fb75eeaac49b74fbf9898e15bf6f4870ace13",
+            "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778",
+            "8f941ce56169e2df5cd52a9d83153a4bf7422e170258b9b4a2695e4f359966bc",
+            "1f8a54c95004163af2db316548ab30062ca247dd47a7244a39076c49f21733f4",
+            "7a865ee9269cc55855dd0e01b5519e6dbeb369772f40f5402ba6aa84a72b73b9"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q16",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "d45cf11139473aea84dec8d6d072d6bf76e90a4a6dfe3db53a6ea5f76ce0ccb4",
+            "d32260d9f19d3e9c08e2720aade0062fe037235c75f962b45a4c8e24f9f08fea",
+            "2d35129bb942cafe646ab416b5c2d6542ce7fa124887819ea8367fd88ac95edd",
+            "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97",
+            "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q17",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "cd14030f9c4193c48f3a77419af034e4f27181792071c77c8f2e4546a6199e3b",
+            "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+            "9791310ebcfdf6a963f4c6718ef43842302b44324c4ad960de84c73755ecb479",
+            "c95547ee0b31a13d5600da044aaa02ce72302608499ef6400027d82d35c35495",
+            "305f5bd3562d93a38706a082f1546229353223e956695dba9e6c5a2135f64c6d"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q18",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": false,
+          "chunk_ids": [
+            "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+            "69bccaa7588853589ece169e21001d937f31d56a6f8fb48a7297ee24bf8b4bb7",
+            "1e5bbca8347b5cfc82afd71e3b112e1c81a2f22beb0a0baf69147f609de31bf6",
+            "11cc490be91dcaee33e948331a5153a6bd39088244cf1fea25673df1d87946ae",
+            "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90"
+          ],
+          "coverage": 0.2,
+          "hit@5": false,
+          "id": "q19",
+          "missing_terms": [
+            "device",
+            "gpu",
+            "kubernetes",
+            "plugin"
+          ],
+          "status": "candidates"
+        },
+        {
+          "answerable": false,
+          "chunk_ids": [
+            "6aa7a1bf371ef5b09ced8df345c6d5847c5f890eafb25b72720ae31487e4167d",
+            "89243a750eb704a7130659dc7301c95f4f2e9f9379496a89e855c10fd8d012b1",
+            "8f941ce56169e2df5cd52a9d83153a4bf7422e170258b9b4a2695e4f359966bc",
+            "cbbe2f21f3dc0d943a91ebc1588ef82a1f092b8e8b60c055c93b9267e79dc867",
+            "cf5210d2f96762e619ccca4ae2897d4e8a02d5a305c7f6e2a4cfae1f99bbd7d3"
+          ],
+          "coverage": 0.5,
+          "hit@5": false,
+          "id": "q20",
+          "missing_terms": [
+            "release",
+            "today"
+          ],
+          "status": "candidates"
+        },
+        {
+          "answerable": false,
+          "chunk_ids": [],
+          "coverage": 0.0,
+          "hit@5": false,
+          "id": "q21",
+          "missing_terms": [
+            "blorptastic",
+            "neutrinoquux",
+            "zqxv"
+          ],
+          "status": "abstained"
+        },
+        {
+          "answerable": false,
+          "chunk_ids": [
+            "d45cf11139473aea84dec8d6d072d6bf76e90a4a6dfe3db53a6ea5f76ce0ccb4",
+            "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778",
+            "6aa7a1bf371ef5b09ced8df345c6d5847c5f890eafb25b72720ae31487e4167d",
+            "237ee193eeb3f01deb3bccedb500eca5f1461e3076854fccf935be8039ef480a",
+            "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97"
+          ],
+          "coverage": 0.4,
+          "hit@5": false,
+          "id": "q22",
+          "missing_terms": [
+            "malaysia",
+            "plan",
+            "price"
+          ],
+          "status": "candidates"
+        }
+      ],
+      "unanswerable_nonempty": 3
+    },
+    "glossary_gate": {
+      "answerable_abstained": 0,
+      "hit@5": 1.0,
+      "rows": [
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+            "99eb663b7fbad9567cd42faa8627997a86014badd1dfc9772b8b25d528b96965",
+            "4890e7569434d705b6edfe66e151127ecc71ee35a9948be515f170fbc0aa9fc1",
+            "4afa2bd8a6490ae6a6b68309ceebe03851d8e90dc391a23eb64485c4d30efc1d",
+            "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9"
+          ],
+          "coverage": 0.8333333333333334,
+          "hit@5": true,
+          "id": "q01",
+          "missing_terms": [
+            "accept"
+          ],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "a8e4833e1768b54154af6f15b6fc593938091c31fcbfb66314b752d1d3d09c52",
+            "a1ecd831380e5012f1f76ec92c5195813179531b40b0bffd06fd85894f12b30d",
+            "cf5210d2f96762e619ccca4ae2897d4e8a02d5a305c7f6e2a4cfae1f99bbd7d3",
+            "ecccf07797bc891a6e195d5a3647074c847863ad3eb73b842c515477d08f267b",
+            "c7e082e8b03c192d73bb59c430981f2507780f4eff16a67e3b7ec99949f776ad"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q02",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "c7e082e8b03c192d73bb59c430981f2507780f4eff16a67e3b7ec99949f776ad",
+            "29d4f9a361abd5fa4f15a8dcc3ec0e5a1055b9dbb3b6fd65a99627151503f7d6",
+            "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+            "8e109862bda675ba2e67447c0cc09a64b50360106461869bf965f9f5aab51877",
+            "ca93533baa472344597348145a78d056807ebdcc67f73005b21ee0fc6cf90895"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q03",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "8e109862bda675ba2e67447c0cc09a64b50360106461869bf965f9f5aab51877",
+            "0ad1a9ff59b1d6323fb84a8481bed82ea803871ab06b37a73072b9a4e683c933",
+            "7a865ee9269cc55855dd0e01b5519e6dbeb369772f40f5402ba6aa84a72b73b9",
+            "a1ecd831380e5012f1f76ec92c5195813179531b40b0bffd06fd85894f12b30d",
+            "b4bda0f7333f88a362b75f359296ee6b80b8ccc1f35dd833c5073249ed334083"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q04",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "a86ad676882a5d331a9874ea7fce826222e994a14105ebdc9d990057b2caca60",
+            "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+            "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+            "11cc490be91dcaee33e948331a5153a6bd39088244cf1fea25673df1d87946ae",
+            "237ee193eeb3f01deb3bccedb500eca5f1461e3076854fccf935be8039ef480a"
+          ],
+          "coverage": 0.75,
+          "hit@5": true,
+          "id": "q05",
+          "missing_terms": [
+            "existing",
+            "rotating"
+          ],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "2ca6e131afb3468a70515873c1c073bb0633950e9b85d24a954bba08a2e60a6f",
+            "9872c7e03b564b0d08bdf7a8dd8aeca34169d53f3a1cd3f555430c68b2fbe494",
+            "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+            "d32260d9f19d3e9c08e2720aade0062fe037235c75f962b45a4c8e24f9f08fea",
+            "89243a750eb704a7130659dc7301c95f4f2e9f9379496a89e855c10fd8d012b1"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q06",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "92a592b397588809b6df383b95400026d2dbacb66d9832ba517b25c85d15f3ed",
+            "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+            "ca93533baa472344597348145a78d056807ebdcc67f73005b21ee0fc6cf90895",
+            "cf5210d2f96762e619ccca4ae2897d4e8a02d5a305c7f6e2a4cfae1f99bbd7d3",
+            "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q07",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+            "c11da45b9626fd230cb87d6e6bf86de05db859deba2ed31ef20e9d26da0b890b",
+            "ecccf07797bc891a6e195d5a3647074c847863ad3eb73b842c515477d08f267b",
+            "ec88afd4463c4f5c4b7bed123a588adb424d8e2b9c1c4dc450e71d1b06470369",
+            "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q08",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+            "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9",
+            "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+            "c11da45b9626fd230cb87d6e6bf86de05db859deba2ed31ef20e9d26da0b890b",
+            "11cc490be91dcaee33e948331a5153a6bd39088244cf1fea25673df1d87946ae"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q09",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa",
+            "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+            "b77c1c68b826e849e14b15303030638d81952c3b45bdc63481c9f648c0a1e491",
+            "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+            "8d73902c4ed720e73c697f28ef7857c7ab49b2af0d9567b6bf60678466561092"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q10",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "cd14030f9c4193c48f3a77419af034e4f27181792071c77c8f2e4546a6199e3b",
+            "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+            "305f5bd3562d93a38706a082f1546229353223e956695dba9e6c5a2135f64c6d",
+            "69bccaa7588853589ece169e21001d937f31d56a6f8fb48a7297ee24bf8b4bb7",
+            "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q11",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+            "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+            "e3a3d805b82848f5e014248b9f1a90dc3a76f28594a8fbaab266ab62b09c5e7d",
+            "2afc3095bbf641a90b1215649ae66649baea0a0eaeec6ebebfc17fa95cd2cdd3",
+            "cd14030f9c4193c48f3a77419af034e4f27181792071c77c8f2e4546a6199e3b"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q12",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "305f5bd3562d93a38706a082f1546229353223e956695dba9e6c5a2135f64c6d",
+            "4afa2bd8a6490ae6a6b68309ceebe03851d8e90dc391a23eb64485c4d30efc1d",
+            "0bbd6416389ee555c33abe547ec93d213c43f32e63946bc54ec3172c18107b5d",
+            "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97",
+            "2d35129bb942cafe646ab416b5c2d6542ce7fa124887819ea8367fd88ac95edd"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q13",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "dc15014c53e62071d58b9be79c7b3a744ab369d5be4fd0df22a8427cac611777",
+            "b77c1c68b826e849e14b15303030638d81952c3b45bdc63481c9f648c0a1e491",
+            "d93cd2faa28c2c0dc37e33ae317a2686ba8374a5fa3a266066adc662a93110b1",
+            "d3f5874c2503bc6c0f891520ca67e7160c34bdefbbad974c4bb9e102b7a06e99",
+            "578b3d94c57a2086b2c9d3cbf2fba4eaa09ba6bbe4a246b5967707240358ba33"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q14",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "d93cd2faa28c2c0dc37e33ae317a2686ba8374a5fa3a266066adc662a93110b1",
+            "d3f5874c2503bc6c0f891520ca67e7160c34bdefbbad974c4bb9e102b7a06e99",
+            "0bbd6416389ee555c33abe547ec93d213c43f32e63946bc54ec3172c18107b5d",
+            "4d96bfbe1eafde65ba3551f8f3ed8a9e9e7ac719922d2d17f594abf89d98495e",
+            "5996298a40e6bfc6bbf7c2ac77e6343a0432ea9a6d475233aeb904f9481df570"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q15",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "1678ee9a8d83872969078bd9376fb75eeaac49b74fbf9898e15bf6f4870ace13",
+            "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778",
+            "8f941ce56169e2df5cd52a9d83153a4bf7422e170258b9b4a2695e4f359966bc",
+            "1f8a54c95004163af2db316548ab30062ca247dd47a7244a39076c49f21733f4",
+            "7a865ee9269cc55855dd0e01b5519e6dbeb369772f40f5402ba6aa84a72b73b9"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q16",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "d45cf11139473aea84dec8d6d072d6bf76e90a4a6dfe3db53a6ea5f76ce0ccb4",
+            "d32260d9f19d3e9c08e2720aade0062fe037235c75f962b45a4c8e24f9f08fea",
+            "2d35129bb942cafe646ab416b5c2d6542ce7fa124887819ea8367fd88ac95edd",
+            "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97",
+            "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q17",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": true,
+          "chunk_ids": [
+            "cd14030f9c4193c48f3a77419af034e4f27181792071c77c8f2e4546a6199e3b",
+            "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+            "9791310ebcfdf6a963f4c6718ef43842302b44324c4ad960de84c73755ecb479",
+            "c95547ee0b31a13d5600da044aaa02ce72302608499ef6400027d82d35c35495",
+            "305f5bd3562d93a38706a082f1546229353223e956695dba9e6c5a2135f64c6d"
+          ],
+          "coverage": 1.0,
+          "hit@5": true,
+          "id": "q18",
+          "missing_terms": [],
+          "status": "candidates"
+        },
+        {
+          "answerable": false,
+          "chunk_ids": [],
+          "coverage": 0.2,
+          "hit@5": false,
+          "id": "q19",
+          "missing_terms": [
+            "device",
+            "gpu",
+            "kubernetes",
+            "plugin"
+          ],
+          "status": "abstained"
+        },
+        {
+          "answerable": false,
+          "chunk_ids": [],
+          "coverage": 0.5,
+          "hit@5": false,
+          "id": "q20",
+          "missing_terms": [
+            "release",
+            "today"
+          ],
+          "status": "abstained"
+        },
+        {
+          "answerable": false,
+          "chunk_ids": [],
+          "coverage": 0.0,
+          "hit@5": false,
+          "id": "q21",
+          "missing_terms": [
+            "blorptastic",
+            "neutrinoquux",
+            "zqxv"
+          ],
+          "status": "abstained"
+        },
+        {
+          "answerable": false,
+          "chunk_ids": [],
+          "coverage": 0.4,
+          "hit@5": false,
+          "id": "q22",
+          "missing_terms": [
+            "malaysia",
+            "plan",
+            "price"
+          ],
+          "status": "abstained"
+        }
+      ],
+      "unanswerable_nonempty": 0
+    }
+  }
+}
