@@ -1,0 +1,13 @@
+{
+  "architecture": "x86_64",
+  "chunk_count": 91,
+  "load_chunk_index_once_ms": 29.654268000058437,
+  "measured_queries": 220,
+  "platform": "Linux",
+  "python": "3.12.14",
+  "query_median_ms": 0.1992229999814299,
+  "query_p95_nearest_rank_ms": 0.30434900008913246,
+  "scope": "one process; tiny pinned corpus; warm search only, no network or generator",
+  "warmup_queries": 22,
+  "warning": "Non-deterministic wall-clock sample; not a production SLA or scale benchmark."
+}

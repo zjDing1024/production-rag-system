@@ -1,0 +1,964 @@
+{
+  "answerable_count": 18,
+  "bm25": {
+    "b": 0.75,
+    "k1": 1.5
+  },
+  "chunk_count": 91,
+  "chunking": {
+    "max_words": 180,
+    "overlap": 40,
+    "unit": "whitespace words"
+  },
+  "chunks_sha256": "de8a54066e25aa135724924ebae09e960884bbfc292429d0324e62320140b9de",
+  "generator": null,
+  "k": 5,
+  "manifest_sha256": "0dcdc59d0b07e7cd2e3b077e25d152d7300b7fd4e1f909ea0c5b27a18ca24cad",
+  "metrics": {
+    "hit@1": 0.6666666666666666,
+    "hit@3": 0.8888888888888888,
+    "hit@5": 0.9444444444444444,
+    "mrr@5": 0.7916666666666666,
+    "unanswerable_nonempty_rate": 0.75
+  },
+  "question_count": 22,
+  "questions_sha256": "30b677b040466b3636cfd3182ef110924444d70e0a1a6feb368079b3809d28ca",
+  "results": [
+    {
+      "answerable": true,
+      "first_relevant_rank": 4,
+      "id": "q01",
+      "query": "How do I make a URL route accept POST instead of only GET?",
+      "retrieved": [
+        {
+          "chunk_id": "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L532-L562",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 10.32728507025226
+        },
+        {
+          "chunk_id": "99eb663b7fbad9567cd42faa8627997a86014badd1dfc9772b8b25d528b96965",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L580-L619",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 9.96171647176346
+        },
+        {
+          "chunk_id": "4890e7569434d705b6edfe66e151127ecc71ee35a9948be515f170fbc0aa9fc1",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L148-L188",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 9.776416267601803
+        },
+        {
+          "chunk_id": "4afa2bd8a6490ae6a6b68309ceebe03851d8e90dc391a23eb64485c4d30efc1d",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L263-L331",
+          "document_id": "flask-quickstart",
+          "relevant": true,
+          "score": 9.534255110038927
+        },
+        {
+          "chunk_id": "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L119-L175",
+          "document_id": "flask-logging",
+          "relevant": false,
+          "score": 9.16537273415147
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": true,
+      "first_relevant_rank": 1,
+      "id": "q02",
+      "query": "Where should I put static CSS files and how can I build their URLs?",
+      "retrieved": [
+        {
+          "chunk_id": "a8e4833e1768b54154af6f15b6fc593938091c31fcbfb66314b752d1d3d09c52",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L316-L356",
+          "document_id": "flask-quickstart",
+          "relevant": true,
+          "score": 20.837218406755547
+        },
+        {
+          "chunk_id": "a1ecd831380e5012f1f76ec92c5195813179531b40b0bffd06fd85894f12b30d",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L346-L380",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 12.436998305433534
+        },
+        {
+          "chunk_id": "cf5210d2f96762e619ccca4ae2897d4e8a02d5a305c7f6e2a4cfae1f99bbd7d3",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L1-L32",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 11.43049548299863
+        },
+        {
+          "chunk_id": "ecccf07797bc891a6e195d5a3647074c847863ad3eb73b842c515477d08f267b",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L1-L38",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 8.970385265506874
+        },
+        {
+          "chunk_id": "c7e082e8b03c192d73bb59c430981f2507780f4eff16a67e3b7ec99949f776ad",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L223-L250",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 8.360749204034956
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": true,
+      "first_relevant_rank": 1,
+      "id": "q03",
+      "query": "What happens when the slash at the end of a projects URL is omitted?",
+      "retrieved": [
+        {
+          "chunk_id": "c7e082e8b03c192d73bb59c430981f2507780f4eff16a67e3b7ec99949f776ad",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L223-L250",
+          "document_id": "flask-quickstart",
+          "relevant": true,
+          "score": 17.613909837498465
+        },
+        {
+          "chunk_id": "29d4f9a361abd5fa4f15a8dcc3ec0e5a1055b9dbb3b6fd65a99627151503f7d6",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L180-L227",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 16.453120659509743
+        },
+        {
+          "chunk_id": "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L532-L562",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 10.820864654901534
+        },
+        {
+          "chunk_id": "8e109862bda675ba2e67447c0cc09a64b50360106461869bf965f9f5aab51877",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L114-L153",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 7.537992219144136
+        },
+        {
+          "chunk_id": "ca93533baa472344597348145a78d056807ebdcc67f73005b21ee0fc6cf90895",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L823-L845",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 6.869750154066762
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": true,
+      "first_relevant_rank": 1,
+      "id": "q04",
+      "query": "Why do templates escape user-provided HTML?",
+      "retrieved": [
+        {
+          "chunk_id": "8e109862bda675ba2e67447c0cc09a64b50360106461869bf965f9f5aab51877",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L114-L153",
+          "document_id": "flask-quickstart",
+          "relevant": true,
+          "score": 14.360260591580555
+        },
+        {
+          "chunk_id": "0ad1a9ff59b1d6323fb84a8481bed82ea803871ab06b37a73072b9a4e683c933",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L433-L472",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 10.936860675650394
+        },
+        {
+          "chunk_id": "7a865ee9269cc55855dd0e01b5519e6dbeb369772f40f5402ba6aa84a72b73b9",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L414-L443",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 8.86874829836742
+        },
+        {
+          "chunk_id": "a1ecd831380e5012f1f76ec92c5195813179531b40b0bffd06fd85894f12b30d",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L346-L380",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 7.83072457062894
+        },
+        {
+          "chunk_id": "b4bda0f7333f88a362b75f359296ee6b80b8ccc1f35dd833c5073249ed334083",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L370-L419",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 6.723263325628453
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": true,
+      "first_relevant_rank": 2,
+      "id": "q05",
+      "query": "How can I keep existing sessions working while rotating secret signing keys?",
+      "retrieved": [
+        {
+          "chunk_id": "a86ad676882a5d331a9874ea7fce826222e994a14105ebdc9d990057b2caca60",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L762-L800",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 15.412044587599254
+        },
+        {
+          "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+          "document_id": "flask-config",
+          "relevant": true,
+          "score": 14.6853452640987
+        },
+        {
+          "chunk_id": "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L785-L826",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 10.58956459209178
+        },
+        {
+          "chunk_id": "11cc490be91dcaee33e948331a5153a6bd39088244cf1fea25673df1d87946ae",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L566-L609",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 8.842787870735924
+        },
+        {
+          "chunk_id": "237ee193eeb3f01deb3bccedb500eca5f1461e3076854fccf935be8039ef480a",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L603-L639",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 7.856647722462421
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": true,
+      "first_relevant_rank": 1,
+      "id": "q06",
+      "query": "What happens to exceptions when TESTING is enabled?",
+      "retrieved": [
+        {
+          "chunk_id": "2ca6e131afb3468a70515873c1c073bb0633950e9b85d24a954bba08a2e60a6f",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L58-L92",
+          "document_id": "flask-config",
+          "relevant": true,
+          "score": 10.96948253407458
+        },
+        {
+          "chunk_id": "9872c7e03b564b0d08bdf7a8dd8aeca34169d53f3a1cd3f555430c68b2fbe494",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L84-L119",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 7.680278041445354
+        },
+        {
+          "chunk_id": "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L532-L562",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 5.707127377276709
+        },
+        {
+          "chunk_id": "d32260d9f19d3e9c08e2720aade0062fe037235c75f962b45a4c8e24f9f08fea",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L466-L486",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 5.6813434786052515
+        },
+        {
+          "chunk_id": "89243a750eb704a7130659dc7301c95f4f2e9f9379496a89e855c10fd8d012b1",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L501-L537",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 5.660015066219449
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": true,
+      "first_relevant_rank": 1,
+      "id": "q07",
+      "query": "Which cookie setting prevents access from JavaScript?",
+      "retrieved": [
+        {
+          "chunk_id": "92a592b397588809b6df383b95400026d2dbacb66d9832ba517b25c85d15f3ed",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L168-L211",
+          "document_id": "flask-config",
+          "relevant": true,
+          "score": 16.174243164067015
+        },
+        {
+          "chunk_id": "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L142-L177",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 8.889901940816992
+        },
+        {
+          "chunk_id": "ca93533baa472344597348145a78d056807ebdcc67f73005b21ee0fc6cf90895",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L823-L845",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 5.545966267057189
+        },
+        {
+          "chunk_id": "cf5210d2f96762e619ccca4ae2897d4e8a02d5a305c7f6e2a4cfae1f99bbd7d3",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L1-L32",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 4.753987139516568
+        },
+        {
+          "chunk_id": "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L300-L329",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 4.637515386498608
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": true,
+      "first_relevant_rank": 1,
+      "id": "q08",
+      "query": "When configuring logging should I create the application object first?",
+      "retrieved": [
+        {
+          "chunk_id": "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L1-L51",
+          "document_id": "flask-logging",
+          "relevant": true,
+          "score": 10.83732511624775
+        },
+        {
+          "chunk_id": "c11da45b9626fd230cb87d6e6bf86de05db859deba2ed31ef20e9d26da0b890b",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L84-L128",
+          "document_id": "flask-logging",
+          "relevant": false,
+          "score": 8.3587124548213
+        },
+        {
+          "chunk_id": "ecccf07797bc891a6e195d5a3647074c847863ad3eb73b842c515477d08f267b",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L1-L38",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 8.349797273972724
+        },
+        {
+          "chunk_id": "ec88afd4463c4f5c4b7bed123a588adb424d8e2b9c1c4dc450e71d1b06470369",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L635-L661",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 7.267019634559978
+        },
+        {
+          "chunk_id": "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L119-L175",
+          "document_id": "flask-logging",
+          "relevant": false,
+          "score": 6.986721733271739
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": true,
+      "first_relevant_rank": 1,
+      "id": "q09",
+      "query": "How can I remove the default app.logger handler?",
+      "retrieved": [
+        {
+          "chunk_id": "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L36-L89",
+          "document_id": "flask-logging",
+          "relevant": true,
+          "score": 14.401764434684472
+        },
+        {
+          "chunk_id": "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L119-L175",
+          "document_id": "flask-logging",
+          "relevant": false,
+          "score": 9.42219235793644
+        },
+        {
+          "chunk_id": "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L1-L51",
+          "document_id": "flask-logging",
+          "relevant": false,
+          "score": 8.660592456966768
+        },
+        {
+          "chunk_id": "c11da45b9626fd230cb87d6e6bf86de05db859deba2ed31ef20e9d26da0b890b",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L84-L128",
+          "document_id": "flask-logging",
+          "relevant": false,
+          "score": 7.1425832372354465
+        },
+        {
+          "chunk_id": "11cc490be91dcaee33e948331a5153a6bd39088244cf1fea25673df1d87946ae",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L566-L609",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 6.062520864629537
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": true,
+      "first_relevant_rank": 2,
+      "id": "q10",
+      "query": "What stream receives default logs when no request is active?",
+      "retrieved": [
+        {
+          "chunk_id": "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L300-L329",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 10.734421940280917
+        },
+        {
+          "chunk_id": "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L36-L89",
+          "document_id": "flask-logging",
+          "relevant": true,
+          "score": 10.403206583827433
+        },
+        {
+          "chunk_id": "b77c1c68b826e849e14b15303030638d81952c3b45bdc63481c9f648c0a1e491",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L142-L161",
+          "document_id": "flask-errorhandling",
+          "relevant": false,
+          "score": 9.988713987797386
+        },
+        {
+          "chunk_id": "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L1-L51",
+          "document_id": "flask-logging",
+          "relevant": false,
+          "score": 9.48545761107107
+        },
+        {
+          "chunk_id": "8d73902c4ed720e73c697f28ef7857c7ab49b2af0d9567b6bf60678466561092",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L324-L358",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 7.822202594148077
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": true,
+      "first_relevant_rank": 1,
+      "id": "q11",
+      "query": "Do test client requests require a running live server?",
+      "retrieved": [
+        {
+          "chunk_id": "cd14030f9c4193c48f3a77419af034e4f27181792071c77c8f2e4546a6199e3b",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L51-L101",
+          "document_id": "flask-testing",
+          "relevant": true,
+          "score": 17.82770852382322
+        },
+        {
+          "chunk_id": "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L155-L207",
+          "document_id": "flask-testing",
+          "relevant": false,
+          "score": 9.689856743727566
+        },
+        {
+          "chunk_id": "305f5bd3562d93a38706a082f1546229353223e956695dba9e6c5a2135f64c6d",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L279-L319",
+          "document_id": "flask-testing",
+          "relevant": false,
+          "score": 9.225054026842272
+        },
+        {
+          "chunk_id": "69bccaa7588853589ece169e21001d937f31d56a6f8fb48a7297ee24bf8b4bb7",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L30-L70",
+          "document_id": "flask-testing",
+          "relevant": false,
+          "score": 7.062554711139955
+        },
+        {
+          "chunk_id": "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L1-L26",
+          "document_id": "flask-deploying-index",
+          "relevant": false,
+          "score": 6.9416635080055
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": true,
+      "first_relevant_rank": 1,
+      "id": "q12",
+      "query": "How do I follow redirect responses in a test request?",
+      "retrieved": [
+        {
+          "chunk_id": "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L155-L207",
+          "document_id": "flask-testing",
+          "relevant": true,
+          "score": 11.101471378176868
+        },
+        {
+          "chunk_id": "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L785-L826",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 9.189001671214555
+        },
+        {
+          "chunk_id": "e3a3d805b82848f5e014248b9f1a90dc3a76f28594a8fbaab266ab62b09c5e7d",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L645-L687",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 9.068259602569546
+        },
+        {
+          "chunk_id": "2afc3095bbf641a90b1215649ae66649baea0a0eaeec6ebebfc17fa95cd2cdd3",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L609-L660",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 9.022444316540671
+        },
+        {
+          "chunk_id": "cd14030f9c4193c48f3a77419af034e4f27181792071c77c8f2e4546a6199e3b",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L51-L101",
+          "document_id": "flask-testing",
+          "relevant": false,
+          "score": 6.112442880804728
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": true,
+      "first_relevant_rank": 1,
+      "id": "q13",
+      "query": "Does test_request_context call before_request functions automatically?",
+      "retrieved": [
+        {
+          "chunk_id": "305f5bd3562d93a38706a082f1546229353223e956695dba9e6c5a2135f64c6d",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L279-L319",
+          "document_id": "flask-testing",
+          "relevant": true,
+          "score": 14.60747555066687
+        },
+        {
+          "chunk_id": "4afa2bd8a6490ae6a6b68309ceebe03851d8e90dc391a23eb64485c4d30efc1d",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L263-L331",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 6.753457233911305
+        },
+        {
+          "chunk_id": "0bbd6416389ee555c33abe547ec93d213c43f32e63946bc54ec3172c18107b5d",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L387-L420",
+          "document_id": "flask-errorhandling",
+          "relevant": false,
+          "score": 6.622661247800233
+        },
+        {
+          "chunk_id": "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L265-L306",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 6.518954222592544
+        },
+        {
+          "chunk_id": "2d35129bb942cafe646ab416b5c2d6542ce7fa124887819ea8367fd88ac95edd",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L481-L511",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 6.232248953105952
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": true,
+      "first_relevant_rank": 2,
+      "id": "q14",
+      "query": "How is an error handler chosen when both code and exception class match?",
+      "retrieved": [
+        {
+          "chunk_id": "dc15014c53e62071d58b9be79c7b3a744ab369d5be4fd0df22a8427cac611777",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L208-L247",
+          "document_id": "flask-errorhandling",
+          "relevant": false,
+          "score": 17.33997709658913
+        },
+        {
+          "chunk_id": "b77c1c68b826e849e14b15303030638d81952c3b45bdc63481c9f648c0a1e491",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L142-L161",
+          "document_id": "flask-errorhandling",
+          "relevant": true,
+          "score": 17.28107761374552
+        },
+        {
+          "chunk_id": "d93cd2faa28c2c0dc37e33ae317a2686ba8374a5fa3a266066adc662a93110b1",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L159-L184",
+          "document_id": "flask-errorhandling",
+          "relevant": false,
+          "score": 15.997266889555474
+        },
+        {
+          "chunk_id": "d3f5874c2503bc6c0f891520ca67e7160c34bdefbbad974c4bb9e102b7a06e99",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L179-L214",
+          "document_id": "flask-errorhandling",
+          "relevant": false,
+          "score": 11.60206977052237
+        },
+        {
+          "chunk_id": "578b3d94c57a2086b2c9d3cbf2fba4eaa09ba6bbe4a246b5967707240358ba33",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L80-L116",
+          "document_id": "flask-errorhandling",
+          "relevant": false,
+          "score": 10.214163184283553
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": true,
+      "first_relevant_rank": 1,
+      "id": "q15",
+      "query": "Can a blueprint error handler catch a routing 404?",
+      "retrieved": [
+        {
+          "chunk_id": "d93cd2faa28c2c0dc37e33ae317a2686ba8374a5fa3a266066adc662a93110b1",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L159-L184",
+          "document_id": "flask-errorhandling",
+          "relevant": true,
+          "score": 20.41160580451446
+        },
+        {
+          "chunk_id": "d3f5874c2503bc6c0f891520ca67e7160c34bdefbbad974c4bb9e102b7a06e99",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L179-L214",
+          "document_id": "flask-errorhandling",
+          "relevant": false,
+          "score": 12.706356263776938
+        },
+        {
+          "chunk_id": "0bbd6416389ee555c33abe547ec93d213c43f32e63946bc54ec3172c18107b5d",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L387-L420",
+          "document_id": "flask-errorhandling",
+          "relevant": false,
+          "score": 12.572703702194152
+        },
+        {
+          "chunk_id": "4d96bfbe1eafde65ba3551f8f3ed8a9e9e7ac719922d2d17f594abf89d98495e",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L412-L452",
+          "document_id": "flask-errorhandling",
+          "relevant": false,
+          "score": 10.086449691781201
+        },
+        {
+          "chunk_id": "5996298a40e6bfc6bbf7c2ac77e6343a0432ea9a6d475233aeb904f9481df570",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L336-L396",
+          "document_id": "flask-errorhandling",
+          "relevant": false,
+          "score": 8.600125528831203
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": true,
+      "first_relevant_rank": 2,
+      "id": "q16",
+      "query": "Is the development server safe for production deployment?",
+      "retrieved": [
+        {
+          "chunk_id": "1678ee9a8d83872969078bd9376fb75eeaac49b74fbf9898e15bf6f4870ace13",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L723-L762",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 9.85680275617683
+        },
+        {
+          "chunk_id": "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L1-L26",
+          "document_id": "flask-deploying-index",
+          "relevant": true,
+          "score": 9.450173710600193
+        },
+        {
+          "chunk_id": "8f941ce56169e2df5cd52a9d83153a4bf7422e170258b9b4a2695e4f359966bc",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L57-L91",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 8.93256671286155
+        },
+        {
+          "chunk_id": "1f8a54c95004163af2db316548ab30062ca247dd47a7244a39076c49f21733f4",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L747-L780",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 8.044291338520067
+        },
+        {
+          "chunk_id": "7a865ee9269cc55855dd0e01b5519e6dbeb369772f40f5402ba6aa84a72b73b9",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L414-L443",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 7.254494449101891
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": true,
+      "first_relevant_rank": 1,
+      "id": "q17",
+      "query": "What does a reverse proxy mean in front of a WSGI server?",
+      "retrieved": [
+        {
+          "chunk_id": "d45cf11139473aea84dec8d6d072d6bf76e90a4a6dfe3db53a6ea5f76ce0ccb4",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L22-L63",
+          "document_id": "flask-deploying-index",
+          "relevant": true,
+          "score": 18.311715204373634
+        },
+        {
+          "chunk_id": "d32260d9f19d3e9c08e2720aade0062fe037235c75f962b45a4c8e24f9f08fea",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L466-L486",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 12.541811304513136
+        },
+        {
+          "chunk_id": "2d35129bb942cafe646ab416b5c2d6542ce7fa124887819ea8367fd88ac95edd",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L481-L511",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 9.783291444374626
+        },
+        {
+          "chunk_id": "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L265-L306",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 7.381409998687474
+        },
+        {
+          "chunk_id": "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L1-L26",
+          "document_id": "flask-deploying-index",
+          "relevant": false,
+          "score": 6.235803984522532
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": true,
+      "first_relevant_rank": null,
+      "id": "q18",
+      "query": "Flask 的测试客户端需要启动真实服务器吗？",
+      "retrieved": [
+        {
+          "chunk_id": "ecccf07797bc891a6e195d5a3647074c847863ad3eb73b842c515477d08f267b",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L1-L38",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 0.26969130985507206
+        },
+        {
+          "chunk_id": "cf5210d2f96762e619ccca4ae2897d4e8a02d5a305c7f6e2a4cfae1f99bbd7d3",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L1-L32",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 0.2671492293404552
+        },
+        {
+          "chunk_id": "f0ece727e1048c675b71552b8ed0111f51f62fc841477039b8b9fd97d22874fe",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L197-L249",
+          "document_id": "flask-testing",
+          "relevant": false,
+          "score": 0.26603833619519224
+        },
+        {
+          "chunk_id": "4afa2bd8a6490ae6a6b68309ceebe03851d8e90dc391a23eb64485c4d30efc1d",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L263-L331",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 0.2638440380197622
+        },
+        {
+          "chunk_id": "18d5e982743e2667eef52aa9b5254568ad1908537e4615d4000bd7c7baccd6b1",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L861-L907",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 0.26191429086406987
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": false,
+      "first_relevant_rank": null,
+      "id": "q19",
+      "query": "How do I configure a Kubernetes GPU device plugin for Flask?",
+      "retrieved": [
+        {
+          "chunk_id": "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L1-L51",
+          "document_id": "flask-logging",
+          "relevant": false,
+          "score": 5.532770551476884
+        },
+        {
+          "chunk_id": "69bccaa7588853589ece169e21001d937f31d56a6f8fb48a7297ee24bf8b4bb7",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L30-L70",
+          "document_id": "flask-testing",
+          "relevant": false,
+          "score": 5.5210674319879205
+        },
+        {
+          "chunk_id": "1e5bbca8347b5cfc82afd71e3b112e1c81a2f22beb0a0baf69147f609de31bf6",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L809-L836",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 4.490765971578266
+        },
+        {
+          "chunk_id": "11cc490be91dcaee33e948331a5153a6bd39088244cf1fea25673df1d87946ae",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L566-L609",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 4.36905621973936
+        },
+        {
+          "chunk_id": "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L36-L89",
+          "document_id": "flask-logging",
+          "relevant": false,
+          "score": 4.120008030571894
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": false,
+      "first_relevant_rank": null,
+      "id": "q20",
+      "query": "What is the latest Flask release available today?",
+      "retrieved": [
+        {
+          "chunk_id": "6aa7a1bf371ef5b09ced8df345c6d5847c5f890eafb25b72720ae31487e4167d",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L54-L79",
+          "document_id": "flask-deploying-index",
+          "relevant": false,
+          "score": 6.603696712451163
+        },
+        {
+          "chunk_id": "89243a750eb704a7130659dc7301c95f4f2e9f9379496a89e855c10fd8d012b1",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L501-L537",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 4.400456278274492
+        },
+        {
+          "chunk_id": "8f941ce56169e2df5cd52a9d83153a4bf7422e170258b9b4a2695e4f359966bc",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L57-L91",
+          "document_id": "flask-quickstart",
+          "relevant": false,
+          "score": 4.330489538231469
+        },
+        {
+          "chunk_id": "cbbe2f21f3dc0d943a91ebc1588ef82a1f092b8e8b60c055c93b9267e79dc867",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L20-L53",
+          "document_id": "flask-errorhandling",
+          "relevant": false,
+          "score": 3.9614069362257993
+        },
+        {
+          "chunk_id": "cf5210d2f96762e619ccca4ae2897d4e8a02d5a305c7f6e2a4cfae1f99bbd7d3",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L1-L32",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 3.5647995326772874
+        }
+      ],
+      "returned_count": 5
+    },
+    {
+      "answerable": false,
+      "first_relevant_rank": null,
+      "id": "q21",
+      "query": "zqxv blorptastic neutrinoquux",
+      "retrieved": [],
+      "returned_count": 0
+    },
+    {
+      "answerable": false,
+      "first_relevant_rank": null,
+      "id": "q22",
+      "query": "What is the price of a dedicated hosting plan in Malaysia?",
+      "retrieved": [
+        {
+          "chunk_id": "d45cf11139473aea84dec8d6d072d6bf76e90a4a6dfe3db53a6ea5f76ce0ccb4",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L22-L63",
+          "document_id": "flask-deploying-index",
+          "relevant": false,
+          "score": 9.17887771629942
+        },
+        {
+          "chunk_id": "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L1-L26",
+          "document_id": "flask-deploying-index",
+          "relevant": false,
+          "score": 7.7638894829292315
+        },
+        {
+          "chunk_id": "6aa7a1bf371ef5b09ced8df345c6d5847c5f890eafb25b72720ae31487e4167d",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L54-L79",
+          "document_id": "flask-deploying-index",
+          "relevant": false,
+          "score": 6.138908308251882
+        },
+        {
+          "chunk_id": "237ee193eeb3f01deb3bccedb500eca5f1461e3076854fccf935be8039ef480a",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L603-L639",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 4.3110253992513226
+        },
+        {
+          "chunk_id": "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97",
+          "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L265-L306",
+          "document_id": "flask-config",
+          "relevant": false,
+          "score": 3.6908986573044875
+        }
+      ],
+      "returned_count": 5
+    }
+  ],
+  "schema_version": 1,
+  "scope": "retrieval-only authored development set",
+  "tokenizer": "unicode-word-casefold-v1",
+  "unanswerable_count": 4
+}

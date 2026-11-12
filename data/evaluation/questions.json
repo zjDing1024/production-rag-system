@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "name": "flask-docs-authored-dev-v1",
+  "created_date": "2026-11-12",
+  "purpose": "Initial authored development set; not independent or held out. Queries and source quotes frozen before first retrieval run.",
+  "questions": [
+    {
+      "id": "q01",
+      "query": "How do I make a URL route accept POST instead of only GET?",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-quickstart",
+          "quote": "You can use the ``methods`` argument of the :meth:`~flask.Flask.route` decorator to handle different HTTP methods."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "q02",
+      "query": "Where should I put static CSS files and how can I build their URLs?",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-quickstart",
+          "quote": "To generate URLs for static files, use the special ``'static'`` endpoint name"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "q03",
+      "query": "What happens when the slash at the end of a projects URL is omitted?",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-quickstart",
+          "quote": "If you access the URL without a trailing slash (``/projects``), Flask redirects you to the canonical URL with the trailing slash (``/projects/``)."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "q04",
+      "query": "Why do templates escape user-provided HTML?",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-quickstart",
+          "quote": "user-provided values rendered in the output must be escaped to protect from injection attacks."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "q05",
+      "query": "How can I keep existing sessions working while rotating secret signing keys?",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-config",
+          "quote": "This allows a project to implement key rotation without invalidating active sessions or other recently-signed secrets."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "q06",
+      "query": "What happens to exceptions when TESTING is enabled?",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-config",
+          "quote": "Enable testing mode. Exceptions are propagated rather than handled by the the app's error handlers."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "q07",
+      "query": "Which cookie setting prevents access from JavaScript?",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-config",
+          "quote": "Browsers will not allow JavaScript access to cookies marked as \"HTTP only\" for security."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "q08",
+      "query": "When configuring logging should I create the application object first?",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-logging",
+          "quote": "If possible, configure logging before creating the application object."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "q09",
+      "query": "How can I remove the default app.logger handler?",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-logging",
+          "quote": "app.logger.removeHandler(default_handler)"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "q10",
+      "query": "What stream receives default logs when no request is active?",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-logging",
+          "quote": "Outside a request, it will log to :data:`sys.stderr`."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "q11",
+      "query": "Do test client requests require a running live server?",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-testing",
+          "quote": "The test client makes requests to the application without running a live server."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "q12",
+      "query": "How do I follow redirect responses in a test request?",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-testing",
+          "quote": "By passing ``follow_redirects=True`` to a request method, the client will continue to make requests until a non-redirect response is returned."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "q13",
+      "query": "Does test_request_context call before_request functions automatically?",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-testing",
+          "quote": "Creating a test request context doesn't run any of the Flask dispatching code, so ``before_request`` functions are not called."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "q14",
+      "query": "How is an error handler chosen when both code and exception class match?",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-errorhandling",
+          "quote": "When Flask catches an exception while handling a request, it is first looked up by code."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "q15",
+      "query": "Can a blueprint error handler catch a routing 404?",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-errorhandling",
+          "quote": "the blueprint cannot handle 404 routing errors because the 404 occurs at the routing level before the blueprint can be determined."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "q16",
+      "query": "Is the development server safe for production deployment?",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-deploying-index",
+          "quote": "Do not use the development server when deploying to production."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "q17",
+      "query": "What does a reverse proxy mean in front of a WSGI server?",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-deploying-index",
+          "quote": "Putting an HTTP server in front of the WSGI server is called a \"reverse proxy.\""
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "q18",
+      "query": "Flask 的测试客户端需要启动真实服务器吗？",
+      "answerable": true,
+      "evidence": [
+        {
+          "document_id": "flask-testing",
+          "quote": "The test client makes requests to the application without running a live server."
+        }
+      ],
+      "note": "Cross-language stress query. No translation or multilingual embedding is implemented."
+    },
+    {
+      "id": "q19",
+      "query": "How do I configure a Kubernetes GPU device plugin for Flask?",
+      "answerable": false,
+      "evidence": [],
+      "note": "The corpus discusses Flask deployment but not Kubernetes GPU device plugins. Lexical overlap may still return chunks."
+    },
+    {
+      "id": "q20",
+      "query": "What is the latest Flask release available today?",
+      "answerable": false,
+      "evidence": [],
+      "note": "Pinned 3.1.0 snapshot does not establish the latest release."
+    },
+    {
+      "id": "q21",
+      "query": "zqxv blorptastic neutrinoquux",
+      "answerable": false,
+      "evidence": [],
+      "note": "No-overlap sentinel; tests the empty retrieval path, not realistic answerability."
+    },
+    {
+      "id": "q22",
+      "query": "What is the price of a dedicated hosting plan in Malaysia?",
+      "answerable": false,
+      "evidence": [],
+      "note": "No current regional prices are supplied in the selected docs."
+    }
+  ]
+}

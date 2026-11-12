@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evidence-rag-foundation"
+version = "0.1.0"
+description = "Offline, evidence-first BM25 foundation for a future RAG system"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+rag-foundation = "rag_foundation.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
