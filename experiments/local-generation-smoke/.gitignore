@@ -1,0 +1,8 @@
+*.gguf
+*.tar.gz
+runtime/
+home/
+cache/
+runs/
+model-download.json
+.download-*/

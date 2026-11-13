@@ -1,0 +1,26 @@
+{
+  "model": {
+    "model_id": "ggml-org/Qwen3.5-0.8B-GGUF",
+    "revision": "004fd086eccea9f7cf867aa07ba328773beef81d",
+    "filename": "Qwen3.5-0.8B-Q4_0.gguf",
+    "url": "https://huggingface.co/ggml-org/Qwen3.5-0.8B-GGUF/resolve/004fd086eccea9f7cf867aa07ba328773beef81d/Qwen3.5-0.8B-Q4_0.gguf",
+    "expected_bytes": 563036064,
+    "expected_sha256": "57d1997790d1744fba5b40a7317df71ea5e2acee28c47e78f0cce39c0703f8cf"
+  },
+  "runtime": {
+    "repository": "ggml-org/llama.cpp",
+    "tag": "b12359",
+    "commit": "b1b770d90d94cad9e9ea5b993bdbc383a522fb28",
+    "filename": "llama-b12359-bin-ubuntu-x64.tar.gz",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b12359/llama-b12359-bin-ubuntu-x64.tar.gz",
+    "expected_bytes": 23311084,
+    "expected_sha256": "0bc1f091e8916102b6d8f2cf944233a620e90a0f856c72d0ce41150c65c2e72e",
+    "server_path": "runtime/llama-b12359/llama-server",
+    "server_sha256": "cf07a7d6b6d2c61064105cc0a81360cb5830aacd3d1a949b80eaea3a96fa409f"
+  },
+  "licenses": {
+    "model_base_revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "model_url": "https://huggingface.co/Qwen/Qwen3.5-0.8B/resolve/2fc06364715b967f1860aea9cf38778875588b17/LICENSE",
+    "runtime_url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/b1b770d90d94cad9e9ea5b993bdbc383a522fb28/LICENSE"
+  }
+}

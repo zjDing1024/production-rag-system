@@ -1,0 +1,125 @@
+{
+  "scope": "Isolated evidence-conditioned local generation smoke tests. No retriever or RAG service is connected.",
+  "started_utc": "2026-11-13T16:03:29.492870+00:00",
+  "finished_utc": "2026-11-13T16:03:32.291892+00:00",
+  "cases_sha256": "39e6e891b09621d73f84377a847e276eb5dbe464d6fa00377fdd0ad26d7ac976",
+  "runner_sha256": "d5838537d6a64e6d9f73b9b0a4140baf46fd7de1a5af6ed2f53ef414a3f67573",
+  "runtime_binary_sha256": "cf07a7d6b6d2c61064105cc0a81360cb5830aacd3d1a949b80eaea3a96fa409f",
+  "generation_mode": "non-thinking, CPU, no tools, no retriever",
+  "startup_seconds": 1.215566939999917,
+  "server_memory": [
+    "VmHWM:\t 1017692 kB",
+    "VmRSS:\t 1017692 kB"
+  ],
+  "server_returncode_after_cleanup": 0,
+  "server_stopped": true,
+  "schema_version": 1,
+  "run_count": 1,
+  "runtime_version": "version: 1.0.0-dev (build 12359, commit b1b770d90)\nbuilt with GNU 11.4.0 for Linux x86_64",
+  "generation_parameters": {
+    "seed": 42,
+    "temperature": 0,
+    "max_new_tokens": 192,
+    "context_tokens": 2048,
+    "threads": 4,
+    "gpu_layers": 0
+  },
+  "runtime_flags": [
+    "--model",
+    "Qwen3.5-0.8B-Q4_0.gguf",
+    "--alias",
+    "qwen35-local-smoke",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "<ephemeral-loopback-port>",
+    "--ctx-size",
+    "2048",
+    "--threads",
+    "4",
+    "--threads-batch",
+    "4",
+    "--parallel",
+    "1",
+    "--gpu-layers",
+    "0",
+    "--no-agent",
+    "--no-webui",
+    "--no-ui-mcp-proxy",
+    "--reasoning",
+    "off",
+    "--chat-template-kwargs",
+    "{\"enable_thinking\":false}"
+  ],
+  "requests": [
+    {
+      "id": "english_supported",
+      "expected_behavior": "State that no live server is required and include [S1].",
+      "http_status": 200,
+      "content": "S1.",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 115,
+        "total_tokens": 119,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "status": "generated",
+      "elapsed_seconds": 0.49781507100033195,
+      "raw_response_file": "english_supported-response.raw.json",
+      "raw_sha256": "170028f7851ec523c666911691c7a9a6cb3b41e134f01110d4f9e55652165c9e",
+      "strict_pass": false,
+      "review_note": "Does not answer the question and does not include literal [S1].",
+      "human_semantic_expectation_met": false
+    },
+    {
+      "id": "chinese_supported",
+      "expected_behavior": "用中文说明不需要启动真实服务器，并包含 [S1]。",
+      "http_status": 200,
+      "content": "否。根据文档，测试客户端仅用于发起请求，不运行服务器。",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 17,
+        "prompt_tokens": 121,
+        "total_tokens": 138,
+        "prompt_tokens_details": {
+          "cached_tokens": 59
+        }
+      },
+      "status": "generated",
+      "elapsed_seconds": 0.6273084520003067,
+      "raw_response_file": "chinese_supported-response.raw.json",
+      "raw_sha256": "1ae9534c77caa74b56cd569708d0a6a2672dca344af055f909c4e6461b1023a9",
+      "strict_pass": false,
+      "review_note": "Chinese answer is broadly supported by the context, but mandatory [S1] is absent.",
+      "human_semantic_expectation_met": true
+    },
+    {
+      "id": "unsupported",
+      "expected_behavior": "Respond exactly INSUFFICIENT_EVIDENCE, because a 3.1.0 snapshot does not identify the latest release.",
+      "http_status": 200,
+      "content": "INSUFFICIENT_EVIDENCE.",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 8,
+        "prompt_tokens": 114,
+        "total_tokens": 122,
+        "prompt_tokens_details": {
+          "cached_tokens": 59
+        }
+      },
+      "status": "generated",
+      "elapsed_seconds": 0.39187347500001124,
+      "raw_response_file": "unsupported-response.raw.json",
+      "raw_sha256": "273a5decee5aba489305b1cf27dc7bd0b727269f6874ad92e832ac403f5cff9d",
+      "strict_pass": false,
+      "review_note": "Semantically abstains, but trailing period violates the exact required marker.",
+      "human_semantic_expectation_met": true
+    }
+  ],
+  "assessment": "human review against the pre-written expected_behavior, with mechanical format checks; not a benchmark",
+  "strict_pass_count": 0,
+  "case_count": 3
+}
