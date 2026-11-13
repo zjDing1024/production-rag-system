@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "9bdc8f61f49709de6844890696097dcb709ad72a",
+  "suite_sha256": "059ca60c6f81aa176aea9201e62b5c537aa12f9c7575fd7ece74adf277fbacb8",
+  "service_sha256": "0da625dc6ed4cad6847a8eee653ab809a8b5ff8fbe3eee5b5b8dd2bf92ceeaa7",
+  "retrieval_sha256": "d62b2aa753f701dc6e51be077bd292a277b5985cf8fa3a9c6c5d7d9e181776f5",
+  "manifest_sha256": "0dcdc59d0b07e7cd2e3b077e25d152d7300b7fd4e1f909ea0c5b27a18ca24cad",
+  "protocol": "Freeze before first retrieval on these queries. No threshold, tokenizer, glossary or corpus changes. Three fixed variants: baseline(false,false), glossary(true,false), deployed(true,true). k=5. Split by category and language. No new-set parameter selection."
+}

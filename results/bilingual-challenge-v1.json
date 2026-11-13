@@ -1,0 +1,3069 @@
+{
+  "category_counts": {
+    "answerable": 8,
+    "missing": 8,
+    "related_insufficient": 8
+  },
+  "chunks_sha256": "de8a54066e25aa135724924ebae09e960884bbfc292429d0324e62320140b9de",
+  "freeze": {
+    "baseline_commit": "9bdc8f61f49709de6844890696097dcb709ad72a",
+    "manifest_sha256": "0dcdc59d0b07e7cd2e3b077e25d152d7300b7fd4e1f909ea0c5b27a18ca24cad",
+    "protocol": "Freeze before first retrieval on these queries. No threshold, tokenizer, glossary or corpus changes. Three fixed variants: baseline(false,false), glossary(true,false), deployed(true,true). k=5. Split by category and language. No new-set parameter selection.",
+    "retrieval_sha256": "d62b2aa753f701dc6e51be077bd292a277b5985cf8fa3a9c6c5d7d9e181776f5",
+    "schema_version": 1,
+    "service_sha256": "0da625dc6ed4cad6847a8eee653ab809a8b5ff8fbe3eee5b5b8dd2bf92ceeaa7",
+    "suite_sha256": "059ca60c6f81aa176aea9201e62b5c537aa12f9c7575fd7ece74adf277fbacb8"
+  },
+  "generator": null,
+  "metric_warning": "Admission is returning candidates, not generating an incorrect answer. Topic overlap is not sufficient evidence.",
+  "question_count": 24,
+  "schema_version": 1,
+  "scope": "Authored frozen challenge; author knows corpus and existing policy, not an independent benchmark",
+  "variants": {
+    "baseline": {
+      "config": {
+        "expand_zh": false,
+        "gate": false,
+        "k": 5
+      },
+      "groups": {
+        "answerable/all": {
+          "abstained": 1,
+          "admitted": 7,
+          "count": 8,
+          "evidence_hit_count": 7,
+          "hit@5": 0.875,
+          "insufficient_admission_count": null,
+          "insufficient_admission_rate": null
+        },
+        "answerable/en": {
+          "abstained": 0,
+          "admitted": 4,
+          "count": 4,
+          "evidence_hit_count": 4,
+          "hit@5": 1.0,
+          "insufficient_admission_count": null,
+          "insufficient_admission_rate": null
+        },
+        "answerable/zh": {
+          "abstained": 1,
+          "admitted": 3,
+          "count": 4,
+          "evidence_hit_count": 3,
+          "hit@5": 0.75,
+          "insufficient_admission_count": null,
+          "insufficient_admission_rate": null
+        },
+        "missing/all": {
+          "abstained": 4,
+          "admitted": 4,
+          "count": 8,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 4,
+          "insufficient_admission_rate": 0.5
+        },
+        "missing/en": {
+          "abstained": 0,
+          "admitted": 4,
+          "count": 4,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 4,
+          "insufficient_admission_rate": 1.0
+        },
+        "missing/zh": {
+          "abstained": 4,
+          "admitted": 0,
+          "count": 4,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 0,
+          "insufficient_admission_rate": 0.0
+        },
+        "related_insufficient/all": {
+          "abstained": 1,
+          "admitted": 7,
+          "count": 8,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 7,
+          "insufficient_admission_rate": 0.875
+        },
+        "related_insufficient/en": {
+          "abstained": 0,
+          "admitted": 4,
+          "count": 4,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 4,
+          "insufficient_admission_rate": 1.0
+        },
+        "related_insufficient/zh": {
+          "abstained": 1,
+          "admitted": 3,
+          "count": 4,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 3,
+          "insufficient_admission_rate": 0.75
+        }
+      },
+      "rows": [
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 5,
+          "category": "answerable",
+          "coverage": 0.75,
+          "effective_query": "What transport is required for browsers to send a session cookie marked secure?",
+          "id": "a01-en",
+          "language": "en",
+          "missing_terms": [
+            "required",
+            "transport"
+          ],
+          "pair_id": "a01",
+          "query": "What transport is required for browsers to send a session cookie marked secure?",
+          "results": [
+            {
+              "chunk_id": "92a592b397588809b6df383b95400026d2dbacb66d9832ba517b25c85d15f3ed",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L168-L211",
+              "score": 22.365286219059918
+            },
+            {
+              "chunk_id": "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L142-L177",
+              "score": 19.605957363072616
+            },
+            {
+              "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+              "score": 10.57070533000981
+            },
+            {
+              "chunk_id": "a86ad676882a5d331a9874ea7fce826222e994a14105ebdc9d990057b2caca60",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L762-L800",
+              "score": 7.935756246339542
+            },
+            {
+              "chunk_id": "dd3eee795777993bddee739b8596b36c23497fcfdd40955198e9b476188ed3a4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L199-L243",
+              "score": 7.123565287756534
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 5,
+          "category": "answerable",
+          "coverage": 1.0,
+          "effective_query": "会话 cookie 标记 secure 时浏览器只通过什么协议发送？",
+          "id": "a01-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "a01",
+          "query": "会话 cookie 标记 secure 时浏览器只通过什么协议发送？",
+          "results": [
+            {
+              "chunk_id": "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L142-L177",
+              "score": 6.904147996932249
+            },
+            {
+              "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+              "score": 6.601167402208672
+            },
+            {
+              "chunk_id": "92a592b397588809b6df383b95400026d2dbacb66d9832ba517b25c85d15f3ed",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L168-L211",
+              "score": 6.42476221160211
+            },
+            {
+              "chunk_id": "dd3eee795777993bddee739b8596b36c23497fcfdd40955198e9b476188ed3a4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L199-L243",
+              "score": 3.6950943497261926
+            },
+            {
+              "chunk_id": "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L785-L826",
+              "score": 3.1354801077676324
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 5,
+          "category": "answerable",
+          "coverage": 0.8,
+          "effective_query": "What error is raised when a request exceeds MAX_CONTENT_LENGTH?",
+          "id": "a02-en",
+          "language": "en",
+          "missing_terms": [
+            "exceeds"
+          ],
+          "pair_id": "a02",
+          "query": "What error is raised when a request exceeds MAX_CONTENT_LENGTH?",
+          "results": [
+            {
+              "chunk_id": "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L300-L329",
+              "score": 10.338330236678804
+            },
+            {
+              "chunk_id": "8d73902c4ed720e73c697f28ef7857c7ab49b2af0d9567b6bf60678466561092",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L324-L358",
+              "score": 8.909288308801273
+            },
+            {
+              "chunk_id": "89243a750eb704a7130659dc7301c95f4f2e9f9379496a89e855c10fd8d012b1",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L501-L537",
+              "score": 7.1440811594136715
+            },
+            {
+              "chunk_id": "578b3d94c57a2086b2c9d3cbf2fba4eaa09ba6bbe4a246b5967707240358ba33",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L80-L116",
+              "score": 7.119146919267718
+            },
+            {
+              "chunk_id": "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L532-L562",
+              "score": 6.912145021543336
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 3,
+          "category": "answerable",
+          "coverage": 1.0,
+          "effective_query": "请求超过 MAX_CONTENT_LENGTH 限制时会抛出什么错误？",
+          "id": "a02-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "a02",
+          "query": "请求超过 MAX_CONTENT_LENGTH 限制时会抛出什么错误？",
+          "results": [
+            {
+              "chunk_id": "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L300-L329",
+              "score": 4.7197823023318195
+            },
+            {
+              "chunk_id": "fd1a51e0006c7de32703e64d714c69ef612fd701e6b56cc70e18e0d59eb63072",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L384-L453",
+              "score": 3.32579999275841
+            },
+            {
+              "chunk_id": "8d73902c4ed720e73c697f28ef7857c7ab49b2af0d9567b6bf60678466561092",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L324-L358",
+              "score": 3.2343832573491946
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 5,
+          "category": "answerable",
+          "coverage": 1.0,
+          "effective_query": "Why should the uploaded client filename pass through secure_filename before storage?",
+          "id": "a03-en",
+          "language": "en",
+          "missing_terms": [],
+          "pair_id": "a03",
+          "query": "Why should the uploaded client filename pass through secure_filename before storage?",
+          "results": [
+            {
+              "chunk_id": "99eb663b7fbad9567cd42faa8627997a86014badd1dfc9772b8b25d528b96965",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L580-L619",
+              "score": 23.136734645263004
+            },
+            {
+              "chunk_id": "9791310ebcfdf6a963f4c6718ef43842302b44324c4ad960de84c73755ecb479",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L98-L129",
+              "score": 13.465800536470871
+            },
+            {
+              "chunk_id": "c95547ee0b31a13d5600da044aaa02ce72302608499ef6400027d82d35c35495",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L124-L167",
+              "score": 12.795580857014574
+            },
+            {
+              "chunk_id": "f18c01336f6c1bef0953885c62a5f5e5a8aa88335ee532da8cc7450a8998d1d0",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L555-L585",
+              "score": 12.197495983657356
+            },
+            {
+              "chunk_id": "f0ece727e1048c675b71552b8ed0111f51f62fc841477039b8b9fd97d22874fe",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L197-L249",
+              "score": 8.43073599479726
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 1,
+          "category": "answerable",
+          "coverage": 1.0,
+          "effective_query": "为什么保存上传文件前应该把客户端文件名传给 secure_filename？",
+          "id": "a03-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "a03",
+          "query": "为什么保存上传文件前应该把客户端文件名传给 secure_filename？",
+          "results": [
+            {
+              "chunk_id": "99eb663b7fbad9567cd42faa8627997a86014badd1dfc9772b8b25d528b96965",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L580-L619",
+              "score": 6.691621818322922
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 5,
+          "category": "answerable",
+          "coverage": 1.0,
+          "effective_query": "What is the usual default log level without logging configuration?",
+          "id": "a04-en",
+          "language": "en",
+          "missing_terms": [],
+          "pair_id": "a04",
+          "query": "What is the usual default log level without logging configuration?",
+          "results": [
+            {
+              "chunk_id": "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L1-L51",
+              "score": 15.17708039313887
+            },
+            {
+              "chunk_id": "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L36-L89",
+              "score": 13.639113833738234
+            },
+            {
+              "chunk_id": "c11da45b9626fd230cb87d6e6bf86de05db859deba2ed31ef20e9d26da0b890b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L84-L128",
+              "score": 7.9183477536401785
+            },
+            {
+              "chunk_id": "d32260d9f19d3e9c08e2720aade0062fe037235c75f962b45a4c8e24f9f08fea",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L466-L486",
+              "score": 7.810523694363088
+            },
+            {
+              "chunk_id": "e81de12123049b14f7126f466281cd0231e1471b870efd04fff1ceba657c7974",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L159-L183",
+              "score": 7.109759617296094
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 0,
+          "category": "answerable",
+          "coverage": 0.0,
+          "effective_query": "没有配置日志时通常的默认日志级别是什么？",
+          "id": "a04-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "a04",
+          "query": "没有配置日志时通常的默认日志级别是什么？",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 0.8,
+          "effective_query": "What is the SECRET_KEY configured in my application right now?",
+          "id": "i01-en",
+          "language": "en",
+          "missing_terms": [
+            "right"
+          ],
+          "pair_id": "i01",
+          "query": "What is the SECRET_KEY configured in my application right now?",
+          "results": [
+            {
+              "chunk_id": "e808f2b3eb3a0365df5d344904a6edd640ed5ff93d9e46da5bd19b1146a42ca5",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L33-L64",
+              "score": 5.8477632943198286
+            },
+            {
+              "chunk_id": "2d35129bb942cafe646ab416b5c2d6542ce7fa124887819ea8367fd88ac95edd",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L481-L511",
+              "score": 5.768362560048784
+            },
+            {
+              "chunk_id": "5e7057ab887067316849dd296bda675ae12989eb75951dd980f7dd3905f1bb0f",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L25-L66",
+              "score": 5.607570862014595
+            },
+            {
+              "chunk_id": "8f941ce56169e2df5cd52a9d83153a4bf7422e170258b9b4a2695e4f359966bc",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L57-L91",
+              "score": 5.382676910544202
+            },
+            {
+              "chunk_id": "a86ad676882a5d331a9874ea7fce826222e994a14105ebdc9d990057b2caca60",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L762-L800",
+              "score": 4.9031060450604596
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 1.0,
+          "effective_query": "我的应用现在配置的 SECRET_KEY 是什么？",
+          "id": "i01-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "i01",
+          "query": "我的应用现在配置的 SECRET_KEY 是什么？",
+          "results": [
+            {
+              "chunk_id": "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L785-L826",
+              "score": 4.095823216439148
+            },
+            {
+              "chunk_id": "9872c7e03b564b0d08bdf7a8dd8aeca34169d53f3a1cd3f555430c68b2fbe494",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L84-L119",
+              "score": 2.5624946457059052
+            },
+            {
+              "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+              "score": 2.5624946457059052
+            },
+            {
+              "chunk_id": "5e7057ab887067316849dd296bda675ae12989eb75951dd980f7dd3905f1bb0f",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L25-L66",
+              "score": 2.5444305803346445
+            },
+            {
+              "chunk_id": "a86ad676882a5d331a9874ea7fce826222e994a14105ebdc9d990057b2caca60",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L762-L800",
+              "score": 2.5148831921670762
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 1.0,
+          "effective_query": "How many requests per second will my production WSGI server handle?",
+          "id": "i02-en",
+          "language": "en",
+          "missing_terms": [],
+          "pair_id": "i02",
+          "query": "How many requests per second will my production WSGI server handle?",
+          "results": [
+            {
+              "chunk_id": "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L1-L26",
+              "score": 13.47197901483837
+            },
+            {
+              "chunk_id": "d45cf11139473aea84dec8d6d072d6bf76e90a4a6dfe3db53a6ea5f76ce0ccb4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L22-L63",
+              "score": 10.977045968868799
+            },
+            {
+              "chunk_id": "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L36-L89",
+              "score": 9.264752063754724
+            },
+            {
+              "chunk_id": "93b1c0cb4d0c5a9bf5802e8c5d343b7687c79c3a4303e7c2f681101c71b5da6d",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L1-L24",
+              "score": 8.617905867028867
+            },
+            {
+              "chunk_id": "8f941ce56169e2df5cd52a9d83153a4bf7422e170258b9b4a2695e4f359966bc",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L57-L91",
+              "score": 7.396579693934332
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 1.0,
+          "effective_query": "我的生产环境 WSGI 服务器每秒能处理多少请求？",
+          "id": "i02-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "i02",
+          "query": "我的生产环境 WSGI 服务器每秒能处理多少请求？",
+          "results": [
+            {
+              "chunk_id": "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L1-L26",
+              "score": 3.775527206336544
+            },
+            {
+              "chunk_id": "d45cf11139473aea84dec8d6d072d6bf76e90a4a6dfe3db53a6ea5f76ce0ccb4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L22-L63",
+              "score": 3.601849781915466
+            },
+            {
+              "chunk_id": "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L36-L89",
+              "score": 3.4018001740406243
+            },
+            {
+              "chunk_id": "6aa7a1bf371ef5b09ced8df345c6d5847c5f890eafb25b72720ae31487e4167d",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L54-L79",
+              "score": 2.558485607757505
+            },
+            {
+              "chunk_id": "18d5e982743e2667eef52aa9b5254568ad1908537e4615d4000bd7c7baccd6b1",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L861-L907",
+              "score": 2.4962196263489456
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 0.8333333333333334,
+          "effective_query": "Which error occurred in my application logs this morning?",
+          "id": "i03-en",
+          "language": "en",
+          "missing_terms": [
+            "morning"
+          ],
+          "pair_id": "i03",
+          "query": "Which error occurred in my application logs this morning?",
+          "results": [
+            {
+              "chunk_id": "a75b89432a13a4dc4c89a753b40ef47233ced9f7286fc71f5807ba0414b83ae8",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L840-L871",
+              "score": 8.341935114933861
+            },
+            {
+              "chunk_id": "18d5e982743e2667eef52aa9b5254568ad1908537e4615d4000bd7c7baccd6b1",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L861-L907",
+              "score": 7.791051664322816
+            },
+            {
+              "chunk_id": "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L1-L51",
+              "score": 5.4916593294572404
+            },
+            {
+              "chunk_id": "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L36-L89",
+              "score": 4.856533387108132
+            },
+            {
+              "chunk_id": "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L119-L175",
+              "score": 4.8251008656922885
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 0,
+          "category": "related_insufficient",
+          "coverage": 0.0,
+          "effective_query": "我的应用今早日志里发生了哪一个异常？",
+          "id": "i03-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "i03",
+          "query": "我的应用今早日志里发生了哪一个异常？",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 0.875,
+          "effective_query": "Is my current session cookie secure against every possible attack?",
+          "id": "i04-en",
+          "language": "en",
+          "missing_terms": [
+            "attack"
+          ],
+          "pair_id": "i04",
+          "query": "Is my current session cookie secure against every possible attack?",
+          "results": [
+            {
+              "chunk_id": "dd3eee795777993bddee739b8596b36c23497fcfdd40955198e9b476188ed3a4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L199-L243",
+              "score": 12.954968236696912
+            },
+            {
+              "chunk_id": "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L142-L177",
+              "score": 10.584676236097625
+            },
+            {
+              "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+              "score": 10.184227469129805
+            },
+            {
+              "chunk_id": "92a592b397588809b6df383b95400026d2dbacb66d9832ba517b25c85d15f3ed",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L168-L211",
+              "score": 8.569367966647125
+            },
+            {
+              "chunk_id": "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L785-L826",
+              "score": 8.505498007368416
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 1.0,
+          "effective_query": "我的当前会话 cookie 能防住所有可能的攻击吗？",
+          "id": "i04-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "i04",
+          "query": "我的当前会话 cookie 能防住所有可能的攻击吗？",
+          "results": [
+            {
+              "chunk_id": "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L142-L177",
+              "score": 3.990138610911093
+            },
+            {
+              "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+              "score": 3.7216378040874027
+            },
+            {
+              "chunk_id": "dd3eee795777993bddee739b8596b36c23497fcfdd40955198e9b476188ed3a4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L199-L243",
+              "score": 3.6950943497261926
+            },
+            {
+              "chunk_id": "92a592b397588809b6df383b95400026d2dbacb66d9832ba517b25c85d15f3ed",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L168-L211",
+              "score": 3.5315390790073473
+            },
+            {
+              "chunk_id": "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L785-L826",
+              "score": 3.1354801077676324
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "What is the refund policy for an airline ticket?",
+          "id": "m01-en",
+          "language": "en",
+          "missing_terms": [
+            "airline",
+            "policy",
+            "refund",
+            "ticket"
+          ],
+          "pair_id": "m01",
+          "query": "What is the refund policy for an airline ticket?",
+          "results": [
+            {
+              "chunk_id": "ecccf07797bc891a6e195d5a3647074c847863ad3eb73b842c515477d08f267b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L1-L38",
+              "score": 4.019502695411569
+            },
+            {
+              "chunk_id": "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L265-L306",
+              "score": 3.91464790376269
+            },
+            {
+              "chunk_id": "d32260d9f19d3e9c08e2720aade0062fe037235c75f962b45a4c8e24f9f08fea",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L466-L486",
+              "score": 3.5655598869712684
+            },
+            {
+              "chunk_id": "929aaa64ea74f64d6f9337225d098c7d28d823513a7dd4f5715ff18a012501b8",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L657-L693",
+              "score": 3.1659375801621277
+            },
+            {
+              "chunk_id": "cd049a7451e2a19e3469c614f86cc797c8712cfd8debc6b47b21d584a267e35b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L288-L345",
+              "score": 3.1117396081952937
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 0,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "航空机票的退款政策是什么？",
+          "id": "m01-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "m01",
+          "query": "航空机票的退款政策是什么？",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "How should an oncologist select a chemotherapy dose?",
+          "id": "m02-en",
+          "language": "en",
+          "missing_terms": [
+            "chemotherapy",
+            "dose",
+            "oncologist",
+            "select"
+          ],
+          "pair_id": "m02",
+          "query": "How should an oncologist select a chemotherapy dose?",
+          "results": [
+            {
+              "chunk_id": "ae3545e667b4bcf4607a99930341287e9e5f199f5cf8b929e3a9416768b551b2",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L353-L391",
+              "score": 3.414312125703873
+            },
+            {
+              "chunk_id": "e3a3d805b82848f5e014248b9f1a90dc3a76f28594a8fbaab266ab62b09c5e7d",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L645-L687",
+              "score": 3.3308044312672167
+            },
+            {
+              "chunk_id": "8d73902c4ed720e73c697f28ef7857c7ab49b2af0d9567b6bf60678466561092",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L324-L358",
+              "score": 3.0677222745739456
+            },
+            {
+              "chunk_id": "9872c7e03b564b0d08bdf7a8dd8aeca34169d53f3a1cd3f555430c68b2fbe494",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L84-L119",
+              "score": 3.0016121844989736
+            },
+            {
+              "chunk_id": "bfe9afaeb225966a21addca879568a498d57a5c9020724d680bc4f6f90d65ec7",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L485-L523",
+              "score": 2.9803449824045325
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 0,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "肿瘤科医生应如何选择化疗剂量？",
+          "id": "m02-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "m02",
+          "query": "肿瘤科医生应如何选择化疗剂量？",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "What will the weather be in Kuala Lumpur tomorrow?",
+          "id": "m03-en",
+          "language": "en",
+          "missing_terms": [
+            "kuala",
+            "lumpur",
+            "tomorrow",
+            "weather"
+          ],
+          "pair_id": "m03",
+          "query": "What will the weather be in Kuala Lumpur tomorrow?",
+          "results": [
+            {
+              "chunk_id": "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L265-L306",
+              "score": 4.041142520185997
+            },
+            {
+              "chunk_id": "ecccf07797bc891a6e195d5a3647074c847863ad3eb73b842c515477d08f267b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L1-L38",
+              "score": 3.8839967679182146
+            },
+            {
+              "chunk_id": "d32260d9f19d3e9c08e2720aade0062fe037235c75f962b45a4c8e24f9f08fea",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L466-L486",
+              "score": 3.376002057800032
+            },
+            {
+              "chunk_id": "60ec3f54f0487a1c59f4d3f8b96ef3f31506d656f8f3727d5bea1ea2e2456b32",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L1-L39",
+              "score": 3.014806291500399
+            },
+            {
+              "chunk_id": "0ad1a9ff59b1d6323fb84a8481bed82ea803871ab06b37a73072b9a4e683c933",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L433-L472",
+              "score": 2.922123983654791
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 0,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "吉隆坡明天的天气会怎样？",
+          "id": "m03-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "m03",
+          "query": "吉隆坡明天的天气会怎样？",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "How do I repair a bicycle hydraulic brake?",
+          "id": "m04-en",
+          "language": "en",
+          "missing_terms": [
+            "bicycle",
+            "brake",
+            "hydraulic",
+            "repair"
+          ],
+          "pair_id": "m04",
+          "query": "How do I repair a bicycle hydraulic brake?",
+          "results": [
+            {
+              "chunk_id": "11cc490be91dcaee33e948331a5153a6bd39088244cf1fea25673df1d87946ae",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L566-L609",
+              "score": 4.136963174992349
+            },
+            {
+              "chunk_id": "93b1c0cb4d0c5a9bf5802e8c5d343b7687c79c3a4303e7c2f681101c71b5da6d",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L1-L24",
+              "score": 3.2547601271048574
+            },
+            {
+              "chunk_id": "a1ecd831380e5012f1f76ec92c5195813179531b40b0bffd06fd85894f12b30d",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L346-L380",
+              "score": 3.05227281306058
+            },
+            {
+              "chunk_id": "8f941ce56169e2df5cd52a9d83153a4bf7422e170258b9b4a2695e4f359966bc",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L57-L91",
+              "score": 2.5510287354681096
+            },
+            {
+              "chunk_id": "8e109862bda675ba2e67447c0cc09a64b50360106461869bf965f9f5aab51877",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L114-L153",
+              "score": 2.550149203748051
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 0,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "如何修理自行车液压刹车？",
+          "id": "m04-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "m04",
+          "query": "如何修理自行车液压刹车？",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": true
+        }
+      ]
+    },
+    "deployed": {
+      "config": {
+        "expand_zh": true,
+        "gate": true,
+        "k": 5
+      },
+      "groups": {
+        "answerable/all": {
+          "abstained": 0,
+          "admitted": 8,
+          "count": 8,
+          "evidence_hit_count": 8,
+          "hit@5": 1.0,
+          "insufficient_admission_count": null,
+          "insufficient_admission_rate": null
+        },
+        "answerable/en": {
+          "abstained": 0,
+          "admitted": 4,
+          "count": 4,
+          "evidence_hit_count": 4,
+          "hit@5": 1.0,
+          "insufficient_admission_count": null,
+          "insufficient_admission_rate": null
+        },
+        "answerable/zh": {
+          "abstained": 0,
+          "admitted": 4,
+          "count": 4,
+          "evidence_hit_count": 4,
+          "hit@5": 1.0,
+          "insufficient_admission_count": null,
+          "insufficient_admission_rate": null
+        },
+        "missing/all": {
+          "abstained": 8,
+          "admitted": 0,
+          "count": 8,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 0,
+          "insufficient_admission_rate": 0.0
+        },
+        "missing/en": {
+          "abstained": 4,
+          "admitted": 0,
+          "count": 4,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 0,
+          "insufficient_admission_rate": 0.0
+        },
+        "missing/zh": {
+          "abstained": 4,
+          "admitted": 0,
+          "count": 4,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 0,
+          "insufficient_admission_rate": 0.0
+        },
+        "related_insufficient/all": {
+          "abstained": 0,
+          "admitted": 8,
+          "count": 8,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 8,
+          "insufficient_admission_rate": 1.0
+        },
+        "related_insufficient/en": {
+          "abstained": 0,
+          "admitted": 4,
+          "count": 4,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 4,
+          "insufficient_admission_rate": 1.0
+        },
+        "related_insufficient/zh": {
+          "abstained": 0,
+          "admitted": 4,
+          "count": 4,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 4,
+          "insufficient_admission_rate": 1.0
+        }
+      },
+      "rows": [
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 5,
+          "category": "answerable",
+          "coverage": 0.75,
+          "effective_query": "What transport is required for browsers to send a session cookie marked secure?",
+          "id": "a01-en",
+          "language": "en",
+          "missing_terms": [
+            "required",
+            "transport"
+          ],
+          "pair_id": "a01",
+          "query": "What transport is required for browsers to send a session cookie marked secure?",
+          "results": [
+            {
+              "chunk_id": "92a592b397588809b6df383b95400026d2dbacb66d9832ba517b25c85d15f3ed",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L168-L211",
+              "score": 22.365286219059918
+            },
+            {
+              "chunk_id": "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L142-L177",
+              "score": 19.605957363072616
+            },
+            {
+              "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+              "score": 10.57070533000981
+            },
+            {
+              "chunk_id": "a86ad676882a5d331a9874ea7fce826222e994a14105ebdc9d990057b2caca60",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L762-L800",
+              "score": 7.935756246339542
+            },
+            {
+              "chunk_id": "dd3eee795777993bddee739b8596b36c23497fcfdd40955198e9b476188ed3a4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L199-L243",
+              "score": 7.123565287756534
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [
+            {
+              "replacement": "session",
+              "source": "会话"
+            }
+          ],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 5,
+          "category": "answerable",
+          "coverage": 1.0,
+          "effective_query": " session  cookie 标记 secure 时浏览器只通过什么协议发送？",
+          "id": "a01-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "a01",
+          "query": "会话 cookie 标记 secure 时浏览器只通过什么协议发送？",
+          "results": [
+            {
+              "chunk_id": "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L142-L177",
+              "score": 10.315086552943937
+            },
+            {
+              "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+              "score": 10.184227469129805
+            },
+            {
+              "chunk_id": "92a592b397588809b6df383b95400026d2dbacb66d9832ba517b25c85d15f3ed",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L168-L211",
+              "score": 8.322368798417827
+            },
+            {
+              "chunk_id": "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L785-L826",
+              "score": 6.786729462818606
+            },
+            {
+              "chunk_id": "dd3eee795777993bddee739b8596b36c23497fcfdd40955198e9b476188ed3a4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L199-L243",
+              "score": 6.779944340030844
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 5,
+          "category": "answerable",
+          "coverage": 0.8,
+          "effective_query": "What error is raised when a request exceeds MAX_CONTENT_LENGTH?",
+          "id": "a02-en",
+          "language": "en",
+          "missing_terms": [
+            "exceeds"
+          ],
+          "pair_id": "a02",
+          "query": "What error is raised when a request exceeds MAX_CONTENT_LENGTH?",
+          "results": [
+            {
+              "chunk_id": "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L300-L329",
+              "score": 10.338330236678804
+            },
+            {
+              "chunk_id": "8d73902c4ed720e73c697f28ef7857c7ab49b2af0d9567b6bf60678466561092",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L324-L358",
+              "score": 8.909288308801273
+            },
+            {
+              "chunk_id": "89243a750eb704a7130659dc7301c95f4f2e9f9379496a89e855c10fd8d012b1",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L501-L537",
+              "score": 7.1440811594136715
+            },
+            {
+              "chunk_id": "578b3d94c57a2086b2c9d3cbf2fba4eaa09ba6bbe4a246b5967707240358ba33",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L80-L116",
+              "score": 7.119146919267718
+            },
+            {
+              "chunk_id": "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L532-L562",
+              "score": 6.912145021543336
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 3,
+          "category": "answerable",
+          "coverage": 1.0,
+          "effective_query": "请求超过 MAX_CONTENT_LENGTH 限制时会抛出什么错误？",
+          "id": "a02-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "a02",
+          "query": "请求超过 MAX_CONTENT_LENGTH 限制时会抛出什么错误？",
+          "results": [
+            {
+              "chunk_id": "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L300-L329",
+              "score": 4.7197823023318195
+            },
+            {
+              "chunk_id": "fd1a51e0006c7de32703e64d714c69ef612fd701e6b56cc70e18e0d59eb63072",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L384-L453",
+              "score": 3.32579999275841
+            },
+            {
+              "chunk_id": "8d73902c4ed720e73c697f28ef7857c7ab49b2af0d9567b6bf60678466561092",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L324-L358",
+              "score": 3.2343832573491946
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 5,
+          "category": "answerable",
+          "coverage": 1.0,
+          "effective_query": "Why should the uploaded client filename pass through secure_filename before storage?",
+          "id": "a03-en",
+          "language": "en",
+          "missing_terms": [],
+          "pair_id": "a03",
+          "query": "Why should the uploaded client filename pass through secure_filename before storage?",
+          "results": [
+            {
+              "chunk_id": "99eb663b7fbad9567cd42faa8627997a86014badd1dfc9772b8b25d528b96965",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L580-L619",
+              "score": 23.136734645263004
+            },
+            {
+              "chunk_id": "9791310ebcfdf6a963f4c6718ef43842302b44324c4ad960de84c73755ecb479",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L98-L129",
+              "score": 13.465800536470871
+            },
+            {
+              "chunk_id": "c95547ee0b31a13d5600da044aaa02ce72302608499ef6400027d82d35c35495",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L124-L167",
+              "score": 12.795580857014574
+            },
+            {
+              "chunk_id": "f18c01336f6c1bef0953885c62a5f5e5a8aa88335ee532da8cc7450a8998d1d0",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L555-L585",
+              "score": 12.197495983657356
+            },
+            {
+              "chunk_id": "f0ece727e1048c675b71552b8ed0111f51f62fc841477039b8b9fd97d22874fe",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L197-L249",
+              "score": 8.43073599479726
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 1,
+          "category": "answerable",
+          "coverage": 1.0,
+          "effective_query": "为什么保存上传文件前应该把客户端文件名传给 secure_filename？",
+          "id": "a03-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "a03",
+          "query": "为什么保存上传文件前应该把客户端文件名传给 secure_filename？",
+          "results": [
+            {
+              "chunk_id": "99eb663b7fbad9567cd42faa8627997a86014badd1dfc9772b8b25d528b96965",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L580-L619",
+              "score": 6.691621818322922
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 5,
+          "category": "answerable",
+          "coverage": 1.0,
+          "effective_query": "What is the usual default log level without logging configuration?",
+          "id": "a04-en",
+          "language": "en",
+          "missing_terms": [],
+          "pair_id": "a04",
+          "query": "What is the usual default log level without logging configuration?",
+          "results": [
+            {
+              "chunk_id": "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L1-L51",
+              "score": 15.17708039313887
+            },
+            {
+              "chunk_id": "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L36-L89",
+              "score": 13.639113833738234
+            },
+            {
+              "chunk_id": "c11da45b9626fd230cb87d6e6bf86de05db859deba2ed31ef20e9d26da0b890b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L84-L128",
+              "score": 7.9183477536401785
+            },
+            {
+              "chunk_id": "d32260d9f19d3e9c08e2720aade0062fe037235c75f962b45a4c8e24f9f08fea",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L466-L486",
+              "score": 7.810523694363088
+            },
+            {
+              "chunk_id": "e81de12123049b14f7126f466281cd0231e1471b870efd04fff1ceba657c7974",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L159-L183",
+              "score": 7.109759617296094
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [
+            {
+              "replacement": "logging",
+              "source": "日志"
+            }
+          ],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 5,
+          "category": "answerable",
+          "coverage": 1.0,
+          "effective_query": "没有配置 logging 时通常的默认 logging 级别是什么？",
+          "id": "a04-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "a04",
+          "query": "没有配置日志时通常的默认日志级别是什么？",
+          "results": [
+            {
+              "chunk_id": "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L1-L51",
+              "score": 4.516991289414827
+            },
+            {
+              "chunk_id": "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L119-L175",
+              "score": 4.417892257429936
+            },
+            {
+              "chunk_id": "c11da45b9626fd230cb87d6e6bf86de05db859deba2ed31ef20e9d26da0b890b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L84-L128",
+              "score": 4.328650081885803
+            },
+            {
+              "chunk_id": "e81de12123049b14f7126f466281cd0231e1471b870efd04fff1ceba657c7974",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L159-L183",
+              "score": 4.287860711791878
+            },
+            {
+              "chunk_id": "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L36-L89",
+              "score": 4.259085943684284
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 0.8,
+          "effective_query": "What is the SECRET_KEY configured in my application right now?",
+          "id": "i01-en",
+          "language": "en",
+          "missing_terms": [
+            "right"
+          ],
+          "pair_id": "i01",
+          "query": "What is the SECRET_KEY configured in my application right now?",
+          "results": [
+            {
+              "chunk_id": "e808f2b3eb3a0365df5d344904a6edd640ed5ff93d9e46da5bd19b1146a42ca5",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L33-L64",
+              "score": 5.8477632943198286
+            },
+            {
+              "chunk_id": "2d35129bb942cafe646ab416b5c2d6542ce7fa124887819ea8367fd88ac95edd",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L481-L511",
+              "score": 5.768362560048784
+            },
+            {
+              "chunk_id": "5e7057ab887067316849dd296bda675ae12989eb75951dd980f7dd3905f1bb0f",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L25-L66",
+              "score": 5.607570862014595
+            },
+            {
+              "chunk_id": "8f941ce56169e2df5cd52a9d83153a4bf7422e170258b9b4a2695e4f359966bc",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L57-L91",
+              "score": 5.382676910544202
+            },
+            {
+              "chunk_id": "a86ad676882a5d331a9874ea7fce826222e994a14105ebdc9d990057b2caca60",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L762-L800",
+              "score": 4.9031060450604596
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 1.0,
+          "effective_query": "我的应用现在配置的 SECRET_KEY 是什么？",
+          "id": "i01-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "i01",
+          "query": "我的应用现在配置的 SECRET_KEY 是什么？",
+          "results": [
+            {
+              "chunk_id": "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L785-L826",
+              "score": 4.095823216439148
+            },
+            {
+              "chunk_id": "9872c7e03b564b0d08bdf7a8dd8aeca34169d53f3a1cd3f555430c68b2fbe494",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L84-L119",
+              "score": 2.5624946457059052
+            },
+            {
+              "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+              "score": 2.5624946457059052
+            },
+            {
+              "chunk_id": "5e7057ab887067316849dd296bda675ae12989eb75951dd980f7dd3905f1bb0f",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L25-L66",
+              "score": 2.5444305803346445
+            },
+            {
+              "chunk_id": "a86ad676882a5d331a9874ea7fce826222e994a14105ebdc9d990057b2caca60",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L762-L800",
+              "score": 2.5148831921670762
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 1.0,
+          "effective_query": "How many requests per second will my production WSGI server handle?",
+          "id": "i02-en",
+          "language": "en",
+          "missing_terms": [],
+          "pair_id": "i02",
+          "query": "How many requests per second will my production WSGI server handle?",
+          "results": [
+            {
+              "chunk_id": "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L1-L26",
+              "score": 13.47197901483837
+            },
+            {
+              "chunk_id": "d45cf11139473aea84dec8d6d072d6bf76e90a4a6dfe3db53a6ea5f76ce0ccb4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L22-L63",
+              "score": 10.977045968868799
+            },
+            {
+              "chunk_id": "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L36-L89",
+              "score": 9.264752063754724
+            },
+            {
+              "chunk_id": "93b1c0cb4d0c5a9bf5802e8c5d343b7687c79c3a4303e7c2f681101c71b5da6d",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L1-L24",
+              "score": 8.617905867028867
+            },
+            {
+              "chunk_id": "8f941ce56169e2df5cd52a9d83153a4bf7422e170258b9b4a2695e4f359966bc",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L57-L91",
+              "score": 7.396579693934332
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [
+            {
+              "replacement": "production",
+              "source": "生产环境"
+            },
+            {
+              "replacement": "server",
+              "source": "服务器"
+            }
+          ],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 1.0,
+          "effective_query": "我的 production  WSGI  server 每秒能处理多少请求？",
+          "id": "i02-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "i02",
+          "query": "我的生产环境 WSGI 服务器每秒能处理多少请求？",
+          "results": [
+            {
+              "chunk_id": "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L1-L26",
+              "score": 8.941417869186054
+            },
+            {
+              "chunk_id": "d45cf11139473aea84dec8d6d072d6bf76e90a4a6dfe3db53a6ea5f76ce0ccb4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L22-L63",
+              "score": 7.1540455622054555
+            },
+            {
+              "chunk_id": "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L36-L89",
+              "score": 6.547308365697153
+            },
+            {
+              "chunk_id": "e808f2b3eb3a0365df5d344904a6edd640ed5ff93d9e46da5bd19b1146a42ca5",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L33-L64",
+              "score": 4.370690779102403
+            },
+            {
+              "chunk_id": "93b1c0cb4d0c5a9bf5802e8c5d343b7687c79c3a4303e7c2f681101c71b5da6d",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L1-L24",
+              "score": 4.1914971227546545
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 0.8333333333333334,
+          "effective_query": "Which error occurred in my application logs this morning?",
+          "id": "i03-en",
+          "language": "en",
+          "missing_terms": [
+            "morning"
+          ],
+          "pair_id": "i03",
+          "query": "Which error occurred in my application logs this morning?",
+          "results": [
+            {
+              "chunk_id": "a75b89432a13a4dc4c89a753b40ef47233ced9f7286fc71f5807ba0414b83ae8",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L840-L871",
+              "score": 8.341935114933861
+            },
+            {
+              "chunk_id": "18d5e982743e2667eef52aa9b5254568ad1908537e4615d4000bd7c7baccd6b1",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L861-L907",
+              "score": 7.791051664322816
+            },
+            {
+              "chunk_id": "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L1-L51",
+              "score": 5.4916593294572404
+            },
+            {
+              "chunk_id": "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L36-L89",
+              "score": 4.856533387108132
+            },
+            {
+              "chunk_id": "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L119-L175",
+              "score": 4.8251008656922885
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [
+            {
+              "replacement": "exception",
+              "source": "异常"
+            },
+            {
+              "replacement": "logging",
+              "source": "日志"
+            }
+          ],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 1.0,
+          "effective_query": "我的应用今早 logging 里发生了哪一个 exception ？",
+          "id": "i03-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "i03",
+          "query": "我的应用今早日志里发生了哪一个异常？",
+          "results": [
+            {
+              "chunk_id": "cbbe2f21f3dc0d943a91ebc1588ef82a1f092b8e8b60c055c93b9267e79dc867",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L20-L53",
+              "score": 5.66883142142707
+            },
+            {
+              "chunk_id": "bfe9afaeb225966a21addca879568a498d57a5c9020724d680bc4f6f90d65ec7",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L485-L523",
+              "score": 5.495070500108412
+            },
+            {
+              "chunk_id": "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L1-L51",
+              "score": 4.516991289414827
+            },
+            {
+              "chunk_id": "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L119-L175",
+              "score": 4.417892257429936
+            },
+            {
+              "chunk_id": "c11da45b9626fd230cb87d6e6bf86de05db859deba2ed31ef20e9d26da0b890b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L84-L128",
+              "score": 4.328650081885803
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 0.875,
+          "effective_query": "Is my current session cookie secure against every possible attack?",
+          "id": "i04-en",
+          "language": "en",
+          "missing_terms": [
+            "attack"
+          ],
+          "pair_id": "i04",
+          "query": "Is my current session cookie secure against every possible attack?",
+          "results": [
+            {
+              "chunk_id": "dd3eee795777993bddee739b8596b36c23497fcfdd40955198e9b476188ed3a4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L199-L243",
+              "score": 12.954968236696912
+            },
+            {
+              "chunk_id": "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L142-L177",
+              "score": 10.584676236097625
+            },
+            {
+              "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+              "score": 10.184227469129805
+            },
+            {
+              "chunk_id": "92a592b397588809b6df383b95400026d2dbacb66d9832ba517b25c85d15f3ed",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L168-L211",
+              "score": 8.569367966647125
+            },
+            {
+              "chunk_id": "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L785-L826",
+              "score": 8.505498007368416
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [
+            {
+              "replacement": "session",
+              "source": "会话"
+            }
+          ],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 1.0,
+          "effective_query": "我的当前 session  cookie 能防住所有可能的攻击吗？",
+          "id": "i04-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "i04",
+          "query": "我的当前会话 cookie 能防住所有可能的攻击吗？",
+          "results": [
+            {
+              "chunk_id": "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L142-L177",
+              "score": 7.40107716692278
+            },
+            {
+              "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+              "score": 7.3046978710085355
+            },
+            {
+              "chunk_id": "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L785-L826",
+              "score": 6.786729462818606
+            },
+            {
+              "chunk_id": "dd3eee795777993bddee739b8596b36c23497fcfdd40955198e9b476188ed3a4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L199-L243",
+              "score": 6.779944340030844
+            },
+            {
+              "chunk_id": "a86ad676882a5d331a9874ea7fce826222e994a14105ebdc9d990057b2caca60",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L762-L800",
+              "score": 5.482726306832769
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "What is the refund policy for an airline ticket?",
+          "id": "m01-en",
+          "language": "en",
+          "missing_terms": [
+            "airline",
+            "policy",
+            "refund",
+            "ticket"
+          ],
+          "pair_id": "m01",
+          "query": "What is the refund policy for an airline ticket?",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 0,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "航空机票的退款政策是什么？",
+          "id": "m01-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "m01",
+          "query": "航空机票的退款政策是什么？",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "How should an oncologist select a chemotherapy dose?",
+          "id": "m02-en",
+          "language": "en",
+          "missing_terms": [
+            "chemotherapy",
+            "dose",
+            "oncologist",
+            "select"
+          ],
+          "pair_id": "m02",
+          "query": "How should an oncologist select a chemotherapy dose?",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 0,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "肿瘤科医生应如何选择化疗剂量？",
+          "id": "m02-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "m02",
+          "query": "肿瘤科医生应如何选择化疗剂量？",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "What will the weather be in Kuala Lumpur tomorrow?",
+          "id": "m03-en",
+          "language": "en",
+          "missing_terms": [
+            "kuala",
+            "lumpur",
+            "tomorrow",
+            "weather"
+          ],
+          "pair_id": "m03",
+          "query": "What will the weather be in Kuala Lumpur tomorrow?",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 0,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "吉隆坡明天的天气会怎样？",
+          "id": "m03-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "m03",
+          "query": "吉隆坡明天的天气会怎样？",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "How do I repair a bicycle hydraulic brake?",
+          "id": "m04-en",
+          "language": "en",
+          "missing_terms": [
+            "bicycle",
+            "brake",
+            "hydraulic",
+            "repair"
+          ],
+          "pair_id": "m04",
+          "query": "How do I repair a bicycle hydraulic brake?",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 0,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "如何修理自行车液压刹车？",
+          "id": "m04-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "m04",
+          "query": "如何修理自行车液压刹车？",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": true
+        }
+      ]
+    },
+    "glossary": {
+      "config": {
+        "expand_zh": true,
+        "gate": false,
+        "k": 5
+      },
+      "groups": {
+        "answerable/all": {
+          "abstained": 0,
+          "admitted": 8,
+          "count": 8,
+          "evidence_hit_count": 8,
+          "hit@5": 1.0,
+          "insufficient_admission_count": null,
+          "insufficient_admission_rate": null
+        },
+        "answerable/en": {
+          "abstained": 0,
+          "admitted": 4,
+          "count": 4,
+          "evidence_hit_count": 4,
+          "hit@5": 1.0,
+          "insufficient_admission_count": null,
+          "insufficient_admission_rate": null
+        },
+        "answerable/zh": {
+          "abstained": 0,
+          "admitted": 4,
+          "count": 4,
+          "evidence_hit_count": 4,
+          "hit@5": 1.0,
+          "insufficient_admission_count": null,
+          "insufficient_admission_rate": null
+        },
+        "missing/all": {
+          "abstained": 4,
+          "admitted": 4,
+          "count": 8,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 4,
+          "insufficient_admission_rate": 0.5
+        },
+        "missing/en": {
+          "abstained": 0,
+          "admitted": 4,
+          "count": 4,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 4,
+          "insufficient_admission_rate": 1.0
+        },
+        "missing/zh": {
+          "abstained": 4,
+          "admitted": 0,
+          "count": 4,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 0,
+          "insufficient_admission_rate": 0.0
+        },
+        "related_insufficient/all": {
+          "abstained": 0,
+          "admitted": 8,
+          "count": 8,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 8,
+          "insufficient_admission_rate": 1.0
+        },
+        "related_insufficient/en": {
+          "abstained": 0,
+          "admitted": 4,
+          "count": 4,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 4,
+          "insufficient_admission_rate": 1.0
+        },
+        "related_insufficient/zh": {
+          "abstained": 0,
+          "admitted": 4,
+          "count": 4,
+          "evidence_hit_count": null,
+          "hit@5": null,
+          "insufficient_admission_count": 4,
+          "insufficient_admission_rate": 1.0
+        }
+      },
+      "rows": [
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 5,
+          "category": "answerable",
+          "coverage": 0.75,
+          "effective_query": "What transport is required for browsers to send a session cookie marked secure?",
+          "id": "a01-en",
+          "language": "en",
+          "missing_terms": [
+            "required",
+            "transport"
+          ],
+          "pair_id": "a01",
+          "query": "What transport is required for browsers to send a session cookie marked secure?",
+          "results": [
+            {
+              "chunk_id": "92a592b397588809b6df383b95400026d2dbacb66d9832ba517b25c85d15f3ed",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L168-L211",
+              "score": 22.365286219059918
+            },
+            {
+              "chunk_id": "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L142-L177",
+              "score": 19.605957363072616
+            },
+            {
+              "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+              "score": 10.57070533000981
+            },
+            {
+              "chunk_id": "a86ad676882a5d331a9874ea7fce826222e994a14105ebdc9d990057b2caca60",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L762-L800",
+              "score": 7.935756246339542
+            },
+            {
+              "chunk_id": "dd3eee795777993bddee739b8596b36c23497fcfdd40955198e9b476188ed3a4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L199-L243",
+              "score": 7.123565287756534
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [
+            {
+              "replacement": "session",
+              "source": "会话"
+            }
+          ],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 5,
+          "category": "answerable",
+          "coverage": 1.0,
+          "effective_query": " session  cookie 标记 secure 时浏览器只通过什么协议发送？",
+          "id": "a01-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "a01",
+          "query": "会话 cookie 标记 secure 时浏览器只通过什么协议发送？",
+          "results": [
+            {
+              "chunk_id": "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L142-L177",
+              "score": 10.315086552943937
+            },
+            {
+              "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+              "score": 10.184227469129805
+            },
+            {
+              "chunk_id": "92a592b397588809b6df383b95400026d2dbacb66d9832ba517b25c85d15f3ed",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L168-L211",
+              "score": 8.322368798417827
+            },
+            {
+              "chunk_id": "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L785-L826",
+              "score": 6.786729462818606
+            },
+            {
+              "chunk_id": "dd3eee795777993bddee739b8596b36c23497fcfdd40955198e9b476188ed3a4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L199-L243",
+              "score": 6.779944340030844
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 5,
+          "category": "answerable",
+          "coverage": 0.8,
+          "effective_query": "What error is raised when a request exceeds MAX_CONTENT_LENGTH?",
+          "id": "a02-en",
+          "language": "en",
+          "missing_terms": [
+            "exceeds"
+          ],
+          "pair_id": "a02",
+          "query": "What error is raised when a request exceeds MAX_CONTENT_LENGTH?",
+          "results": [
+            {
+              "chunk_id": "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L300-L329",
+              "score": 10.338330236678804
+            },
+            {
+              "chunk_id": "8d73902c4ed720e73c697f28ef7857c7ab49b2af0d9567b6bf60678466561092",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L324-L358",
+              "score": 8.909288308801273
+            },
+            {
+              "chunk_id": "89243a750eb704a7130659dc7301c95f4f2e9f9379496a89e855c10fd8d012b1",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L501-L537",
+              "score": 7.1440811594136715
+            },
+            {
+              "chunk_id": "578b3d94c57a2086b2c9d3cbf2fba4eaa09ba6bbe4a246b5967707240358ba33",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L80-L116",
+              "score": 7.119146919267718
+            },
+            {
+              "chunk_id": "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L532-L562",
+              "score": 6.912145021543336
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 3,
+          "category": "answerable",
+          "coverage": 1.0,
+          "effective_query": "请求超过 MAX_CONTENT_LENGTH 限制时会抛出什么错误？",
+          "id": "a02-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "a02",
+          "query": "请求超过 MAX_CONTENT_LENGTH 限制时会抛出什么错误？",
+          "results": [
+            {
+              "chunk_id": "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L300-L329",
+              "score": 4.7197823023318195
+            },
+            {
+              "chunk_id": "fd1a51e0006c7de32703e64d714c69ef612fd701e6b56cc70e18e0d59eb63072",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L384-L453",
+              "score": 3.32579999275841
+            },
+            {
+              "chunk_id": "8d73902c4ed720e73c697f28ef7857c7ab49b2af0d9567b6bf60678466561092",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L324-L358",
+              "score": 3.2343832573491946
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 5,
+          "category": "answerable",
+          "coverage": 1.0,
+          "effective_query": "Why should the uploaded client filename pass through secure_filename before storage?",
+          "id": "a03-en",
+          "language": "en",
+          "missing_terms": [],
+          "pair_id": "a03",
+          "query": "Why should the uploaded client filename pass through secure_filename before storage?",
+          "results": [
+            {
+              "chunk_id": "99eb663b7fbad9567cd42faa8627997a86014badd1dfc9772b8b25d528b96965",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L580-L619",
+              "score": 23.136734645263004
+            },
+            {
+              "chunk_id": "9791310ebcfdf6a963f4c6718ef43842302b44324c4ad960de84c73755ecb479",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L98-L129",
+              "score": 13.465800536470871
+            },
+            {
+              "chunk_id": "c95547ee0b31a13d5600da044aaa02ce72302608499ef6400027d82d35c35495",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L124-L167",
+              "score": 12.795580857014574
+            },
+            {
+              "chunk_id": "f18c01336f6c1bef0953885c62a5f5e5a8aa88335ee532da8cc7450a8998d1d0",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L555-L585",
+              "score": 12.197495983657356
+            },
+            {
+              "chunk_id": "f0ece727e1048c675b71552b8ed0111f51f62fc841477039b8b9fd97d22874fe",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L197-L249",
+              "score": 8.43073599479726
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 1,
+          "category": "answerable",
+          "coverage": 1.0,
+          "effective_query": "为什么保存上传文件前应该把客户端文件名传给 secure_filename？",
+          "id": "a03-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "a03",
+          "query": "为什么保存上传文件前应该把客户端文件名传给 secure_filename？",
+          "results": [
+            {
+              "chunk_id": "99eb663b7fbad9567cd42faa8627997a86014badd1dfc9772b8b25d528b96965",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L580-L619",
+              "score": 6.691621818322922
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 5,
+          "category": "answerable",
+          "coverage": 1.0,
+          "effective_query": "What is the usual default log level without logging configuration?",
+          "id": "a04-en",
+          "language": "en",
+          "missing_terms": [],
+          "pair_id": "a04",
+          "query": "What is the usual default log level without logging configuration?",
+          "results": [
+            {
+              "chunk_id": "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L1-L51",
+              "score": 15.17708039313887
+            },
+            {
+              "chunk_id": "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L36-L89",
+              "score": 13.639113833738234
+            },
+            {
+              "chunk_id": "c11da45b9626fd230cb87d6e6bf86de05db859deba2ed31ef20e9d26da0b890b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L84-L128",
+              "score": 7.9183477536401785
+            },
+            {
+              "chunk_id": "d32260d9f19d3e9c08e2720aade0062fe037235c75f962b45a4c8e24f9f08fea",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L466-L486",
+              "score": 7.810523694363088
+            },
+            {
+              "chunk_id": "e81de12123049b14f7126f466281cd0231e1471b870efd04fff1ceba657c7974",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L159-L183",
+              "score": 7.109759617296094
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [
+            {
+              "replacement": "logging",
+              "source": "日志"
+            }
+          ],
+          "answer": null,
+          "answer_evidence_hit": true,
+          "candidate_count_before_gate": 5,
+          "category": "answerable",
+          "coverage": 1.0,
+          "effective_query": "没有配置 logging 时通常的默认 logging 级别是什么？",
+          "id": "a04-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "a04",
+          "query": "没有配置日志时通常的默认日志级别是什么？",
+          "results": [
+            {
+              "chunk_id": "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L1-L51",
+              "score": 4.516991289414827
+            },
+            {
+              "chunk_id": "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L119-L175",
+              "score": 4.417892257429936
+            },
+            {
+              "chunk_id": "c11da45b9626fd230cb87d6e6bf86de05db859deba2ed31ef20e9d26da0b890b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L84-L128",
+              "score": 4.328650081885803
+            },
+            {
+              "chunk_id": "e81de12123049b14f7126f466281cd0231e1471b870efd04fff1ceba657c7974",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L159-L183",
+              "score": 4.287860711791878
+            },
+            {
+              "chunk_id": "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L36-L89",
+              "score": 4.259085943684284
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 0.8,
+          "effective_query": "What is the SECRET_KEY configured in my application right now?",
+          "id": "i01-en",
+          "language": "en",
+          "missing_terms": [
+            "right"
+          ],
+          "pair_id": "i01",
+          "query": "What is the SECRET_KEY configured in my application right now?",
+          "results": [
+            {
+              "chunk_id": "e808f2b3eb3a0365df5d344904a6edd640ed5ff93d9e46da5bd19b1146a42ca5",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L33-L64",
+              "score": 5.8477632943198286
+            },
+            {
+              "chunk_id": "2d35129bb942cafe646ab416b5c2d6542ce7fa124887819ea8367fd88ac95edd",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L481-L511",
+              "score": 5.768362560048784
+            },
+            {
+              "chunk_id": "5e7057ab887067316849dd296bda675ae12989eb75951dd980f7dd3905f1bb0f",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L25-L66",
+              "score": 5.607570862014595
+            },
+            {
+              "chunk_id": "8f941ce56169e2df5cd52a9d83153a4bf7422e170258b9b4a2695e4f359966bc",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L57-L91",
+              "score": 5.382676910544202
+            },
+            {
+              "chunk_id": "a86ad676882a5d331a9874ea7fce826222e994a14105ebdc9d990057b2caca60",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L762-L800",
+              "score": 4.9031060450604596
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 1.0,
+          "effective_query": "我的应用现在配置的 SECRET_KEY 是什么？",
+          "id": "i01-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "i01",
+          "query": "我的应用现在配置的 SECRET_KEY 是什么？",
+          "results": [
+            {
+              "chunk_id": "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L785-L826",
+              "score": 4.095823216439148
+            },
+            {
+              "chunk_id": "9872c7e03b564b0d08bdf7a8dd8aeca34169d53f3a1cd3f555430c68b2fbe494",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L84-L119",
+              "score": 2.5624946457059052
+            },
+            {
+              "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+              "score": 2.5624946457059052
+            },
+            {
+              "chunk_id": "5e7057ab887067316849dd296bda675ae12989eb75951dd980f7dd3905f1bb0f",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L25-L66",
+              "score": 2.5444305803346445
+            },
+            {
+              "chunk_id": "a86ad676882a5d331a9874ea7fce826222e994a14105ebdc9d990057b2caca60",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L762-L800",
+              "score": 2.5148831921670762
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 1.0,
+          "effective_query": "How many requests per second will my production WSGI server handle?",
+          "id": "i02-en",
+          "language": "en",
+          "missing_terms": [],
+          "pair_id": "i02",
+          "query": "How many requests per second will my production WSGI server handle?",
+          "results": [
+            {
+              "chunk_id": "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L1-L26",
+              "score": 13.47197901483837
+            },
+            {
+              "chunk_id": "d45cf11139473aea84dec8d6d072d6bf76e90a4a6dfe3db53a6ea5f76ce0ccb4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L22-L63",
+              "score": 10.977045968868799
+            },
+            {
+              "chunk_id": "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L36-L89",
+              "score": 9.264752063754724
+            },
+            {
+              "chunk_id": "93b1c0cb4d0c5a9bf5802e8c5d343b7687c79c3a4303e7c2f681101c71b5da6d",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L1-L24",
+              "score": 8.617905867028867
+            },
+            {
+              "chunk_id": "8f941ce56169e2df5cd52a9d83153a4bf7422e170258b9b4a2695e4f359966bc",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L57-L91",
+              "score": 7.396579693934332
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [
+            {
+              "replacement": "production",
+              "source": "生产环境"
+            },
+            {
+              "replacement": "server",
+              "source": "服务器"
+            }
+          ],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 1.0,
+          "effective_query": "我的 production  WSGI  server 每秒能处理多少请求？",
+          "id": "i02-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "i02",
+          "query": "我的生产环境 WSGI 服务器每秒能处理多少请求？",
+          "results": [
+            {
+              "chunk_id": "a83f31986bbf2d03b34b4b44446950cc11d0176d058b1dab7b27833981192778",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L1-L26",
+              "score": 8.941417869186054
+            },
+            {
+              "chunk_id": "d45cf11139473aea84dec8d6d072d6bf76e90a4a6dfe3db53a6ea5f76ce0ccb4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/deploying/index.rst#L22-L63",
+              "score": 7.1540455622054555
+            },
+            {
+              "chunk_id": "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L36-L89",
+              "score": 6.547308365697153
+            },
+            {
+              "chunk_id": "e808f2b3eb3a0365df5d344904a6edd640ed5ff93d9e46da5bd19b1146a42ca5",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L33-L64",
+              "score": 4.370690779102403
+            },
+            {
+              "chunk_id": "93b1c0cb4d0c5a9bf5802e8c5d343b7687c79c3a4303e7c2f681101c71b5da6d",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L1-L24",
+              "score": 4.1914971227546545
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 0.8333333333333334,
+          "effective_query": "Which error occurred in my application logs this morning?",
+          "id": "i03-en",
+          "language": "en",
+          "missing_terms": [
+            "morning"
+          ],
+          "pair_id": "i03",
+          "query": "Which error occurred in my application logs this morning?",
+          "results": [
+            {
+              "chunk_id": "a75b89432a13a4dc4c89a753b40ef47233ced9f7286fc71f5807ba0414b83ae8",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L840-L871",
+              "score": 8.341935114933861
+            },
+            {
+              "chunk_id": "18d5e982743e2667eef52aa9b5254568ad1908537e4615d4000bd7c7baccd6b1",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L861-L907",
+              "score": 7.791051664322816
+            },
+            {
+              "chunk_id": "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L1-L51",
+              "score": 5.4916593294572404
+            },
+            {
+              "chunk_id": "ed5ca892ca61bc2d6b343bba994947850ed5b62ef0a675a23edf9b6ed8002e90",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L36-L89",
+              "score": 4.856533387108132
+            },
+            {
+              "chunk_id": "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L119-L175",
+              "score": 4.8251008656922885
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [
+            {
+              "replacement": "exception",
+              "source": "异常"
+            },
+            {
+              "replacement": "logging",
+              "source": "日志"
+            }
+          ],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 1.0,
+          "effective_query": "我的应用今早 logging 里发生了哪一个 exception ？",
+          "id": "i03-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "i03",
+          "query": "我的应用今早日志里发生了哪一个异常？",
+          "results": [
+            {
+              "chunk_id": "cbbe2f21f3dc0d943a91ebc1588ef82a1f092b8e8b60c055c93b9267e79dc867",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L20-L53",
+              "score": 5.66883142142707
+            },
+            {
+              "chunk_id": "bfe9afaeb225966a21addca879568a498d57a5c9020724d680bc4f6f90d65ec7",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L485-L523",
+              "score": 5.495070500108412
+            },
+            {
+              "chunk_id": "52eb8d9b1d0499debac1308a48bb3cf05ebb637438fdbc6e494e0d7c864e9e93",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L1-L51",
+              "score": 4.516991289414827
+            },
+            {
+              "chunk_id": "dab04d8d2d7c155779845da564c04a19e60a294e6c250c8d7a8400daef7fdae9",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L119-L175",
+              "score": 4.417892257429936
+            },
+            {
+              "chunk_id": "c11da45b9626fd230cb87d6e6bf86de05db859deba2ed31ef20e9d26da0b890b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/logging.rst#L84-L128",
+              "score": 4.328650081885803
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 0.875,
+          "effective_query": "Is my current session cookie secure against every possible attack?",
+          "id": "i04-en",
+          "language": "en",
+          "missing_terms": [
+            "attack"
+          ],
+          "pair_id": "i04",
+          "query": "Is my current session cookie secure against every possible attack?",
+          "results": [
+            {
+              "chunk_id": "dd3eee795777993bddee739b8596b36c23497fcfdd40955198e9b476188ed3a4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L199-L243",
+              "score": 12.954968236696912
+            },
+            {
+              "chunk_id": "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L142-L177",
+              "score": 10.584676236097625
+            },
+            {
+              "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+              "score": 10.184227469129805
+            },
+            {
+              "chunk_id": "92a592b397588809b6df383b95400026d2dbacb66d9832ba517b25c85d15f3ed",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L168-L211",
+              "score": 8.569367966647125
+            },
+            {
+              "chunk_id": "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L785-L826",
+              "score": 8.505498007368416
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": true,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [
+            {
+              "replacement": "session",
+              "source": "会话"
+            }
+          ],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "related_insufficient",
+          "coverage": 1.0,
+          "effective_query": "我的当前 session  cookie 能防住所有可能的攻击吗？",
+          "id": "i04-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "i04",
+          "query": "我的当前会话 cookie 能防住所有可能的攻击吗？",
+          "results": [
+            {
+              "chunk_id": "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L142-L177",
+              "score": 7.40107716692278
+            },
+            {
+              "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+              "score": 7.3046978710085355
+            },
+            {
+              "chunk_id": "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L785-L826",
+              "score": 6.786729462818606
+            },
+            {
+              "chunk_id": "dd3eee795777993bddee739b8596b36c23497fcfdd40955198e9b476188ed3a4",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L199-L243",
+              "score": 6.779944340030844
+            },
+            {
+              "chunk_id": "a86ad676882a5d331a9874ea7fce826222e994a14105ebdc9d990057b2caca60",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L762-L800",
+              "score": 5.482726306832769
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "What is the refund policy for an airline ticket?",
+          "id": "m01-en",
+          "language": "en",
+          "missing_terms": [
+            "airline",
+            "policy",
+            "refund",
+            "ticket"
+          ],
+          "pair_id": "m01",
+          "query": "What is the refund policy for an airline ticket?",
+          "results": [
+            {
+              "chunk_id": "ecccf07797bc891a6e195d5a3647074c847863ad3eb73b842c515477d08f267b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L1-L38",
+              "score": 4.019502695411569
+            },
+            {
+              "chunk_id": "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L265-L306",
+              "score": 3.91464790376269
+            },
+            {
+              "chunk_id": "d32260d9f19d3e9c08e2720aade0062fe037235c75f962b45a4c8e24f9f08fea",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L466-L486",
+              "score": 3.5655598869712684
+            },
+            {
+              "chunk_id": "929aaa64ea74f64d6f9337225d098c7d28d823513a7dd4f5715ff18a012501b8",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L657-L693",
+              "score": 3.1659375801621277
+            },
+            {
+              "chunk_id": "cd049a7451e2a19e3469c614f86cc797c8712cfd8debc6b47b21d584a267e35b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L288-L345",
+              "score": 3.1117396081952937
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 0,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "航空机票的退款政策是什么？",
+          "id": "m01-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "m01",
+          "query": "航空机票的退款政策是什么？",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "How should an oncologist select a chemotherapy dose?",
+          "id": "m02-en",
+          "language": "en",
+          "missing_terms": [
+            "chemotherapy",
+            "dose",
+            "oncologist",
+            "select"
+          ],
+          "pair_id": "m02",
+          "query": "How should an oncologist select a chemotherapy dose?",
+          "results": [
+            {
+              "chunk_id": "ae3545e667b4bcf4607a99930341287e9e5f199f5cf8b929e3a9416768b551b2",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L353-L391",
+              "score": 3.414312125703873
+            },
+            {
+              "chunk_id": "e3a3d805b82848f5e014248b9f1a90dc3a76f28594a8fbaab266ab62b09c5e7d",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L645-L687",
+              "score": 3.3308044312672167
+            },
+            {
+              "chunk_id": "8d73902c4ed720e73c697f28ef7857c7ab49b2af0d9567b6bf60678466561092",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L324-L358",
+              "score": 3.0677222745739456
+            },
+            {
+              "chunk_id": "9872c7e03b564b0d08bdf7a8dd8aeca34169d53f3a1cd3f555430c68b2fbe494",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L84-L119",
+              "score": 3.0016121844989736
+            },
+            {
+              "chunk_id": "bfe9afaeb225966a21addca879568a498d57a5c9020724d680bc4f6f90d65ec7",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L485-L523",
+              "score": 2.9803449824045325
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 0,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "肿瘤科医生应如何选择化疗剂量？",
+          "id": "m02-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "m02",
+          "query": "肿瘤科医生应如何选择化疗剂量？",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "What will the weather be in Kuala Lumpur tomorrow?",
+          "id": "m03-en",
+          "language": "en",
+          "missing_terms": [
+            "kuala",
+            "lumpur",
+            "tomorrow",
+            "weather"
+          ],
+          "pair_id": "m03",
+          "query": "What will the weather be in Kuala Lumpur tomorrow?",
+          "results": [
+            {
+              "chunk_id": "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L265-L306",
+              "score": 4.041142520185997
+            },
+            {
+              "chunk_id": "ecccf07797bc891a6e195d5a3647074c847863ad3eb73b842c515477d08f267b",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L1-L38",
+              "score": 3.8839967679182146
+            },
+            {
+              "chunk_id": "d32260d9f19d3e9c08e2720aade0062fe037235c75f962b45a4c8e24f9f08fea",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L466-L486",
+              "score": 3.376002057800032
+            },
+            {
+              "chunk_id": "60ec3f54f0487a1c59f4d3f8b96ef3f31506d656f8f3727d5bea1ea2e2456b32",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L1-L39",
+              "score": 3.014806291500399
+            },
+            {
+              "chunk_id": "0ad1a9ff59b1d6323fb84a8481bed82ea803871ab06b37a73072b9a4e683c933",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L433-L472",
+              "score": 2.922123983654791
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 0,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "吉隆坡明天的天气会怎样？",
+          "id": "m03-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "m03",
+          "query": "吉隆坡明天的天气会怎样？",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": true
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 5,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "How do I repair a bicycle hydraulic brake?",
+          "id": "m04-en",
+          "language": "en",
+          "missing_terms": [
+            "bicycle",
+            "brake",
+            "hydraulic",
+            "repair"
+          ],
+          "pair_id": "m04",
+          "query": "How do I repair a bicycle hydraulic brake?",
+          "results": [
+            {
+              "chunk_id": "11cc490be91dcaee33e948331a5153a6bd39088244cf1fea25673df1d87946ae",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L566-L609",
+              "score": 4.136963174992349
+            },
+            {
+              "chunk_id": "93b1c0cb4d0c5a9bf5802e8c5d343b7687c79c3a4303e7c2f681101c71b5da6d",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/errorhandling.rst#L1-L24",
+              "score": 3.2547601271048574
+            },
+            {
+              "chunk_id": "a1ecd831380e5012f1f76ec92c5195813179531b40b0bffd06fd85894f12b30d",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L346-L380",
+              "score": 3.05227281306058
+            },
+            {
+              "chunk_id": "8f941ce56169e2df5cd52a9d83153a4bf7422e170258b9b4a2695e4f359966bc",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L57-L91",
+              "score": 2.5510287354681096
+            },
+            {
+              "chunk_id": "8e109862bda675ba2e67447c0cc09a64b50360106461869bf965f9f5aab51877",
+              "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L114-L153",
+              "score": 2.550149203748051
+            }
+          ],
+          "status": "candidates",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": false
+        },
+        {
+          "aliases": [],
+          "answer": null,
+          "answer_evidence_hit": false,
+          "candidate_count_before_gate": 0,
+          "category": "missing",
+          "coverage": 0.0,
+          "effective_query": "如何修理自行车液压刹车？",
+          "id": "m04-zh",
+          "language": "zh",
+          "missing_terms": [],
+          "pair_id": "m04",
+          "query": "如何修理自行车液压刹车？",
+          "results": [],
+          "status": "abstained",
+          "topic_evidence_hit": false,
+          "untranslated_cjk": true
+        }
+      ]
+    }
+  }
+}

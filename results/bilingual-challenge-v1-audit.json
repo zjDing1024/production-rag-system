@@ -1,0 +1,245 @@
+{
+  "anchor": ".. py:data:: MAX_CONTENT_LENGTH\n\n    The maximum number of bytes that will be read during this request. If\n    this limit is exceeded, a 413 :exc:`~werkzeug.exceptions.RequestEntityTooLarge`\n    error is raised.",
+  "audit_version": "a02-section-anchor-v1",
+  "original_result_sha256": "2c6ea3bc507370cac26b7e2720014e197faa6438e6611b809e5577b114d79656",
+  "reason": "a02 quote repeats under three config fields; require MAX_CONTENT_LENGTH heading plus contiguous definition and 413 sentence",
+  "schema_version": 1,
+  "suite_sha256": "059ca60c6f81aa176aea9201e62b5c537aa12f9c7575fd7ece74adf277fbacb8",
+  "timing": "Post-first-run correction; original frozen labels and result retained unchanged",
+  "variants": {
+    "baseline": {
+      "groups": {
+        "all": {
+          "count": 8,
+          "hits": 7
+        },
+        "en": {
+          "count": 4,
+          "hits": 4
+        },
+        "zh": {
+          "count": 4,
+          "hits": 3
+        }
+      },
+      "rows": [
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": null,
+          "id": "a01-en",
+          "language": "en",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": null,
+          "id": "a01-zh",
+          "language": "zh",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": [
+            "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa"
+          ],
+          "id": "a02-en",
+          "language": "en",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": [
+            "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa"
+          ],
+          "id": "a02-zh",
+          "language": "zh",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": null,
+          "id": "a03-en",
+          "language": "en",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": null,
+          "id": "a03-zh",
+          "language": "zh",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": null,
+          "id": "a04-en",
+          "language": "en",
+          "original_hit": true
+        },
+        {
+          "audited_hit": false,
+          "corrected_a02_chunk_ids": null,
+          "id": "a04-zh",
+          "language": "zh",
+          "original_hit": false
+        }
+      ]
+    },
+    "deployed": {
+      "groups": {
+        "all": {
+          "count": 8,
+          "hits": 8
+        },
+        "en": {
+          "count": 4,
+          "hits": 4
+        },
+        "zh": {
+          "count": 4,
+          "hits": 4
+        }
+      },
+      "rows": [
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": null,
+          "id": "a01-en",
+          "language": "en",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": null,
+          "id": "a01-zh",
+          "language": "zh",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": [
+            "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa"
+          ],
+          "id": "a02-en",
+          "language": "en",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": [
+            "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa"
+          ],
+          "id": "a02-zh",
+          "language": "zh",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": null,
+          "id": "a03-en",
+          "language": "en",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": null,
+          "id": "a03-zh",
+          "language": "zh",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": null,
+          "id": "a04-en",
+          "language": "en",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": null,
+          "id": "a04-zh",
+          "language": "zh",
+          "original_hit": true
+        }
+      ]
+    },
+    "glossary": {
+      "groups": {
+        "all": {
+          "count": 8,
+          "hits": 8
+        },
+        "en": {
+          "count": 4,
+          "hits": 4
+        },
+        "zh": {
+          "count": 4,
+          "hits": 4
+        }
+      },
+      "rows": [
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": null,
+          "id": "a01-en",
+          "language": "en",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": null,
+          "id": "a01-zh",
+          "language": "zh",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": [
+            "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa"
+          ],
+          "id": "a02-en",
+          "language": "en",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": [
+            "7d3c990652347dca77e6775d8a91a0fcc384fe6db8e8cbd98f6b5cac5622d3aa"
+          ],
+          "id": "a02-zh",
+          "language": "zh",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": null,
+          "id": "a03-en",
+          "language": "en",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": null,
+          "id": "a03-zh",
+          "language": "zh",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": null,
+          "id": "a04-en",
+          "language": "en",
+          "original_hit": true
+        },
+        {
+          "audited_hit": true,
+          "corrected_a02_chunk_ids": null,
+          "id": "a04-zh",
+          "language": "zh",
+          "original_hit": true
+        }
+      ]
+    }
+  }
+}

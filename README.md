@@ -1,5 +1,17 @@
 # production-rag-system
 
+## 2026-11-14：冻结双语挑战揭示证据不足问题
+
+新增24题、12英中配对的冻结挑战，区分可答、相关但证据不足、完全缺失。没有改词典或门槛。当前配置可答Hit@5=8/8、缺失题无返回8/8，但**相关不足8/8仍返回候选**。这是候选误放，不是模型错误回答；依然没有生成模型。小样本为作者已知语料/策略的挑战，不是独立泛化证明。a02重复证据句的事后锚点审计完整保留。
+
+[协议、逐类结果与限制](docs/bilingual-challenge-report.md) · [原始结果](results/bilingual-challenge-v1.json) · [证据锚点审计](results/bilingual-challenge-v1-audit.json)
+
+```bash
+PYTHONPATH=src python -m rag_foundation.challenge > build/bilingual-challenge-v1.json
+PYTHONPATH=src python -m rag_foundation.challenge_audit > build/bilingual-challenge-v1-audit.json
+```
+
+
 **Day 1: evidence-first retrieval foundation.** 目前完成离线文档导入、可追溯切分、原创 BM25 关键词检索与首批评测。仓库名表示长期目标，当前版本没有生成模型、向量检索或生产部署，不是完整 RAG。
 
 ## 为什么先做检索

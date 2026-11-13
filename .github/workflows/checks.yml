@@ -34,3 +34,7 @@ jobs:
           cmp examples/query-output.json build/query-output.json
           python examples/evaluate_service.py > build/service-development.json
           cmp results/service-development.json build/service-development.json
+          python -m rag_foundation.challenge > build/bilingual-challenge-v1.json
+          cmp results/bilingual-challenge-v1.json build/bilingual-challenge-v1.json
+          python -m rag_foundation.challenge_audit > build/bilingual-challenge-v1-audit.json
+          cmp results/bilingual-challenge-v1-audit.json build/bilingual-challenge-v1-audit.json

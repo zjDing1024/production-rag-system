@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "name": "flask-bilingual-challenge-v1",
+  "created_date": "2026-11-14",
+  "scope": "Authored frozen challenge; author knows corpus and existing policy, not an independent benchmark",
+  "categories": {
+    "answerable": "gold quote directly supports the requested fact",
+    "related_insufficient": "topic quote exists but cannot establish the requested fact",
+    "missing": "no supporting topic evidence in selected corpus"
+  },
+  "questions": [
+    {
+      "id": "a01-en",
+      "pair_id": "a01",
+      "language": "en",
+      "category": "answerable",
+      "query": "What transport is required for browsers to send a session cookie marked secure?",
+      "evidence": [
+        {
+          "document_id": "flask-config",
+          "quote": "Browsers will only send cookies with requests over HTTPS if the cookie is marked \"secure\"."
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "a01-zh",
+      "pair_id": "a01",
+      "language": "zh",
+      "category": "answerable",
+      "query": "会话 cookie 标记 secure 时浏览器只通过什么协议发送？",
+      "evidence": [
+        {
+          "document_id": "flask-config",
+          "quote": "Browsers will only send cookies with requests over HTTPS if the cookie is marked \"secure\"."
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "a02-en",
+      "pair_id": "a02",
+      "language": "en",
+      "category": "answerable",
+      "query": "What error is raised when a request exceeds MAX_CONTENT_LENGTH?",
+      "evidence": [
+        {
+          "document_id": "flask-config",
+          "quote": "If this limit is exceeded, a 413 :exc:`~werkzeug.exceptions.RequestEntityTooLarge` error is raised."
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "a02-zh",
+      "pair_id": "a02",
+      "language": "zh",
+      "category": "answerable",
+      "query": "请求超过 MAX_CONTENT_LENGTH 限制时会抛出什么错误？",
+      "evidence": [
+        {
+          "document_id": "flask-config",
+          "quote": "If this limit is exceeded, a 413 :exc:`~werkzeug.exceptions.RequestEntityTooLarge` error is raised."
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "a03-en",
+      "pair_id": "a03",
+      "language": "en",
+      "category": "answerable",
+      "query": "Why should the uploaded client filename pass through secure_filename before storage?",
+      "evidence": [
+        {
+          "document_id": "flask-quickstart",
+          "quote": "However please keep in mind that this value can be forged so never ever trust that value."
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "a03-zh",
+      "pair_id": "a03",
+      "language": "zh",
+      "category": "answerable",
+      "query": "为什么保存上传文件前应该把客户端文件名传给 secure_filename？",
+      "evidence": [
+        {
+          "document_id": "flask-quickstart",
+          "quote": "However please keep in mind that this value can be forged so never ever trust that value."
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "a04-en",
+      "pair_id": "a04",
+      "language": "en",
+      "category": "answerable",
+      "query": "What is the usual default log level without logging configuration?",
+      "evidence": [
+        {
+          "document_id": "flask-logging",
+          "quote": "If you don't configure logging, Python's default log level is usually 'warning'."
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "a04-zh",
+      "pair_id": "a04",
+      "language": "zh",
+      "category": "answerable",
+      "query": "没有配置日志时通常的默认日志级别是什么？",
+      "evidence": [
+        {
+          "document_id": "flask-logging",
+          "quote": "If you don't configure logging, Python's default log level is usually 'warning'."
+        }
+      ],
+      "rationale": ""
+    },
+    {
+      "id": "i01-en",
+      "pair_id": "i01",
+      "language": "en",
+      "category": "related_insufficient",
+      "query": "What is the SECRET_KEY configured in my application right now?",
+      "evidence": [
+        {
+          "document_id": "flask-config",
+          "quote": "A secret key that will be used for securely signing the session cookie"
+        }
+      ],
+      "rationale": "Explains a configuration field, not the actual private runtime value; example keys do not establish user configuration."
+    },
+    {
+      "id": "i01-zh",
+      "pair_id": "i01",
+      "language": "zh",
+      "category": "related_insufficient",
+      "query": "我的应用现在配置的 SECRET_KEY 是什么？",
+      "evidence": [
+        {
+          "document_id": "flask-config",
+          "quote": "A secret key that will be used for securely signing the session cookie"
+        }
+      ],
+      "rationale": "Explains a configuration field, not the actual private runtime value; example keys do not establish user configuration."
+    },
+    {
+      "id": "i02-en",
+      "pair_id": "i02",
+      "language": "en",
+      "category": "related_insufficient",
+      "query": "How many requests per second will my production WSGI server handle?",
+      "evidence": [
+        {
+          "document_id": "flask-deploying-index",
+          "quote": "Do not use the development server when deploying to production."
+        }
+      ],
+      "rationale": "General deployment guidance contains no hardware, workload or measured capacity for this application."
+    },
+    {
+      "id": "i02-zh",
+      "pair_id": "i02",
+      "language": "zh",
+      "category": "related_insufficient",
+      "query": "我的生产环境 WSGI 服务器每秒能处理多少请求？",
+      "evidence": [
+        {
+          "document_id": "flask-deploying-index",
+          "quote": "Do not use the development server when deploying to production."
+        }
+      ],
+      "rationale": "General deployment guidance contains no hardware, workload or measured capacity for this application."
+    },
+    {
+      "id": "i03-en",
+      "pair_id": "i03",
+      "language": "en",
+      "category": "related_insufficient",
+      "query": "Which error occurred in my application logs this morning?",
+      "evidence": [
+        {
+          "document_id": "flask-logging",
+          "quote": "This logger can also be used to log your own messages."
+        }
+      ],
+      "rationale": "Logging instructions do not contain the user application event history."
+    },
+    {
+      "id": "i03-zh",
+      "pair_id": "i03",
+      "language": "zh",
+      "category": "related_insufficient",
+      "query": "我的应用今早日志里发生了哪一个异常？",
+      "evidence": [
+        {
+          "document_id": "flask-logging",
+          "quote": "This logger can also be used to log your own messages."
+        }
+      ],
+      "rationale": "Logging instructions do not contain the user application event history."
+    },
+    {
+      "id": "i04-en",
+      "pair_id": "i04",
+      "language": "en",
+      "category": "related_insufficient",
+      "query": "Is my current session cookie secure against every possible attack?",
+      "evidence": [
+        {
+          "document_id": "flask-config",
+          "quote": "Browsers will only send cookies with requests over HTTPS if the cookie is marked \"secure\"."
+        }
+      ],
+      "rationale": "One transport setting is insufficient for a universal security guarantee or actual configuration audit."
+    },
+    {
+      "id": "i04-zh",
+      "pair_id": "i04",
+      "language": "zh",
+      "category": "related_insufficient",
+      "query": "我的当前会话 cookie 能防住所有可能的攻击吗？",
+      "evidence": [
+        {
+          "document_id": "flask-config",
+          "quote": "Browsers will only send cookies with requests over HTTPS if the cookie is marked \"secure\"."
+        }
+      ],
+      "rationale": "One transport setting is insufficient for a universal security guarantee or actual configuration audit."
+    },
+    {
+      "id": "m01-en",
+      "pair_id": "m01",
+      "language": "en",
+      "category": "missing",
+      "query": "What is the refund policy for an airline ticket?",
+      "evidence": [],
+      "rationale": "No airline contract or ticket data in the selected Flask documents."
+    },
+    {
+      "id": "m01-zh",
+      "pair_id": "m01",
+      "language": "zh",
+      "category": "missing",
+      "query": "航空机票的退款政策是什么？",
+      "evidence": [],
+      "rationale": "No airline contract or ticket data in the selected Flask documents."
+    },
+    {
+      "id": "m02-en",
+      "pair_id": "m02",
+      "language": "en",
+      "category": "missing",
+      "query": "How should an oncologist select a chemotherapy dose?",
+      "evidence": [],
+      "rationale": "Medical dosing is absent; this is only an abstention diagnostic, not medical advice."
+    },
+    {
+      "id": "m02-zh",
+      "pair_id": "m02",
+      "language": "zh",
+      "category": "missing",
+      "query": "肿瘤科医生应如何选择化疗剂量？",
+      "evidence": [],
+      "rationale": "Medical dosing is absent; this is only an abstention diagnostic, not medical advice."
+    },
+    {
+      "id": "m03-en",
+      "pair_id": "m03",
+      "language": "en",
+      "category": "missing",
+      "query": "What will the weather be in Kuala Lumpur tomorrow?",
+      "evidence": [],
+      "rationale": "No weather data or forecast in the pinned documents."
+    },
+    {
+      "id": "m03-zh",
+      "pair_id": "m03",
+      "language": "zh",
+      "category": "missing",
+      "query": "吉隆坡明天的天气会怎样？",
+      "evidence": [],
+      "rationale": "No weather data or forecast in the pinned documents."
+    },
+    {
+      "id": "m04-en",
+      "pair_id": "m04",
+      "language": "en",
+      "category": "missing",
+      "query": "How do I repair a bicycle hydraulic brake?",
+      "evidence": [],
+      "rationale": "Bicycle repair is absent from the selected corpus."
+    },
+    {
+      "id": "m04-zh",
+      "pair_id": "m04",
+      "language": "zh",
+      "category": "missing",
+      "query": "如何修理自行车液压刹车？",
+      "evidence": [],
+      "rationale": "Bicycle repair is absent from the selected corpus."
+    }
+  ]
+}
