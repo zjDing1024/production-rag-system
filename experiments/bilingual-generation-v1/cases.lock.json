@@ -1,0 +1,13 @@
+{
+  "cases_sha256": "267d108cb56adad24f0ed737e8fe632e578c08c0c709b39573974df61a6101b7",
+  "case_count": 12,
+  "pair_count": 6,
+  "category_counts": {
+    "answerable": 4,
+    "related_insufficient": 4,
+    "missing": 4
+  },
+  "frozen_before_first_model_request": true,
+  "source_sha256": "b7b2c4780508802da18543ec8d1f9fe8a155d26144995ed38b13d39d568c0818",
+  "source_commit": "ab8149664182b662453a563161aa89013c806dc9"
+}

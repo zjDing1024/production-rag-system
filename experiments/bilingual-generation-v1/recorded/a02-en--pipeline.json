@@ -1,0 +1,93 @@
+{
+  "mode": "optional-local-generation",
+  "query": "After runner.invoke(), which Result attribute is checked for the command output in the example?",
+  "answer": "The CLI Runner checks the 'output' attribute of the Result object for the command output.",
+  "citation_ids": [
+    "e0c9c646c3024759c3dc7b98372326c5bdfbc73f7071cd3b812ee2bd7f9bad99"
+  ],
+  "citations": [
+    {
+      "chunk_id": "e0c9c646c3024759c3dc7b98372326c5bdfbc73f7071cd3b812ee2bd7f9bad99",
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L234-L285"
+    }
+  ],
+  "semantic_support": "unverified",
+  "retrieval": {
+    "mode": "retrieval-only",
+    "answer": null,
+    "answerability": "unverified",
+    "status": "candidates",
+    "query": "After runner.invoke(), which Result attribute is checked for the command output in the example?",
+    "effective_query": "After runner.invoke(), which Result attribute is checked for the command output in the example?",
+    "aliases": [],
+    "untranslated_cjk": false,
+    "policy": {
+      "version": "lexical-coverage-v1",
+      "enabled": true,
+      "threshold": 0.6,
+      "coverage": 0.8888888888888888,
+      "missing_terms": [
+        "checked"
+      ],
+      "passed": true,
+      "meaning": "corpus-vocabulary coverage, not confidence"
+    },
+    "chunks_sha256": "de8a54066e25aa135724924ebae09e960884bbfc292429d0324e62320140b9de",
+    "results": [
+      {
+        "chunk_id": "e0c9c646c3024759c3dc7b98372326c5bdfbc73f7071cd3b812ee2bd7f9bad99",
+        "document_id": "flask-testing",
+        "score": 29.368929283606654,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L234-L285",
+        "text": "id without going through the login route\n            session[\"user_id\"] = 1\n\n        # session is saved now\n\n        response = client.get(\"/users/me\")\n        assert response.json[\"username\"] == \"flask\"\n\n\n.. _testing-cli:\n\nRunning Commands with the CLI Runner\n------------------------------------\n\nFlask provides :meth:`~flask.Flask.test_cli_runner` to create a\n:class:`~flask.testing.FlaskCliRunner`, which runs CLI commands in\nisolation and captures the output in a :class:`~click.testing.Result`\nobject. Flask's runner extends :doc:`Click's runner <click:testing>`,\nsee those docs for additional information.\n\nUse the runner's :meth:`~flask.testing.FlaskCliRunner.invoke` method to\ncall commands in the same way they would be called with the ``flask``\ncommand from the command line.\n\n.. code-block:: python\n\n    import click\n\n    @app.cli.command(\"hello\")\n    @click.option(\"--name\", default=\"World\")\n    def hello_command(name):\n        click.echo(f\"Hello, {name}!\")\n\n    def test_hello_command(runner):\n        result = runner.invoke(args=\"hello\")\n        assert \"World\" in result.output\n\n        result = runner.invoke(args=[\"hello\", \"--name\", \"Flask\"])\n        assert \"Flask\" in result.output\n\n\nTests that depend on an Active Context\n--------------------------------------\n\nYou may have functions that are called from views or commands, that\nexpect an active :doc:`application context </appcontext>` or\n:doc:`request context  </reqcontext>` because they access ``request``,\n``session``, or ``current_app``. Rather than testing them by making a\nrequest or invoking the command, you can create and activate a context\ndirectly.\n\nUse ``with app.app_context()`` to push"
+      },
+      {
+        "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+        "document_id": "flask-config",
+        "score": 7.1510343247317545,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+        "text": "secret key that will be used for securely signing the session cookie\n    and can be used for any other security related needs by extensions or your\n    application. It should be a long random ``bytes`` or ``str``. For\n    example, copy the output of this to your config::\n\n        $ python -c 'import secrets; print(secrets.token_hex())'\n        '192b9bdd22ab9ed4d12e236c78afcb9a393ec15f71bbf5dc987d54727823bcbf'\n\n    **Do not reveal the secret key when posting questions or committing code.**\n\n    Default: ``None``\n\n.. py:data:: SECRET_KEY_FALLBACKS\n\n    A list of old secret keys that can still be used for unsigning, most recent\n    first. This allows a project to implement key rotation without invalidating\n    active sessions or other recently-signed secrets.\n\n    Keys should be removed after an appropriate period of time, as checking each\n    additional key adds some overhead.\n\n    Flask's built-in secure cookie session supports this. Extensions that use\n    :data:`SECRET_KEY` may not support this yet.\n\n    Default: ``None``\n\n    .. versionadded:: 3.1\n\n.. py:data:: SESSION_COOKIE_NAME\n\n    The name of the session cookie. Can be changed in case you already have a\n    cookie with the same name.\n\n    Default: ``'session'``\n\n.. py:data:: SESSION_COOKIE_DOMAIN\n\n    The value of the ``Domain`` parameter on the session cookie. If"
+      },
+      {
+        "chunk_id": "f0ece727e1048c675b71552b8ed0111f51f62fc841477039b8b9fd97d22874fe",
+        "document_id": "flask-testing",
+        "score": 6.595373694791892,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L197-L249",
+        "text": "len(response.history) == 1\n        # Check that the second request was to the index page.\n        assert response.request.path == \"/index\"\n\n\nAccessing and Modifying the Session\n-----------------------------------\n\nTo access Flask's context variables, mainly\n:data:`~flask.session`, use the client in a ``with`` statement.\nThe app and request context will remain active *after* making a request,\nuntil the ``with`` block ends.\n\n.. code-block:: python\n\n    from flask import session\n\n    def test_access_session(client):\n        with client:\n            client.post(\"/auth/login\", data={\"username\": \"flask\"})\n            # session is still accessible\n            assert session[\"user_id\"] == 1\n\n        # session is no longer accessible\n\nIf you want to access or set a value in the session *before* making a\nrequest, use the client's\n:meth:`~flask.testing.FlaskClient.session_transaction` method in a\n``with`` statement. It returns a session object, and will save the\nsession once the block ends.\n\n.. code-block:: python\n\n    from flask import session\n\n    def test_modify_session(client):\n        with client.session_transaction() as session:\n            # set a user id without going through the login route\n            session[\"user_id\"] = 1\n\n        # session is saved now\n\n        response = client.get(\"/users/me\")\n        assert response.json[\"username\"] == \"flask\"\n\n\n.. _testing-cli:\n\nRunning Commands with the CLI Runner\n------------------------------------\n\nFlask provides :meth:`~flask.Flask.test_cli_runner` to create a\n:class:`~flask.testing.FlaskCliRunner`, which runs"
+      }
+    ],
+    "candidate_count_before_gate": 3
+  },
+  "context": [
+    {
+      "chunk_id": "e0c9c646c3024759c3dc7b98372326c5bdfbc73f7071cd3b812ee2bd7f9bad99",
+      "document_id": "flask-testing",
+      "score": 29.368929283606654,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L234-L285",
+      "text": "id without going through the login route\n            session[\"user_id\"] = 1\n\n        # session is saved now\n\n        response = client.get(\"/users/me\")\n        assert response.json[\"username\"] == \"flask\"\n\n\n.. _testing-cli:\n\nRunning Commands with the CLI Runner\n------------------------------------\n\nFlask provides :meth:`~flask.Flask.test_cli_runner` to create a\n:class:`~flask.testing.FlaskCliRunner`, which runs CLI commands in\nisolation and captures the output in a :class:`~click.testing.Result`\nobject. Flask's runner extends :doc:`Click's runner <click:testing>`,\nsee those docs for additional information.\n\nUse the runner's :meth:`~flask.testing.FlaskCliRunner.invoke` method to\ncall commands in the same way they would be called with the ``flask``\ncommand from the command line.\n\n.. code-block:: python\n\n    import click\n\n    @app.cli.command(\"hello\")\n    @click.option(\"--name\", default=\"World\")\n    def hello_command(name):\n        click.echo(f\"Hello, {name}!\")\n\n    def test_hello_command(runner):\n        result = runner.invoke(args=\"hello\")\n        assert \"World\" in result.output\n\n        result = runner.invoke(args=[\"hello\", \"--name\", \"Flask\"])\n        assert \"Flask\" in result.output\n\n\nTests that depend on an Active Context\n--------------------------------------\n\nYou may have functions that are called from views or commands, that\nexpect an active :doc:`application context </appcontext>` or\n:doc:`request context  </reqcontext>` because they access ``request``,\n``session``, or ``current_app``. Rather than testing them by making a\nrequest or invoking the command, you can create and activate a context\ndirectly.\n\nUse ``with app.app_context()`` to push"
+    },
+    {
+      "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+      "document_id": "flask-config",
+      "score": 7.1510343247317545,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+      "text": "secret key that will be used for securely signing the session cookie\n    and can be used for any other security related needs by extensions or your\n    application. It should be a long random ``bytes`` or ``str``. For\n    example, copy the output of this to your config::\n\n        $ python -c 'import secrets; print(secrets.token_hex())'\n        '192b9bdd22ab9ed4d12e236c78afcb9a393ec15f71bbf5dc987d54727823bcbf'\n\n    **Do not reveal the secret key when posting questions or committing code.**\n\n    Default: ``None``\n\n.. py:data:: SECRET_KEY_FALLBACKS\n\n    A list of old secret keys that can still be used for unsigning, most recent\n    first. This allows a project to implement key rotation without invalidating\n    active sessions or other recently-signed secrets.\n\n    Keys should be removed after an appropriate period of time, as checking each\n    additional key adds some overhead.\n\n    Flask's built-in secure cookie session supports this. Extensions that use\n    :data:`SECRET_KEY` may not support this yet.\n\n    Default: ``None``\n\n    .. versionadded:: 3.1\n\n.. py:data:: SESSION_COOKIE_NAME\n\n    The name of the session cookie. Can be changed in case you already have a\n    cookie with the same name.\n\n    Default: ``'session'``\n\n.. py:data:: SESSION_COOKIE_DOMAIN\n\n    The value of the ``Domain`` parameter on the session cookie. If"
+    },
+    {
+      "chunk_id": "f0ece727e1048c675b71552b8ed0111f51f62fc841477039b8b9fd97d22874fe",
+      "document_id": "flask-testing",
+      "score": 6.595373694791892,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L197-L249",
+      "text": "len(response.history) == 1\n        # Check that the second request was to the index page.\n        assert response.request.path == \"/index\"\n\n\nAccessing and Modifying the Session\n-----------------------------------\n\nTo access Flask's context variables, mainly\n:data:`~flask.session`, use the client in a ``with`` statement.\nThe app and request context will remain active *after* making a request,\nuntil the ``with`` block ends.\n\n.. code-block:: python\n\n    from flask import session\n\n    def test_access_session(client):\n        with client:\n            client.post(\"/auth/login\", data={\"username\": \"flask\"})\n            # session is still accessible\n            assert session[\"user_id\"] == 1\n\n        # session is no longer accessible\n\nIf you want to access or set a value in the session *before* making a\nrequest, use the client's\n:meth:`~flask.testing.FlaskClient.session_transaction` method in a\n``with`` statement. It returns a session object, and will save the\nsession once the block ends.\n\n.. code-block:: python\n\n    from flask import session\n\n    def test_modify_session(client):\n        with client.session_transaction() as session:\n            # set a user id without going through the login route\n            session[\"user_id\"] = 1\n\n        # session is saved now\n\n        response = client.get(\"/users/me\")\n        assert response.json[\"username\"] == \"flask\"\n\n\n.. _testing-cli:\n\nRunning Commands with the CLI Runner\n------------------------------------\n\nFlask provides :meth:`~flask.Flask.test_cli_runner` to create a\n:class:`~flask.testing.FlaskCliRunner`, which runs"
+    }
+  ],
+  "context_limit_characters": 12000,
+  "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"answer\\\": \\\"The CLI Runner checks the 'output' attribute of the Result object for the command output.\\\", \\\"citations\\\": [\\\"e0c9c646c3024759c3dc7b98372326c5bdfbc73f7071cd3b812ee2bd7f9bad99\\\"], \\\"abstain\\\": false}\"}}],\"created\":1794672115,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":92,\"prompt_tokens\":1509,\"total_tokens\":1601,\"prompt_tokens_details\":{\"cached_tokens\":92}},\"id\":\"chatcmpl-RY5oRXBdSQ5vdMT3C1p1j1rHJZ7NnPiN\",\"timings\":{\"cache_n\":92,\"prompt_n\":1417,\"prompt_ms\":4869.798,\"prompt_per_token_ms\":3.4366958362738176,\"prompt_per_second\":290.9771616810389,\"predicted_n\":92,\"predicted_ms\":2883.842,\"predicted_per_token_ms\":31.69057142857143,\"predicted_per_second\":31.555126806531007}}",
+  "status": "answered",
+  "reason": "contract_valid",
+  "usage": {
+    "prompt_tokens": 1509,
+    "completion_tokens": 92,
+    "total_tokens": 1601
+  }
+}

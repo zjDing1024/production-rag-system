@@ -1,0 +1,96 @@
+{
+  "mode": "optional-local-generation",
+  "query": "使用 follow_redirects=True 时，最多允许跟随多少次重定向？",
+  "answer": "最多允许跟随 1 次重定向",
+  "citation_ids": [
+    "2afc3095bbf641a90b1215649ae66649baea0a0eaeec6ebebfc17fa95cd2cdd3"
+  ],
+  "citations": [
+    {
+      "chunk_id": "2afc3095bbf641a90b1215649ae66649baea0a0eaeec6ebebfc17fa95cd2cdd3",
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L609-L660"
+    }
+  ],
+  "semantic_support": "unverified",
+  "retrieval": {
+    "mode": "retrieval-only",
+    "answer": null,
+    "answerability": "unverified",
+    "status": "candidates",
+    "query": "使用 follow_redirects=True 时，最多允许跟随多少次重定向？",
+    "effective_query": "使用 follow_redirects=True 时，最多允许跟随多少次 redirect ？",
+    "aliases": [
+      {
+        "source": "重定向",
+        "replacement": "redirect"
+      }
+    ],
+    "untranslated_cjk": true,
+    "policy": {
+      "version": "lexical-coverage-v1",
+      "enabled": true,
+      "threshold": 0.6,
+      "coverage": 1.0,
+      "missing_terms": [],
+      "passed": true,
+      "meaning": "corpus-vocabulary coverage, not confidence"
+    },
+    "chunks_sha256": "de8a54066e25aa135724924ebae09e960884bbfc292429d0324e62320140b9de",
+    "results": [
+      {
+        "chunk_id": "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+        "document_id": "flask-testing",
+        "score": 12.751229813345025,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L155-L207",
+        "text": "The ``Content-Type``\nheader will be set to ``application/json`` automatically.\n\nSimilarly, if the response contains JSON data, the ``response.json``\nattribute will contain the deserialized object.\n\n.. code-block:: python\n\n    def test_json_data(client):\n        response = client.post(\"/graphql\", json={\n            \"query\": \"\"\"\n                query User($id: String!) {\n                    user(id: $id) {\n                        name\n                        theme\n                        picture_url\n                    }\n                }\n            \"\"\",\n            variables={\"id\": 2},\n        })\n        assert response.json[\"data\"][\"user\"][\"name\"] == \"Flask\"\n\n\nFollowing Redirects\n-------------------\n\nBy default, the client does not make additional requests if the response\nis a redirect. By passing ``follow_redirects=True`` to a request method,\nthe client will continue to make requests until a non-redirect response\nis returned.\n\n:attr:`TestResponse.history <werkzeug.test.TestResponse.history>` is\na tuple of the responses that led up to the final response. Each\nresponse has a :attr:`~werkzeug.test.TestResponse.request` attribute\nwhich records the request that produced that response.\n\n.. code-block:: python\n\n    def test_logout_redirect(client):\n        response = client.get(\"/logout\", follow_redirects=True)\n        # Check that there was one redirect response.\n        assert len(response.history) == 1\n        # Check that the second request was to the index page.\n        assert response.request.path == \"/index\"\n\n\nAccessing and Modifying the Session\n-----------------------------------\n\nTo access Flask's context variables, mainly\n:data:`~flask.session`, use the client in a ``with`` statement.\nThe app"
+      },
+      {
+        "chunk_id": "2afc3095bbf641a90b1215649ae66649baea0a0eaeec6ebebfc17fa95cd2cdd3",
+        "document_id": "flask-quickstart",
+        "score": 4.779796965352796,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L609-L660",
+        "text": "Flask that add some security on top of cookies for you.\n\nReading cookies::\n\n    from flask import request\n\n    @app.route('/')\n    def index():\n        username = request.cookies.get('username')\n        # use cookies.get(key) instead of cookies[key] to not get a\n        # KeyError if the cookie is missing.\n\nStoring cookies::\n\n    from flask import make_response\n\n    @app.route('/')\n    def index():\n        resp = make_response(render_template(...))\n        resp.set_cookie('username', 'the username')\n        return resp\n\nNote that cookies are set on response objects.  Since you normally\njust return strings from the view functions Flask will convert them into\nresponse objects for you.  If you explicitly want to do that you can use\nthe :meth:`~flask.make_response` function and then modify it.\n\nSometimes you might want to set a cookie at a point where the response\nobject does not exist yet.  This is possible by utilizing the\n:doc:`patterns/deferredcallbacks` pattern.\n\nFor this also see :ref:`about-responses`.\n\nRedirects and Errors\n--------------------\n\nTo redirect a user to another endpoint, use the :func:`~flask.redirect`\nfunction; to abort a request early with an error code, use the\n:func:`~flask.abort` function::\n\n    from flask import abort, redirect, url_for\n\n    @app.route('/')\n    def index():\n        return redirect(url_for('login'))\n\n    @app.route('/login')\n    def login():\n        abort(401)\n        this_is_never_executed()\n\nThis is a"
+      },
+      {
+        "chunk_id": "e3a3d805b82848f5e014248b9f1a90dc3a76f28594a8fbaab266ab62b09c5e7d",
+        "document_id": "flask-quickstart",
+        "score": 4.379320248130995,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L645-L687",
+        "text": "user to another endpoint, use the :func:`~flask.redirect`\nfunction; to abort a request early with an error code, use the\n:func:`~flask.abort` function::\n\n    from flask import abort, redirect, url_for\n\n    @app.route('/')\n    def index():\n        return redirect(url_for('login'))\n\n    @app.route('/login')\n    def login():\n        abort(401)\n        this_is_never_executed()\n\nThis is a rather pointless example because a user will be redirected from\nthe index to a page they cannot access (401 means access denied) but it\nshows how that works.\n\nBy default a black and white error page is shown for each error code.  If\nyou want to customize the error page, you can use the\n:meth:`~flask.Flask.errorhandler` decorator::\n\n    from flask import render_template\n\n    @app.errorhandler(404)\n    def page_not_found(error):\n        return render_template('page_not_found.html'), 404\n\nNote the ``404`` after the :func:`~flask.render_template` call.  This\ntells Flask that the status code of that page should be 404 which means\nnot found.  By default 200 is assumed which translates to: all went well.\n\nSee :doc:`errorhandling` for more details.\n\n.. _about-responses:\n\nAbout Responses\n---------------\n\nThe return value from a view function is automatically converted into\na response object for you. If the return value is a string it's\nconverted into a response object"
+      }
+    ],
+    "candidate_count_before_gate": 3
+  },
+  "context": [
+    {
+      "chunk_id": "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+      "document_id": "flask-testing",
+      "score": 12.751229813345025,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L155-L207",
+      "text": "The ``Content-Type``\nheader will be set to ``application/json`` automatically.\n\nSimilarly, if the response contains JSON data, the ``response.json``\nattribute will contain the deserialized object.\n\n.. code-block:: python\n\n    def test_json_data(client):\n        response = client.post(\"/graphql\", json={\n            \"query\": \"\"\"\n                query User($id: String!) {\n                    user(id: $id) {\n                        name\n                        theme\n                        picture_url\n                    }\n                }\n            \"\"\",\n            variables={\"id\": 2},\n        })\n        assert response.json[\"data\"][\"user\"][\"name\"] == \"Flask\"\n\n\nFollowing Redirects\n-------------------\n\nBy default, the client does not make additional requests if the response\nis a redirect. By passing ``follow_redirects=True`` to a request method,\nthe client will continue to make requests until a non-redirect response\nis returned.\n\n:attr:`TestResponse.history <werkzeug.test.TestResponse.history>` is\na tuple of the responses that led up to the final response. Each\nresponse has a :attr:`~werkzeug.test.TestResponse.request` attribute\nwhich records the request that produced that response.\n\n.. code-block:: python\n\n    def test_logout_redirect(client):\n        response = client.get(\"/logout\", follow_redirects=True)\n        # Check that there was one redirect response.\n        assert len(response.history) == 1\n        # Check that the second request was to the index page.\n        assert response.request.path == \"/index\"\n\n\nAccessing and Modifying the Session\n-----------------------------------\n\nTo access Flask's context variables, mainly\n:data:`~flask.session`, use the client in a ``with`` statement.\nThe app"
+    },
+    {
+      "chunk_id": "2afc3095bbf641a90b1215649ae66649baea0a0eaeec6ebebfc17fa95cd2cdd3",
+      "document_id": "flask-quickstart",
+      "score": 4.779796965352796,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L609-L660",
+      "text": "Flask that add some security on top of cookies for you.\n\nReading cookies::\n\n    from flask import request\n\n    @app.route('/')\n    def index():\n        username = request.cookies.get('username')\n        # use cookies.get(key) instead of cookies[key] to not get a\n        # KeyError if the cookie is missing.\n\nStoring cookies::\n\n    from flask import make_response\n\n    @app.route('/')\n    def index():\n        resp = make_response(render_template(...))\n        resp.set_cookie('username', 'the username')\n        return resp\n\nNote that cookies are set on response objects.  Since you normally\njust return strings from the view functions Flask will convert them into\nresponse objects for you.  If you explicitly want to do that you can use\nthe :meth:`~flask.make_response` function and then modify it.\n\nSometimes you might want to set a cookie at a point where the response\nobject does not exist yet.  This is possible by utilizing the\n:doc:`patterns/deferredcallbacks` pattern.\n\nFor this also see :ref:`about-responses`.\n\nRedirects and Errors\n--------------------\n\nTo redirect a user to another endpoint, use the :func:`~flask.redirect`\nfunction; to abort a request early with an error code, use the\n:func:`~flask.abort` function::\n\n    from flask import abort, redirect, url_for\n\n    @app.route('/')\n    def index():\n        return redirect(url_for('login'))\n\n    @app.route('/login')\n    def login():\n        abort(401)\n        this_is_never_executed()\n\nThis is a"
+    },
+    {
+      "chunk_id": "e3a3d805b82848f5e014248b9f1a90dc3a76f28594a8fbaab266ab62b09c5e7d",
+      "document_id": "flask-quickstart",
+      "score": 4.379320248130995,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L645-L687",
+      "text": "user to another endpoint, use the :func:`~flask.redirect`\nfunction; to abort a request early with an error code, use the\n:func:`~flask.abort` function::\n\n    from flask import abort, redirect, url_for\n\n    @app.route('/')\n    def index():\n        return redirect(url_for('login'))\n\n    @app.route('/login')\n    def login():\n        abort(401)\n        this_is_never_executed()\n\nThis is a rather pointless example because a user will be redirected from\nthe index to a page they cannot access (401 means access denied) but it\nshows how that works.\n\nBy default a black and white error page is shown for each error code.  If\nyou want to customize the error page, you can use the\n:meth:`~flask.Flask.errorhandler` decorator::\n\n    from flask import render_template\n\n    @app.errorhandler(404)\n    def page_not_found(error):\n        return render_template('page_not_found.html'), 404\n\nNote the ``404`` after the :func:`~flask.render_template` call.  This\ntells Flask that the status code of that page should be 404 which means\nnot found.  By default 200 is assumed which translates to: all went well.\n\nSee :doc:`errorhandling` for more details.\n\n.. _about-responses:\n\nAbout Responses\n---------------\n\nThe return value from a view function is automatically converted into\na response object for you. If the return value is a string it's\nconverted into a response object"
+    }
+  ],
+  "context_limit_characters": 12000,
+  "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"answer\\\": \\\"最多允许跟随 1 次重定向\\\", \\\"citations\\\": [\\\"2afc3095bbf641a90b1215649ae66649baea0a0eaeec6ebebfc17fa95cd2cdd3\\\"], \\\"abstain\\\": false}\"}}],\"created\":1794672143,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":78,\"prompt_tokens\":1472,\"total_tokens\":1550,\"prompt_tokens_details\":{\"cached_tokens\":92}},\"id\":\"chatcmpl-v4B8Q8pLglGlLKnxwZ16T2ShaNUd761N\",\"timings\":{\"cache_n\":92,\"prompt_n\":1380,\"prompt_ms\":4516.09,\"prompt_per_token_ms\":3.2725289855072464,\"prompt_per_second\":305.5740696044587,\"predicted_n\":78,\"predicted_ms\":1742.672,\"predicted_per_token_ms\":22.632103896103896,\"predicted_per_second\":44.18502162196902}}",
+  "status": "answered",
+  "reason": "contract_valid",
+  "usage": {
+    "prompt_tokens": 1472,
+    "completion_tokens": 78,
+    "total_tokens": 1550
+  }
+}

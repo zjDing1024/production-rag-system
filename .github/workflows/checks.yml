@@ -38,3 +38,7 @@ jobs:
           cmp results/bilingual-challenge-v1.json build/bilingual-challenge-v1.json
           python -m rag_foundation.challenge_audit > build/bilingual-challenge-v1-audit.json
           cmp results/bilingual-challenge-v1-audit.json build/bilingual-challenge-v1-audit.json
+      - name: Verify recorded generation evidence without a model
+        run: |
+          python experiments/bilingual-generation-v1/audit_record.py > build/bilingual-generation-v1-summary.json
+          cmp experiments/bilingual-generation-v1/summary.json build/bilingual-generation-v1-summary.json

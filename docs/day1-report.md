@@ -100,6 +100,7 @@ and scheduling, so they are stored separately from the deterministic report.
 Re-run:
 
 ```bash
+mkdir -p build
 PYTHONPATH=src python examples/benchmark_retrieval.py --output build/latency.json
 ```
 

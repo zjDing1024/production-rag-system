@@ -41,6 +41,7 @@
 ## 运行与验收
 
 ```bash
+mkdir -p build
 PYTHONPATH=src python -m unittest discover -s tests -v
 PYTHONPATH=src python -m rag_foundation.challenge > build/bilingual-challenge-v1.json
 cmp results/bilingual-challenge-v1.json build/bilingual-challenge-v1.json

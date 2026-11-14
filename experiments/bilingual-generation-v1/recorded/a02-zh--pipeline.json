@@ -1,0 +1,79 @@
+{
+  "mode": "optional-local-generation",
+  "query": "执行 runner.invoke() 后，示例检查 Result 的哪个属性来获取命令输出？",
+  "answer": null,
+  "citation_ids": [],
+  "citations": [],
+  "semantic_support": "unverified",
+  "retrieval": {
+    "mode": "retrieval-only",
+    "answer": null,
+    "answerability": "unverified",
+    "status": "candidates",
+    "query": "执行 runner.invoke() 后，示例检查 Result 的哪个属性来获取命令输出？",
+    "effective_query": "执行 runner.invoke() 后，示例检查 Result 的哪个属性来获取命令输出？",
+    "aliases": [],
+    "untranslated_cjk": true,
+    "policy": {
+      "version": "lexical-coverage-v1",
+      "enabled": true,
+      "threshold": 0.6,
+      "coverage": 1.0,
+      "missing_terms": [],
+      "passed": true,
+      "meaning": "corpus-vocabulary coverage, not confidence"
+    },
+    "chunks_sha256": "de8a54066e25aa135724924ebae09e960884bbfc292429d0324e62320140b9de",
+    "results": [
+      {
+        "chunk_id": "e0c9c646c3024759c3dc7b98372326c5bdfbc73f7071cd3b812ee2bd7f9bad99",
+        "document_id": "flask-testing",
+        "score": 18.19304701797447,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L234-L285",
+        "text": "id without going through the login route\n            session[\"user_id\"] = 1\n\n        # session is saved now\n\n        response = client.get(\"/users/me\")\n        assert response.json[\"username\"] == \"flask\"\n\n\n.. _testing-cli:\n\nRunning Commands with the CLI Runner\n------------------------------------\n\nFlask provides :meth:`~flask.Flask.test_cli_runner` to create a\n:class:`~flask.testing.FlaskCliRunner`, which runs CLI commands in\nisolation and captures the output in a :class:`~click.testing.Result`\nobject. Flask's runner extends :doc:`Click's runner <click:testing>`,\nsee those docs for additional information.\n\nUse the runner's :meth:`~flask.testing.FlaskCliRunner.invoke` method to\ncall commands in the same way they would be called with the ``flask``\ncommand from the command line.\n\n.. code-block:: python\n\n    import click\n\n    @app.cli.command(\"hello\")\n    @click.option(\"--name\", default=\"World\")\n    def hello_command(name):\n        click.echo(f\"Hello, {name}!\")\n\n    def test_hello_command(runner):\n        result = runner.invoke(args=\"hello\")\n        assert \"World\" in result.output\n\n        result = runner.invoke(args=[\"hello\", \"--name\", \"Flask\"])\n        assert \"Flask\" in result.output\n\n\nTests that depend on an Active Context\n--------------------------------------\n\nYou may have functions that are called from views or commands, that\nexpect an active :doc:`application context </appcontext>` or\n:doc:`request context  </reqcontext>` because they access ``request``,\n``session``, or ``current_app``. Rather than testing them by making a\nrequest or invoking the command, you can create and activate a context\ndirectly.\n\nUse ``with app.app_context()`` to push"
+      },
+      {
+        "chunk_id": "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+        "document_id": "flask-config",
+        "score": 3.729607230981986,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L142-L177",
+        "text": "3.1\n\n.. py:data:: SESSION_COOKIE_NAME\n\n    The name of the session cookie. Can be changed in case you already have a\n    cookie with the same name.\n\n    Default: ``'session'``\n\n.. py:data:: SESSION_COOKIE_DOMAIN\n\n    The value of the ``Domain`` parameter on the session cookie. If not set, browsers\n    will only send the cookie to the exact domain it was set from. Otherwise, they\n    will send it to any subdomain of the given value as well.\n\n    Not setting this value is more restricted and secure than setting it.\n\n    Default: ``None``\n\n    .. warning::\n        If this is changed after the browser created a cookie is created with\n        one setting, it may result in another being created. Browsers may send\n        send both in an undefined order. In that case, you may want to change\n        :data:`SESSION_COOKIE_NAME` as well or otherwise invalidate old sessions.\n\n    .. versionchanged:: 2.3\n        Not set by default, does not fall back to ``SERVER_NAME``.\n\n.. py:data:: SESSION_COOKIE_PATH\n\n    The path that the session cookie will be valid for. If not set, the cookie\n    will be valid underneath ``APPLICATION_ROOT`` or ``/`` if that is not set.\n\n    Default: ``None``\n\n.. py:data::"
+      },
+      {
+        "chunk_id": "d32260d9f19d3e9c08e2720aade0062fe037235c75f962b45a4c8e24f9f08fea",
+        "document_id": "flask-quickstart",
+        "score": 3.381552859404269,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L466-L486",
+        "text": "Insider Information\n\n   If you want to understand how that works and how you can implement\n   tests with context locals, read this section, otherwise just skip it.\n\nCertain objects in Flask are global objects, but not of the usual kind.\nThese objects are actually proxies to objects that are local to a specific\ncontext.  What a mouthful.  But that is actually quite easy to understand.\n\nImagine the context being the handling thread.  A request comes in and the\nweb server decides to spawn a new thread (or something else, the\nunderlying object is capable of dealing with concurrency systems other\nthan threads).  When Flask starts its internal request handling it\nfigures out that the current thread is the active context and binds the\ncurrent application and the WSGI environments to that context (thread).\nIt does that in an intelligent way so that one application can invoke another\napplication without breaking.\n\nSo what does this mean to you?  Basically you can completely ignore that\nthis is the case unless you are doing something like unit testing.  You\nwill notice that code which"
+      }
+    ],
+    "candidate_count_before_gate": 3
+  },
+  "context": [
+    {
+      "chunk_id": "e0c9c646c3024759c3dc7b98372326c5bdfbc73f7071cd3b812ee2bd7f9bad99",
+      "document_id": "flask-testing",
+      "score": 18.19304701797447,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L234-L285",
+      "text": "id without going through the login route\n            session[\"user_id\"] = 1\n\n        # session is saved now\n\n        response = client.get(\"/users/me\")\n        assert response.json[\"username\"] == \"flask\"\n\n\n.. _testing-cli:\n\nRunning Commands with the CLI Runner\n------------------------------------\n\nFlask provides :meth:`~flask.Flask.test_cli_runner` to create a\n:class:`~flask.testing.FlaskCliRunner`, which runs CLI commands in\nisolation and captures the output in a :class:`~click.testing.Result`\nobject. Flask's runner extends :doc:`Click's runner <click:testing>`,\nsee those docs for additional information.\n\nUse the runner's :meth:`~flask.testing.FlaskCliRunner.invoke` method to\ncall commands in the same way they would be called with the ``flask``\ncommand from the command line.\n\n.. code-block:: python\n\n    import click\n\n    @app.cli.command(\"hello\")\n    @click.option(\"--name\", default=\"World\")\n    def hello_command(name):\n        click.echo(f\"Hello, {name}!\")\n\n    def test_hello_command(runner):\n        result = runner.invoke(args=\"hello\")\n        assert \"World\" in result.output\n\n        result = runner.invoke(args=[\"hello\", \"--name\", \"Flask\"])\n        assert \"Flask\" in result.output\n\n\nTests that depend on an Active Context\n--------------------------------------\n\nYou may have functions that are called from views or commands, that\nexpect an active :doc:`application context </appcontext>` or\n:doc:`request context  </reqcontext>` because they access ``request``,\n``session``, or ``current_app``. Rather than testing them by making a\nrequest or invoking the command, you can create and activate a context\ndirectly.\n\nUse ``with app.app_context()`` to push"
+    },
+    {
+      "chunk_id": "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+      "document_id": "flask-config",
+      "score": 3.729607230981986,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L142-L177",
+      "text": "3.1\n\n.. py:data:: SESSION_COOKIE_NAME\n\n    The name of the session cookie. Can be changed in case you already have a\n    cookie with the same name.\n\n    Default: ``'session'``\n\n.. py:data:: SESSION_COOKIE_DOMAIN\n\n    The value of the ``Domain`` parameter on the session cookie. If not set, browsers\n    will only send the cookie to the exact domain it was set from. Otherwise, they\n    will send it to any subdomain of the given value as well.\n\n    Not setting this value is more restricted and secure than setting it.\n\n    Default: ``None``\n\n    .. warning::\n        If this is changed after the browser created a cookie is created with\n        one setting, it may result in another being created. Browsers may send\n        send both in an undefined order. In that case, you may want to change\n        :data:`SESSION_COOKIE_NAME` as well or otherwise invalidate old sessions.\n\n    .. versionchanged:: 2.3\n        Not set by default, does not fall back to ``SERVER_NAME``.\n\n.. py:data:: SESSION_COOKIE_PATH\n\n    The path that the session cookie will be valid for. If not set, the cookie\n    will be valid underneath ``APPLICATION_ROOT`` or ``/`` if that is not set.\n\n    Default: ``None``\n\n.. py:data::"
+    },
+    {
+      "chunk_id": "d32260d9f19d3e9c08e2720aade0062fe037235c75f962b45a4c8e24f9f08fea",
+      "document_id": "flask-quickstart",
+      "score": 3.381552859404269,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L466-L486",
+      "text": "Insider Information\n\n   If you want to understand how that works and how you can implement\n   tests with context locals, read this section, otherwise just skip it.\n\nCertain objects in Flask are global objects, but not of the usual kind.\nThese objects are actually proxies to objects that are local to a specific\ncontext.  What a mouthful.  But that is actually quite easy to understand.\n\nImagine the context being the handling thread.  A request comes in and the\nweb server decides to spawn a new thread (or something else, the\nunderlying object is capable of dealing with concurrency systems other\nthan threads).  When Flask starts its internal request handling it\nfigures out that the current thread is the active context and binds the\ncurrent application and the WSGI environments to that context (thread).\nIt does that in an intelligent way so that one application can invoke another\napplication without breaking.\n\nSo what does this mean to you?  Basically you can completely ignore that\nthis is the case unless you are doing something like unit testing.  You\nwill notice that code which"
+    }
+  ],
+  "context_limit_characters": 12000,
+  "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"answer\\\": \\\"None\\\", \\\"citations\\\": [], \\\"abstain\\\": true}\"}}],\"created\":1794672119,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":19,\"prompt_tokens\":1301,\"total_tokens\":1320,\"prompt_tokens_details\":{\"cached_tokens\":92}},\"id\":\"chatcmpl-4d782plgU9uCzGHBXFt8EA2YX9PbnJzp\",\"timings\":{\"cache_n\":92,\"prompt_n\":1209,\"prompt_ms\":3960.15,\"prompt_per_token_ms\":3.275558312655087,\"prompt_per_second\":305.2914662323397,\"predicted_n\":19,\"predicted_ms\":474.09,\"predicted_per_token_ms\":26.33833333333333,\"predicted_per_second\":37.9674745301525}}",
+  "status": "invalid_response",
+  "reason": "ValueError"
+}

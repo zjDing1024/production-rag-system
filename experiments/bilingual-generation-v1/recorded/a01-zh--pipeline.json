@@ -1,0 +1,100 @@
+{
+  "mode": "optional-local-generation",
+  "query": "测试客户端的响应中，哪个属性包含重定向链上先前的响应？",
+  "answer": "response.json",
+  "citation_ids": [
+    "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2"
+  ],
+  "citations": [
+    {
+      "chunk_id": "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L155-L207"
+    }
+  ],
+  "semantic_support": "unverified",
+  "retrieval": {
+    "mode": "retrieval-only",
+    "answer": null,
+    "answerability": "unverified",
+    "status": "candidates",
+    "query": "测试客户端的响应中，哪个属性包含重定向链上先前的响应？",
+    "effective_query": " test client 的响应中，哪个属性包含 redirect 链上先前的响应？",
+    "aliases": [
+      {
+        "source": "测试客户端",
+        "replacement": "test client"
+      },
+      {
+        "source": "重定向",
+        "replacement": "redirect"
+      }
+    ],
+    "untranslated_cjk": true,
+    "policy": {
+      "version": "lexical-coverage-v1",
+      "enabled": true,
+      "threshold": 0.6,
+      "coverage": 1.0,
+      "missing_terms": [],
+      "passed": true,
+      "meaning": "corpus-vocabulary coverage, not confidence"
+    },
+    "chunks_sha256": "de8a54066e25aa135724924ebae09e960884bbfc292429d0324e62320140b9de",
+    "results": [
+      {
+        "chunk_id": "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+        "document_id": "flask-testing",
+        "score": 11.173215071676996,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L155-L207",
+        "text": "The ``Content-Type``\nheader will be set to ``application/json`` automatically.\n\nSimilarly, if the response contains JSON data, the ``response.json``\nattribute will contain the deserialized object.\n\n.. code-block:: python\n\n    def test_json_data(client):\n        response = client.post(\"/graphql\", json={\n            \"query\": \"\"\"\n                query User($id: String!) {\n                    user(id: $id) {\n                        name\n                        theme\n                        picture_url\n                    }\n                }\n            \"\"\",\n            variables={\"id\": 2},\n        })\n        assert response.json[\"data\"][\"user\"][\"name\"] == \"Flask\"\n\n\nFollowing Redirects\n-------------------\n\nBy default, the client does not make additional requests if the response\nis a redirect. By passing ``follow_redirects=True`` to a request method,\nthe client will continue to make requests until a non-redirect response\nis returned.\n\n:attr:`TestResponse.history <werkzeug.test.TestResponse.history>` is\na tuple of the responses that led up to the final response. Each\nresponse has a :attr:`~werkzeug.test.TestResponse.request` attribute\nwhich records the request that produced that response.\n\n.. code-block:: python\n\n    def test_logout_redirect(client):\n        response = client.get(\"/logout\", follow_redirects=True)\n        # Check that there was one redirect response.\n        assert len(response.history) == 1\n        # Check that the second request was to the index page.\n        assert response.request.path == \"/index\"\n\n\nAccessing and Modifying the Session\n-----------------------------------\n\nTo access Flask's context variables, mainly\n:data:`~flask.session`, use the client in a ``with`` statement.\nThe app"
+      },
+      {
+        "chunk_id": "cd14030f9c4193c48f3a77419af034e4f27181792071c77c8f2e4546a6199e3b",
+        "document_id": "flask-testing",
+        "score": 8.236318171272249,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L51-L101",
+        "text": "to\nset up and tear down resources.\n\n.. code-block:: python\n\n    import pytest\n    from my_project import create_app\n\n    @pytest.fixture()\n    def app():\n        app = create_app()\n        app.config.update({\n            \"TESTING\": True,\n        })\n\n        # other setup can go here\n\n        yield app\n\n        # clean up / reset resources here\n\n\n    @pytest.fixture()\n    def client(app):\n        return app.test_client()\n\n\n    @pytest.fixture()\n    def runner(app):\n        return app.test_cli_runner()\n\n\nSending Requests with the Test Client\n-------------------------------------\n\nThe test client makes requests to the application without running a live\nserver. Flask's client extends\n:doc:`Werkzeug's client <werkzeug:test>`, see those docs for additional\ninformation.\n\nThe ``client`` has methods that match the common HTTP request methods,\nsuch as ``client.get()`` and ``client.post()``. They take many arguments\nfor building the request; you can find the full documentation in\n:class:`~werkzeug.test.EnvironBuilder`. Typically you'll use ``path``,\n``query_string``, ``headers``, and ``data`` or ``json``.\n\nTo make a request, call the method the request should use with the path\nto the route to test. A :class:`~werkzeug.test.TestResponse` is returned\nto examine the response data. It has all the usual properties of a\nresponse object. You'll usually look at ``response.data``, which is the\nbytes returned by the view. If you want to"
+      },
+      {
+        "chunk_id": "9791310ebcfdf6a963f4c6718ef43842302b44324c4ad960de84c73755ecb479",
+        "document_id": "flask-testing",
+        "score": 5.701397237932195,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L98-L129",
+        "text": "the route to test. A :class:`~werkzeug.test.TestResponse` is returned\nto examine the response data. It has all the usual properties of a\nresponse object. You'll usually look at ``response.data``, which is the\nbytes returned by the view. If you want to use text, Werkzeug 2.1\nprovides ``response.text``, or use ``response.get_data(as_text=True)``.\n\n.. code-block:: python\n\n    def test_request_example(client):\n        response = client.get(\"/posts\")\n        assert b\"<h2>Hello, World!</h2>\" in response.data\n\n\nPass a dict ``query_string={\"key\": \"value\", ...}`` to set arguments in\nthe query string (after the ``?`` in the URL). Pass a dict\n``headers={}`` to set request headers.\n\nTo send a request body in a POST or PUT request, pass a value to\n``data``. If raw bytes are passed, that exact body is used. Usually,\nyou'll pass a dict to set form data.\n\n\nForm Data\n~~~~~~~~~\n\nTo send form data, pass a dict to ``data``. The ``Content-Type`` header\nwill be set to ``multipart/form-data`` or\n``application/x-www-form-urlencoded`` automatically.\n\nIf a value is a file object opened for reading bytes (``\"rb\"`` mode), it\nwill be treated as an uploaded file. To change the detected filename and\ncontent type, pass a ``(file, filename,"
+      }
+    ],
+    "candidate_count_before_gate": 3
+  },
+  "context": [
+    {
+      "chunk_id": "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+      "document_id": "flask-testing",
+      "score": 11.173215071676996,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L155-L207",
+      "text": "The ``Content-Type``\nheader will be set to ``application/json`` automatically.\n\nSimilarly, if the response contains JSON data, the ``response.json``\nattribute will contain the deserialized object.\n\n.. code-block:: python\n\n    def test_json_data(client):\n        response = client.post(\"/graphql\", json={\n            \"query\": \"\"\"\n                query User($id: String!) {\n                    user(id: $id) {\n                        name\n                        theme\n                        picture_url\n                    }\n                }\n            \"\"\",\n            variables={\"id\": 2},\n        })\n        assert response.json[\"data\"][\"user\"][\"name\"] == \"Flask\"\n\n\nFollowing Redirects\n-------------------\n\nBy default, the client does not make additional requests if the response\nis a redirect. By passing ``follow_redirects=True`` to a request method,\nthe client will continue to make requests until a non-redirect response\nis returned.\n\n:attr:`TestResponse.history <werkzeug.test.TestResponse.history>` is\na tuple of the responses that led up to the final response. Each\nresponse has a :attr:`~werkzeug.test.TestResponse.request` attribute\nwhich records the request that produced that response.\n\n.. code-block:: python\n\n    def test_logout_redirect(client):\n        response = client.get(\"/logout\", follow_redirects=True)\n        # Check that there was one redirect response.\n        assert len(response.history) == 1\n        # Check that the second request was to the index page.\n        assert response.request.path == \"/index\"\n\n\nAccessing and Modifying the Session\n-----------------------------------\n\nTo access Flask's context variables, mainly\n:data:`~flask.session`, use the client in a ``with`` statement.\nThe app"
+    },
+    {
+      "chunk_id": "cd14030f9c4193c48f3a77419af034e4f27181792071c77c8f2e4546a6199e3b",
+      "document_id": "flask-testing",
+      "score": 8.236318171272249,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L51-L101",
+      "text": "to\nset up and tear down resources.\n\n.. code-block:: python\n\n    import pytest\n    from my_project import create_app\n\n    @pytest.fixture()\n    def app():\n        app = create_app()\n        app.config.update({\n            \"TESTING\": True,\n        })\n\n        # other setup can go here\n\n        yield app\n\n        # clean up / reset resources here\n\n\n    @pytest.fixture()\n    def client(app):\n        return app.test_client()\n\n\n    @pytest.fixture()\n    def runner(app):\n        return app.test_cli_runner()\n\n\nSending Requests with the Test Client\n-------------------------------------\n\nThe test client makes requests to the application without running a live\nserver. Flask's client extends\n:doc:`Werkzeug's client <werkzeug:test>`, see those docs for additional\ninformation.\n\nThe ``client`` has methods that match the common HTTP request methods,\nsuch as ``client.get()`` and ``client.post()``. They take many arguments\nfor building the request; you can find the full documentation in\n:class:`~werkzeug.test.EnvironBuilder`. Typically you'll use ``path``,\n``query_string``, ``headers``, and ``data`` or ``json``.\n\nTo make a request, call the method the request should use with the path\nto the route to test. A :class:`~werkzeug.test.TestResponse` is returned\nto examine the response data. It has all the usual properties of a\nresponse object. You'll usually look at ``response.data``, which is the\nbytes returned by the view. If you want to"
+    },
+    {
+      "chunk_id": "9791310ebcfdf6a963f4c6718ef43842302b44324c4ad960de84c73755ecb479",
+      "document_id": "flask-testing",
+      "score": 5.701397237932195,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L98-L129",
+      "text": "the route to test. A :class:`~werkzeug.test.TestResponse` is returned\nto examine the response data. It has all the usual properties of a\nresponse object. You'll usually look at ``response.data``, which is the\nbytes returned by the view. If you want to use text, Werkzeug 2.1\nprovides ``response.text``, or use ``response.get_data(as_text=True)``.\n\n.. code-block:: python\n\n    def test_request_example(client):\n        response = client.get(\"/posts\")\n        assert b\"<h2>Hello, World!</h2>\" in response.data\n\n\nPass a dict ``query_string={\"key\": \"value\", ...}`` to set arguments in\nthe query string (after the ``?`` in the URL). Pass a dict\n``headers={}`` to set request headers.\n\nTo send a request body in a POST or PUT request, pass a value to\n``data``. If raw bytes are passed, that exact body is used. Usually,\nyou'll pass a dict to set form data.\n\n\nForm Data\n~~~~~~~~~\n\nTo send form data, pass a dict to ``data``. The ``Content-Type`` header\nwill be set to ``multipart/form-data`` or\n``application/x-www-form-urlencoded`` automatically.\n\nIf a value is a file object opened for reading bytes (``\"rb\"`` mode), it\nwill be treated as an uploaded file. To change the detected filename and\ncontent type, pass a ``(file, filename,"
+    }
+  ],
+  "context_limit_characters": 12000,
+  "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"answer\\\": \\\"response.json\\\", \\\"citations\\\": [\\\"558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2\\\"], \\\"abstain\\\": false}\"}}],\"created\":1794672107,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":79,\"prompt_tokens\":1425,\"total_tokens\":1504,\"prompt_tokens_details\":{\"cached_tokens\":92}},\"id\":\"chatcmpl-d6qKj295esEpAkR27SRmg9j13aRXaBUr\",\"timings\":{\"cache_n\":92,\"prompt_n\":1333,\"prompt_ms\":5011.01,\"prompt_per_token_ms\":3.7591972993248315,\"prompt_per_second\":266.0142366508947,\"predicted_n\":79,\"predicted_ms\":2233.575,\"predicted_per_token_ms\":28.635576923076922,\"predicted_per_second\":34.921594305093855}}",
+  "status": "answered",
+  "reason": "contract_valid",
+  "usage": {
+    "prompt_tokens": 1425,
+    "completion_tokens": 79,
+    "total_tokens": 1504
+  }
+}

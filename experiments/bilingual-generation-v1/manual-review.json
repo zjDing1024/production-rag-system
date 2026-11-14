@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "review_method": "Post-run manual review of the question, original model content, and actually supplied context. Not an automated semantic judge or independent benchmark. Technical identifier-only answers are accepted for both languages; this is not a Chinese fluency measure.",
+  "reviews": [
+    {
+      "case_id": "a01-en",
+      "mode": "baseline_text",
+      "verdict": "incorrect_abstention",
+      "answer_supported_and_correct": null,
+      "note": "history is explicitly supplied, but the model refuses.",
+      "gold_fact_visible_in_context": true,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "a01-en",
+      "mode": "structured_json_schema",
+      "verdict": "correct_supported_answer",
+      "answer_supported_and_correct": true,
+      "note": "Exact technical attribute answers the question and is supported by the supplied excerpt.",
+      "gold_fact_visible_in_context": true,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "a01-zh",
+      "mode": "baseline_text",
+      "verdict": "incorrect_abstention",
+      "answer_supported_and_correct": null,
+      "note": "history is explicitly supplied, but the model refuses.",
+      "gold_fact_visible_in_context": true,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "a01-zh",
+      "mode": "structured_json_schema",
+      "verdict": "correct_supported_answer",
+      "answer_supported_and_correct": true,
+      "note": "Exact technical attribute answers the question and is supported by the supplied excerpt.",
+      "gold_fact_visible_in_context": true,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "a02-en",
+      "mode": "baseline_text",
+      "verdict": "wrong_answer",
+      "answer_supported_and_correct": false,
+      "note": "Names the Result class, not the required output attribute; also lacks literal [S1].",
+      "gold_fact_visible_in_context": true,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "a02-en",
+      "mode": "structured_json_schema",
+      "verdict": "correct_supported_answer",
+      "answer_supported_and_correct": true,
+      "note": "Exact technical attribute answers the question and is supported by the supplied excerpt.",
+      "gold_fact_visible_in_context": true,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "a02-zh",
+      "mode": "baseline_text",
+      "verdict": "correct_supported_answer",
+      "answer_supported_and_correct": true,
+      "note": "Correctly identifies output; S1: is not the required [S1] citation syntax.",
+      "gold_fact_visible_in_context": true,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "a02-zh",
+      "mode": "structured_json_schema",
+      "verdict": "correct_supported_answer",
+      "answer_supported_and_correct": true,
+      "note": "Exact technical attribute answers the question and is supported by the supplied excerpt.",
+      "gold_fact_visible_in_context": true,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "r01-en",
+      "mode": "baseline_text",
+      "verdict": "correct_abstention",
+      "answer_supported_and_correct": null,
+      "note": "Exact abstention marker; requested fact is not supplied.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "r01-en",
+      "mode": "structured_json_schema",
+      "verdict": "unsupported_answer",
+      "answer_supported_and_correct": false,
+      "note": "Answers from unsupported information; topic evidence or an unrelated source ID does not support the claim.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": true
+    },
+    {
+      "case_id": "r01-zh",
+      "mode": "baseline_text",
+      "verdict": "correct_abstention",
+      "answer_supported_and_correct": null,
+      "note": "Exact abstention marker; requested fact is not supplied.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "r01-zh",
+      "mode": "structured_json_schema",
+      "verdict": "unsupported_answer",
+      "answer_supported_and_correct": false,
+      "note": "Answers from unsupported information; topic evidence or an unrelated source ID does not support the claim.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": true
+    },
+    {
+      "case_id": "r02-en",
+      "mode": "baseline_text",
+      "verdict": "correct_abstention",
+      "answer_supported_and_correct": null,
+      "note": "Exact abstention marker; requested fact is not supplied.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "r02-en",
+      "mode": "structured_json_schema",
+      "verdict": "malformed_abstention",
+      "answer_supported_and_correct": null,
+      "note": "abstain=true but answer=None as a nonempty string and citations=[S1]; not a valid abstention.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "r02-zh",
+      "mode": "baseline_text",
+      "verdict": "correct_abstention",
+      "answer_supported_and_correct": null,
+      "note": "Exact abstention marker; requested fact is not supplied.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "r02-zh",
+      "mode": "structured_json_schema",
+      "verdict": "unsupported_answer",
+      "answer_supported_and_correct": false,
+      "note": "Answers from unsupported information; topic evidence or an unrelated source ID does not support the claim.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": true
+    },
+    {
+      "case_id": "m01-en",
+      "mode": "baseline_text",
+      "verdict": "correct_abstention",
+      "answer_supported_and_correct": null,
+      "note": "Exact abstention marker; requested fact is not supplied.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "m01-en",
+      "mode": "structured_json_schema",
+      "verdict": "unsupported_answer",
+      "answer_supported_and_correct": false,
+      "note": "Answers from unsupported information; topic evidence or an unrelated source ID does not support the claim.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": true
+    },
+    {
+      "case_id": "m01-zh",
+      "mode": "baseline_text",
+      "verdict": "correct_abstention",
+      "answer_supported_and_correct": null,
+      "note": "Exact abstention marker; requested fact is not supplied.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "m01-zh",
+      "mode": "structured_json_schema",
+      "verdict": "unsupported_answer",
+      "answer_supported_and_correct": false,
+      "note": "Answers from unsupported information; topic evidence or an unrelated source ID does not support the claim.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": true
+    },
+    {
+      "case_id": "m02-en",
+      "mode": "baseline_text",
+      "verdict": "correct_abstention",
+      "answer_supported_and_correct": null,
+      "note": "Exact abstention marker; requested fact is not supplied.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "m02-en",
+      "mode": "structured_json_schema",
+      "verdict": "unsupported_answer",
+      "answer_supported_and_correct": false,
+      "note": "Answers from unsupported information; topic evidence or an unrelated source ID does not support the claim.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": true
+    },
+    {
+      "case_id": "m02-zh",
+      "mode": "baseline_text",
+      "verdict": "correct_abstention",
+      "answer_supported_and_correct": null,
+      "note": "Exact abstention marker; requested fact is not supplied.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "m02-zh",
+      "mode": "structured_json_schema",
+      "verdict": "unsupported_answer",
+      "answer_supported_and_correct": false,
+      "note": "Answers from unsupported information; topic evidence or an unrelated source ID does not support the claim.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": true
+    },
+    {
+      "case_id": "a01-en",
+      "mode": "retrieval_pipeline",
+      "verdict": "wrong_answer",
+      "answer_supported_and_correct": false,
+      "note": "history is present in the first supplied chunk, but the answer selects an unrelated header/JSON property.",
+      "gold_fact_visible_in_context": true,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "a01-zh",
+      "mode": "retrieval_pipeline",
+      "verdict": "wrong_answer",
+      "answer_supported_and_correct": false,
+      "note": "history is present in the first supplied chunk, but the answer selects an unrelated header/JSON property.",
+      "gold_fact_visible_in_context": true,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "a02-en",
+      "mode": "retrieval_pipeline",
+      "verdict": "correct_supported_answer",
+      "answer_supported_and_correct": true,
+      "note": "output is explicitly present in the cited first chunk and answers the question.",
+      "gold_fact_visible_in_context": true,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "a02-zh",
+      "mode": "retrieval_pipeline",
+      "verdict": "malformed_abstention",
+      "answer_supported_and_correct": null,
+      "note": "abstain=true with nonempty answer string None; adapter correctly rejects. Not a valid evidence-based abstention.",
+      "gold_fact_visible_in_context": true,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "r01-en",
+      "mode": "retrieval_pipeline",
+      "verdict": "incomplete_output",
+      "answer_supported_and_correct": false,
+      "note": "Raw content fabricates a huge redirect maximum, then finish_reason=length truncates JSON. Both unsupported generation and incomplete form occurred; the adapter prevented return as an answer. HTTP succeeded; not a transport failure.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": true
+    },
+    {
+      "case_id": "r01-zh",
+      "mode": "retrieval_pipeline",
+      "verdict": "unsupported_answer",
+      "answer_supported_and_correct": false,
+      "note": "Claimed maximum of 1 is not established by any supplied excerpt. Example count or isolation is not a general limit.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": true
+    },
+    {
+      "case_id": "r02-en",
+      "mode": "retrieval_pipeline",
+      "verdict": "malformed_abstention",
+      "answer_supported_and_correct": null,
+      "note": "abstain=true with nonempty answer string None; adapter correctly rejects. Not a valid evidence-based abstention.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "r02-zh",
+      "mode": "retrieval_pipeline",
+      "verdict": "unsupported_answer",
+      "answer_supported_and_correct": false,
+      "note": "Claimed maximum of 1 is not established by any supplied excerpt. Example count or isolation is not a general limit.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": true
+    },
+    {
+      "case_id": "m01-en",
+      "mode": "retrieval_pipeline",
+      "verdict": "correct_gate_abstention",
+      "answer_supported_and_correct": null,
+      "note": "No context after retrieval gate; the model was not invoked. Not evidence of model refusal capability.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "m01-zh",
+      "mode": "retrieval_pipeline",
+      "verdict": "correct_gate_abstention",
+      "answer_supported_and_correct": null,
+      "note": "No context after retrieval gate; the model was not invoked. Not evidence of model refusal capability.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "m02-en",
+      "mode": "retrieval_pipeline",
+      "verdict": "correct_gate_abstention",
+      "answer_supported_and_correct": null,
+      "note": "No context after retrieval gate; the model was not invoked. Not evidence of model refusal capability.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": false
+    },
+    {
+      "case_id": "m02-zh",
+      "mode": "retrieval_pipeline",
+      "verdict": "correct_gate_abstention",
+      "answer_supported_and_correct": null,
+      "note": "No context after retrieval gate; the model was not invoked. Not evidence of model refusal capability.",
+      "gold_fact_visible_in_context": false,
+      "unsupported_claim_in_raw": false
+    }
+  ],
+  "second_readonly_review": "Independent AI review confirmed all four answerable facts appear in the first retrieved chunk, raw/hash consistency, and the unsupported generation hidden inside the truncated r01-en output. No additional model run."
+}

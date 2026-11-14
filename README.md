@@ -1,5 +1,18 @@
 # production-rag-system
 
+## 2026-11-15：可选本地引用回答
+
+新增检索→本地 llama.cpp→结构化回答/引用校验的完整入口，默认检索服务仍不调用模型。生成结果区分有效结构回答、证据拒答、传输错误与无效输出；合法引用不等于语义正确。模型独立启动，CI不下载模型。
+
+```bash
+mkdir -p build
+PYTHONPATH=src python -m rag_foundation.generation 'What is MAX_CONTENT_LENGTH?' \
+  --endpoint http://127.0.0.1:8080 > build/generated-answer.json
+```
+
+[引用合同与状态定义](docs/local-generation-contract.md) · [12 题实测与复现命令](experiments/bilingual-generation-v1/README.md) · [逐题结果](experiments/bilingual-generation-v1/summary.json)。真实端到端的 5 个合同有效答案中仅 1 个正确且受支持，不能作为可靠知识问答使用。以下日期段落保留当时状态。
+
+
 ## 2026-11-14：独立本地生成实验，不是 RAG 集成
 
 公开 Apache-2.0 的 Qwen3.5-0.8B Q4_0 配合官方 llama.cpp，已实际完成三条 CPU 生成请求。人工固定上下文，没有连接检索器。英文返回 `S1.`、中文答案漏引用、无依据题拒答标记多句点，按运行前要求严格 **0/3 通过**。完整保留失败，不把请求成功当回答正确。
@@ -13,6 +26,7 @@
 [协议、逐类结果与限制](docs/bilingual-challenge-report.md) · [原始结果](results/bilingual-challenge-v1.json) · [证据锚点审计](results/bilingual-challenge-v1-audit.json)
 
 ```bash
+mkdir -p build
 PYTHONPATH=src python -m rag_foundation.challenge > build/bilingual-challenge-v1.json
 PYTHONPATH=src python -m rag_foundation.challenge_audit > build/bilingual-challenge-v1-audit.json
 ```
@@ -31,6 +45,7 @@ PYTHONPATH=src python -m rag_foundation.challenge_audit > build/bilingual-challe
 Python 3.10+，运行与测试仅使用标准库，无模型下载、API Key、付费服务或网络请求。从仓库根目录运行：
 
 ```bash
+mkdir -p build
 export PYTHONPATH=src
 python -m unittest discover -s tests -v
 python -m rag_foundation ingest
@@ -95,13 +110,14 @@ docs/               设计、来源阅读与实验边界
 
 倒排索引构建线性扫描 token，单次检索访问匹配 posting 后对候选块排序。当前数据太小，不能外推规模或生产延迟；本机暖查询计量与方法见[报告](docs/day1-report.md)。
 
-下一步：增加独立审阅的难例与同义改写，比较词法/向量/混合检索，加入段落感知切分与去重，再研究带引用的生成、证据不足时拒答、文档更新及服务边界。当前未实现 embedding、reranker、LLM、权限分区、增量索引、HTTP API 或线上部署。
+下一步：优先把具体论断的证据充分性作为独立关卡，在新题上验证误答与误拒。向量检索、reranker、权限分区、增量索引及线上部署尚未完成。
 
 ## 2026-11-13：可运行本地检索服务
 
 零模型费用、零新增依赖；此版本仍是 **retrieval-only**，不是生成式 RAG。
 
 ```bash
+mkdir -p build
 PYTHONPATH=src python -m rag_foundation.service --port 8000
 # 另一终端：
 curl -s http://127.0.0.1:8000/health

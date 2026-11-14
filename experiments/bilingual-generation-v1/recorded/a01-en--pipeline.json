@@ -1,0 +1,93 @@
+{
+  "mode": "optional-local-generation",
+  "query": "Which test response attribute contains the earlier responses in a redirect chain?",
+  "answer": "The `Content-Type` header",
+  "citation_ids": [
+    "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2"
+  ],
+  "citations": [
+    {
+      "chunk_id": "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L155-L207"
+    }
+  ],
+  "semantic_support": "unverified",
+  "retrieval": {
+    "mode": "retrieval-only",
+    "answer": null,
+    "answerability": "unverified",
+    "status": "candidates",
+    "query": "Which test response attribute contains the earlier responses in a redirect chain?",
+    "effective_query": "Which test response attribute contains the earlier responses in a redirect chain?",
+    "aliases": [],
+    "untranslated_cjk": false,
+    "policy": {
+      "version": "lexical-coverage-v1",
+      "enabled": true,
+      "threshold": 0.6,
+      "coverage": 0.875,
+      "missing_terms": [
+        "chain"
+      ],
+      "passed": true,
+      "meaning": "corpus-vocabulary coverage, not confidence"
+    },
+    "chunks_sha256": "de8a54066e25aa135724924ebae09e960884bbfc292429d0324e62320140b9de",
+    "results": [
+      {
+        "chunk_id": "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+        "document_id": "flask-testing",
+        "score": 20.481979072350427,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L155-L207",
+        "text": "The ``Content-Type``\nheader will be set to ``application/json`` automatically.\n\nSimilarly, if the response contains JSON data, the ``response.json``\nattribute will contain the deserialized object.\n\n.. code-block:: python\n\n    def test_json_data(client):\n        response = client.post(\"/graphql\", json={\n            \"query\": \"\"\"\n                query User($id: String!) {\n                    user(id: $id) {\n                        name\n                        theme\n                        picture_url\n                    }\n                }\n            \"\"\",\n            variables={\"id\": 2},\n        })\n        assert response.json[\"data\"][\"user\"][\"name\"] == \"Flask\"\n\n\nFollowing Redirects\n-------------------\n\nBy default, the client does not make additional requests if the response\nis a redirect. By passing ``follow_redirects=True`` to a request method,\nthe client will continue to make requests until a non-redirect response\nis returned.\n\n:attr:`TestResponse.history <werkzeug.test.TestResponse.history>` is\na tuple of the responses that led up to the final response. Each\nresponse has a :attr:`~werkzeug.test.TestResponse.request` attribute\nwhich records the request that produced that response.\n\n.. code-block:: python\n\n    def test_logout_redirect(client):\n        response = client.get(\"/logout\", follow_redirects=True)\n        # Check that there was one redirect response.\n        assert len(response.history) == 1\n        # Check that the second request was to the index page.\n        assert response.request.path == \"/index\"\n\n\nAccessing and Modifying the Session\n-----------------------------------\n\nTo access Flask's context variables, mainly\n:data:`~flask.session`, use the client in a ``with`` statement.\nThe app"
+      },
+      {
+        "chunk_id": "e3a3d805b82848f5e014248b9f1a90dc3a76f28594a8fbaab266ab62b09c5e7d",
+        "document_id": "flask-quickstart",
+        "score": 10.896022161333132,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L645-L687",
+        "text": "user to another endpoint, use the :func:`~flask.redirect`\nfunction; to abort a request early with an error code, use the\n:func:`~flask.abort` function::\n\n    from flask import abort, redirect, url_for\n\n    @app.route('/')\n    def index():\n        return redirect(url_for('login'))\n\n    @app.route('/login')\n    def login():\n        abort(401)\n        this_is_never_executed()\n\nThis is a rather pointless example because a user will be redirected from\nthe index to a page they cannot access (401 means access denied) but it\nshows how that works.\n\nBy default a black and white error page is shown for each error code.  If\nyou want to customize the error page, you can use the\n:meth:`~flask.Flask.errorhandler` decorator::\n\n    from flask import render_template\n\n    @app.errorhandler(404)\n    def page_not_found(error):\n        return render_template('page_not_found.html'), 404\n\nNote the ``404`` after the :func:`~flask.render_template` call.  This\ntells Flask that the status code of that page should be 404 which means\nnot found.  By default 200 is assumed which translates to: all went well.\n\nSee :doc:`errorhandling` for more details.\n\n.. _about-responses:\n\nAbout Responses\n---------------\n\nThe return value from a view function is automatically converted into\na response object for you. If the return value is a string it's\nconverted into a response object"
+      },
+      {
+        "chunk_id": "c95547ee0b31a13d5600da044aaa02ce72302608499ef6400027d82d35c35495",
+        "document_id": "flask-testing",
+        "score": 10.765279563941512,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L124-L167",
+        "text": "be set to ``multipart/form-data`` or\n``application/x-www-form-urlencoded`` automatically.\n\nIf a value is a file object opened for reading bytes (``\"rb\"`` mode), it\nwill be treated as an uploaded file. To change the detected filename and\ncontent type, pass a ``(file, filename, content_type)`` tuple. File\nobjects will be closed after making the request, so they do not need to\nuse the usual ``with open() as f:`` pattern.\n\nIt can be useful to store files in a ``tests/resources`` folder, then\nuse ``pathlib.Path`` to get files relative to the current test file.\n\n.. code-block:: python\n\n    from pathlib import Path\n\n    # get the resources folder in the tests folder\n    resources = Path(__file__).parent / \"resources\"\n\n    def test_edit_user(client):\n        response = client.post(\"/user/2/edit\", data={\n            \"name\": \"Flask\",\n            \"theme\": \"dark\",\n            \"picture\": (resources / \"picture.png\").open(\"rb\"),\n        })\n        assert response.status_code == 200\n\n\nJSON Data\n~~~~~~~~~\n\nTo send JSON data, pass an object to ``json``. The ``Content-Type``\nheader will be set to ``application/json`` automatically.\n\nSimilarly, if the response contains JSON data, the ``response.json``\nattribute will contain the deserialized object.\n\n.. code-block:: python\n\n    def test_json_data(client):\n        response = client.post(\"/graphql\", json={\n            \"query\": \"\"\"\n                query User($id: String!) {\n                    user(id:"
+      }
+    ],
+    "candidate_count_before_gate": 3
+  },
+  "context": [
+    {
+      "chunk_id": "558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2",
+      "document_id": "flask-testing",
+      "score": 20.481979072350427,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L155-L207",
+      "text": "The ``Content-Type``\nheader will be set to ``application/json`` automatically.\n\nSimilarly, if the response contains JSON data, the ``response.json``\nattribute will contain the deserialized object.\n\n.. code-block:: python\n\n    def test_json_data(client):\n        response = client.post(\"/graphql\", json={\n            \"query\": \"\"\"\n                query User($id: String!) {\n                    user(id: $id) {\n                        name\n                        theme\n                        picture_url\n                    }\n                }\n            \"\"\",\n            variables={\"id\": 2},\n        })\n        assert response.json[\"data\"][\"user\"][\"name\"] == \"Flask\"\n\n\nFollowing Redirects\n-------------------\n\nBy default, the client does not make additional requests if the response\nis a redirect. By passing ``follow_redirects=True`` to a request method,\nthe client will continue to make requests until a non-redirect response\nis returned.\n\n:attr:`TestResponse.history <werkzeug.test.TestResponse.history>` is\na tuple of the responses that led up to the final response. Each\nresponse has a :attr:`~werkzeug.test.TestResponse.request` attribute\nwhich records the request that produced that response.\n\n.. code-block:: python\n\n    def test_logout_redirect(client):\n        response = client.get(\"/logout\", follow_redirects=True)\n        # Check that there was one redirect response.\n        assert len(response.history) == 1\n        # Check that the second request was to the index page.\n        assert response.request.path == \"/index\"\n\n\nAccessing and Modifying the Session\n-----------------------------------\n\nTo access Flask's context variables, mainly\n:data:`~flask.session`, use the client in a ``with`` statement.\nThe app"
+    },
+    {
+      "chunk_id": "e3a3d805b82848f5e014248b9f1a90dc3a76f28594a8fbaab266ab62b09c5e7d",
+      "document_id": "flask-quickstart",
+      "score": 10.896022161333132,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L645-L687",
+      "text": "user to another endpoint, use the :func:`~flask.redirect`\nfunction; to abort a request early with an error code, use the\n:func:`~flask.abort` function::\n\n    from flask import abort, redirect, url_for\n\n    @app.route('/')\n    def index():\n        return redirect(url_for('login'))\n\n    @app.route('/login')\n    def login():\n        abort(401)\n        this_is_never_executed()\n\nThis is a rather pointless example because a user will be redirected from\nthe index to a page they cannot access (401 means access denied) but it\nshows how that works.\n\nBy default a black and white error page is shown for each error code.  If\nyou want to customize the error page, you can use the\n:meth:`~flask.Flask.errorhandler` decorator::\n\n    from flask import render_template\n\n    @app.errorhandler(404)\n    def page_not_found(error):\n        return render_template('page_not_found.html'), 404\n\nNote the ``404`` after the :func:`~flask.render_template` call.  This\ntells Flask that the status code of that page should be 404 which means\nnot found.  By default 200 is assumed which translates to: all went well.\n\nSee :doc:`errorhandling` for more details.\n\n.. _about-responses:\n\nAbout Responses\n---------------\n\nThe return value from a view function is automatically converted into\na response object for you. If the return value is a string it's\nconverted into a response object"
+    },
+    {
+      "chunk_id": "c95547ee0b31a13d5600da044aaa02ce72302608499ef6400027d82d35c35495",
+      "document_id": "flask-testing",
+      "score": 10.765279563941512,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L124-L167",
+      "text": "be set to ``multipart/form-data`` or\n``application/x-www-form-urlencoded`` automatically.\n\nIf a value is a file object opened for reading bytes (``\"rb\"`` mode), it\nwill be treated as an uploaded file. To change the detected filename and\ncontent type, pass a ``(file, filename, content_type)`` tuple. File\nobjects will be closed after making the request, so they do not need to\nuse the usual ``with open() as f:`` pattern.\n\nIt can be useful to store files in a ``tests/resources`` folder, then\nuse ``pathlib.Path`` to get files relative to the current test file.\n\n.. code-block:: python\n\n    from pathlib import Path\n\n    # get the resources folder in the tests folder\n    resources = Path(__file__).parent / \"resources\"\n\n    def test_edit_user(client):\n        response = client.post(\"/user/2/edit\", data={\n            \"name\": \"Flask\",\n            \"theme\": \"dark\",\n            \"picture\": (resources / \"picture.png\").open(\"rb\"),\n        })\n        assert response.status_code == 200\n\n\nJSON Data\n~~~~~~~~~\n\nTo send JSON data, pass an object to ``json``. The ``Content-Type``\nheader will be set to ``application/json`` automatically.\n\nSimilarly, if the response contains JSON data, the ``response.json``\nattribute will contain the deserialized object.\n\n.. code-block:: python\n\n    def test_json_data(client):\n        response = client.post(\"/graphql\", json={\n            \"query\": \"\"\"\n                query User($id: String!) {\n                    user(id:"
+    }
+  ],
+  "context_limit_characters": 12000,
+  "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"answer\\\": \\\"The `Content-Type` header\\\", \\\"citations\\\": [\\\"558949fb3b394e69f7bf2ec504b88e1d1215238c56c342c1d8ca155e3ccea4a2\\\"], \\\"abstain\\\": false}\"}}],\"created\":1794672100,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":83,\"prompt_tokens\":1471,\"total_tokens\":1554,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"id\":\"chatcmpl-yXxsleQRBi9X65MgHgEbXJvdOAhqVcgU\",\"timings\":{\"cache_n\":0,\"prompt_n\":1471,\"prompt_ms\":5010.788,\"prompt_per_token_ms\":3.4063820530251525,\"prompt_per_second\":293.5666007023247,\"predicted_n\":83,\"predicted_ms\":2229.988,\"predicted_per_token_ms\":27.194975609756096,\"predicted_per_second\":36.77149832196407}}",
+  "status": "answered",
+  "reason": "contract_valid",
+  "usage": {
+    "prompt_tokens": 1471,
+    "completion_tokens": 83,
+    "total_tokens": 1554
+  }
+}
