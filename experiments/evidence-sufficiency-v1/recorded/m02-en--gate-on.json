@@ -1,0 +1,95 @@
+{
+  "mode": "optional-local-generation",
+  "query": "What full format name does the abbreviation PNG stand for?",
+  "answer": null,
+  "citation_ids": [],
+  "citations": [],
+  "semantic_support": "unverified",
+  "retrieval": {
+    "mode": "retrieval-only",
+    "answer": null,
+    "answerability": "unverified",
+    "status": "candidates",
+    "query": "What full format name does the abbreviation PNG stand for?",
+    "effective_query": "What full format name does the abbreviation PNG stand for?",
+    "aliases": [],
+    "untranslated_cjk": false,
+    "policy": {
+      "version": "lexical-coverage-v1",
+      "enabled": true,
+      "threshold": 0.6,
+      "coverage": 0.6666666666666666,
+      "missing_terms": [
+        "abbreviation",
+        "stand"
+      ],
+      "passed": true,
+      "meaning": "corpus-vocabulary coverage, not confidence"
+    },
+    "chunks_sha256": "de8a54066e25aa135724924ebae09e960884bbfc292429d0324e62320140b9de",
+    "results": [
+      {
+        "chunk_id": "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+        "document_id": "flask-quickstart",
+        "score": 6.181591825084815,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L532-L562",
+        "text": "the request method\n        # was GET or the credentials were invalid\n        return render_template('login.html', error=error)\n\nWhat happens if the key does not exist in the ``form`` attribute?  In that\ncase a special :exc:`KeyError` is raised.  You can catch it like a\nstandard :exc:`KeyError` but if you don't do that, a HTTP 400 Bad Request\nerror page is shown instead.  So for many situations you don't have to\ndeal with that problem.\n\nTo access parameters submitted in the URL (``?key=value``) you can use the\n:attr:`~flask.Request.args` attribute::\n\n    searchword = request.args.get('key', '')\n\nWe recommend accessing URL parameters with `get` or by catching the\n:exc:`KeyError` because users might change the URL and presenting them a 400\nbad request page in that case is not user friendly.\n\nFor a full list of methods and attributes of the request object, head over\nto the :class:`~flask.Request` documentation.\n\n\nFile Uploads\n````````````\n\nYou can handle uploaded files with Flask easily.  Just make sure not to\nforget to set the ``enctype=\"multipart/form-data\"`` attribute on your HTML\nform, otherwise the browser will not transmit your files at all.\n\nUploaded files are stored in"
+      },
+      {
+        "chunk_id": "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97",
+        "document_id": "flask-config",
+        "score": 6.161612957245724,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L265-L306",
+        "text": "in a 400 error. If it is ``None``, all\n    hosts are valid. Each value is either an exact match, or can start with\n    a dot ``.`` to match any subdomain.\n\n    Validation is done during routing against this value. ``before_request`` and\n    ``after_request`` callbacks will still be called.\n\n    Default: ``None``\n\n    .. versionadded:: 3.1\n\n.. py:data:: SERVER_NAME\n\n    Inform the application what host and port it is bound to.\n\n    Must be set if ``subdomain_matching`` is enabled, to be able to extract the\n    subdomain from the request.\n\n    Must be set for ``url_for`` to generate external URLs outside of a\n    request context.\n\n    Default: ``None``\n\n    .. versionchanged:: 3.1\n        Does not restrict requests to only this domain, for both\n        ``subdomain_matching`` and ``host_matching``.\n\n    .. versionchanged:: 1.0\n        Does not implicitly enable ``subdomain_matching``.\n\n    .. versionchanged:: 2.3\n        Does not affect ``SESSION_COOKIE_DOMAIN``.\n\n.. py:data:: APPLICATION_ROOT\n\n    Inform the application what path it is mounted under by the application /\n    web server.  This is used for generating URLs outside the context of a\n    request (inside a request, the dispatcher is responsible for setting\n    ``SCRIPT_NAME`` instead; see :doc:`/patterns/appdispatch`\n    for examples of dispatch configuration).\n\n    Will be used"
+      },
+      {
+        "chunk_id": "89243a750eb704a7130659dc7301c95f4f2e9f9379496a89e855c10fd8d012b1",
+        "document_id": "flask-quickstart",
+        "score": 5.8481367581675245,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L501-L537",
+        "text": "The other possibility is passing a whole WSGI environment to the\n:meth:`~flask.Flask.request_context` method::\n\n    with app.request_context(environ):\n        assert request.method == 'POST'\n\nThe Request Object\n``````````````````\n\nThe request object is documented in the API section and we will not cover\nit here in detail (see :class:`~flask.Request`). Here is a broad overview of\nsome of the most common operations.  First of all you have to import it from\nthe ``flask`` module::\n\n    from flask import request\n\nThe current request method is available by using the\n:attr:`~flask.Request.method` attribute.  To access form data (data\ntransmitted in a ``POST`` or ``PUT`` request) you can use the\n:attr:`~flask.Request.form` attribute.  Here is a full example of the two\nattributes mentioned above::\n\n    @app.route('/login', methods=['POST', 'GET'])\n    def login():\n        error = None\n        if request.method == 'POST':\n            if valid_login(request.form['username'],\n                           request.form['password']):\n                return log_the_user_in(request.form['username'])\n            else:\n                error = 'Invalid username/password'\n        # the code below is executed if the request method\n        # was GET or the credentials were invalid\n        return render_template('login.html', error=error)\n\nWhat happens if the key does not exist in the ``form`` attribute?  In that\ncase a special :exc:`KeyError` is raised.  You can catch it like a"
+      }
+    ],
+    "candidate_count_before_gate": 3
+  },
+  "context": [
+    {
+      "chunk_id": "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+      "document_id": "flask-quickstart",
+      "score": 6.181591825084815,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L532-L562",
+      "text": "the request method\n        # was GET or the credentials were invalid\n        return render_template('login.html', error=error)\n\nWhat happens if the key does not exist in the ``form`` attribute?  In that\ncase a special :exc:`KeyError` is raised.  You can catch it like a\nstandard :exc:`KeyError` but if you don't do that, a HTTP 400 Bad Request\nerror page is shown instead.  So for many situations you don't have to\ndeal with that problem.\n\nTo access parameters submitted in the URL (``?key=value``) you can use the\n:attr:`~flask.Request.args` attribute::\n\n    searchword = request.args.get('key', '')\n\nWe recommend accessing URL parameters with `get` or by catching the\n:exc:`KeyError` because users might change the URL and presenting them a 400\nbad request page in that case is not user friendly.\n\nFor a full list of methods and attributes of the request object, head over\nto the :class:`~flask.Request` documentation.\n\n\nFile Uploads\n````````````\n\nYou can handle uploaded files with Flask easily.  Just make sure not to\nforget to set the ``enctype=\"multipart/form-data\"`` attribute on your HTML\nform, otherwise the browser will not transmit your files at all.\n\nUploaded files are stored in"
+    },
+    {
+      "chunk_id": "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97",
+      "document_id": "flask-config",
+      "score": 6.161612957245724,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L265-L306",
+      "text": "in a 400 error. If it is ``None``, all\n    hosts are valid. Each value is either an exact match, or can start with\n    a dot ``.`` to match any subdomain.\n\n    Validation is done during routing against this value. ``before_request`` and\n    ``after_request`` callbacks will still be called.\n\n    Default: ``None``\n\n    .. versionadded:: 3.1\n\n.. py:data:: SERVER_NAME\n\n    Inform the application what host and port it is bound to.\n\n    Must be set if ``subdomain_matching`` is enabled, to be able to extract the\n    subdomain from the request.\n\n    Must be set for ``url_for`` to generate external URLs outside of a\n    request context.\n\n    Default: ``None``\n\n    .. versionchanged:: 3.1\n        Does not restrict requests to only this domain, for both\n        ``subdomain_matching`` and ``host_matching``.\n\n    .. versionchanged:: 1.0\n        Does not implicitly enable ``subdomain_matching``.\n\n    .. versionchanged:: 2.3\n        Does not affect ``SESSION_COOKIE_DOMAIN``.\n\n.. py:data:: APPLICATION_ROOT\n\n    Inform the application what path it is mounted under by the application /\n    web server.  This is used for generating URLs outside the context of a\n    request (inside a request, the dispatcher is responsible for setting\n    ``SCRIPT_NAME`` instead; see :doc:`/patterns/appdispatch`\n    for examples of dispatch configuration).\n\n    Will be used"
+    },
+    {
+      "chunk_id": "89243a750eb704a7130659dc7301c95f4f2e9f9379496a89e855c10fd8d012b1",
+      "document_id": "flask-quickstart",
+      "score": 5.8481367581675245,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L501-L537",
+      "text": "The other possibility is passing a whole WSGI environment to the\n:meth:`~flask.Flask.request_context` method::\n\n    with app.request_context(environ):\n        assert request.method == 'POST'\n\nThe Request Object\n``````````````````\n\nThe request object is documented in the API section and we will not cover\nit here in detail (see :class:`~flask.Request`). Here is a broad overview of\nsome of the most common operations.  First of all you have to import it from\nthe ``flask`` module::\n\n    from flask import request\n\nThe current request method is available by using the\n:attr:`~flask.Request.method` attribute.  To access form data (data\ntransmitted in a ``POST`` or ``PUT`` request) you can use the\n:attr:`~flask.Request.form` attribute.  Here is a full example of the two\nattributes mentioned above::\n\n    @app.route('/login', methods=['POST', 'GET'])\n    def login():\n        error = None\n        if request.method == 'POST':\n            if valid_login(request.form['username'],\n                           request.form['password']):\n                return log_the_user_in(request.form['username'])\n            else:\n                error = 'Invalid username/password'\n        # the code below is executed if the request method\n        # was GET or the credentials were invalid\n        return render_template('login.html', error=error)\n\nWhat happens if the key does not exist in the ``form`` attribute?  In that\ncase a special :exc:`KeyError` is raised.  You can catch it like a"
+    }
+  ],
+  "context_limit_characters": 12000,
+  "raw_response": null,
+  "evidence_gate": {
+    "policy": "local-evidence-screen-v1",
+    "semantic_sufficiency": "model_judgment_unverified",
+    "context_ids": [
+      "3cfa60d8ed2664d71a49a033b9987fe1cbf5e3be33785d324b5e870ca796abf8",
+      "c700a00eb41b9683731999b3312a847b949449878efc9dcb8800aa2367b48c97",
+      "89243a750eb704a7130659dc7301c95f4f2e9f9379496a89e855c10fd8d012b1"
+    ],
+    "evidence": [],
+    "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"sufficient\\\": true,\\n  \\\"evidence\\\": [\\n    {\\n      \\\"chunk_id\\\": \\\"89243a750eb704a7130659dc7301c95f4f2e9f9379496a89e855c10fd8d012b1\\\",\\n      \\\"quote\\\": \\\"The other possibility is passing a whole WSGI environment to the :meth:`~flask.Flask.request_context` method::\\\"\\n    },\\n    {\\n      \\\"chunk_id\\\": \\\"89243a750eb704a7130659dc7301c95f4f2e9f9379496a89e855c10fd8d012b1\\\",\\n      \\\"quote\\\": \\\"The current request method is available by using the :attr:`~flask.Request.method` attribute.\\\"\\n    }\\n  ]\\n}\"}}],\"created\":1794759224,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":229,\"prompt_tokens\":1410,\"total_tokens\":1639,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"id\":\"chatcmpl-OB0bMQKlqGXxQpD6cLTzJKNALWUg6AUk\",\"timings\":{\"cache_n\":0,\"prompt_n\":1410,\"prompt_ms\":4182.984,\"prompt_per_token_ms\":2.9666553191489364,\"prompt_per_second\":337.07994101818224,\"predicted_n\":229,\"predicted_ms\":5268.819,\"predicted_per_token_ms\":23.108855263157896,\"predicted_per_second\":43.27345463945525}}",
+    "status": "invalid_response",
+    "reason": "ValueError"
+  },
+  "status": "invalid_response",
+  "reason": "sufficiency_gate_ValueError"
+}

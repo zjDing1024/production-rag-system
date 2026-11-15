@@ -1,0 +1,326 @@
+{
+  "scope": "Post-hoc rejection diagnosis only. Whitespace normalization is not used by the production gate, not a repaired arm, and does not establish entailment.",
+  "gate_rows": [
+    {
+      "case_id": "a01-en",
+      "raw_sufficient": true,
+      "manual_sufficient": true,
+      "validated_status": "invalid_response",
+      "finish_reason": "stop",
+      "validation_error": "ValueError: quote must be an exact supplied excerpt span",
+      "quotes": 2
+    },
+    {
+      "case_id": "a01-zh",
+      "raw_sufficient": true,
+      "manual_sufficient": true,
+      "validated_status": "invalid_response",
+      "finish_reason": "stop",
+      "validation_error": "ValueError: quote must be an exact supplied excerpt span",
+      "quotes": 2
+    },
+    {
+      "case_id": "a02-en",
+      "raw_sufficient": true,
+      "manual_sufficient": true,
+      "validated_status": "invalid_response",
+      "finish_reason": "stop",
+      "validation_error": "ValueError: quote must be an exact supplied excerpt span",
+      "quotes": 2
+    },
+    {
+      "case_id": "a02-zh",
+      "raw_sufficient": true,
+      "manual_sufficient": true,
+      "validated_status": "invalid_response",
+      "finish_reason": "stop",
+      "validation_error": "ValueError: quote must be an exact supplied excerpt span",
+      "quotes": 2
+    },
+    {
+      "case_id": "r01-en",
+      "raw_sufficient": true,
+      "manual_sufficient": false,
+      "validated_status": "invalid_response",
+      "finish_reason": "stop",
+      "validation_error": "ValueError: quote must be an exact supplied excerpt span",
+      "quotes": 3
+    },
+    {
+      "case_id": "r01-zh",
+      "raw_sufficient": true,
+      "manual_sufficient": false,
+      "validated_status": "invalid_response",
+      "finish_reason": "stop",
+      "validation_error": "ValueError: quote must be an exact supplied excerpt span",
+      "quotes": 3
+    },
+    {
+      "case_id": "r02-en",
+      "raw_sufficient": true,
+      "manual_sufficient": false,
+      "validated_status": "invalid_response",
+      "finish_reason": "stop",
+      "validation_error": "ValueError: quote must be an exact supplied excerpt span",
+      "quotes": 3
+    },
+    {
+      "case_id": "r02-zh",
+      "raw_sufficient": true,
+      "manual_sufficient": false,
+      "validated_status": "invalid_response",
+      "finish_reason": "stop",
+      "validation_error": "ValueError: quote must be an exact supplied excerpt span",
+      "quotes": 2
+    },
+    {
+      "case_id": "m02-en",
+      "raw_sufficient": true,
+      "manual_sufficient": false,
+      "validated_status": "invalid_response",
+      "finish_reason": "stop",
+      "validation_error": "ValueError: quote must be an exact supplied excerpt span",
+      "quotes": 2
+    },
+    {
+      "case_id": "m02-zh",
+      "raw_sufficient": true,
+      "manual_sufficient": false,
+      "validated_status": "invalid_response",
+      "finish_reason": "stop",
+      "validation_error": "ValueError: quote must be an exact supplied excerpt span",
+      "quotes": 2
+    },
+    {
+      "case_id": "d01-en-full",
+      "raw_sufficient": true,
+      "manual_sufficient": true,
+      "validated_status": "invalid_response",
+      "finish_reason": "stop",
+      "validation_error": "ValueError: quote must be an exact supplied excerpt span",
+      "quotes": 2
+    },
+    {
+      "case_id": "d01-en-value_removed",
+      "raw_sufficient": true,
+      "manual_sufficient": false,
+      "validated_status": "invalid_response",
+      "finish_reason": "stop",
+      "validation_error": "ValueError: quote must be an exact supplied excerpt span",
+      "quotes": 2
+    },
+    {
+      "case_id": "d01-zh-full",
+      "raw_sufficient": true,
+      "manual_sufficient": true,
+      "validated_status": "invalid_response",
+      "finish_reason": "stop",
+      "validation_error": "ValueError: quote must be an exact supplied excerpt span",
+      "quotes": 2
+    },
+    {
+      "case_id": "d01-zh-value_removed",
+      "raw_sufficient": true,
+      "manual_sufficient": false,
+      "validated_status": "invalid_response",
+      "finish_reason": "stop",
+      "validation_error": "ValueError: quote must be an exact supplied excerpt span",
+      "quotes": 2
+    }
+  ],
+  "quote_rows": [
+    {
+      "case_id": "a01-en",
+      "quote_index": 0,
+      "category": "not_found_after_whitespace_normalization",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "a01-en",
+      "quote_index": 1,
+      "category": "not_found_after_whitespace_normalization",
+      "duplicate_pair": true
+    },
+    {
+      "case_id": "a01-zh",
+      "quote_index": 0,
+      "category": "not_found_after_whitespace_normalization",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "a01-zh",
+      "quote_index": 1,
+      "category": "not_found_after_whitespace_normalization",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "a02-en",
+      "quote_index": 0,
+      "category": "whitespace_only_selected_span",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "a02-en",
+      "quote_index": 1,
+      "category": "other_supplied_chunk",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "a02-zh",
+      "quote_index": 0,
+      "category": "whitespace_only_selected_span",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "a02-zh",
+      "quote_index": 1,
+      "category": "other_supplied_chunk",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "r01-en",
+      "quote_index": 0,
+      "category": "not_found_after_whitespace_normalization",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "r01-en",
+      "quote_index": 1,
+      "category": "not_found_after_whitespace_normalization",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "r01-en",
+      "quote_index": 2,
+      "category": "other_supplied_chunk",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "r01-zh",
+      "quote_index": 0,
+      "category": "not_found_after_whitespace_normalization",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "r01-zh",
+      "quote_index": 1,
+      "category": "not_found_after_whitespace_normalization",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "r01-zh",
+      "quote_index": 2,
+      "category": "not_found_after_whitespace_normalization",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "r02-en",
+      "quote_index": 0,
+      "category": "whitespace_only_selected_span",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "r02-en",
+      "quote_index": 1,
+      "category": "whitespace_only_selected_span",
+      "duplicate_pair": true
+    },
+    {
+      "case_id": "r02-en",
+      "quote_index": 2,
+      "category": "whitespace_only_selected_span",
+      "duplicate_pair": true
+    },
+    {
+      "case_id": "r02-zh",
+      "quote_index": 0,
+      "category": "whitespace_only_selected_span",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "r02-zh",
+      "quote_index": 1,
+      "category": "whitespace_only_selected_span",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "m02-en",
+      "quote_index": 0,
+      "category": "whitespace_only_selected_span",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "m02-en",
+      "quote_index": 1,
+      "category": "whitespace_only_selected_span",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "m02-zh",
+      "quote_index": 0,
+      "category": "whitespace_only_selected_span",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "m02-zh",
+      "quote_index": 1,
+      "category": "whitespace_only_selected_span",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "d01-en-full",
+      "quote_index": 0,
+      "category": "not_found_after_whitespace_normalization",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "d01-en-full",
+      "quote_index": 1,
+      "category": "whitespace_only_selected_span",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "d01-en-value_removed",
+      "quote_index": 0,
+      "category": "not_found_after_whitespace_normalization",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "d01-en-value_removed",
+      "quote_index": 1,
+      "category": "exact_selected_span",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "d01-zh-full",
+      "quote_index": 0,
+      "category": "not_found_after_whitespace_normalization",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "d01-zh-full",
+      "quote_index": 1,
+      "category": "not_found_after_whitespace_normalization",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "d01-zh-value_removed",
+      "quote_index": 0,
+      "category": "not_found_after_whitespace_normalization",
+      "duplicate_pair": false
+    },
+    {
+      "case_id": "d01-zh-value_removed",
+      "quote_index": 1,
+      "category": "exact_selected_span",
+      "duplicate_pair": false
+    }
+  ],
+  "quote_category_counts": {
+    "not_found_after_whitespace_normalization": 14,
+    "whitespace_only_selected_span": 12,
+    "other_supplied_chunk": 3,
+    "exact_selected_span": 2
+  },
+  "duplicate_pairs": 3
+}

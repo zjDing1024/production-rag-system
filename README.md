@@ -1,5 +1,61 @@
 # production-rag-system
 
+离线可追溯检索 + 可选本地生成原型。它不是生产级或可靠知识问答系统。
+
+## 先选你要审核的路径
+
+### 1. 离线检索：不下载模型
+
+Python 3.10+，仅标准库；从仓库根目录运行：
+
+```bash
+PYTHONPATH=src python -m rag_foundation ingest
+PYTHONPATH=src python -m rag_foundation query 'test client live server' -k 3
+```
+
+这里返回来源片段，`answer=null`，**没有生成回答**。
+
+### 2. 审核已记录实验：不运行模型
+
+```bash
+python experiments/evidence-sufficiency-v1/audit_record.py
+```
+
+该命令复核冻结输入、原始记录和计数，不重新生成、不自动判定语义真值。
+[最新报告](experiments/evidence-sufficiency-v1/REPORT.md) ·
+[汇总与逐题结果](experiments/evidence-sufficiency-v1/summary.json) ·
+[人工依据](experiments/evidence-sufficiency-v1/manual-review.json)。
+旧的[生成实验审计](experiments/bilingual-generation-v1/README.md)保留为回归记录。
+
+### 3. 可选真实 CPU 模型：显式下载与运行
+
+Linux x86_64、Python 3.12，公开下载约586 MB，临时RAM建议至少5 GB。无收费API。
+模型/运行时固定校验并仅下载到 `/tmp`，runner自动启动和停止本地服务：
+
+```bash
+python3 experiments/evidence-sufficiency-v1/prepare_assets.py --directory /tmp/rag-local-assets
+python3 experiments/evidence-sufficiency-v1/run_experiment.py \
+  --assets /tmp/rag-local-assets --output build/my-evidence-gate-run
+```
+
+[环境、固定许可/来源、实验边界](experiments/evidence-sufficiency-v1/README.md)。
+每次使用新的输出目录。通常测试和CI仅检索/审计，不下载或执行模型。
+
+## 2026-11-16：证据门运行成功，但能力验证失败
+
+12个新英中问题、实际context预先标注；同一生成器比较gate off/on，另做同题删值诊断。
+10个非空context的门输出全部逐字引用校验失败，**不能计作正确拒答**。
+已接受且有支持的正确答案从off的3/4降到on的0/4；原有2个无候选退出不计新门增益。
+4个删值诊断也未产生合法判定。该模型门保持默认关闭，不建议启用。
+
+精确引用只能检查出处，不能证明所问论断得到支持。门的协议失败、合法不足判断、
+传输故障和下游错误分别记录。新增门多一次模型计算，不是等算力比较。
+[接口与限制](docs/local-generation-contract.md) · [失败分析](experiments/evidence-sufficiency-v1/REPORT.md)。
+
+## 历史实验与实现记录
+
+以下日期段落保留当时状态，不表示当前完整能力。当前入口以上面的三条路径为准。
+
 ## 2026-11-15：可选本地引用回答
 
 新增检索→本地 llama.cpp→结构化回答/引用校验的完整入口，默认检索服务仍不调用模型。生成结果区分有效结构回答、证据拒答、传输错误与无效输出；合法引用不等于语义正确。模型独立启动，CI不下载模型。

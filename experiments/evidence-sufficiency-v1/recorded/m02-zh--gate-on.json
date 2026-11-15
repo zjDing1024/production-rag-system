@@ -1,0 +1,77 @@
+{
+  "mode": "optional-local-generation",
+  "query": "PNG 缩写代表的完整格式名称是什么？",
+  "answer": null,
+  "citation_ids": [],
+  "citations": [],
+  "semantic_support": "unverified",
+  "retrieval": {
+    "mode": "retrieval-only",
+    "answer": null,
+    "answerability": "unverified",
+    "status": "candidates",
+    "query": "PNG 缩写代表的完整格式名称是什么？",
+    "effective_query": "PNG 缩写代表的完整格式名称是什么？",
+    "aliases": [],
+    "untranslated_cjk": true,
+    "policy": {
+      "version": "lexical-coverage-v1",
+      "enabled": true,
+      "threshold": 0.6,
+      "coverage": 1.0,
+      "missing_terms": [],
+      "passed": true,
+      "meaning": "corpus-vocabulary coverage, not confidence"
+    },
+    "chunks_sha256": "de8a54066e25aa135724924ebae09e960884bbfc292429d0324e62320140b9de",
+    "results": [
+      {
+        "chunk_id": "c3c7dfdba7439eb87fa2bd2fd28605a95eb40a7b7e1c25ade15b2f28cb6bd7be",
+        "document_id": "flask-quickstart",
+        "score": 3.6854769454410277,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L80-L122",
+        "text": "the command line::\n\n       $ flask run --host=0.0.0.0\n\n   This tells your operating system to listen on all public IPs.\n\n\nDebug Mode\n----------\n\nThe ``flask run`` command can do more than just start the development\nserver. By enabling debug mode, the server will automatically reload if\ncode changes, and will show an interactive debugger in the browser if an\nerror occurs during a request.\n\n.. image:: _static/debugger.png\n    :align: center\n    :class: screenshot\n    :alt: The interactive debugger in action.\n\n.. warning::\n\n    The debugger allows executing arbitrary Python code from the\n    browser. It is protected by a pin, but still represents a major\n    security risk. Do not run the development server or debugger in a\n    production environment.\n\nTo enable debug mode, use the ``--debug`` option.\n\n.. code-block:: text\n\n    $ flask --app hello run --debug\n     * Serving Flask app 'hello'\n     * Debug mode: on\n     * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)\n     * Restarting with stat\n     * Debugger is active!\n     * Debugger PIN: nnn-nnn-nnn\n\nSee also:\n\n-   :doc:`/server` and :doc:`/cli` for information about running in debug mode.\n-   :doc:`/debugging` for information about using the built-in debugger"
+      },
+      {
+        "chunk_id": "c95547ee0b31a13d5600da044aaa02ce72302608499ef6400027d82d35c35495",
+        "document_id": "flask-testing",
+        "score": 3.5919731160067454,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L124-L167",
+        "text": "be set to ``multipart/form-data`` or\n``application/x-www-form-urlencoded`` automatically.\n\nIf a value is a file object opened for reading bytes (``\"rb\"`` mode), it\nwill be treated as an uploaded file. To change the detected filename and\ncontent type, pass a ``(file, filename, content_type)`` tuple. File\nobjects will be closed after making the request, so they do not need to\nuse the usual ``with open() as f:`` pattern.\n\nIt can be useful to store files in a ``tests/resources`` folder, then\nuse ``pathlib.Path`` to get files relative to the current test file.\n\n.. code-block:: python\n\n    from pathlib import Path\n\n    # get the resources folder in the tests folder\n    resources = Path(__file__).parent / \"resources\"\n\n    def test_edit_user(client):\n        response = client.post(\"/user/2/edit\", data={\n            \"name\": \"Flask\",\n            \"theme\": \"dark\",\n            \"picture\": (resources / \"picture.png\").open(\"rb\"),\n        })\n        assert response.status_code == 200\n\n\nJSON Data\n~~~~~~~~~\n\nTo send JSON data, pass an object to ``json``. The ``Content-Type``\nheader will be set to ``application/json`` automatically.\n\nSimilarly, if the response contains JSON data, the ``response.json``\nattribute will contain the deserialized object.\n\n.. code-block:: python\n\n    def test_json_data(client):\n        response = client.post(\"/graphql\", json={\n            \"query\": \"\"\"\n                query User($id: String!) {\n                    user(id:"
+      }
+    ],
+    "candidate_count_before_gate": 2
+  },
+  "context": [
+    {
+      "chunk_id": "c3c7dfdba7439eb87fa2bd2fd28605a95eb40a7b7e1c25ade15b2f28cb6bd7be",
+      "document_id": "flask-quickstart",
+      "score": 3.6854769454410277,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L80-L122",
+      "text": "the command line::\n\n       $ flask run --host=0.0.0.0\n\n   This tells your operating system to listen on all public IPs.\n\n\nDebug Mode\n----------\n\nThe ``flask run`` command can do more than just start the development\nserver. By enabling debug mode, the server will automatically reload if\ncode changes, and will show an interactive debugger in the browser if an\nerror occurs during a request.\n\n.. image:: _static/debugger.png\n    :align: center\n    :class: screenshot\n    :alt: The interactive debugger in action.\n\n.. warning::\n\n    The debugger allows executing arbitrary Python code from the\n    browser. It is protected by a pin, but still represents a major\n    security risk. Do not run the development server or debugger in a\n    production environment.\n\nTo enable debug mode, use the ``--debug`` option.\n\n.. code-block:: text\n\n    $ flask --app hello run --debug\n     * Serving Flask app 'hello'\n     * Debug mode: on\n     * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)\n     * Restarting with stat\n     * Debugger is active!\n     * Debugger PIN: nnn-nnn-nnn\n\nSee also:\n\n-   :doc:`/server` and :doc:`/cli` for information about running in debug mode.\n-   :doc:`/debugging` for information about using the built-in debugger"
+    },
+    {
+      "chunk_id": "c95547ee0b31a13d5600da044aaa02ce72302608499ef6400027d82d35c35495",
+      "document_id": "flask-testing",
+      "score": 3.5919731160067454,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/testing.rst#L124-L167",
+      "text": "be set to ``multipart/form-data`` or\n``application/x-www-form-urlencoded`` automatically.\n\nIf a value is a file object opened for reading bytes (``\"rb\"`` mode), it\nwill be treated as an uploaded file. To change the detected filename and\ncontent type, pass a ``(file, filename, content_type)`` tuple. File\nobjects will be closed after making the request, so they do not need to\nuse the usual ``with open() as f:`` pattern.\n\nIt can be useful to store files in a ``tests/resources`` folder, then\nuse ``pathlib.Path`` to get files relative to the current test file.\n\n.. code-block:: python\n\n    from pathlib import Path\n\n    # get the resources folder in the tests folder\n    resources = Path(__file__).parent / \"resources\"\n\n    def test_edit_user(client):\n        response = client.post(\"/user/2/edit\", data={\n            \"name\": \"Flask\",\n            \"theme\": \"dark\",\n            \"picture\": (resources / \"picture.png\").open(\"rb\"),\n        })\n        assert response.status_code == 200\n\n\nJSON Data\n~~~~~~~~~\n\nTo send JSON data, pass an object to ``json``. The ``Content-Type``\nheader will be set to ``application/json`` automatically.\n\nSimilarly, if the response contains JSON data, the ``response.json``\nattribute will contain the deserialized object.\n\n.. code-block:: python\n\n    def test_json_data(client):\n        response = client.post(\"/graphql\", json={\n            \"query\": \"\"\"\n                query User($id: String!) {\n                    user(id:"
+    }
+  ],
+  "context_limit_characters": 12000,
+  "raw_response": null,
+  "evidence_gate": {
+    "policy": "local-evidence-screen-v1",
+    "semantic_sufficiency": "model_judgment_unverified",
+    "context_ids": [
+      "c3c7dfdba7439eb87fa2bd2fd28605a95eb40a7b7e1c25ade15b2f28cb6bd7be",
+      "c95547ee0b31a13d5600da044aaa02ce72302608499ef6400027d82d35c35495"
+    ],
+    "evidence": [],
+    "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"sufficient\\\": true,\\n  \\\"evidence\\\": [\\n    {\\n      \\\"chunk_id\\\": \\\"c95547ee0b31a13d5600da044aaa02ce72302608499ef6400027d82d35c35495\\\",\\n      \\\"quote\\\": \\\"To send JSON data, pass an object to ``json``. The ``Content-Type`` header will be set to ``application/json`` automatically.\\\"\\n    },\\n    {\\n      \\\"chunk_id\\\": \\\"c3c7dfdba7439eb87fa2bd2fd28605a95eb40a7b7e1c25ade15b2f28cb6bd7be\\\",\\n      \\\"quote\\\": \\\"The ``flask run`` command can do more than just start the development server. By enabling debug mode, the server will automatically reload if code changes, and will show an interactive debugger in the browser if an error occurs during a request.\\\"\\n    }\\n  ]\\n}\"}}],\"created\":1794759238,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":248,\"prompt_tokens\":1019,\"total_tokens\":1267,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"id\":\"chatcmpl-77amebx6HVT70rutv1CmfpRZLc468e9l\",\"timings\":{\"cache_n\":0,\"prompt_n\":1019,\"prompt_ms\":3226.622,\"prompt_per_token_ms\":3.166459273797841,\"prompt_per_second\":315.8101568761386,\"predicted_n\":248,\"predicted_ms\":5867.537,\"predicted_per_token_ms\":23.75521052631579,\"predicted_per_second\":42.09602768589273}}",
+    "status": "invalid_response",
+    "reason": "ValueError"
+  },
+  "status": "invalid_response",
+  "reason": "sufficiency_gate_ValueError"
+}

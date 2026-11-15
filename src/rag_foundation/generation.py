@@ -130,7 +130,12 @@ class LocalGenerator:
 
 
 class GenerationPipeline:
-    def __init__(self, root: Path, endpoint='http://127.0.0.1:8080', timeout=120):
+    def __init__(self, root: Path, endpoint='http://127.0.0.1:8080', timeout=120, evidence_gate=False):
+        if type(evidence_gate) is not bool:
+            raise ValueError('evidence_gate must be boolean')
+        self.evidence_gate = evidence_gate
+        from .sufficiency import LocalSufficiencyGate
+        self.sufficiency_gate = LocalSufficiencyGate(endpoint, timeout) if evidence_gate else None
         self.retriever = RetrievalService(root)
         self.generator = LocalGenerator(endpoint, timeout)
 
@@ -151,6 +156,15 @@ class GenerationPipeline:
         if not context:
             result.update(status='evidence_abstained', reason='no_retrieved_context')
             return result
+        if self.evidence_gate:
+            decision = self.sufficiency_gate.assess(query, context)
+            result['evidence_gate'] = decision
+            if decision['status'] == 'insufficient':
+                result.update(status='evidence_abstained', reason='model_judged_evidence_insufficient')
+                return result
+            if decision['status'] != 'sufficient':
+                result.update(status=decision['status'], reason='sufficiency_gate_' + decision['reason'])
+                return result
         result.update(self.generator.generate(query, context))
         selected = set(result['citation_ids'])
         result['citations'] = [{'chunk_id': h['chunk_id'], 'citation': h['citation']}
@@ -163,8 +177,11 @@ def main():
     parser.add_argument('query')
     parser.add_argument('--root', type=Path, default=Path('.'))
     parser.add_argument('--endpoint', default='http://127.0.0.1:8080')
+    parser.add_argument('--evidence-gate', action='store_true',
+                        help='optional model evidence screen; quotes prove provenance, not entailment')
     args = parser.parse_args()
-    print(canonical_json(GenerationPipeline(args.root, args.endpoint).answer(args.query)), end='')
+    print(canonical_json(GenerationPipeline(args.root, args.endpoint,
+          evidence_gate=args.evidence_gate).answer(args.query)), end='')
 
 
 if __name__ == '__main__':

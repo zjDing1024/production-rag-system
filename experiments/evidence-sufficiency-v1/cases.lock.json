@@ -1,0 +1,9 @@
+{
+  "cases_sha256": "91d1ac7556583a13a4e26855352c12c04dfb53fffefd917f906e22d0e3198d05",
+  "case_count": 12,
+  "diagnostic_count": 4,
+  "status": "frozen_before_execution",
+  "frozen_model_requests_started": false,
+  "second_review": "Read-only independent pre-run review confirmed all labels, exact retrieved contexts, and removal of the only decisive value.",
+  "frozen_utc": "2026-11-15T16:11:17.905998+00:00"
+}

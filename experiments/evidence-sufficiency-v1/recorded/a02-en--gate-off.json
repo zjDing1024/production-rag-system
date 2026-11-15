@@ -1,0 +1,91 @@
+{
+  "mode": "optional-local-generation",
+  "query": "Which documented configuration key should I use to change my current application session cookie name?",
+  "answer": "SESSION_COOKIE_NAME",
+  "citation_ids": [
+    "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b"
+  ],
+  "citations": [
+    {
+      "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153"
+    }
+  ],
+  "semantic_support": "unverified",
+  "retrieval": {
+    "mode": "retrieval-only",
+    "answer": null,
+    "answerability": "unverified",
+    "status": "candidates",
+    "query": "Which documented configuration key should I use to change my current application session cookie name?",
+    "effective_query": "Which documented configuration key should I use to change my current application session cookie name?",
+    "aliases": [],
+    "untranslated_cjk": false,
+    "policy": {
+      "version": "lexical-coverage-v1",
+      "enabled": true,
+      "threshold": 0.6,
+      "coverage": 1.0,
+      "missing_terms": [],
+      "passed": true,
+      "meaning": "corpus-vocabulary coverage, not confidence"
+    },
+    "chunks_sha256": "de8a54066e25aa135724924ebae09e960884bbfc292429d0324e62320140b9de",
+    "results": [
+      {
+        "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+        "document_id": "flask-config",
+        "score": 16.46313563473253,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+        "text": "secret key that will be used for securely signing the session cookie\n    and can be used for any other security related needs by extensions or your\n    application. It should be a long random ``bytes`` or ``str``. For\n    example, copy the output of this to your config::\n\n        $ python -c 'import secrets; print(secrets.token_hex())'\n        '192b9bdd22ab9ed4d12e236c78afcb9a393ec15f71bbf5dc987d54727823bcbf'\n\n    **Do not reveal the secret key when posting questions or committing code.**\n\n    Default: ``None``\n\n.. py:data:: SECRET_KEY_FALLBACKS\n\n    A list of old secret keys that can still be used for unsigning, most recent\n    first. This allows a project to implement key rotation without invalidating\n    active sessions or other recently-signed secrets.\n\n    Keys should be removed after an appropriate period of time, as checking each\n    additional key adds some overhead.\n\n    Flask's built-in secure cookie session supports this. Extensions that use\n    :data:`SECRET_KEY` may not support this yet.\n\n    Default: ``None``\n\n    .. versionadded:: 3.1\n\n.. py:data:: SESSION_COOKIE_NAME\n\n    The name of the session cookie. Can be changed in case you already have a\n    cookie with the same name.\n\n    Default: ``'session'``\n\n.. py:data:: SESSION_COOKIE_DOMAIN\n\n    The value of the ``Domain`` parameter on the session cookie. If"
+      },
+      {
+        "chunk_id": "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+        "document_id": "flask-quickstart",
+        "score": 12.148000782504605,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L785-L826",
+        "text": "really secret!\n    app.secret_key = b'_5#y2L\"F4Q8z\\n\\xec]/'\n\n    @app.route('/')\n    def index():\n        if 'username' in session:\n            return f'Logged in as {session[\"username\"]}'\n        return 'You are not logged in'\n\n    @app.route('/login', methods=['GET', 'POST'])\n    def login():\n        if request.method == 'POST':\n            session['username'] = request.form['username']\n            return redirect(url_for('index'))\n        return '''\n            <form method=\"post\">\n                <p><input type=text name=username>\n                <p><input type=submit value=Login>\n            </form>\n        '''\n\n    @app.route('/logout')\n    def logout():\n        # remove the username from the session if it's there\n        session.pop('username', None)\n        return redirect(url_for('index'))\n\n.. admonition:: How to generate good secret keys\n\n    A secret key should be as random as possible. Your operating system has\n    ways to generate pretty random data based on a cryptographic random\n    generator. Use the following command to quickly generate a value for\n    :attr:`Flask.secret_key` (or :data:`SECRET_KEY`)::\n\n        $ python -c 'import secrets; print(secrets.token_hex())'\n        '192b9bdd22ab9ed4d12e236c78afcb9a393ec15f71bbf5dc987d54727823bcbf'\n\nA note on cookie-based sessions: Flask will take the values you put into the\nsession object and serialize them into a cookie.  If you are finding some\nvalues do not persist across requests, cookies are indeed enabled, and you are\nnot getting a clear error message, check the size of the cookie in your page\nresponses compared to the size supported"
+      },
+      {
+        "chunk_id": "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+        "document_id": "flask-config",
+        "score": 11.852655077901584,
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L142-L177",
+        "text": "3.1\n\n.. py:data:: SESSION_COOKIE_NAME\n\n    The name of the session cookie. Can be changed in case you already have a\n    cookie with the same name.\n\n    Default: ``'session'``\n\n.. py:data:: SESSION_COOKIE_DOMAIN\n\n    The value of the ``Domain`` parameter on the session cookie. If not set, browsers\n    will only send the cookie to the exact domain it was set from. Otherwise, they\n    will send it to any subdomain of the given value as well.\n\n    Not setting this value is more restricted and secure than setting it.\n\n    Default: ``None``\n\n    .. warning::\n        If this is changed after the browser created a cookie is created with\n        one setting, it may result in another being created. Browsers may send\n        send both in an undefined order. In that case, you may want to change\n        :data:`SESSION_COOKIE_NAME` as well or otherwise invalidate old sessions.\n\n    .. versionchanged:: 2.3\n        Not set by default, does not fall back to ``SERVER_NAME``.\n\n.. py:data:: SESSION_COOKIE_PATH\n\n    The path that the session cookie will be valid for. If not set, the cookie\n    will be valid underneath ``APPLICATION_ROOT`` or ``/`` if that is not set.\n\n    Default: ``None``\n\n.. py:data::"
+      }
+    ],
+    "candidate_count_before_gate": 3
+  },
+  "context": [
+    {
+      "chunk_id": "daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b",
+      "document_id": "flask-config",
+      "score": 16.46313563473253,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L116-L153",
+      "text": "secret key that will be used for securely signing the session cookie\n    and can be used for any other security related needs by extensions or your\n    application. It should be a long random ``bytes`` or ``str``. For\n    example, copy the output of this to your config::\n\n        $ python -c 'import secrets; print(secrets.token_hex())'\n        '192b9bdd22ab9ed4d12e236c78afcb9a393ec15f71bbf5dc987d54727823bcbf'\n\n    **Do not reveal the secret key when posting questions or committing code.**\n\n    Default: ``None``\n\n.. py:data:: SECRET_KEY_FALLBACKS\n\n    A list of old secret keys that can still be used for unsigning, most recent\n    first. This allows a project to implement key rotation without invalidating\n    active sessions or other recently-signed secrets.\n\n    Keys should be removed after an appropriate period of time, as checking each\n    additional key adds some overhead.\n\n    Flask's built-in secure cookie session supports this. Extensions that use\n    :data:`SECRET_KEY` may not support this yet.\n\n    Default: ``None``\n\n    .. versionadded:: 3.1\n\n.. py:data:: SESSION_COOKIE_NAME\n\n    The name of the session cookie. Can be changed in case you already have a\n    cookie with the same name.\n\n    Default: ``'session'``\n\n.. py:data:: SESSION_COOKIE_DOMAIN\n\n    The value of the ``Domain`` parameter on the session cookie. If"
+    },
+    {
+      "chunk_id": "bd6ffd3ca5dc52dca9fac88b4cc674ab2a9da9565551aa24ca5a5acb1f907b71",
+      "document_id": "flask-quickstart",
+      "score": 12.148000782504605,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L785-L826",
+      "text": "really secret!\n    app.secret_key = b'_5#y2L\"F4Q8z\\n\\xec]/'\n\n    @app.route('/')\n    def index():\n        if 'username' in session:\n            return f'Logged in as {session[\"username\"]}'\n        return 'You are not logged in'\n\n    @app.route('/login', methods=['GET', 'POST'])\n    def login():\n        if request.method == 'POST':\n            session['username'] = request.form['username']\n            return redirect(url_for('index'))\n        return '''\n            <form method=\"post\">\n                <p><input type=text name=username>\n                <p><input type=submit value=Login>\n            </form>\n        '''\n\n    @app.route('/logout')\n    def logout():\n        # remove the username from the session if it's there\n        session.pop('username', None)\n        return redirect(url_for('index'))\n\n.. admonition:: How to generate good secret keys\n\n    A secret key should be as random as possible. Your operating system has\n    ways to generate pretty random data based on a cryptographic random\n    generator. Use the following command to quickly generate a value for\n    :attr:`Flask.secret_key` (or :data:`SECRET_KEY`)::\n\n        $ python -c 'import secrets; print(secrets.token_hex())'\n        '192b9bdd22ab9ed4d12e236c78afcb9a393ec15f71bbf5dc987d54727823bcbf'\n\nA note on cookie-based sessions: Flask will take the values you put into the\nsession object and serialize them into a cookie.  If you are finding some\nvalues do not persist across requests, cookies are indeed enabled, and you are\nnot getting a clear error message, check the size of the cookie in your page\nresponses compared to the size supported"
+    },
+    {
+      "chunk_id": "9cd44c56972c54803df3f960a89289b98b1fd0325537a7999dd99ce8bcae1ef3",
+      "document_id": "flask-config",
+      "score": 11.852655077901584,
+      "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L142-L177",
+      "text": "3.1\n\n.. py:data:: SESSION_COOKIE_NAME\n\n    The name of the session cookie. Can be changed in case you already have a\n    cookie with the same name.\n\n    Default: ``'session'``\n\n.. py:data:: SESSION_COOKIE_DOMAIN\n\n    The value of the ``Domain`` parameter on the session cookie. If not set, browsers\n    will only send the cookie to the exact domain it was set from. Otherwise, they\n    will send it to any subdomain of the given value as well.\n\n    Not setting this value is more restricted and secure than setting it.\n\n    Default: ``None``\n\n    .. warning::\n        If this is changed after the browser created a cookie is created with\n        one setting, it may result in another being created. Browsers may send\n        send both in an undefined order. In that case, you may want to change\n        :data:`SESSION_COOKIE_NAME` as well or otherwise invalidate old sessions.\n\n    .. versionchanged:: 2.3\n        Not set by default, does not fall back to ``SERVER_NAME``.\n\n.. py:data:: SESSION_COOKIE_PATH\n\n    The path that the session cookie will be valid for. If not set, the cookie\n    will be valid underneath ``APPLICATION_ROOT`` or ``/`` if that is not set.\n\n    Default: ``None``\n\n.. py:data::"
+    }
+  ],
+  "context_limit_characters": 12000,
+  "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"answer\\\": \\\"SESSION_COOKIE_NAME\\\", \\\"citations\\\": [\\\"daf5e8c41eb4fb42d45595b097f0c462b7bed31a11e59cca17222ebfff71379b\\\"], \\\"abstain\\\": false}\"}}],\"created\":1794759120,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":75,\"prompt_tokens\":1450,\"total_tokens\":1525,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"id\":\"chatcmpl-ZgYtnUasHmmubU5bI0nF1PRYJHX4fyKG\",\"timings\":{\"cache_n\":0,\"prompt_n\":1450,\"prompt_ms\":4625.973,\"prompt_per_token_ms\":3.1903262068965517,\"prompt_per_second\":313.44757092183636,\"predicted_n\":75,\"predicted_ms\":1914.897,\"predicted_per_token_ms\":25.876986486486487,\"predicted_per_second\":38.6443761727132}}",
+  "status": "answered",
+  "reason": "contract_valid",
+  "usage": {
+    "prompt_tokens": 1450,
+    "completion_tokens": 75,
+    "total_tokens": 1525
+  }
+}

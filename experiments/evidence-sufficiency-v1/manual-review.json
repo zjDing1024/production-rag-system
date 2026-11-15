@@ -1,0 +1,201 @@
+{
+  "method": "Post-run manual review against pre-run labels and actual context. Invalid provenance/contract errors are not semantic rejections. Independent read-only review confirmed all results.",
+  "reviews": [
+    {
+      "case_id": "a01-en",
+      "condition": "off",
+      "verdict": "invalid_generation_output",
+      "raw_generation_supported_and_correct": true,
+      "note": "Raw answer 4093 is correct for the supplied documentation but citations is empty; not an accepted supported answer."
+    },
+    {
+      "case_id": "a01-en",
+      "condition": "on",
+      "verdict": "invalid_gate_output",
+      "raw_generation_supported_and_correct": null,
+      "note": "The gate blocks the generator due to invalid quote provenance; not a semantic insufficient decision."
+    },
+    {
+      "case_id": "a01-zh",
+      "condition": "off",
+      "verdict": "supported_correct_answer",
+      "raw_generation_supported_and_correct": true,
+      "note": "Accepted answer matches the documented default or setting supported by the actual supplied context. This judges the whole supplied evidence, not that every individual citation independently entails the answer."
+    },
+    {
+      "case_id": "a01-zh",
+      "condition": "on",
+      "verdict": "invalid_gate_output",
+      "raw_generation_supported_and_correct": null,
+      "note": "The gate blocks the generator due to invalid quote provenance; not a semantic insufficient decision."
+    },
+    {
+      "case_id": "a02-en",
+      "condition": "off",
+      "verdict": "supported_correct_answer",
+      "raw_generation_supported_and_correct": true,
+      "note": "Accepted answer matches the documented default or setting supported by the actual supplied context. This judges the whole supplied evidence, not that every individual citation independently entails the answer."
+    },
+    {
+      "case_id": "a02-en",
+      "condition": "on",
+      "verdict": "invalid_gate_output",
+      "raw_generation_supported_and_correct": null,
+      "note": "The gate blocks the generator due to invalid quote provenance; not a semantic insufficient decision."
+    },
+    {
+      "case_id": "a02-zh",
+      "condition": "off",
+      "verdict": "supported_correct_answer",
+      "raw_generation_supported_and_correct": true,
+      "note": "Accepted answer matches the documented default or setting supported by the actual supplied context. This judges the whole supplied evidence, not that every individual citation independently entails the answer."
+    },
+    {
+      "case_id": "a02-zh",
+      "condition": "on",
+      "verdict": "invalid_gate_output",
+      "raw_generation_supported_and_correct": null,
+      "note": "The gate blocks the generator due to invalid quote provenance; not a semantic insufficient decision."
+    },
+    {
+      "case_id": "r01-en",
+      "condition": "off",
+      "verdict": "invalid_generation_output",
+      "raw_generation_supported_and_correct": false,
+      "note": "Raw 4093 incorrectly substitutes a documented default for an unknown running-app value and also omits citations."
+    },
+    {
+      "case_id": "r01-en",
+      "condition": "on",
+      "verdict": "invalid_gate_output",
+      "raw_generation_supported_and_correct": null,
+      "note": "The gate blocks the generator due to invalid quote provenance; not a semantic insufficient decision."
+    },
+    {
+      "case_id": "r01-zh",
+      "condition": "off",
+      "verdict": "unsupported_answer",
+      "raw_generation_supported_and_correct": false,
+      "note": "Accepted answer is not supported for the exact requested claim: default does not establish runtime value, and image format labels do not establish the expansion of PNG."
+    },
+    {
+      "case_id": "r01-zh",
+      "condition": "on",
+      "verdict": "invalid_gate_output",
+      "raw_generation_supported_and_correct": null,
+      "note": "The gate blocks the generator due to invalid quote provenance; not a semantic insufficient decision."
+    },
+    {
+      "case_id": "r02-en",
+      "condition": "off",
+      "verdict": "invalid_generation_output",
+      "raw_generation_supported_and_correct": null,
+      "note": "Raw text correctly says the active value is not in the evidence, but abstain=true with a nonempty answer violates the contract. Semantic abstention intent is not accepted abstention."
+    },
+    {
+      "case_id": "r02-en",
+      "condition": "on",
+      "verdict": "invalid_gate_output",
+      "raw_generation_supported_and_correct": null,
+      "note": "The gate blocks the generator due to invalid quote provenance; not a semantic insufficient decision."
+    },
+    {
+      "case_id": "r02-zh",
+      "condition": "off",
+      "verdict": "unsupported_answer",
+      "raw_generation_supported_and_correct": false,
+      "note": "Accepted answer is not supported for the exact requested claim: default does not establish runtime value, and image format labels do not establish the expansion of PNG."
+    },
+    {
+      "case_id": "r02-zh",
+      "condition": "on",
+      "verdict": "invalid_gate_output",
+      "raw_generation_supported_and_correct": null,
+      "note": "The gate blocks the generator due to invalid quote provenance; not a semantic insufficient decision."
+    },
+    {
+      "case_id": "m01-en",
+      "condition": "off",
+      "verdict": "existing_no_context_exit",
+      "raw_generation_supported_and_correct": null,
+      "note": "Existing retrieval gate returned no context. Neither generator nor sufficiency model was called."
+    },
+    {
+      "case_id": "m01-en",
+      "condition": "on",
+      "verdict": "existing_no_context_exit",
+      "raw_generation_supported_and_correct": null,
+      "note": "Existing retrieval gate returned no context. Neither generator nor sufficiency model was called."
+    },
+    {
+      "case_id": "m01-zh",
+      "condition": "off",
+      "verdict": "existing_no_context_exit",
+      "raw_generation_supported_and_correct": null,
+      "note": "Existing retrieval gate returned no context. Neither generator nor sufficiency model was called."
+    },
+    {
+      "case_id": "m01-zh",
+      "condition": "on",
+      "verdict": "existing_no_context_exit",
+      "raw_generation_supported_and_correct": null,
+      "note": "Existing retrieval gate returned no context. Neither generator nor sufficiency model was called."
+    },
+    {
+      "case_id": "m02-en",
+      "condition": "off",
+      "verdict": "unsupported_answer",
+      "raw_generation_supported_and_correct": false,
+      "note": "Accepted answer is not supported for the exact requested claim: default does not establish runtime value, and image format labels do not establish the expansion of PNG."
+    },
+    {
+      "case_id": "m02-en",
+      "condition": "on",
+      "verdict": "invalid_gate_output",
+      "raw_generation_supported_and_correct": null,
+      "note": "The gate blocks the generator due to invalid quote provenance; not a semantic insufficient decision."
+    },
+    {
+      "case_id": "m02-zh",
+      "condition": "off",
+      "verdict": "unsupported_answer",
+      "raw_generation_supported_and_correct": false,
+      "note": "Accepted answer is not supported for the exact requested claim: default does not establish runtime value, and image format labels do not establish the expansion of PNG."
+    },
+    {
+      "case_id": "m02-zh",
+      "condition": "on",
+      "verdict": "invalid_gate_output",
+      "raw_generation_supported_and_correct": null,
+      "note": "The gate blocks the generator due to invalid quote provenance; not a semantic insufficient decision."
+    },
+    {
+      "case_id": "d01-en-full",
+      "condition": "diagnostic",
+      "verdict": "invalid_gate_output",
+      "raw_generation_supported_and_correct": null,
+      "note": "Raw gate asserts sufficient, but quoted evidence is not exact. This is not a valid evidence decision."
+    },
+    {
+      "case_id": "d01-en-value_removed",
+      "condition": "diagnostic",
+      "verdict": "invalid_gate_output",
+      "raw_generation_supported_and_correct": null,
+      "note": "Raw gate asserts sufficient, but quoted evidence is not exact. This is not a valid evidence decision."
+    },
+    {
+      "case_id": "d01-zh-full",
+      "condition": "diagnostic",
+      "verdict": "invalid_gate_output",
+      "raw_generation_supported_and_correct": null,
+      "note": "Raw gate asserts sufficient, but quoted evidence is not exact. This is not a valid evidence decision."
+    },
+    {
+      "case_id": "d01-zh-value_removed",
+      "condition": "diagnostic",
+      "verdict": "invalid_gate_output",
+      "raw_generation_supported_and_correct": null,
+      "note": "Raw gate asserts sufficient, but quoted evidence is not exact. This is not a valid evidence decision."
+    }
+  ]
+}

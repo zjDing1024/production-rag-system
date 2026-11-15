@@ -1,0 +1,11 @@
+{
+  "policy": "local-evidence-screen-v1",
+  "semantic_sufficiency": "model_judgment_unverified",
+  "context_ids": [
+    "diagnostic-config"
+  ],
+  "evidence": [],
+  "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"sufficient\\\": true,\\n  \\\"evidence\\\": [\\n    {\\n      \\\"chunk_id\\\": \\\"diagnostic-config\\\",\\n      \\\"quote\\\": \\\"The maximum size in bytes any non-file form field may be in a multipart/form-data body. If this limit is exceeded, a 413 :exc:`~werkzeug.exceptions.RequestEntityTooLarge` error is raised. If it is set to ``None``, no limit is enforced at the Flask application level. Each request defaults to this config. It can be set on a specific :attr:`.Request.max_form_memory_parts` to apply the limit to that specific view. This should be set appropriately based on an application's or view's specific needs.\\\"\\n    },\\n    {\\n      \\\"chunk_id\\\": \\\"diagnostic-config\\\",\\n      \\\"quote\\\": \\\"Default: ``1_000``\\\"\\n    }\\n  ]\\n}\"}}],\"created\":1794759250,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":190,\"prompt_tokens\":520,\"total_tokens\":710,\"prompt_tokens_details\":{\"cached_tokens\":145}},\"id\":\"chatcmpl-gAKZgMMbrsGZoTZSrj1THzGsWRLm95iB\",\"timings\":{\"cache_n\":145,\"prompt_n\":375,\"prompt_ms\":1172.224,\"prompt_per_token_ms\":3.1259306666666666,\"prompt_per_second\":319.9047281065735,\"predicted_n\":190,\"predicted_ms\":4242.061,\"predicted_per_token_ms\":22.444767195767195,\"predicted_per_second\":44.553814761268164}}",
+  "status": "invalid_response",
+  "reason": "ValueError"
+}

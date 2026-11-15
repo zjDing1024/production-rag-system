@@ -1,0 +1,35 @@
+{
+  "mode": "optional-local-generation",
+  "query": "标准国际象棋棋盘有多少个格子？",
+  "answer": null,
+  "citation_ids": [],
+  "citations": [],
+  "semantic_support": "unverified",
+  "retrieval": {
+    "mode": "retrieval-only",
+    "answer": null,
+    "answerability": "unverified",
+    "status": "abstained",
+    "query": "标准国际象棋棋盘有多少个格子？",
+    "effective_query": "标准国际象棋棋盘有多少个格子？",
+    "aliases": [],
+    "untranslated_cjk": true,
+    "policy": {
+      "version": "lexical-coverage-v1",
+      "enabled": true,
+      "threshold": 0.6,
+      "coverage": 0.0,
+      "missing_terms": [],
+      "passed": false,
+      "meaning": "corpus-vocabulary coverage, not confidence"
+    },
+    "chunks_sha256": "de8a54066e25aa135724924ebae09e960884bbfc292429d0324e62320140b9de",
+    "results": [],
+    "candidate_count_before_gate": 0
+  },
+  "context": [],
+  "context_limit_characters": 12000,
+  "raw_response": null,
+  "status": "evidence_abstained",
+  "reason": "no_retrieved_context"
+}
