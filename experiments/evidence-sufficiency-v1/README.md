@@ -3,7 +3,7 @@
 **结论：不建议启用本轮 evidence gate。实际跑通了链路，但没有验证出可靠的证据充分性判断。**
 
 12 个新问题组成 6 个英中事实对，按充分、相关不足、主题缺失分层；每层都包含数值和
-非数值题。先保存实际检索片段、人工充分性标签并独立复核，再冻结执行。
+非数值题。先保存实际检索片段、AI 助理逐题标注证据充分性，并由另一助理复核，再冻结执行。
 生成器、检索、上下文、提示词、采样及输出校验在 gate off/on 两臂保持相同。
 on 额外调用一次同一模型做证据判断，**总计算成本并不相等**。
 
@@ -18,7 +18,7 @@ on 额外调用一次同一模型做证据判断，**总计算成本并不相等
 - 同题 full/删唯一值的 4 个诊断全部无效；14 个 gate raw 都声称 `sufficient=true`，
   包括全部不足题。没有证明门能随决定性证据变化作出正确判定。
 
-[逐层报告](REPORT.md) · [可复算汇总](summary.json) · [人工结果复核](manual-review.json) ·
+[逐层报告](REPORT.md) · [可复算汇总](summary.json) · [助理逐题复核](manual-review.json) ·
 [原始记录](recorded/) · [事后引用失败诊断](quote-diagnostics.json)
 
 ## 最短审核路径：不下载、不运行模型
@@ -31,7 +31,7 @@ python -m unittest discover -s experiments/evidence-sufficiency-v1 -p 'test_*.py
 ```
 
 审计成功表示冻结输入、实际片段、原始输出哈希和计数一致，不表示模型通过。
-语义标签来自预先人工审阅，不是自动引用检查产生的真值。旧题只作记录回归审计。
+语义标签来自 AI 助理预先逐题审阅，不是人类标注，不是自动引用检查产生的真值。旧题只作记录回归审计。
 
 ## 可选真实模型复现
 
@@ -52,7 +52,7 @@ runner 同环境启动/关闭本地 loopback 服务，先校验模型、源码�
 
 ## 材料和边界
 
-- [cases.json](cases.json)：新题、人工标签、真正供给的片段、协议和冻结源码哈希。
+- [cases.json](cases.json)：新题、助理逐题标签、真正供给的片段、协议和冻结源码哈希。
 - [cases.lock.json](cases.lock.json)：首请求前冻结和独立审查记录。
 - [run_experiment.py](run_experiment.py)：实际执行版本，其哈希在 manifest 中。
 - `recorded/`：28 个完整流程返回和 manifest，保留原始模型响应文本。

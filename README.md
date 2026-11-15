@@ -24,7 +24,7 @@ python experiments/evidence-sufficiency-v1/audit_record.py
 该命令复核冻结输入、原始记录和计数，不重新生成、不自动判定语义真值。
 [最新报告](experiments/evidence-sufficiency-v1/REPORT.md) ·
 [汇总与逐题结果](experiments/evidence-sufficiency-v1/summary.json) ·
-[人工依据](experiments/evidence-sufficiency-v1/manual-review.json)。
+[助理逐题判定依据](experiments/evidence-sufficiency-v1/manual-review.json)。
 旧的[生成实验审计](experiments/bilingual-generation-v1/README.md)保留为回归记录。
 
 ### 3. 可选真实 CPU 模型：显式下载与运行
@@ -43,7 +43,7 @@ python3 experiments/evidence-sufficiency-v1/run_experiment.py \
 
 ## 2026-11-16：证据门运行成功，但能力验证失败
 
-12个新英中问题、实际context预先标注；同一生成器比较gate off/on，另做同题删值诊断。
+12个新英中问题、实际 context 由 AI 助理预先逐题标注；同一生成器比较gate off/on，另做同题删值诊断。
 10个非空context的门输出全部逐字引用校验失败，**不能计作正确拒答**。
 已接受且有支持的正确答案从off的3/4降到on的0/4；原有2个无候选退出不计新门增益。
 4个删值诊断也未产生合法判定。该模型门保持默认关闭，不建议启用。

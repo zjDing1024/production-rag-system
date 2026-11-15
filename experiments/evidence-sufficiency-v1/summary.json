@@ -1,6 +1,6 @@
 {
   "record_integrity": "verified",
-  "semantic_labels": "frozen human assessment of actual context; outcomes manually reviewed",
+  "semantic_labels": "frozen manual assessment of actual context by AI assistants; outcomes reviewed by AI assistants",
   "summary": {
     "fresh_cases": 12,
     "bilingual_fact_pairs": 6,

@@ -142,7 +142,7 @@ def audit(root=HERE):
         'posthoc_quote_categories': quote_counts,
         'diagnostic_correct_valid_decisions': sum(d['correct_valid_decision'] for d in diagnostics),
         'diagnostic_denominator': len(diagnostics)}
-    return {'record_integrity': 'verified', 'semantic_labels': 'frozen human assessment of actual context; outcomes manually reviewed',
+    return {'record_integrity': 'verified', 'semantic_labels': 'frozen manual assessment of actual context by AI assistants; outcomes reviewed by AI assistants',
             'summary': summary, 'pairs': rows, 'diagnostics': diagnostics}
 
 
