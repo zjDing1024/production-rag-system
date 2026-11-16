@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-16T16:13:24.299737+00:00",
+  "base_commit": "2bd1a005d39a9141d94b0132481394f1c1998c09",
+  "scope": "New authored development questions over four facts, not independent held-out evaluation. AI assistant source reading supplies the semantic labels; a second AI checks before execution. No human or third-party preregistration is claimed.",
+  "offered_spans": [
+    {
+      "span_id": 1,
+      "text": ".. py:data:: PERMANENT_SESSION_LIFETIME\n\n    If ``session.permanent`` is true, the cookie's expiration will be set this\n    number of seconds in the future. Can either be a\n    :class:`datetime.timedelta` or an ``int``.\n\n    Flask's default cookie implementation validates that the cryptographic\n    signature is not older than this value.\n\n    Default: ``timedelta(days=31)`` (``2678400`` seconds)\n",
+      "source_path": "data/corpus/flask/config.rst",
+      "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+      "line_start": 219,
+      "line_end": 228,
+      "char_start": 7555,
+      "char_end": 7954,
+      "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L219-L228",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "span_id": 2,
+      "text": ".. py:data:: SESSION_REFRESH_EACH_REQUEST\n\n    Control whether the cookie is sent with every response when\n    ``session.permanent`` is true. Sending the cookie every time (the default)\n    can more reliably keep the session from expiring, but uses more bandwidth.\n    Non-permanent sessions are not affected.\n\n    Default: ``True``\n",
+      "source_path": "data/corpus/flask/config.rst",
+      "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+      "line_start": 230,
+      "line_end": 237,
+      "char_start": 7955,
+      "char_end": 8288,
+      "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L230-L237",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "span_id": 3,
+      "text": ".. py:data:: USE_X_SENDFILE\n\n    When serving files, set the ``X-Sendfile`` header instead of serving the\n    data with Flask. Some web servers, such as Apache, recognize this and serve\n    the data more efficiently. This only makes sense when using such a server.\n\n    Default: ``False``\n",
+      "source_path": "data/corpus/flask/config.rst",
+      "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+      "line_start": 239,
+      "line_end": 245,
+      "char_start": 8289,
+      "char_end": 8578,
+      "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L239-L245",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "span_id": 4,
+      "text": ".. py:data:: SEND_FILE_MAX_AGE_DEFAULT\n\n    When serving files, set the cache control max age to this number of\n    seconds. Can be a :class:`datetime.timedelta` or an ``int``.\n    Override this value on a per-file basis using\n    :meth:`~flask.Flask.get_send_file_max_age` on the application or\n    blueprint.\n\n    If ``None``, ``send_file`` tells the browser to use conditional\n    requests will be used instead of a timed cache, which is usually\n    preferable.\n\n",
+      "source_path": "data/corpus/flask/config.rst",
+      "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+      "line_start": 247,
+      "line_end": 258,
+      "char_start": 8579,
+      "char_end": 9045,
+      "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L247-L258",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "span_id": 5,
+      "text": ".. py:data:: EXPLAIN_TEMPLATE_LOADING\n\n    Log debugging information tracing how a template file was loaded. This can\n    be useful to figure out why a template was not loaded or the wrong file\n    appears to be loaded.\n\n    Default: ``False``\n",
+      "source_path": "data/corpus/flask/config.rst",
+      "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+      "line_start": 374,
+      "line_end": 380,
+      "char_start": 13059,
+      "char_end": 13303,
+      "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L374-L380",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "span_id": 6,
+      "text": ".. code-block:: text\n\n    $ flask --app hello run\n     * Serving Flask app 'hello'\n     * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)\n",
+      "source_path": "data/corpus/flask/quickstart.rst",
+      "source_sha256": "83570a5afab76fe943a31af107fff7aded3e6441babe24af870c04282e922685",
+      "line_start": 46,
+      "line_end": 50,
+      "char_start": 1484,
+      "char_end": 1630,
+      "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L46-L50",
+      "license": "BSD-3-Clause"
+    }
+  ],
+  "cases": [
+    {
+      "id": "f01-a-en",
+      "family": "f01",
+      "category": "answerable",
+      "answer_kind": "numeric",
+      "language": "en",
+      "query": "According to the documentation, what is the default PERMANENT_SESSION_LIFETIME in days?",
+      "offered_sufficient": true,
+      "supporting_span_ids": [
+        1
+      ],
+      "assistant_expected_fact_or_limit": "31 days; 2678400 seconds is equivalent.",
+      "arm_order": [
+        "exact_quote",
+        "numbered_span"
+      ]
+    },
+    {
+      "id": "f01-a-zh",
+      "family": "f01",
+      "category": "answerable",
+      "answer_kind": "numeric",
+      "language": "zh",
+      "query": "根据文档，PERMANENT_SESSION_LIFETIME 的默认值是多少天？",
+      "offered_sufficient": true,
+      "supporting_span_ids": [
+        1
+      ],
+      "assistant_expected_fact_or_limit": "31 days; 2678400 seconds is equivalent.",
+      "arm_order": [
+        "numbered_span",
+        "exact_quote"
+      ]
+    },
+    {
+      "id": "f01-r-en",
+      "family": "f01",
+      "category": "related_unanswerable",
+      "answer_kind": "numeric",
+      "language": "en",
+      "query": "How many days remain before my current permanent session cookie expires?",
+      "offered_sufficient": false,
+      "supporting_span_ids": [],
+      "assistant_expected_fact_or_limit": "A documented lifetime default cannot establish remaining time for an unspecified existing cookie.",
+      "arm_order": [
+        "numbered_span",
+        "exact_quote"
+      ]
+    },
+    {
+      "id": "f01-r-zh",
+      "family": "f01",
+      "category": "related_unanswerable",
+      "answer_kind": "numeric",
+      "language": "zh",
+      "query": "我当前的永久会话 cookie 还有多少天到期？",
+      "offered_sufficient": false,
+      "supporting_span_ids": [],
+      "assistant_expected_fact_or_limit": "A documented lifetime default cannot establish remaining time for an unspecified existing cookie.",
+      "arm_order": [
+        "exact_quote",
+        "numbered_span"
+      ]
+    },
+    {
+      "id": "f02-a-en",
+      "family": "f02",
+      "category": "answerable",
+      "answer_kind": "numeric",
+      "language": "en",
+      "query": "Which port number is shown in the Quickstart minimal application run output?",
+      "offered_sufficient": true,
+      "supporting_span_ids": [
+        6
+      ],
+      "assistant_expected_fact_or_limit": "5000 is the port displayed by the minimal application example.",
+      "arm_order": [
+        "numbered_span",
+        "exact_quote"
+      ]
+    },
+    {
+      "id": "f02-a-zh",
+      "family": "f02",
+      "category": "answerable",
+      "answer_kind": "numeric",
+      "language": "zh",
+      "query": "Quickstart 最小应用的运行输出显示哪个端口号？",
+      "offered_sufficient": true,
+      "supporting_span_ids": [
+        6
+      ],
+      "assistant_expected_fact_or_limit": "5000 is the port displayed by the minimal application example.",
+      "arm_order": [
+        "exact_quote",
+        "numbered_span"
+      ]
+    },
+    {
+      "id": "f02-r-en",
+      "family": "f02",
+      "category": "related_unanswerable",
+      "answer_kind": "numeric",
+      "language": "en",
+      "query": "Which port number is my running production application listening on right now?",
+      "offered_sufficient": false,
+      "supporting_span_ids": [],
+      "assistant_expected_fact_or_limit": "The example port does not establish a particular deployed application port.",
+      "arm_order": [
+        "exact_quote",
+        "numbered_span"
+      ]
+    },
+    {
+      "id": "f02-r-zh",
+      "family": "f02",
+      "category": "related_unanswerable",
+      "answer_kind": "numeric",
+      "language": "zh",
+      "query": "我正在运行的生产应用此刻监听哪个端口号？",
+      "offered_sufficient": false,
+      "supporting_span_ids": [],
+      "assistant_expected_fact_or_limit": "The example port does not establish a particular deployed application port.",
+      "arm_order": [
+        "numbered_span",
+        "exact_quote"
+      ]
+    },
+    {
+      "id": "f03-a-en",
+      "family": "f03",
+      "category": "answerable",
+      "answer_kind": "nonnumeric",
+      "language": "en",
+      "query": "When USE_X_SENDFILE is enabled for a supporting web server, which HTTP header does Flask set?",
+      "offered_sufficient": true,
+      "supporting_span_ids": [
+        3
+      ],
+      "assistant_expected_fact_or_limit": "X-Sendfile is the header used when USE_X_SENDFILE is enabled for a supporting server.",
+      "arm_order": [
+        "exact_quote",
+        "numbered_span"
+      ]
+    },
+    {
+      "id": "f03-a-zh",
+      "family": "f03",
+      "category": "answerable",
+      "answer_kind": "nonnumeric",
+      "language": "zh",
+      "query": "对支持此功能的 Web 服务器启用 USE_X_SENDFILE 时，Flask 设置哪个 HTTP 头？",
+      "offered_sufficient": true,
+      "supporting_span_ids": [
+        3
+      ],
+      "assistant_expected_fact_or_limit": "X-Sendfile is the header used when USE_X_SENDFILE is enabled for a supporting server.",
+      "arm_order": [
+        "numbered_span",
+        "exact_quote"
+      ]
+    },
+    {
+      "id": "f03-r-en",
+      "family": "f03",
+      "category": "related_unanswerable",
+      "answer_kind": "nonnumeric",
+      "language": "en",
+      "query": "Which HTTP header did my production server actually emit for its last file download?",
+      "offered_sufficient": false,
+      "supporting_span_ids": [],
+      "assistant_expected_fact_or_limit": "A documented conditional feature does not reveal a real response from an unspecified production server.",
+      "arm_order": [
+        "numbered_span",
+        "exact_quote"
+      ]
+    },
+    {
+      "id": "f03-r-zh",
+      "family": "f03",
+      "category": "related_unanswerable",
+      "answer_kind": "nonnumeric",
+      "language": "zh",
+      "query": "我的生产服务器在最近一次文件下载中实际发送了哪个 HTTP 头？",
+      "offered_sufficient": false,
+      "supporting_span_ids": [],
+      "assistant_expected_fact_or_limit": "A documented conditional feature does not reveal a real response from an unspecified production server.",
+      "arm_order": [
+        "exact_quote",
+        "numbered_span"
+      ]
+    },
+    {
+      "id": "f04-a-en",
+      "family": "f04",
+      "category": "answerable",
+      "answer_kind": "nonnumeric",
+      "language": "en",
+      "query": "Which configuration key enables debugging information about how a template was loaded?",
+      "offered_sufficient": true,
+      "supporting_span_ids": [
+        5
+      ],
+      "assistant_expected_fact_or_limit": "EXPLAIN_TEMPLATE_LOADING enables debugging information about template loading.",
+      "arm_order": [
+        "numbered_span",
+        "exact_quote"
+      ]
+    },
+    {
+      "id": "f04-a-zh",
+      "family": "f04",
+      "category": "answerable",
+      "answer_kind": "nonnumeric",
+      "language": "zh",
+      "query": "哪个配置项可启用有关模板加载过程的调试信息？",
+      "offered_sufficient": true,
+      "supporting_span_ids": [
+        5
+      ],
+      "assistant_expected_fact_or_limit": "EXPLAIN_TEMPLATE_LOADING enables debugging information about template loading.",
+      "arm_order": [
+        "exact_quote",
+        "numbered_span"
+      ]
+    },
+    {
+      "id": "f04-r-en",
+      "family": "f04",
+      "category": "related_unanswerable",
+      "answer_kind": "nonnumeric",
+      "language": "en",
+      "query": "Which exact template filename was loaded by my application's most recent request?",
+      "offered_sufficient": false,
+      "supporting_span_ids": [],
+      "assistant_expected_fact_or_limit": "A configuration option for producing logs does not supply actual template trace data.",
+      "arm_order": [
+        "exact_quote",
+        "numbered_span"
+      ]
+    },
+    {
+      "id": "f04-r-zh",
+      "family": "f04",
+      "category": "related_unanswerable",
+      "answer_kind": "nonnumeric",
+      "language": "zh",
+      "query": "我的应用最近一次请求实际加载的模板文件名是什么？",
+      "offered_sufficient": false,
+      "supporting_span_ids": [],
+      "assistant_expected_fact_or_limit": "A configuration option for producing logs does not supply actual template trace data.",
+      "arm_order": [
+        "numbered_span",
+        "exact_quote"
+      ]
+    }
+  ],
+  "plan": {
+    "arms": [
+      "exact_quote",
+      "numbered_span"
+    ],
+    "evidence_unit": "A complete bounded supplied span; at most one may be selected. All answerable cases have a complete single-span fact. Both arms receive identical ordered span_id/text objects; metadata and expected answers are not sent.",
+    "selection_limit": 1,
+    "max_spans": 12,
+    "max_span_characters": 600,
+    "max_total_span_characters": 4800,
+    "selector_temperature": 0,
+    "selector_seed": 42,
+    "selector_max_tokens": 512,
+    "generator": "Unchanged rag_foundation.generation.LocalGenerator, only selected materialized original spans supplied.",
+    "generator_temperature": 0,
+    "generator_seed": 42,
+    "generator_max_tokens": 512,
+    "server_context_tokens": 4096,
+    "cpu_threads": 4,
+    "order": "Counterbalance first arm across family, language and answerability using frozen arm_order per case.",
+    "retry": false,
+    "telemetry": "Best effort; never discard completed requests because optional memory/log collection fails.",
+    "coverage": "Curated offered-evidence comparison, not a retriever ranking or full production pipeline benchmark.",
+    "old_cases": "Saved prior experiments remain offline regression audits only."
+  }
+}

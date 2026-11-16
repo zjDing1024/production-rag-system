@@ -1,0 +1,831 @@
+{
+  "record_integrity": "verified",
+  "semantic_review": "AI-authored and second-AI-reviewed; not automatically proved",
+  "scope": "4 fact families; 16 bilingual category questions; curated offered evidence, not retrieval ranking or held-out benchmark",
+  "summary": {
+    "exact_quote": {
+      "cases": 16,
+      "offered_sufficient": 8,
+      "offered_insufficient": 8,
+      "selector_status_counts": {
+        "invalid_response": 16
+      },
+      "contract_valid_selections": 0,
+      "selected_semantically_supporting": 0,
+      "legitimate_selector_refusals": 0,
+      "false_selector_refusals": 0,
+      "generator_calls": 0,
+      "generator_status_counts": {},
+      "accepted_supported_correct_answers": 0,
+      "raw_supported_correct_answers": 0,
+      "legitimate_generator_refusals": 0,
+      "by_answer_kind": {
+        "numeric": {
+          "answerable_denominator": 4,
+          "related_unanswerable_denominator": 4,
+          "supported_selections": 0,
+          "legitimate_selector_refusals": 0,
+          "false_selector_refusals": 0
+        },
+        "nonnumeric": {
+          "answerable_denominator": 4,
+          "related_unanswerable_denominator": 4,
+          "supported_selections": 0,
+          "legitimate_selector_refusals": 0,
+          "false_selector_refusals": 0
+        }
+      }
+    },
+    "numbered_span": {
+      "cases": 16,
+      "offered_sufficient": 8,
+      "offered_insufficient": 8,
+      "selector_status_counts": {
+        "insufficient": 5,
+        "selected": 11
+      },
+      "contract_valid_selections": 11,
+      "selected_semantically_supporting": 6,
+      "legitimate_selector_refusals": 3,
+      "false_selector_refusals": 2,
+      "generator_calls": 11,
+      "generator_status_counts": {
+        "answered": 1,
+        "invalid_response": 10
+      },
+      "accepted_supported_correct_answers": 0,
+      "raw_supported_correct_answers": 5,
+      "legitimate_generator_refusals": 0,
+      "by_answer_kind": {
+        "numeric": {
+          "answerable_denominator": 4,
+          "related_unanswerable_denominator": 4,
+          "supported_selections": 4,
+          "legitimate_selector_refusals": 0,
+          "false_selector_refusals": 0
+        },
+        "nonnumeric": {
+          "answerable_denominator": 4,
+          "related_unanswerable_denominator": 4,
+          "supported_selections": 2,
+          "legitimate_selector_refusals": 3,
+          "false_selector_refusals": 2
+        }
+      }
+    }
+  },
+  "posthoc_quote_categories": {
+    "only_missing_final_newline": 7,
+    "other_modified_or_partial_text": 9
+  },
+  "rows": [
+    {
+      "case_id": "f01-a-en",
+      "arm": "exact_quote",
+      "category": "answerable",
+      "answer_kind": "numeric",
+      "language": "en",
+      "offered_sufficient": true,
+      "selector_status": "invalid_response",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        1
+      ],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f01-a-en",
+      "arm": "numbered_span",
+      "category": "answerable",
+      "answer_kind": "numeric",
+      "language": "en",
+      "offered_sufficient": true,
+      "selector_status": "selected",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        1
+      ],
+      "resolved_span_ids": [
+        1
+      ],
+      "selected_semantic_support": true,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "supported_correct",
+      "raw_answer": "31"
+    },
+    {
+      "case_id": "f01-a-zh",
+      "arm": "numbered_span",
+      "category": "answerable",
+      "answer_kind": "numeric",
+      "language": "zh",
+      "offered_sufficient": true,
+      "selector_status": "selected",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        1
+      ],
+      "resolved_span_ids": [
+        1
+      ],
+      "selected_semantic_support": true,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "supported_correct",
+      "raw_answer": "31"
+    },
+    {
+      "case_id": "f01-a-zh",
+      "arm": "exact_quote",
+      "category": "answerable",
+      "answer_kind": "numeric",
+      "language": "zh",
+      "offered_sufficient": true,
+      "selector_status": "invalid_response",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        1
+      ],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f01-r-en",
+      "arm": "numbered_span",
+      "category": "related_unanswerable",
+      "answer_kind": "numeric",
+      "language": "en",
+      "offered_sufficient": false,
+      "selector_status": "selected",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        1
+      ],
+      "resolved_span_ids": [
+        1
+      ],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": true,
+      "generator_status": "answered",
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "raw_answer": "31 days"
+    },
+    {
+      "case_id": "f01-r-en",
+      "arm": "exact_quote",
+      "category": "related_unanswerable",
+      "answer_kind": "numeric",
+      "language": "en",
+      "offered_sufficient": false,
+      "selector_status": "invalid_response",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        1
+      ],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f01-r-zh",
+      "arm": "exact_quote",
+      "category": "related_unanswerable",
+      "answer_kind": "numeric",
+      "language": "zh",
+      "offered_sufficient": false,
+      "selector_status": "invalid_response",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        1
+      ],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f01-r-zh",
+      "arm": "numbered_span",
+      "category": "related_unanswerable",
+      "answer_kind": "numeric",
+      "language": "zh",
+      "offered_sufficient": false,
+      "selector_status": "selected",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        1
+      ],
+      "resolved_span_ids": [
+        1
+      ],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "refusal",
+      "raw_answer": "无法确定"
+    },
+    {
+      "case_id": "f02-a-en",
+      "arm": "numbered_span",
+      "category": "answerable",
+      "answer_kind": "numeric",
+      "language": "en",
+      "offered_sufficient": true,
+      "selector_status": "selected",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        6
+      ],
+      "resolved_span_ids": [
+        6
+      ],
+      "selected_semantic_support": true,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "supported_correct",
+      "raw_answer": "5000"
+    },
+    {
+      "case_id": "f02-a-en",
+      "arm": "exact_quote",
+      "category": "answerable",
+      "answer_kind": "numeric",
+      "language": "en",
+      "offered_sufficient": true,
+      "selector_status": "invalid_response",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        6
+      ],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f02-a-zh",
+      "arm": "exact_quote",
+      "category": "answerable",
+      "answer_kind": "numeric",
+      "language": "zh",
+      "offered_sufficient": true,
+      "selector_status": "invalid_response",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        6
+      ],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f02-a-zh",
+      "arm": "numbered_span",
+      "category": "answerable",
+      "answer_kind": "numeric",
+      "language": "zh",
+      "offered_sufficient": true,
+      "selector_status": "selected",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        6
+      ],
+      "resolved_span_ids": [
+        6
+      ],
+      "selected_semantic_support": true,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "supported_correct",
+      "raw_answer": "5000"
+    },
+    {
+      "case_id": "f02-r-en",
+      "arm": "exact_quote",
+      "category": "related_unanswerable",
+      "answer_kind": "numeric",
+      "language": "en",
+      "offered_sufficient": false,
+      "selector_status": "invalid_response",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        6
+      ],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f02-r-en",
+      "arm": "numbered_span",
+      "category": "related_unanswerable",
+      "answer_kind": "numeric",
+      "language": "en",
+      "offered_sufficient": false,
+      "selector_status": "selected",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        6
+      ],
+      "resolved_span_ids": [
+        6
+      ],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "raw_answer": "5000"
+    },
+    {
+      "case_id": "f02-r-zh",
+      "arm": "numbered_span",
+      "category": "related_unanswerable",
+      "answer_kind": "numeric",
+      "language": "zh",
+      "offered_sufficient": false,
+      "selector_status": "selected",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        6
+      ],
+      "resolved_span_ids": [
+        6
+      ],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "raw_answer": "5000"
+    },
+    {
+      "case_id": "f02-r-zh",
+      "arm": "exact_quote",
+      "category": "related_unanswerable",
+      "answer_kind": "numeric",
+      "language": "zh",
+      "offered_sufficient": false,
+      "selector_status": "invalid_response",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        6
+      ],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f03-a-en",
+      "arm": "exact_quote",
+      "category": "answerable",
+      "answer_kind": "nonnumeric",
+      "language": "en",
+      "offered_sufficient": true,
+      "selector_status": "invalid_response",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        3
+      ],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f03-a-en",
+      "arm": "numbered_span",
+      "category": "answerable",
+      "answer_kind": "nonnumeric",
+      "language": "en",
+      "offered_sufficient": true,
+      "selector_status": "insufficient",
+      "raw_sufficient": false,
+      "raw_selected_ids": [],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": true,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f03-a-zh",
+      "arm": "numbered_span",
+      "category": "answerable",
+      "answer_kind": "nonnumeric",
+      "language": "zh",
+      "offered_sufficient": true,
+      "selector_status": "insufficient",
+      "raw_sufficient": false,
+      "raw_selected_ids": [],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": true,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f03-a-zh",
+      "arm": "exact_quote",
+      "category": "answerable",
+      "answer_kind": "nonnumeric",
+      "language": "zh",
+      "offered_sufficient": true,
+      "selector_status": "invalid_response",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        3
+      ],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f03-r-en",
+      "arm": "numbered_span",
+      "category": "related_unanswerable",
+      "answer_kind": "nonnumeric",
+      "language": "en",
+      "offered_sufficient": false,
+      "selector_status": "insufficient",
+      "raw_sufficient": false,
+      "raw_selected_ids": [],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": true,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f03-r-en",
+      "arm": "exact_quote",
+      "category": "related_unanswerable",
+      "answer_kind": "nonnumeric",
+      "language": "en",
+      "offered_sufficient": false,
+      "selector_status": "invalid_response",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        3
+      ],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f03-r-zh",
+      "arm": "exact_quote",
+      "category": "related_unanswerable",
+      "answer_kind": "nonnumeric",
+      "language": "zh",
+      "offered_sufficient": false,
+      "selector_status": "invalid_response",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        1
+      ],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f03-r-zh",
+      "arm": "numbered_span",
+      "category": "related_unanswerable",
+      "answer_kind": "nonnumeric",
+      "language": "zh",
+      "offered_sufficient": false,
+      "selector_status": "insufficient",
+      "raw_sufficient": false,
+      "raw_selected_ids": [],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": true,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f04-a-en",
+      "arm": "numbered_span",
+      "category": "answerable",
+      "answer_kind": "nonnumeric",
+      "language": "en",
+      "offered_sufficient": true,
+      "selector_status": "selected",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        5
+      ],
+      "resolved_span_ids": [
+        5
+      ],
+      "selected_semantic_support": true,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "refusal",
+      "raw_answer": "None"
+    },
+    {
+      "case_id": "f04-a-en",
+      "arm": "exact_quote",
+      "category": "answerable",
+      "answer_kind": "nonnumeric",
+      "language": "en",
+      "offered_sufficient": true,
+      "selector_status": "invalid_response",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        5
+      ],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f04-a-zh",
+      "arm": "exact_quote",
+      "category": "answerable",
+      "answer_kind": "nonnumeric",
+      "language": "zh",
+      "offered_sufficient": true,
+      "selector_status": "invalid_response",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        5
+      ],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f04-a-zh",
+      "arm": "numbered_span",
+      "category": "answerable",
+      "answer_kind": "nonnumeric",
+      "language": "zh",
+      "offered_sufficient": true,
+      "selector_status": "selected",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        5
+      ],
+      "resolved_span_ids": [
+        5
+      ],
+      "selected_semantic_support": true,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "supported_correct",
+      "raw_answer": "EXPLAIN_TEMPLATE_LOADING"
+    },
+    {
+      "case_id": "f04-r-en",
+      "arm": "exact_quote",
+      "category": "related_unanswerable",
+      "answer_kind": "nonnumeric",
+      "language": "en",
+      "offered_sufficient": false,
+      "selector_status": "invalid_response",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        1
+      ],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f04-r-en",
+      "arm": "numbered_span",
+      "category": "related_unanswerable",
+      "answer_kind": "nonnumeric",
+      "language": "en",
+      "offered_sufficient": false,
+      "selector_status": "selected",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        1
+      ],
+      "resolved_span_ids": [
+        1
+      ],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "refusal",
+      "raw_answer": "None"
+    },
+    {
+      "case_id": "f04-r-zh",
+      "arm": "numbered_span",
+      "category": "related_unanswerable",
+      "answer_kind": "nonnumeric",
+      "language": "zh",
+      "offered_sufficient": false,
+      "selector_status": "insufficient",
+      "raw_sufficient": false,
+      "raw_selected_ids": [],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": true,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    },
+    {
+      "case_id": "f04-r-zh",
+      "arm": "exact_quote",
+      "category": "related_unanswerable",
+      "answer_kind": "nonnumeric",
+      "language": "zh",
+      "offered_sufficient": false,
+      "selector_status": "invalid_response",
+      "raw_sufficient": true,
+      "raw_selected_ids": [
+        1
+      ],
+      "resolved_span_ids": [],
+      "selected_semantic_support": false,
+      "legitimate_selector_refusal": false,
+      "false_selector_refusal": false,
+      "generator_invoked": false,
+      "generator_status": null,
+      "legitimate_generator_refusal": false,
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "raw_answer": null
+    }
+  ]
+}

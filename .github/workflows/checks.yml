@@ -49,3 +49,8 @@ jobs:
           python -m unittest discover -s experiments/evidence-sufficiency-v1 -p test_audit.py -v
           python experiments/evidence-sufficiency-v1/audit_record.py > build/evidence-sufficiency-v1-audit.json
           cmp experiments/evidence-sufficiency-v1/summary.json build/evidence-sufficiency-v1-audit.json
+      - name: Verify bounded span comparison without a model
+        run: |
+          python -m unittest discover -s experiments/numbered-spans-v1 -p 'test_*.py' -v
+          python experiments/numbered-spans-v1/audit_record.py > build/numbered-spans-v1-summary.json
+          cmp experiments/numbered-spans-v1/summary.json build/numbered-spans-v1-summary.json

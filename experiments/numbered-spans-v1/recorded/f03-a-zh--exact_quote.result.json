@@ -1,0 +1,16 @@
+{
+  "case_id": "f03-a-zh",
+  "arm": "exact_quote",
+  "selector": {
+    "arm": "exact_quote",
+    "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"sufficient\\\": true, \\\"selections\\\": [{\\\"span_id\\\": 3, \\\"quote\\\": \\\".. py:data:: USE_X_SENDFILE\\\\n\\\\n    When serving files, set the ``X-Sendfile`` header instead of serving the\\\\n    data with Flask. Some web servers, such as Apache, recognize this and serve\\\\n    the data more efficiently. This only makes sense when using such a server.\\\\n\\\\n    Default: ``False``\\\"}]}\"}}],\"created\":1794846082,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":96,\"prompt_tokens\":736,\"total_tokens\":832,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"id\":\"chatcmpl-wyOlZKf0xuVZpmIguxyPB1g8AOFmZ5gq\",\"timings\":{\"cache_n\":0,\"prompt_n\":736,\"prompt_ms\":2714.673,\"prompt_per_token_ms\":3.6884144021739127,\"prompt_per_second\":271.1192103063611,\"predicted_n\":96,\"predicted_ms\":2216.911,\"predicted_per_token_ms\":23.335905263157894,\"predicted_per_second\":42.85241942504683}}",
+    "selected_span_ids": [],
+    "selected_context": [],
+    "semantic_support": "unverified",
+    "http_status": 200,
+    "status": "invalid_response",
+    "reason": "quote must equal the entire original span byte-for-byte in UTF-8"
+  },
+  "generator_invoked": false,
+  "generator": null
+}

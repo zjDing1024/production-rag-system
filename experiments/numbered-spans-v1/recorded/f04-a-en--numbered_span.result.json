@@ -1,0 +1,28 @@
+{
+  "case_id": "f04-a-en",
+  "arm": "numbered_span",
+  "selector": {
+    "arm": "numbered_span",
+    "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"sufficient\\\": true, \\\"selections\\\": [{\\\"span_id\\\": 5}]\\n}\"}}],\"created\":1794846101,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":20,\"prompt_tokens\":722,\"total_tokens\":742,\"prompt_tokens_details\":{\"cached_tokens\":130}},\"id\":\"chatcmpl-uupyATgVTkqADJSvZRQpixvF8eluM9Ux\",\"timings\":{\"cache_n\":130,\"prompt_n\":592,\"prompt_ms\":2723.419,\"prompt_per_token_ms\":4.600369932432432,\"prompt_per_second\":217.37382312453573,\"predicted_n\":20,\"predicted_ms\":518.665,\"predicted_per_token_ms\":27.29815789473684,\"predicted_per_second\":36.63250845921742}}",
+    "selected_span_ids": [
+      5
+    ],
+    "selected_context": [
+      {
+        "chunk_id": "5",
+        "text": ".. py:data:: EXPLAIN_TEMPLATE_LOADING\n\n    Log debugging information tracing how a template file was loaded. This can\n    be useful to figure out why a template was not loaded or the wrong file\n    appears to be loaded.\n\n    Default: ``False``\n",
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L374-L380"
+      }
+    ],
+    "semantic_support": "unverified",
+    "http_status": 200,
+    "status": "selected",
+    "reason": "contract_valid"
+  },
+  "generator_invoked": true,
+  "generator": {
+    "status": "invalid_response",
+    "reason": "ValueError",
+    "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"answer\\\": \\\"None\\\", \\\"citations\\\": [], \\\"abstain\\\": true}\"}}],\"created\":1794846102,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":19,\"prompt_tokens\":197,\"total_tokens\":216,\"prompt_tokens_details\":{\"cached_tokens\":92}},\"id\":\"chatcmpl-cr0OinmBftQTHBgrUkWFKuvFgHYA5BnG\",\"timings\":{\"cache_n\":92,\"prompt_n\":105,\"prompt_ms\":495.279,\"prompt_per_token_ms\":4.7169428571428575,\"prompt_per_second\":212.00172024252998,\"predicted_n\":19,\"predicted_ms\":388.107,\"predicted_per_token_ms\":21.561500000000002,\"predicted_per_second\":46.378962502608815}}"
+  }
+}

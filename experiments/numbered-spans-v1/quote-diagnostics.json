@@ -1,0 +1,101 @@
+{
+  "scope": "Post-hoc descriptive diagnostic only; no validator/prompt changes or rescoring of primary outcomes. Other differences are not asserted to be token-budget truncation.",
+  "rows": [
+    {
+      "case_id": "f01-a-en",
+      "span_id": 1,
+      "category": "only_missing_final_newline",
+      "finish_reason": "stop"
+    },
+    {
+      "case_id": "f01-a-zh",
+      "span_id": 1,
+      "category": "only_missing_final_newline",
+      "finish_reason": "stop"
+    },
+    {
+      "case_id": "f01-r-en",
+      "span_id": 1,
+      "category": "other_modified_or_partial_text",
+      "finish_reason": "stop"
+    },
+    {
+      "case_id": "f01-r-zh",
+      "span_id": 1,
+      "category": "other_modified_or_partial_text",
+      "finish_reason": "stop"
+    },
+    {
+      "case_id": "f02-a-en",
+      "span_id": 6,
+      "category": "other_modified_or_partial_text",
+      "finish_reason": "stop"
+    },
+    {
+      "case_id": "f02-a-zh",
+      "span_id": 6,
+      "category": "other_modified_or_partial_text",
+      "finish_reason": "stop"
+    },
+    {
+      "case_id": "f02-r-en",
+      "span_id": 6,
+      "category": "other_modified_or_partial_text",
+      "finish_reason": "stop"
+    },
+    {
+      "case_id": "f02-r-zh",
+      "span_id": 6,
+      "category": "other_modified_or_partial_text",
+      "finish_reason": "stop"
+    },
+    {
+      "case_id": "f03-a-en",
+      "span_id": 3,
+      "category": "only_missing_final_newline",
+      "finish_reason": "stop"
+    },
+    {
+      "case_id": "f03-a-zh",
+      "span_id": 3,
+      "category": "only_missing_final_newline",
+      "finish_reason": "stop"
+    },
+    {
+      "case_id": "f03-r-en",
+      "span_id": 3,
+      "category": "only_missing_final_newline",
+      "finish_reason": "stop"
+    },
+    {
+      "case_id": "f03-r-zh",
+      "span_id": 1,
+      "category": "other_modified_or_partial_text",
+      "finish_reason": "stop"
+    },
+    {
+      "case_id": "f04-a-en",
+      "span_id": 5,
+      "category": "other_modified_or_partial_text",
+      "finish_reason": "stop"
+    },
+    {
+      "case_id": "f04-a-zh",
+      "span_id": 5,
+      "category": "only_missing_final_newline",
+      "finish_reason": "stop"
+    },
+    {
+      "case_id": "f04-r-en",
+      "span_id": 1,
+      "category": "only_missing_final_newline",
+      "finish_reason": "stop"
+    },
+    {
+      "case_id": "f04-r-zh",
+      "span_id": 1,
+      "category": "other_modified_or_partial_text",
+      "finish_reason": "stop"
+    }
+  ]
+}

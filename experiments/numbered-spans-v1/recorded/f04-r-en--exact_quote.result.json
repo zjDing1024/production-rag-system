@@ -1,0 +1,16 @@
+{
+  "case_id": "f04-r-en",
+  "arm": "exact_quote",
+  "selector": {
+    "arm": "exact_quote",
+    "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"sufficient\\\": true, \\\"selections\\\": [{\\\"span_id\\\": 1, \\\"quote\\\": \\\".. py:data:: PERMANENT_SESSION_LIFETIME\\\\n\\\\n    If ``session.permanent`` is true, the cookie's expiration will be set this\\\\n    number of seconds in the future. Can either be a\\\\n    :class:`datetime.timedelta` or an ``int``.\\\\n\\\\n    Flask's default cookie implementation validates that the cryptographic\\\\n    signature is not older than this value.\\\\n\\\\n    Default: ``timedelta(days=31)`` (``2678400`` seconds)\\\"}]}\"}}],\"created\":1794846122,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":130,\"prompt_tokens\":723,\"total_tokens\":853,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"id\":\"chatcmpl-5f7bcNO0TESzIZM94cayqgmtwYHmYyS6\",\"timings\":{\"cache_n\":0,\"prompt_n\":723,\"prompt_ms\":2794.364,\"prompt_per_token_ms\":3.864957123098202,\"prompt_per_second\":258.73508247314953,\"predicted_n\":130,\"predicted_ms\":3321.9,\"predicted_per_token_ms\":25.751162790697673,\"predicted_per_second\":38.83319786868961}}",
+    "selected_span_ids": [],
+    "selected_context": [],
+    "semantic_support": "unverified",
+    "http_status": 200,
+    "status": "invalid_response",
+    "reason": "quote must equal the entire original span byte-for-byte in UTF-8"
+  },
+  "generator_invoked": false,
+  "generator": null
+}

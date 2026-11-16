@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_execution",
+  "frozen_utc": "2026-11-16T16:19:35.124318+00:00",
+  "cases_sha256": "8d51482bb4aa5c1599267978c3553035a5f5110438d02fc2f13cd6e028a85bd0",
+  "case_count": 16,
+  "fact_families": 4,
+  "implementation_sha256": {
+    "experiments/numbered-spans-v1/mechanics.py": "a559e13b1f7b6762a1e5ad1e149dd1f1c8ab2e083afb5154f6190e6f2a8b6a88",
+    "experiments/numbered-spans-v1/run_experiment.py": "c6b021ca549663261f1608b4f6774fa49c0dd6aabfa85c1f09a04228e020c2f2",
+    "src/rag_foundation/generation.py": "a3aa8cde0881f86ec1a8b48cf823fbc39a0f194d4cc093f0585318b0126e7532"
+  },
+  "review": "AI assistant authored labels; a second AI assistant reviewed source spans, coverage, labels and mechanics before model calls. Local development freeze, not human review, independent held-out evaluation or external preregistration."
+}

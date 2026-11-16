@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-11-16T16:19:47.605469+00:00",
+  "cases_sha256": "8d51482bb4aa5c1599267978c3553035a5f5110438d02fc2f13cd6e028a85bd0",
+  "implementation_sha256": {
+    "experiments/numbered-spans-v1/mechanics.py": "a559e13b1f7b6762a1e5ad1e149dd1f1c8ab2e083afb5154f6190e6f2a8b6a88",
+    "experiments/numbered-spans-v1/run_experiment.py": "c6b021ca549663261f1608b4f6774fa49c0dd6aabfa85c1f09a04228e020c2f2",
+    "src/rag_foundation/generation.py": "a3aa8cde0881f86ec1a8b48cf823fbc39a0f194d4cc093f0585318b0126e7532"
+  },
+  "model_sha256": "57d1997790d1744fba5b40a7317df71ea5e2acee28c47e78f0cce39c0703f8cf",
+  "runtime_sha256": "cf07a7d6b6d2c61064105cc0a81360cb5830aacd3d1a949b80eaea3a96fa409f",
+  "server_flags": [
+    "--model",
+    "Qwen3.5-0.8B-Q4_0.gguf",
+    "--alias",
+    "local-model",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "<ephemeral>",
+    "--ctx-size",
+    "4096",
+    "--threads",
+    "4",
+    "--threads-batch",
+    "4",
+    "--parallel",
+    "1",
+    "--gpu-layers",
+    "0",
+    "--no-agent",
+    "--no-webui",
+    "--no-ui-mcp-proxy",
+    "--reasoning",
+    "off",
+    "--chat-template-kwargs",
+    "{\"enable_thinking\":false}"
+  ],
+  "attempts": [
+    {
+      "case_id": "f01-a-en",
+      "arm": "exact_quote",
+      "request_file": "f01-a-en--exact_quote.request.json",
+      "request_sha256": "12d273c37d2605f6e5b9b3906f2695b12536dbabb5a493a8925fbba61ada066a",
+      "result_file": "f01-a-en--exact_quote.result.json",
+      "result_sha256": "4c522085bd8922b13830d81586a8554fd9027f5d07b698faf2cb89d3e7ed814b",
+      "selector_status": "invalid_response",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 6.132751909000035
+    },
+    {
+      "case_id": "f01-a-en",
+      "arm": "numbered_span",
+      "request_file": "f01-a-en--numbered_span.request.json",
+      "request_sha256": "816543526d4acb5e2ea8009f5115d3fa40e29914da9166748839fe5832c48957",
+      "result_file": "f01-a-en--numbered_span.result.json",
+      "result_sha256": "7aed0156a6215b74d102b2d9940faa85a161242e0040c4e84ac52e379032b9c4",
+      "selector_status": "selected",
+      "selected_span_ids": [
+        1
+      ],
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "seconds": 5.151050423000015
+    },
+    {
+      "case_id": "f01-a-zh",
+      "arm": "numbered_span",
+      "request_file": "f01-a-zh--numbered_span.request.json",
+      "request_sha256": "8150c33a750e29f9a0fdd189f8f3c1cb586e974a7e9203572763ad819cb14d5d",
+      "result_file": "f01-a-zh--numbered_span.result.json",
+      "result_sha256": "64ac0293725869a726eddf7db15af705e28c520e60bd22e20267ece55e944f38",
+      "selector_status": "selected",
+      "selected_span_ids": [
+        1
+      ],
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "seconds": 4.893566653999869
+    },
+    {
+      "case_id": "f01-a-zh",
+      "arm": "exact_quote",
+      "request_file": "f01-a-zh--exact_quote.request.json",
+      "request_sha256": "3d582a317a4282d74776b1cb7a684e3f3734d1862b78693aab90155b6892c350",
+      "result_file": "f01-a-zh--exact_quote.result.json",
+      "result_sha256": "f2449d0bda7259025144718da72f2155e710201f311b17b362c8c64aa63ad9f3",
+      "selector_status": "invalid_response",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 6.503863469999942
+    },
+    {
+      "case_id": "f01-r-en",
+      "arm": "numbered_span",
+      "request_file": "f01-r-en--numbered_span.request.json",
+      "request_sha256": "230dc404b9b5dff4eee6782e7e38e52bf7c14f9d1259bdc1a2dff66c12abbc0f",
+      "result_file": "f01-r-en--numbered_span.result.json",
+      "result_sha256": "29c9cb561f51d2598a1a8874b791f253ca63a237ab10f7141bb87e8f670cf049",
+      "selector_status": "selected",
+      "selected_span_ids": [
+        1
+      ],
+      "generator_invoked": true,
+      "generator_status": "answered",
+      "seconds": 4.792992175999871
+    },
+    {
+      "case_id": "f01-r-en",
+      "arm": "exact_quote",
+      "request_file": "f01-r-en--exact_quote.request.json",
+      "request_sha256": "97f41f0ca0cfc2665630a9cc491f4c96013360a08dc31cb853b656e0d21ae0d2",
+      "result_file": "f01-r-en--exact_quote.result.json",
+      "result_sha256": "1e1ee8e993f69894a99086566c1a72cc380456728780bf0ab8325dbfd6e45bed",
+      "selector_status": "invalid_response",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 6.126509909000106
+    },
+    {
+      "case_id": "f01-r-zh",
+      "arm": "exact_quote",
+      "request_file": "f01-r-zh--exact_quote.request.json",
+      "request_sha256": "1f8aa79c4278116f2939d72ee8dea7f1fea221e6f305edc683e2559865d82b8d",
+      "result_file": "f01-r-zh--exact_quote.result.json",
+      "result_sha256": "a4cfb35493ef9a1514a446a62304750d649105caedcd00f0dd41568de207f448",
+      "selector_status": "invalid_response",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 4.142194318000065
+    },
+    {
+      "case_id": "f01-r-zh",
+      "arm": "numbered_span",
+      "request_file": "f01-r-zh--numbered_span.request.json",
+      "request_sha256": "50cf4cc16bd4615d1178c132dd8dd58057932bc5da43fec0b364962e561ce24d",
+      "result_file": "f01-r-zh--numbered_span.result.json",
+      "result_sha256": "4758d929f8d593ad93b1c2d6301fad48c51cf664ec437428a184bb78ac6d54e6",
+      "selector_status": "selected",
+      "selected_span_ids": [
+        1
+      ],
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "seconds": 4.524278103000142
+    },
+    {
+      "case_id": "f02-a-en",
+      "arm": "numbered_span",
+      "request_file": "f02-a-en--numbered_span.request.json",
+      "request_sha256": "329998586c877c1edab6fb5cadf848adf5b3a43d4e9f2cd0159332bc34115adc",
+      "result_file": "f02-a-en--numbered_span.result.json",
+      "result_sha256": "9ff235614ff28ee47476dd8ba6273f936c1e9f3c0ae008812cc5a98dc306bd51",
+      "selector_status": "selected",
+      "selected_span_ids": [
+        6
+      ],
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "seconds": 4.348279785000159
+    },
+    {
+      "case_id": "f02-a-en",
+      "arm": "exact_quote",
+      "request_file": "f02-a-en--exact_quote.request.json",
+      "request_sha256": "64b929d36341c1e39ee354b2e46a84f47da2c3501a60f8e7be5ec72ac66cefc1",
+      "result_file": "f02-a-en--exact_quote.result.json",
+      "result_sha256": "4edd4bccf01cd0a5c12d0fc27d9f1f027981baa3552d0b25098492366207145c",
+      "selector_status": "invalid_response",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 4.459643336999989
+    },
+    {
+      "case_id": "f02-a-zh",
+      "arm": "exact_quote",
+      "request_file": "f02-a-zh--exact_quote.request.json",
+      "request_sha256": "753cb73af8d7b67987a9fd8455073bf0a49a0227a8940b6def758c07097a930d",
+      "result_file": "f02-a-zh--exact_quote.result.json",
+      "result_sha256": "dfd3317dd01d6592d947b5d72555b59bcb75fdb2c346b4c519682aff47fe51c2",
+      "selector_status": "invalid_response",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 3.9010184889998527
+    },
+    {
+      "case_id": "f02-a-zh",
+      "arm": "numbered_span",
+      "request_file": "f02-a-zh--numbered_span.request.json",
+      "request_sha256": "9eea715a2e5bb3831505dfd5369ac34042740616efb91a2a0c5fbffb87987f9f",
+      "result_file": "f02-a-zh--numbered_span.result.json",
+      "result_sha256": "2c5cadcaabf817a43b943cc5fb2187dbcc5f17b4e7ad9b6ec938d6ff996cd934",
+      "selector_status": "selected",
+      "selected_span_ids": [
+        6
+      ],
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "seconds": 4.385281974999998
+    },
+    {
+      "case_id": "f02-r-en",
+      "arm": "exact_quote",
+      "request_file": "f02-r-en--exact_quote.request.json",
+      "request_sha256": "e88b55267a564dd48bc31174a6a63c40dea0329ea9bc75bd95c857ef12263d81",
+      "result_file": "f02-r-en--exact_quote.result.json",
+      "result_sha256": "b72db18187c6ea23d08708437fc09ddfe1c335bf9054f782a2623545ce7888ea",
+      "selector_status": "invalid_response",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 4.705389943
+    },
+    {
+      "case_id": "f02-r-en",
+      "arm": "numbered_span",
+      "request_file": "f02-r-en--numbered_span.request.json",
+      "request_sha256": "06578a1f65cb844b0e33094c2cb10d2d5332d605a356ae743eb46ffa01cd1eff",
+      "result_file": "f02-r-en--numbered_span.result.json",
+      "result_sha256": "77e231b7dfaf5263ca9b997eadf7cdd991291127209e2adfae96d34b4c11ec59",
+      "selector_status": "selected",
+      "selected_span_ids": [
+        6
+      ],
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "seconds": 3.9184911550000834
+    },
+    {
+      "case_id": "f02-r-zh",
+      "arm": "numbered_span",
+      "request_file": "f02-r-zh--numbered_span.request.json",
+      "request_sha256": "64aa602e725363a3ac7a9077c97d2bf1ab3f850c36162725175602caf616c317",
+      "result_file": "f02-r-zh--numbered_span.result.json",
+      "result_sha256": "0d60ec35841e6987f4c82704cd21584cfbb7b1a218e004040f8d1c24450dae16",
+      "selector_status": "selected",
+      "selected_span_ids": [
+        6
+      ],
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "seconds": 4.703048639999906
+    },
+    {
+      "case_id": "f02-r-zh",
+      "arm": "exact_quote",
+      "request_file": "f02-r-zh--exact_quote.request.json",
+      "request_sha256": "ea7b970ee7fa33f4ed89958f68052724faade78dff04826177d1dc423a522faf",
+      "result_file": "f02-r-zh--exact_quote.result.json",
+      "result_sha256": "2fc68571d5c1fb38555842587305bcb4fbd33141f449953cbc348d56acbef07d",
+      "selector_status": "invalid_response",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 4.518621372000098
+    },
+    {
+      "case_id": "f03-a-en",
+      "arm": "exact_quote",
+      "request_file": "f03-a-en--exact_quote.request.json",
+      "request_sha256": "8cdb623c930ee61ec84b7b1ee3ece56fc3ebdb0d74e8b383bd049f95b41e1f5a",
+      "result_file": "f03-a-en--exact_quote.result.json",
+      "result_sha256": "57a4c48d32402495a8ccc8cb8c1e84d318a9f21ca0da5ad77a5a986ed669f230",
+      "selector_status": "invalid_response",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 4.727716544000032
+    },
+    {
+      "case_id": "f03-a-en",
+      "arm": "numbered_span",
+      "request_file": "f03-a-en--numbered_span.request.json",
+      "request_sha256": "476f1aaa590be82548947a3447c55db9182de59d3e17d2d96d2a51b8378dc6f2",
+      "result_file": "f03-a-en--numbered_span.result.json",
+      "result_sha256": "0fd3631c4abdf448b2282430f8b291041a55e55f5d59ba927b702e33b5428db0",
+      "selector_status": "insufficient",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 2.879689008000014
+    },
+    {
+      "case_id": "f03-a-zh",
+      "arm": "numbered_span",
+      "request_file": "f03-a-zh--numbered_span.request.json",
+      "request_sha256": "6041e6dea7890f1bf869677ba7c3bc816f80ffd4c97e3cca17a9c8b5f9a4270f",
+      "result_file": "f03-a-zh--numbered_span.result.json",
+      "result_sha256": "149bbe8da44b73a5227cbb9838b4b55bcb92133644865cc8cab77d31af464125",
+      "selector_status": "insufficient",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 2.3806062539999857
+    },
+    {
+      "case_id": "f03-a-zh",
+      "arm": "exact_quote",
+      "request_file": "f03-a-zh--exact_quote.request.json",
+      "request_sha256": "392e78aad3343f227dcd7f886091e635d3670053d410ebc80f15faa2426379ef",
+      "result_file": "f03-a-zh--exact_quote.result.json",
+      "result_sha256": "8557a71045ec81ccbd10ed0bd9c6939082222083ab7ec6690658d727fddf69e3",
+      "selector_status": "invalid_response",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 4.951939958000139
+    },
+    {
+      "case_id": "f03-r-en",
+      "arm": "numbered_span",
+      "request_file": "f03-r-en--numbered_span.request.json",
+      "request_sha256": "16d633238d06c465b70da38a8afe7443363ea346417f353606a4801e24435884",
+      "result_file": "f03-r-en--numbered_span.result.json",
+      "result_sha256": "8db9e4b448319fc5394020933dddad73f9ef4100b43a7c83d0818fb41c600104",
+      "selector_status": "insufficient",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 3.1470921969998926
+    },
+    {
+      "case_id": "f03-r-en",
+      "arm": "exact_quote",
+      "request_file": "f03-r-en--exact_quote.request.json",
+      "request_sha256": "b65e4633c51ea0af3f3fdd2453dc1a12ff863304ce2bfc293fb9e6dde2260809",
+      "result_file": "f03-r-en--exact_quote.result.json",
+      "result_sha256": "6be91ad6ef4216d17fd30373e527023a44766fac4c22c0dcff42cb1354f6efab",
+      "selector_status": "invalid_response",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 5.075521531000049
+    },
+    {
+      "case_id": "f03-r-zh",
+      "arm": "exact_quote",
+      "request_file": "f03-r-zh--exact_quote.request.json",
+      "request_sha256": "8ccd1b8f1067d6ee94f2d0391955862d9bdc857f9a9e5fe97787994237acc36d",
+      "result_file": "f03-r-zh--exact_quote.result.json",
+      "result_sha256": "6f268bd0ebf33156d950171f35b50626f8d0cba71eab546753095f3b29d6c1de",
+      "selector_status": "invalid_response",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 3.7024190909999106
+    },
+    {
+      "case_id": "f03-r-zh",
+      "arm": "numbered_span",
+      "request_file": "f03-r-zh--numbered_span.request.json",
+      "request_sha256": "9ff60fbcec590d5dfc4f90999cc52c888d55ba6aecb5937d6c2b8c4ed1fe4f77",
+      "result_file": "f03-r-zh--numbered_span.result.json",
+      "result_sha256": "0cf7a36ee502a9dde7112aa722aa0918b45db6c4b42426a76b9e906462db9dbf",
+      "selector_status": "insufficient",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 3.3730306100001144
+    },
+    {
+      "case_id": "f04-a-en",
+      "arm": "numbered_span",
+      "request_file": "f04-a-en--numbered_span.request.json",
+      "request_sha256": "309365011c32a359f57ff106cc0547cb796eefa789427149b2b86d2ad9300d96",
+      "result_file": "f04-a-en--numbered_span.result.json",
+      "result_sha256": "3da45f458e2c4fed5c7f0633ddcd4d7e62b2003062e0b16d71a2e7a022d538fb",
+      "selector_status": "selected",
+      "selected_span_ids": [
+        5
+      ],
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "seconds": 4.23171486199999
+    },
+    {
+      "case_id": "f04-a-en",
+      "arm": "exact_quote",
+      "request_file": "f04-a-en--exact_quote.request.json",
+      "request_sha256": "2afba5fa83758ac99926e0902ef27f60bb2b4436ef466340edcca78b4d276884",
+      "result_file": "f04-a-en--exact_quote.result.json",
+      "result_sha256": "31b46dc2c5f2d3490a615b72f42d0bc79e212e00fdd09ba24798a800003b8114",
+      "selector_status": "invalid_response",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 4.779881580999927
+    },
+    {
+      "case_id": "f04-a-zh",
+      "arm": "exact_quote",
+      "request_file": "f04-a-zh--exact_quote.request.json",
+      "request_sha256": "cda34e29dff7415e4041259968d2199fd5c0ae7607effd3fb03b5b7fb0b2cd4e",
+      "result_file": "f04-a-zh--exact_quote.result.json",
+      "result_sha256": "97f7a7a2565130db01ce90c8602dfe101117a70358068d034e05f4556f6cb056",
+      "selector_status": "invalid_response",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 4.671701994999921
+    },
+    {
+      "case_id": "f04-a-zh",
+      "arm": "numbered_span",
+      "request_file": "f04-a-zh--numbered_span.request.json",
+      "request_sha256": "4990d46169ebee71ddd8f6fdb812558f5df7127b8fc671d26a7fd7788b79cd61",
+      "result_file": "f04-a-zh--numbered_span.result.json",
+      "result_sha256": "026a5c068cf94411034e43698e80a90fafbdd887b53c4526e556b4b663379b21",
+      "selector_status": "selected",
+      "selected_span_ids": [
+        5
+      ],
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "seconds": 4.502607345000115
+    },
+    {
+      "case_id": "f04-r-en",
+      "arm": "exact_quote",
+      "request_file": "f04-r-en--exact_quote.request.json",
+      "request_sha256": "fe7ccedaa11eadf72ba7c3fac446a6849da0247222a7242227df82e99ae25acc",
+      "result_file": "f04-r-en--exact_quote.result.json",
+      "result_sha256": "9ad6d5267dfe492e8a6e8e85199c3ec7886400f495443dee332bac16d07ba5ea",
+      "selector_status": "invalid_response",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 6.12471831400012
+    },
+    {
+      "case_id": "f04-r-en",
+      "arm": "numbered_span",
+      "request_file": "f04-r-en--numbered_span.request.json",
+      "request_sha256": "c681772d3fabdfa8eac9c8c8825b6beeffbd9b59a9ebfae05d59a64c71307d5f",
+      "result_file": "f04-r-en--numbered_span.result.json",
+      "result_sha256": "1161ce6c4a0afccd84d85536f0dab1acaeca39952f05baf168a340ab53581887",
+      "selector_status": "selected",
+      "selected_span_ids": [
+        1
+      ],
+      "generator_invoked": true,
+      "generator_status": "invalid_response",
+      "seconds": 4.747371586000099
+    },
+    {
+      "case_id": "f04-r-zh",
+      "arm": "numbered_span",
+      "request_file": "f04-r-zh--numbered_span.request.json",
+      "request_sha256": "e04aa491c026b582c2e4092ed59f9ab2defe10b7922049931671e04de9eec4bf",
+      "result_file": "f04-r-zh--numbered_span.result.json",
+      "result_sha256": "e70244d8f1791d3312d63309744df9df2b9f052122006e0c0a3eb24764f7d188",
+      "selector_status": "insufficient",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 3.017386930000157
+    },
+    {
+      "case_id": "f04-r-zh",
+      "arm": "exact_quote",
+      "request_file": "f04-r-zh--exact_quote.request.json",
+      "request_sha256": "e582bf05b97305f1c949712f36bc9a4361cbe12c24c2ad7ce89129d440927e1f",
+      "result_file": "f04-r-zh--exact_quote.result.json",
+      "result_sha256": "f88668d6d02ad67d6cb6060ee4e3478102407e19b8338b7d1113babd3e88abc1",
+      "selector_status": "invalid_response",
+      "selected_span_ids": [],
+      "generator_invoked": false,
+      "generator_status": null,
+      "seconds": 4.819479508000086
+    }
+  ],
+  "startup_seconds": 2.4186652679998133,
+  "telemetry": {
+    "status": "observed",
+    "lines": [
+      "VmHWM:\t 3929984 kB",
+      "VmRSS:\t 3929984 kB"
+    ]
+  },
+  "server_stopped": true,
+  "server_returncode": 0,
+  "finished_utc": "2026-11-16T16:22:14.967357+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "case_id": "f04-a-en",
+  "arm": "exact_quote",
+  "selector": {
+    "arm": "exact_quote",
+    "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"sufficient\\\": true, \\\"selections\\\": [{\\\"span_id\\\": 5, \\\"quote\\\": \\\".. py:data:: EXPLAIN_TEMPLATE_LOADING\\\\n\\\\n    Log debugging information tracing how a template file was loaded. This can\\\\n    be useful to figure out why a template was not loaded or the wrong file\\\\n    appears to be loaded.\\\"}]\\n}\"}}],\"created\":1794846106,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":72,\"prompt_tokens\":722,\"total_tokens\":794,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"id\":\"chatcmpl-yI1B6lN4ZfEa4bGfE077d1YG91nMiwhd\",\"timings\":{\"cache_n\":0,\"prompt_n\":722,\"prompt_ms\":2615.945,\"prompt_per_token_ms\":3.6231925207756235,\"prompt_per_second\":275.9996865377521,\"predicted_n\":72,\"predicted_ms\":2152.862,\"predicted_per_token_ms\":30.322000000000003,\"predicted_per_second\":32.97935492381769}}",
+    "selected_span_ids": [],
+    "selected_context": [],
+    "semantic_support": "unverified",
+    "http_status": 200,
+    "status": "invalid_response",
+    "reason": "quote must equal the entire original span byte-for-byte in UTF-8"
+  },
+  "generator_invoked": false,
+  "generator": null
+}

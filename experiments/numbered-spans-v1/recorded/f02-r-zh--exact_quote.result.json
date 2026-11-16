@@ -1,0 +1,16 @@
+{
+  "case_id": "f02-r-zh",
+  "arm": "exact_quote",
+  "selector": {
+    "arm": "exact_quote",
+    "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"sufficient\\\": true, \\\"selections\\\": [{\\\"span_id\\\": 6, \\\"quote\\\": \\\"``$ flask --app hello run\\\\n     * Serving Flask app 'hello'\\\\n     * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)``\\\"}]}\"}}],\"created\":1794846067,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":69,\"prompt_tokens\":720,\"total_tokens\":789,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"id\":\"chatcmpl-ScY1ntiwWBgz2xPI5NBUZFSRs5fhilLs\",\"timings\":{\"cache_n\":0,\"prompt_n\":720,\"prompt_ms\":2947.615,\"prompt_per_token_ms\":4.093909722222222,\"prompt_per_second\":244.26527887800816,\"predicted_n\":69,\"predicted_ms\":1561.828,\"predicted_per_token_ms\":22.96805882352941,\"predicted_per_second\":43.53872513490602}}",
+    "selected_span_ids": [],
+    "selected_context": [],
+    "semantic_support": "unverified",
+    "http_status": 200,
+    "status": "invalid_response",
+    "reason": "quote must equal the entire original span byte-for-byte in UTF-8"
+  },
+  "generator_invoked": false,
+  "generator": null
+}

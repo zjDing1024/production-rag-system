@@ -1,0 +1,16 @@
+{
+  "case_id": "f04-r-zh",
+  "arm": "numbered_span",
+  "selector": {
+    "arm": "numbered_span",
+    "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"sufficient\\\": false, \\\"selections\\\": []}\"}}],\"created\":1794846129,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":13,\"prompt_tokens\":722,\"total_tokens\":735,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"id\":\"chatcmpl-usTXkZffUS7XPKTaxhzpZwHAJCcKPZ4F\",\"timings\":{\"cache_n\":0,\"prompt_n\":722,\"prompt_ms\":2739.029,\"prompt_per_token_ms\":3.7936689750692523,\"prompt_per_second\":263.59706304679503,\"predicted_n\":13,\"predicted_ms\":267.09,\"predicted_per_token_ms\":22.257499999999997,\"predicted_per_second\":44.92867572728294}}",
+    "selected_span_ids": [],
+    "selected_context": [],
+    "semantic_support": "unverified",
+    "http_status": 200,
+    "status": "insufficient",
+    "reason": "contract_valid"
+  },
+  "generator_invoked": false,
+  "generator": null
+}

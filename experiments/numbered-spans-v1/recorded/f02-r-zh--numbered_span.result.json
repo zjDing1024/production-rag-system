@@ -1,0 +1,28 @@
+{
+  "case_id": "f02-r-zh",
+  "arm": "numbered_span",
+  "selector": {
+    "arm": "numbered_span",
+    "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"sufficient\\\": true, \\\"selections\\\": [{\\\"span_id\\\": 6}]}\"}}],\"created\":1794846062,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":19,\"prompt_tokens\":720,\"total_tokens\":739,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"id\":\"chatcmpl-IeML7esB86u7WtmkXI4WVY4vKLcKtiF1\",\"timings\":{\"cache_n\":0,\"prompt_n\":720,\"prompt_ms\":3013.549,\"prompt_per_token_ms\":4.185484722222222,\"prompt_per_second\":238.92095333442396,\"predicted_n\":19,\"predicted_ms\":599.348,\"predicted_per_token_ms\":33.29711111111111,\"predicted_per_second\":30.032635463870744}}",
+    "selected_span_ids": [
+      6
+    ],
+    "selected_context": [
+      {
+        "chunk_id": "6",
+        "text": ".. code-block:: text\n\n    $ flask --app hello run\n     * Serving Flask app 'hello'\n     * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)\n",
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/quickstart.rst#L46-L50"
+      }
+    ],
+    "semantic_support": "unverified",
+    "http_status": 200,
+    "status": "selected",
+    "reason": "contract_valid"
+  },
+  "generator_invoked": true,
+  "generator": {
+    "status": "invalid_response",
+    "reason": "ValueError",
+    "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"answer\\\": \\\"5000\\\", \\\"citations\\\": [], \\\"abstain\\\": false}\"}}],\"created\":1794846063,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":22,\"prompt_tokens\":189,\"total_tokens\":211,\"prompt_tokens_details\":{\"cached_tokens\":92}},\"id\":\"chatcmpl-V2xgRs58FmQtQk5x5OrJlUWgJBwWOaeE\",\"timings\":{\"cache_n\":92,\"prompt_n\":97,\"prompt_ms\":458.558,\"prompt_per_token_ms\":4.7274020618556705,\"prompt_per_second\":211.53267416553632,\"predicted_n\":22,\"predicted_ms\":566.733,\"predicted_per_token_ms\":26.98728571428571,\"predicted_per_second\":37.05448597487707}}"
+  }
+}

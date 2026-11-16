@@ -1,0 +1,37 @@
+{
+  "case_id": "f01-r-en",
+  "arm": "numbered_span",
+  "selector": {
+    "arm": "numbered_span",
+    "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"sufficient\\\": true, \\\"selections\\\": [{\\\"span_id\\\": 1}]}\"}}],\"created\":1794846016,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":19,\"prompt_tokens\":721,\"total_tokens\":740,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"id\":\"chatcmpl-hozCc3oRNmVTJhQAXop4fypx9PltVJBy\",\"timings\":{\"cache_n\":0,\"prompt_n\":721,\"prompt_ms\":3021.593,\"prompt_per_token_ms\":4.190836338418863,\"prompt_per_second\":238.61585594088947,\"predicted_n\":19,\"predicted_ms\":441.32,\"predicted_per_token_ms\":24.517777777777777,\"predicted_per_second\":40.786730716940085}}",
+    "selected_span_ids": [
+      1
+    ],
+    "selected_context": [
+      {
+        "chunk_id": "1",
+        "text": ".. py:data:: PERMANENT_SESSION_LIFETIME\n\n    If ``session.permanent`` is true, the cookie's expiration will be set this\n    number of seconds in the future. Can either be a\n    :class:`datetime.timedelta` or an ``int``.\n\n    Flask's default cookie implementation validates that the cryptographic\n    signature is not older than this value.\n\n    Default: ``timedelta(days=31)`` (``2678400`` seconds)\n",
+        "citation": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L219-L228"
+      }
+    ],
+    "semantic_support": "unverified",
+    "http_status": 200,
+    "status": "selected",
+    "reason": "contract_valid"
+  },
+  "generator_invoked": true,
+  "generator": {
+    "status": "answered",
+    "reason": "contract_valid",
+    "answer": "31 days",
+    "citation_ids": [
+      "1"
+    ],
+    "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"answer\\\": \\\"31 days\\\", \\\"citations\\\": [\\\"1\\\"], \\\"abstain\\\": false}\"}}],\"created\":1794846017,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":23,\"prompt_tokens\":246,\"total_tokens\":269,\"prompt_tokens_details\":{\"cached_tokens\":92}},\"id\":\"chatcmpl-rS4KnrieqNPJEFGzOb9cIAsA5UFJpHow\",\"timings\":{\"cache_n\":92,\"prompt_n\":154,\"prompt_ms\":692.906,\"prompt_per_token_ms\":4.49938961038961,\"prompt_per_second\":222.25236900820602,\"predicted_n\":23,\"predicted_ms\":518.165,\"predicted_per_token_ms\":23.552954545454543,\"predicted_per_second\":42.45751835805198}}",
+    "usage": {
+      "prompt_tokens": 246,
+      "completion_tokens": 23,
+      "total_tokens": 269
+    }
+  }
+}

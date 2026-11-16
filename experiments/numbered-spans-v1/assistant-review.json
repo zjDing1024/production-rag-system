@@ -1,0 +1,230 @@
+{
+  "reviewer": "AI assistant; source labels reviewed by another AI assistant before inference; outcome review is not a human or independent external evaluation",
+  "scope": "Semantic annotations require source reading; the offline replay verifies integrity/contract and recomputes counts, not semantic truth.",
+  "rows": [
+    {
+      "case_id": "f01-a-en",
+      "arm": "exact_quote",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Selector quote fails the frozen whole-span equality contract. No downstream answer; invalid output is not a refusal."
+    },
+    {
+      "case_id": "f01-a-en",
+      "arm": "numbered_span",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "Raw answer gives the documented requested fact from the selected supporting span, but citations=[] violates the frozen answer contract. Not an accepted answer."
+    },
+    {
+      "case_id": "f01-a-zh",
+      "arm": "numbered_span",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "Raw answer gives the documented requested fact from the selected supporting span, but citations=[] violates the frozen answer contract. Not an accepted answer."
+    },
+    {
+      "case_id": "f01-a-zh",
+      "arm": "exact_quote",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Selector quote fails the frozen whole-span equality contract. No downstream answer; invalid output is not a refusal."
+    },
+    {
+      "case_id": "f01-r-en",
+      "arm": "numbered_span",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "rationale": "The raw answer substitutes the general documented default/example for an unknown actual runtime value. It passes the answer/citation contract but is unsupported for this question."
+    },
+    {
+      "case_id": "f01-r-en",
+      "arm": "exact_quote",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Selector quote fails the frozen whole-span equality contract. No downstream answer; invalid output is not a refusal."
+    },
+    {
+      "case_id": "f01-r-zh",
+      "arm": "exact_quote",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Selector quote fails the frozen whole-span equality contract. No downstream answer; invalid output is not a refusal."
+    },
+    {
+      "case_id": "f01-r-zh",
+      "arm": "numbered_span",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "refusal",
+      "rationale": "Raw abstain=true but answer is nonempty (None or 无法确定), so the answer contract rejects it; not a legitimate served refusal. The supplied documentation cannot establish the requested runtime fact."
+    },
+    {
+      "case_id": "f02-a-en",
+      "arm": "numbered_span",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "Raw answer gives the documented requested fact from the selected supporting span, but citations=[] violates the frozen answer contract. Not an accepted answer."
+    },
+    {
+      "case_id": "f02-a-en",
+      "arm": "exact_quote",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Selector quote fails the frozen whole-span equality contract. No downstream answer; invalid output is not a refusal."
+    },
+    {
+      "case_id": "f02-a-zh",
+      "arm": "exact_quote",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Selector quote fails the frozen whole-span equality contract. No downstream answer; invalid output is not a refusal."
+    },
+    {
+      "case_id": "f02-a-zh",
+      "arm": "numbered_span",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "Raw answer gives the documented requested fact from the selected supporting span, but citations=[] violates the frozen answer contract. Not an accepted answer."
+    },
+    {
+      "case_id": "f02-r-en",
+      "arm": "exact_quote",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Selector quote fails the frozen whole-span equality contract. No downstream answer; invalid output is not a refusal."
+    },
+    {
+      "case_id": "f02-r-en",
+      "arm": "numbered_span",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "rationale": "The raw answer substitutes the general documented default/example for an unknown actual runtime value. It also lacks the required citation, so the answer contract rejects it."
+    },
+    {
+      "case_id": "f02-r-zh",
+      "arm": "numbered_span",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "rationale": "The raw answer substitutes the general documented default/example for an unknown actual runtime value. It also lacks the required citation, so the answer contract rejects it."
+    },
+    {
+      "case_id": "f02-r-zh",
+      "arm": "exact_quote",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Selector quote fails the frozen whole-span equality contract. No downstream answer; invalid output is not a refusal."
+    },
+    {
+      "case_id": "f03-a-en",
+      "arm": "exact_quote",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Selector quote fails the frozen whole-span equality contract. No downstream answer; invalid output is not a refusal."
+    },
+    {
+      "case_id": "f03-a-en",
+      "arm": "numbered_span",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Valid selector insufficient; false refusal because frozen span 3 provides the documented X-Sendfile answer."
+    },
+    {
+      "case_id": "f03-a-zh",
+      "arm": "numbered_span",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Valid selector insufficient; false refusal because frozen span 3 provides the documented X-Sendfile answer."
+    },
+    {
+      "case_id": "f03-a-zh",
+      "arm": "exact_quote",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Selector quote fails the frozen whole-span equality contract. No downstream answer; invalid output is not a refusal."
+    },
+    {
+      "case_id": "f03-r-en",
+      "arm": "numbered_span",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Valid selector insufficient; legitimate refusal because the supplied documentation cannot establish this actual runtime event."
+    },
+    {
+      "case_id": "f03-r-en",
+      "arm": "exact_quote",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Selector quote fails the frozen whole-span equality contract. No downstream answer; invalid output is not a refusal."
+    },
+    {
+      "case_id": "f03-r-zh",
+      "arm": "exact_quote",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Selector quote fails the frozen whole-span equality contract. No downstream answer; invalid output is not a refusal."
+    },
+    {
+      "case_id": "f03-r-zh",
+      "arm": "numbered_span",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Valid selector insufficient; legitimate refusal because the supplied documentation cannot establish this actual runtime event."
+    },
+    {
+      "case_id": "f04-a-en",
+      "arm": "numbered_span",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "refusal",
+      "rationale": "Raw abstain=true but answer is nonempty (None or 无法确定), so the answer contract rejects it; not a legitimate served refusal. The question was answerable from selected span 5, so refusal is also semantically mistaken."
+    },
+    {
+      "case_id": "f04-a-en",
+      "arm": "exact_quote",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Selector quote fails the frozen whole-span equality contract. No downstream answer; invalid output is not a refusal."
+    },
+    {
+      "case_id": "f04-a-zh",
+      "arm": "exact_quote",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Selector quote fails the frozen whole-span equality contract. No downstream answer; invalid output is not a refusal."
+    },
+    {
+      "case_id": "f04-a-zh",
+      "arm": "numbered_span",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "Raw answer gives the documented requested fact from the selected supporting span, but citations=[] violates the frozen answer contract. Not an accepted answer."
+    },
+    {
+      "case_id": "f04-r-en",
+      "arm": "exact_quote",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Selector quote fails the frozen whole-span equality contract. No downstream answer; invalid output is not a refusal."
+    },
+    {
+      "case_id": "f04-r-en",
+      "arm": "numbered_span",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "refusal",
+      "rationale": "Raw abstain=true but answer is nonempty (None or 无法确定), so the answer contract rejects it; not a legitimate served refusal. The supplied documentation cannot establish the requested runtime fact."
+    },
+    {
+      "case_id": "f04-r-zh",
+      "arm": "numbered_span",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Valid selector insufficient; legitimate refusal because the supplied documentation cannot establish this actual runtime event."
+    },
+    {
+      "case_id": "f04-r-zh",
+      "arm": "exact_quote",
+      "accepted_answer_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "Selector quote fails the frozen whole-span equality contract. No downstream answer; invalid output is not a refusal."
+    }
+  ]
+}

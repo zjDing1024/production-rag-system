@@ -18,14 +18,15 @@ PYTHONPATH=src python -m rag_foundation query 'test client live server' -k 3
 ### 2. 审核已记录实验：不运行模型
 
 ```bash
-python experiments/evidence-sufficiency-v1/audit_record.py
+python experiments/numbered-spans-v1/audit_record.py
 ```
 
 该命令复核冻结输入、原始记录和计数，不重新生成、不自动判定语义真值。
-[最新报告](experiments/evidence-sufficiency-v1/REPORT.md) ·
-[汇总与逐题结果](experiments/evidence-sufficiency-v1/summary.json) ·
-[助理逐题判定依据](experiments/evidence-sufficiency-v1/manual-review.json)。
-旧的[生成实验审计](experiments/bilingual-generation-v1/README.md)保留为回归记录。
+[最新报告](experiments/numbered-spans-v1/REPORT.md) ·
+[汇总与逐题结果](experiments/numbered-spans-v1/summary.json) ·
+[AI 助理逐题判定依据](experiments/numbered-spans-v1/assistant-review.json)。
+旧的[证据门实验](experiments/evidence-sufficiency-v1/README.md)与
+[生成实验审计](experiments/bilingual-generation-v1/README.md)保留为回归记录。
 
 ### 3. 可选真实 CPU 模型：显式下载与运行
 
@@ -34,12 +35,23 @@ Linux x86_64、Python 3.12，公开下载约586 MB，临时RAM建议至少5 GB�
 
 ```bash
 python3 experiments/evidence-sufficiency-v1/prepare_assets.py --directory /tmp/rag-local-assets
-python3 experiments/evidence-sufficiency-v1/run_experiment.py \
-  --assets /tmp/rag-local-assets --output build/my-evidence-gate-run
+python3 experiments/numbered-spans-v1/run_experiment.py \
+  --assets /tmp/rag-local-assets --output build/my-span-comparison
 ```
 
-[环境、固定许可/来源、实验边界](experiments/evidence-sufficiency-v1/README.md)。
+[环境、固定许可/来源、实验边界](experiments/numbered-spans-v1/README.md)。
 每次使用新的输出目录。通常测试和CI仅检索/审计，不下载或执行模型。
+
+## 2026-11-17：编号避免复制错误，不等于证据判断可靠
+
+16 个新开发问题、4 个事实族，英中和数值/非数值均衡；两臂得到完全相同的固定短 span 池。
+完整逐字复制臂 16/16 输出不合合同；编号臂有 11 个合法选择，其中仅 6 个支持所问问题，
+另有 3 个正确拒绝、2 个错误拒绝。编号由 schema 限定，程序回填原文，不能把 ID 合法率称为回答准确率。
+
+下游 11 次生成只有 1 个合法答案，却把默认 cookie 寿命当作真实剩余时间，无依据。
+**两臂已接受、有支持的正确答案均为 0/8 可答题**。这是受控接口策略对照，不是检索排名或
+独立 held-out 评测，也不代表语义能力提升。无生产默认行为变更。
+[复现与分层指标](experiments/numbered-spans-v1/README.md) · [失败详情](experiments/numbered-spans-v1/REPORT.md)。
 
 ## 2026-11-16：证据门运行成功，但能力验证失败
 

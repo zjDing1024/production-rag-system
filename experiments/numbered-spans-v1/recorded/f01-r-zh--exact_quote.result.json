@@ -1,0 +1,16 @@
+{
+  "case_id": "f01-r-zh",
+  "arm": "exact_quote",
+  "selector": {
+    "arm": "exact_quote",
+    "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"sufficient\\\": true, \\\"selections\\\": [{\\\"span_id\\\": 1, \\\"quote\\\": \\\"The text explicitly states that the default value for PERMANENT_SESSION_LIFETIME is 31 days (2678400 seconds), which implies the cookie's expiration will be set this number of seconds in the future.\\\"}]}\"}}],\"created\":1794846028,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":72,\"prompt_tokens\":721,\"total_tokens\":793,\"prompt_tokens_details\":{\"cached_tokens\":130}},\"id\":\"chatcmpl-7KP8g6wJeUlKJAl3r9UU8YnBSoiIaiic\",\"timings\":{\"cache_n\":130,\"prompt_n\":591,\"prompt_ms\":2346.283,\"prompt_per_token_ms\":3.970021996615905,\"prompt_per_second\":251.88777312881695,\"predicted_n\":72,\"predicted_ms\":1701.591,\"predicted_per_token_ms\":23.96607042253521,\"predicted_per_second\":41.725655577632935}}",
+    "selected_span_ids": [],
+    "selected_context": [],
+    "semantic_support": "unverified",
+    "http_status": 200,
+    "status": "invalid_response",
+    "reason": "quote must equal the entire original span byte-for-byte in UTF-8"
+  },
+  "generator_invoked": false,
+  "generator": null
+}
