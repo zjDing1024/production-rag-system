@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_execution",
+  "frozen_utc": "2026-11-17T16:10:54.763428+00:00",
+  "cases_sha256": "beb2aa651d8e1b46decf344b0b281f8260483ae9e6462816e0ca760586ea9fb9",
+  "file_sha256": {
+    "experiments/matched-evidence-v1/protocol.py": "25bd4a0f66c68967fb31d3ca65ff33d18df7c3ec92937d1bec2691abde10e651",
+    "experiments/matched-evidence-v1/run_experiment.py": "d5164d37bdaad7eb34a4a6da7bd7d3499bf5153026a377254491c1ca602789fe",
+    "experiments/matched-evidence-v1/build_fixture.py": "cd7dac05a88cf97a879a7481feede8ea8b68febe84620e59610f7b3a9c97ab19",
+    "experiments/matched-evidence-v1/PROTOCOL.md": "74b6c27bf166d5e9a522dd7b867b6ca696a2fd9735217212405dde6b5cf8d62d",
+    "experiments/matched-evidence-v1/preflight_contracts.py": "68a50bf4bde8f6d7676bfd07816a46c21a151092fd1dd4ff793b0f90a4ecc261",
+    "experiments/matched-evidence-v1/preflight.json": "a7cf836c247f30113530c1570611a3b49ce5aa150c5e9bc07cc6e462b23e4b0e",
+    "src/rag_foundation/generation.py": "a3aa8cde0881f86ec1a8b48cf823fbc39a0f194d4cc093f0585318b0126e7532",
+    "experiments/numbered-spans-v1/mechanics.py": "a559e13b1f7b6762a1e5ad1e149dd1f1c8ab2e083afb5154f6190e6f2a8b6a88"
+  },
+  "review": "AI authored; second AI reviewed source anchors, labels, matching and protocol before model calls. Local development freeze, not external preregistration or human review."
+}

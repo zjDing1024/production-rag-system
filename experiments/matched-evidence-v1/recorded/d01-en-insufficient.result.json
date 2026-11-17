@@ -1,0 +1,14 @@
+{
+  "case_id": "d01-en-insufficient",
+  "selector": {
+    "arm": "numbered_span",
+    "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"sufficient\\\": false, \\\"selections\\\": []}\"}}],\"created\":1794931877,\"model\":\"local-model\",\"system_fingerprint\":\"b12359-b1b770d90\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":13,\"prompt_tokens\":329,\"total_tokens\":342,\"prompt_tokens_details\":{\"cached_tokens\":130}},\"id\":\"chatcmpl-KYIvnmwDDhiu5AuLd3IppaPWqTnkVQ9k\",\"timings\":{\"cache_n\":130,\"prompt_n\":199,\"prompt_ms\":1541.897,\"prompt_per_token_ms\":7.748226130653266,\"prompt_per_second\":129.06179855074626,\"predicted_n\":13,\"predicted_ms\":569.725,\"predicted_per_token_ms\":47.47708333333333,\"predicted_per_second\":21.0627934529817}}",
+    "selected_span_ids": [],
+    "selected_context": [],
+    "semantic_support": "unverified",
+    "http_status": 200,
+    "status": "insufficient",
+    "reason": "contract_valid"
+  },
+  "generations": {}
+}

@@ -1,0 +1,188 @@
+{
+  "scope": "Offline original schema-shape checker plus existing Python validator; not native grammar compilation/validation or new model inference.",
+  "native_compiler": "Not executed. Pinned official tree has C++ converter only; release lacks gbnf-validator. Server behavior is tested separately by the live run.",
+  "historical_regressions": [
+    {
+      "source_file": "experiments/numbered-spans-v1/recorded/f01-a-en--numbered_span.result.json",
+      "source_sha256": "7aed0156a6215b74d102b2d9940faa85a161242e0040c4e84ac52e379032b9c4",
+      "legacy_schema_shape": true,
+      "branched_schema_shape": false,
+      "python_contract": false
+    },
+    {
+      "source_file": "experiments/numbered-spans-v1/recorded/f01-a-zh--numbered_span.result.json",
+      "source_sha256": "64ac0293725869a726eddf7db15af705e28c520e60bd22e20267ece55e944f38",
+      "legacy_schema_shape": true,
+      "branched_schema_shape": false,
+      "python_contract": false
+    },
+    {
+      "source_file": "experiments/numbered-spans-v1/recorded/f01-r-en--numbered_span.result.json",
+      "source_sha256": "29c9cb561f51d2598a1a8874b791f253ca63a237ab10f7141bb87e8f670cf049",
+      "legacy_schema_shape": true,
+      "branched_schema_shape": true,
+      "python_contract": true
+    },
+    {
+      "source_file": "experiments/numbered-spans-v1/recorded/f01-r-zh--numbered_span.result.json",
+      "source_sha256": "4758d929f8d593ad93b1c2d6301fad48c51cf664ec437428a184bb78ac6d54e6",
+      "legacy_schema_shape": true,
+      "branched_schema_shape": false,
+      "python_contract": false
+    },
+    {
+      "source_file": "experiments/numbered-spans-v1/recorded/f02-a-en--numbered_span.result.json",
+      "source_sha256": "9ff235614ff28ee47476dd8ba6273f936c1e9f3c0ae008812cc5a98dc306bd51",
+      "legacy_schema_shape": true,
+      "branched_schema_shape": false,
+      "python_contract": false
+    },
+    {
+      "source_file": "experiments/numbered-spans-v1/recorded/f02-a-zh--numbered_span.result.json",
+      "source_sha256": "2c5cadcaabf817a43b943cc5fb2187dbcc5f17b4e7ad9b6ec938d6ff996cd934",
+      "legacy_schema_shape": true,
+      "branched_schema_shape": false,
+      "python_contract": false
+    },
+    {
+      "source_file": "experiments/numbered-spans-v1/recorded/f02-r-en--numbered_span.result.json",
+      "source_sha256": "77e231b7dfaf5263ca9b997eadf7cdd991291127209e2adfae96d34b4c11ec59",
+      "legacy_schema_shape": true,
+      "branched_schema_shape": false,
+      "python_contract": false
+    },
+    {
+      "source_file": "experiments/numbered-spans-v1/recorded/f02-r-zh--numbered_span.result.json",
+      "source_sha256": "0d60ec35841e6987f4c82704cd21584cfbb7b1a218e004040f8d1c24450dae16",
+      "legacy_schema_shape": true,
+      "branched_schema_shape": false,
+      "python_contract": false
+    },
+    {
+      "source_file": "experiments/numbered-spans-v1/recorded/f04-a-en--numbered_span.result.json",
+      "source_sha256": "3da45f458e2c4fed5c7f0633ddcd4d7e62b2003062e0b16d71a2e7a022d538fb",
+      "legacy_schema_shape": true,
+      "branched_schema_shape": false,
+      "python_contract": false
+    },
+    {
+      "source_file": "experiments/numbered-spans-v1/recorded/f04-a-zh--numbered_span.result.json",
+      "source_sha256": "026a5c068cf94411034e43698e80a90fafbdd887b53c4526e556b4b663379b21",
+      "legacy_schema_shape": true,
+      "branched_schema_shape": false,
+      "python_contract": false
+    },
+    {
+      "source_file": "experiments/numbered-spans-v1/recorded/f04-r-en--numbered_span.result.json",
+      "source_sha256": "1161ce6c4a0afccd84d85536f0dab1acaeca39952f05baf168a340ab53581887",
+      "legacy_schema_shape": true,
+      "branched_schema_shape": false,
+      "python_contract": false
+    }
+  ],
+  "fresh_shape_fixtures": [
+    {
+      "id": "cited_answer",
+      "value": {
+        "answer": "invented example",
+        "citations": [
+          "1"
+        ],
+        "abstain": false
+      },
+      "branched_schema_shape": true,
+      "python_contract": true
+    },
+    {
+      "id": "empty_refusal",
+      "value": {
+        "answer": "",
+        "citations": [],
+        "abstain": true
+      },
+      "branched_schema_shape": true,
+      "python_contract": true
+    },
+    {
+      "id": "missing_citation",
+      "value": {
+        "answer": "invented example",
+        "citations": [],
+        "abstain": false
+      },
+      "branched_schema_shape": false,
+      "python_contract": false
+    },
+    {
+      "id": "refusal_with_text",
+      "value": {
+        "answer": "unknown",
+        "citations": [],
+        "abstain": true
+      },
+      "branched_schema_shape": false,
+      "python_contract": false
+    },
+    {
+      "id": "refusal_with_citation",
+      "value": {
+        "answer": "",
+        "citations": [
+          "1"
+        ],
+        "abstain": true
+      },
+      "branched_schema_shape": false,
+      "python_contract": false
+    },
+    {
+      "id": "unknown_id",
+      "value": {
+        "answer": "a",
+        "citations": [
+          "9"
+        ],
+        "abstain": false
+      },
+      "branched_schema_shape": false,
+      "python_contract": false
+    },
+    {
+      "id": "whitespace_answer",
+      "value": {
+        "answer": " ",
+        "citations": [
+          "1"
+        ],
+        "abstain": false
+      },
+      "branched_schema_shape": true,
+      "python_contract": false
+    },
+    {
+      "id": "duplicate_citation",
+      "value": {
+        "answer": "a",
+        "citations": [
+          "1",
+          "1"
+        ],
+        "abstain": false
+      },
+      "branched_schema_shape": true,
+      "python_contract": false
+    },
+    {
+      "id": "empty_answer",
+      "value": {
+        "answer": "",
+        "citations": [
+          "1"
+        ],
+        "abstain": false
+      },
+      "branched_schema_shape": false,
+      "python_contract": false
+    }
+  ]
+}

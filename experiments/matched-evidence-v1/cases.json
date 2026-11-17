@@ -1,0 +1,1207 @@
+{
+  "schema_version": 1,
+  "base_commit": "7a74ca741ae1e813ec52e95329ba697c7aaa0aa7",
+  "scope": "AI-authored controlled development fixture; synthetic snapshots are not real telemetry. Four question families, eight bilingual question pairs, not a document holdout.",
+  "cases": [
+    {
+      "id": "d01-en-sufficient",
+      "pair_id": "d01-en",
+      "family": "d01",
+      "scope": "documentation",
+      "answer_kind": "numeric",
+      "language": "en",
+      "query": "According to the documentation note, what is the default MAX_FORM_PARTS value?",
+      "condition": "sufficient",
+      "offered_sufficient": true,
+      "supporting_span_ids": [
+        1
+      ],
+      "assistant_expected_answer": "1000",
+      "assistant_evidence_basis": "The relevant documentation note gives the requested default.",
+      "spans": [
+        {
+          "text": "source_kind: documentation_note\nsubject: Flask 3.1.0 \nobserved_at: not_applicable\nsetting: MAX_FORM_PARTS          \nvalue: 1000            \nvalue_kind: documented_default\nnotice: Source-derived note; not a runtime observation.\n",
+          "fields": {
+            "source_kind": "documentation_note",
+            "subject": "Flask 3.1.0",
+            "observed_at": "not_applicable",
+            "setting": "MAX_FORM_PARTS",
+            "value": "1000",
+            "value_kind": "documented_default",
+            "notice": "Source-derived note; not a runtime observation."
+          },
+          "provenance": {
+            "type": "original_structured_note_from_official_source",
+            "source_path": "data/corpus/flask/config.rst",
+            "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+            "anchors": [
+              {
+                "text": ".. py:data:: MAX_FORM_PARTS",
+                "char_start": 12303,
+                "char_end": 12330,
+                "line_start": 351
+              },
+              {
+                "text": "Default: ``1_000``",
+                "char_start": 12858,
+                "char_end": 12876,
+                "line_start": 363
+              }
+            ],
+            "transformation": "Join setting header and Default from the same configuration section; normalize RST quotes and numeric underscores. Not a contiguous verbatim excerpt.",
+            "license": "BSD-3-Clause"
+          },
+          "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L351",
+          "span_id": 1
+        },
+        {
+          "text": "source_kind: synthetic_snapshot\nsubject: Willow      \nobserved_at: 2030-04-05T10:00:00Z\nsetting: MAX_FORM_PARTS          \nvalue: 7               \nvalue_kind: effective_snapshot\nnotice: Invented fixture; not real application telemetry.\n",
+          "fields": {
+            "source_kind": "synthetic_snapshot",
+            "subject": "Willow",
+            "observed_at": "2030-04-05T10:00:00Z",
+            "setting": "MAX_FORM_PARTS",
+            "value": "7",
+            "value_kind": "effective_snapshot",
+            "notice": "Invented fixture; not real application telemetry."
+          },
+          "provenance": {
+            "type": "original_synthetic_fixture",
+            "license": "MIT",
+            "statement": "Entirely invented app, timestamp and values, not observed from any user or service."
+          },
+          "source_url": "synthetic://matched-evidence-v1/snapshot",
+          "span_id": 2
+        }
+      ],
+      "generator_arm_order": [
+        "legacy",
+        "branched"
+      ]
+    },
+    {
+      "id": "d01-en-insufficient",
+      "pair_id": "d01-en",
+      "family": "d01",
+      "scope": "documentation",
+      "answer_kind": "numeric",
+      "language": "en",
+      "query": "According to the documentation note, what is the default MAX_FORM_PARTS value?",
+      "condition": "insufficient",
+      "offered_sufficient": false,
+      "supporting_span_ids": [],
+      "assistant_expected_answer": null,
+      "assistant_evidence_basis": "The related note is for a different setting; the snapshot gives effective state, not the requested documented default.",
+      "spans": [
+        {
+          "text": "source_kind: documentation_note\nsubject: Flask 3.1.0 \nobserved_at: not_applicable\nsetting: MAX_FORM_MEMORY_SIZE    \nvalue: 500000          \nvalue_kind: documented_default\nnotice: Source-derived note; not a runtime observation.\n",
+          "fields": {
+            "source_kind": "documentation_note",
+            "subject": "Flask 3.1.0",
+            "observed_at": "not_applicable",
+            "setting": "MAX_FORM_MEMORY_SIZE",
+            "value": "500000",
+            "value_kind": "documented_default",
+            "notice": "Source-derived note; not a runtime observation."
+          },
+          "provenance": {
+            "type": "original_structured_note_from_official_source",
+            "source_path": "data/corpus/flask/config.rst",
+            "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+            "anchors": [
+              {
+                "text": ".. py:data:: MAX_FORM_MEMORY_SIZE",
+                "char_start": 11678,
+                "char_end": 11711,
+                "line_start": 335
+              },
+              {
+                "text": "Default: ``500_000``",
+                "char_start": 12254,
+                "char_end": 12274,
+                "line_start": 347
+              }
+            ],
+            "transformation": "Join setting header and Default from the same configuration section; normalize RST quotes and numeric underscores. Not a contiguous verbatim excerpt.",
+            "license": "BSD-3-Clause"
+          },
+          "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L335",
+          "span_id": 1
+        },
+        {
+          "text": "source_kind: synthetic_snapshot\nsubject: Willow      \nobserved_at: 2030-04-05T10:00:00Z\nsetting: MAX_FORM_PARTS          \nvalue: 7               \nvalue_kind: effective_snapshot\nnotice: Invented fixture; not real application telemetry.\n",
+          "fields": {
+            "source_kind": "synthetic_snapshot",
+            "subject": "Willow",
+            "observed_at": "2030-04-05T10:00:00Z",
+            "setting": "MAX_FORM_PARTS",
+            "value": "7",
+            "value_kind": "effective_snapshot",
+            "notice": "Invented fixture; not real application telemetry."
+          },
+          "provenance": {
+            "type": "original_synthetic_fixture",
+            "license": "MIT",
+            "statement": "Entirely invented app, timestamp and values, not observed from any user or service."
+          },
+          "source_url": "synthetic://matched-evidence-v1/snapshot",
+          "span_id": 2
+        }
+      ],
+      "generator_arm_order": [
+        "branched",
+        "legacy"
+      ]
+    },
+    {
+      "id": "d01-zh-insufficient",
+      "pair_id": "d01-zh",
+      "family": "d01",
+      "scope": "documentation",
+      "answer_kind": "numeric",
+      "language": "zh",
+      "query": "根据文档说明，MAX_FORM_PARTS 的默认值是多少？",
+      "condition": "insufficient",
+      "offered_sufficient": false,
+      "supporting_span_ids": [],
+      "assistant_expected_answer": null,
+      "assistant_evidence_basis": "The related note is for a different setting; the snapshot gives effective state, not the requested documented default.",
+      "spans": [
+        {
+          "text": "source_kind: documentation_note\nsubject: Flask 3.1.0 \nobserved_at: not_applicable\nsetting: MAX_FORM_MEMORY_SIZE    \nvalue: 500000          \nvalue_kind: documented_default\nnotice: Source-derived note; not a runtime observation.\n",
+          "fields": {
+            "source_kind": "documentation_note",
+            "subject": "Flask 3.1.0",
+            "observed_at": "not_applicable",
+            "setting": "MAX_FORM_MEMORY_SIZE",
+            "value": "500000",
+            "value_kind": "documented_default",
+            "notice": "Source-derived note; not a runtime observation."
+          },
+          "provenance": {
+            "type": "original_structured_note_from_official_source",
+            "source_path": "data/corpus/flask/config.rst",
+            "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+            "anchors": [
+              {
+                "text": ".. py:data:: MAX_FORM_MEMORY_SIZE",
+                "char_start": 11678,
+                "char_end": 11711,
+                "line_start": 335
+              },
+              {
+                "text": "Default: ``500_000``",
+                "char_start": 12254,
+                "char_end": 12274,
+                "line_start": 347
+              }
+            ],
+            "transformation": "Join setting header and Default from the same configuration section; normalize RST quotes and numeric underscores. Not a contiguous verbatim excerpt.",
+            "license": "BSD-3-Clause"
+          },
+          "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L335",
+          "span_id": 1
+        },
+        {
+          "text": "source_kind: synthetic_snapshot\nsubject: Willow      \nobserved_at: 2030-04-05T10:00:00Z\nsetting: MAX_FORM_PARTS          \nvalue: 7               \nvalue_kind: effective_snapshot\nnotice: Invented fixture; not real application telemetry.\n",
+          "fields": {
+            "source_kind": "synthetic_snapshot",
+            "subject": "Willow",
+            "observed_at": "2030-04-05T10:00:00Z",
+            "setting": "MAX_FORM_PARTS",
+            "value": "7",
+            "value_kind": "effective_snapshot",
+            "notice": "Invented fixture; not real application telemetry."
+          },
+          "provenance": {
+            "type": "original_synthetic_fixture",
+            "license": "MIT",
+            "statement": "Entirely invented app, timestamp and values, not observed from any user or service."
+          },
+          "source_url": "synthetic://matched-evidence-v1/snapshot",
+          "span_id": 2
+        }
+      ],
+      "generator_arm_order": [
+        "legacy",
+        "branched"
+      ]
+    },
+    {
+      "id": "d01-zh-sufficient",
+      "pair_id": "d01-zh",
+      "family": "d01",
+      "scope": "documentation",
+      "answer_kind": "numeric",
+      "language": "zh",
+      "query": "根据文档说明，MAX_FORM_PARTS 的默认值是多少？",
+      "condition": "sufficient",
+      "offered_sufficient": true,
+      "supporting_span_ids": [
+        1
+      ],
+      "assistant_expected_answer": "1000",
+      "assistant_evidence_basis": "The relevant documentation note gives the requested default.",
+      "spans": [
+        {
+          "text": "source_kind: documentation_note\nsubject: Flask 3.1.0 \nobserved_at: not_applicable\nsetting: MAX_FORM_PARTS          \nvalue: 1000            \nvalue_kind: documented_default\nnotice: Source-derived note; not a runtime observation.\n",
+          "fields": {
+            "source_kind": "documentation_note",
+            "subject": "Flask 3.1.0",
+            "observed_at": "not_applicable",
+            "setting": "MAX_FORM_PARTS",
+            "value": "1000",
+            "value_kind": "documented_default",
+            "notice": "Source-derived note; not a runtime observation."
+          },
+          "provenance": {
+            "type": "original_structured_note_from_official_source",
+            "source_path": "data/corpus/flask/config.rst",
+            "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+            "anchors": [
+              {
+                "text": ".. py:data:: MAX_FORM_PARTS",
+                "char_start": 12303,
+                "char_end": 12330,
+                "line_start": 351
+              },
+              {
+                "text": "Default: ``1_000``",
+                "char_start": 12858,
+                "char_end": 12876,
+                "line_start": 363
+              }
+            ],
+            "transformation": "Join setting header and Default from the same configuration section; normalize RST quotes and numeric underscores. Not a contiguous verbatim excerpt.",
+            "license": "BSD-3-Clause"
+          },
+          "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L351",
+          "span_id": 1
+        },
+        {
+          "text": "source_kind: synthetic_snapshot\nsubject: Willow      \nobserved_at: 2030-04-05T10:00:00Z\nsetting: MAX_FORM_PARTS          \nvalue: 7               \nvalue_kind: effective_snapshot\nnotice: Invented fixture; not real application telemetry.\n",
+          "fields": {
+            "source_kind": "synthetic_snapshot",
+            "subject": "Willow",
+            "observed_at": "2030-04-05T10:00:00Z",
+            "setting": "MAX_FORM_PARTS",
+            "value": "7",
+            "value_kind": "effective_snapshot",
+            "notice": "Invented fixture; not real application telemetry."
+          },
+          "provenance": {
+            "type": "original_synthetic_fixture",
+            "license": "MIT",
+            "statement": "Entirely invented app, timestamp and values, not observed from any user or service."
+          },
+          "source_url": "synthetic://matched-evidence-v1/snapshot",
+          "span_id": 2
+        }
+      ],
+      "generator_arm_order": [
+        "branched",
+        "legacy"
+      ]
+    },
+    {
+      "id": "d02-en-insufficient",
+      "pair_id": "d02-en",
+      "family": "d02",
+      "scope": "documentation",
+      "answer_kind": "nonnumeric",
+      "language": "en",
+      "query": "According to the documentation note, what is the default APPLICATION_ROOT value?",
+      "condition": "insufficient",
+      "offered_sufficient": false,
+      "supporting_span_ids": [],
+      "assistant_expected_answer": null,
+      "assistant_evidence_basis": "The related note is for a different setting; the snapshot gives effective state, not the requested documented default.",
+      "spans": [
+        {
+          "text": "source_kind: documentation_note\nsubject: Flask 3.1.0 \nobserved_at: not_applicable\nsetting: PREFERRED_URL_SCHEME    \nvalue: \"http\"          \nvalue_kind: documented_default\nnotice: Source-derived note; not a runtime observation.\n",
+          "fields": {
+            "source_kind": "documentation_note",
+            "subject": "Flask 3.1.0",
+            "observed_at": "not_applicable",
+            "setting": "PREFERRED_URL_SCHEME",
+            "value": "\"http\"",
+            "value_kind": "documented_default",
+            "notice": "Source-derived note; not a runtime observation."
+          },
+          "provenance": {
+            "type": "original_structured_note_from_official_source",
+            "source_path": "data/corpus/flask/config.rst",
+            "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+            "anchors": [
+              {
+                "text": ".. py:data:: PREFERRED_URL_SCHEME",
+                "char_start": 10742,
+                "char_end": 10775,
+                "line_start": 311
+              },
+              {
+                "text": "Default: ``'http'``",
+                "char_start": 10862,
+                "char_end": 10881,
+                "line_start": 315
+              }
+            ],
+            "transformation": "Join setting header and Default from the same configuration section; normalize RST quotes and numeric underscores. Not a contiguous verbatim excerpt.",
+            "license": "BSD-3-Clause"
+          },
+          "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L311",
+          "span_id": 1
+        },
+        {
+          "text": "source_kind: synthetic_snapshot\nsubject: Willow      \nobserved_at: 2030-04-05T10:00:00Z\nsetting: APPLICATION_ROOT        \nvalue: \"/orchid\"       \nvalue_kind: effective_snapshot\nnotice: Invented fixture; not real application telemetry.\n",
+          "fields": {
+            "source_kind": "synthetic_snapshot",
+            "subject": "Willow",
+            "observed_at": "2030-04-05T10:00:00Z",
+            "setting": "APPLICATION_ROOT",
+            "value": "\"/orchid\"",
+            "value_kind": "effective_snapshot",
+            "notice": "Invented fixture; not real application telemetry."
+          },
+          "provenance": {
+            "type": "original_synthetic_fixture",
+            "license": "MIT",
+            "statement": "Entirely invented app, timestamp and values, not observed from any user or service."
+          },
+          "source_url": "synthetic://matched-evidence-v1/snapshot",
+          "span_id": 2
+        }
+      ],
+      "generator_arm_order": [
+        "legacy",
+        "branched"
+      ]
+    },
+    {
+      "id": "d02-en-sufficient",
+      "pair_id": "d02-en",
+      "family": "d02",
+      "scope": "documentation",
+      "answer_kind": "nonnumeric",
+      "language": "en",
+      "query": "According to the documentation note, what is the default APPLICATION_ROOT value?",
+      "condition": "sufficient",
+      "offered_sufficient": true,
+      "supporting_span_ids": [
+        1
+      ],
+      "assistant_expected_answer": "/",
+      "assistant_evidence_basis": "The relevant documentation note gives the requested default.",
+      "spans": [
+        {
+          "text": "source_kind: documentation_note\nsubject: Flask 3.1.0 \nobserved_at: not_applicable\nsetting: APPLICATION_ROOT        \nvalue: \"/\"             \nvalue_kind: documented_default\nnotice: Source-derived note; not a runtime observation.\n",
+          "fields": {
+            "source_kind": "documentation_note",
+            "subject": "Flask 3.1.0",
+            "observed_at": "not_applicable",
+            "setting": "APPLICATION_ROOT",
+            "value": "\"/\"",
+            "value_kind": "documented_default",
+            "notice": "Source-derived note; not a runtime observation."
+          },
+          "provenance": {
+            "type": "original_structured_note_from_official_source",
+            "source_path": "data/corpus/flask/config.rst",
+            "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+            "anchors": [
+              {
+                "text": ".. py:data:: APPLICATION_ROOT",
+                "char_start": 10266,
+                "char_end": 10295,
+                "line_start": 298
+              },
+              {
+                "text": "Default: ``'/'``",
+                "char_start": 10724,
+                "char_end": 10740,
+                "line_start": 309
+              }
+            ],
+            "transformation": "Join setting header and Default from the same configuration section; normalize RST quotes and numeric underscores. Not a contiguous verbatim excerpt.",
+            "license": "BSD-3-Clause"
+          },
+          "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L298",
+          "span_id": 1
+        },
+        {
+          "text": "source_kind: synthetic_snapshot\nsubject: Willow      \nobserved_at: 2030-04-05T10:00:00Z\nsetting: APPLICATION_ROOT        \nvalue: \"/orchid\"       \nvalue_kind: effective_snapshot\nnotice: Invented fixture; not real application telemetry.\n",
+          "fields": {
+            "source_kind": "synthetic_snapshot",
+            "subject": "Willow",
+            "observed_at": "2030-04-05T10:00:00Z",
+            "setting": "APPLICATION_ROOT",
+            "value": "\"/orchid\"",
+            "value_kind": "effective_snapshot",
+            "notice": "Invented fixture; not real application telemetry."
+          },
+          "provenance": {
+            "type": "original_synthetic_fixture",
+            "license": "MIT",
+            "statement": "Entirely invented app, timestamp and values, not observed from any user or service."
+          },
+          "source_url": "synthetic://matched-evidence-v1/snapshot",
+          "span_id": 2
+        }
+      ],
+      "generator_arm_order": [
+        "branched",
+        "legacy"
+      ]
+    },
+    {
+      "id": "d02-zh-sufficient",
+      "pair_id": "d02-zh",
+      "family": "d02",
+      "scope": "documentation",
+      "answer_kind": "nonnumeric",
+      "language": "zh",
+      "query": "根据文档说明，APPLICATION_ROOT 的默认值是什么？",
+      "condition": "sufficient",
+      "offered_sufficient": true,
+      "supporting_span_ids": [
+        1
+      ],
+      "assistant_expected_answer": "/",
+      "assistant_evidence_basis": "The relevant documentation note gives the requested default.",
+      "spans": [
+        {
+          "text": "source_kind: documentation_note\nsubject: Flask 3.1.0 \nobserved_at: not_applicable\nsetting: APPLICATION_ROOT        \nvalue: \"/\"             \nvalue_kind: documented_default\nnotice: Source-derived note; not a runtime observation.\n",
+          "fields": {
+            "source_kind": "documentation_note",
+            "subject": "Flask 3.1.0",
+            "observed_at": "not_applicable",
+            "setting": "APPLICATION_ROOT",
+            "value": "\"/\"",
+            "value_kind": "documented_default",
+            "notice": "Source-derived note; not a runtime observation."
+          },
+          "provenance": {
+            "type": "original_structured_note_from_official_source",
+            "source_path": "data/corpus/flask/config.rst",
+            "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+            "anchors": [
+              {
+                "text": ".. py:data:: APPLICATION_ROOT",
+                "char_start": 10266,
+                "char_end": 10295,
+                "line_start": 298
+              },
+              {
+                "text": "Default: ``'/'``",
+                "char_start": 10724,
+                "char_end": 10740,
+                "line_start": 309
+              }
+            ],
+            "transformation": "Join setting header and Default from the same configuration section; normalize RST quotes and numeric underscores. Not a contiguous verbatim excerpt.",
+            "license": "BSD-3-Clause"
+          },
+          "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L298",
+          "span_id": 1
+        },
+        {
+          "text": "source_kind: synthetic_snapshot\nsubject: Willow      \nobserved_at: 2030-04-05T10:00:00Z\nsetting: APPLICATION_ROOT        \nvalue: \"/orchid\"       \nvalue_kind: effective_snapshot\nnotice: Invented fixture; not real application telemetry.\n",
+          "fields": {
+            "source_kind": "synthetic_snapshot",
+            "subject": "Willow",
+            "observed_at": "2030-04-05T10:00:00Z",
+            "setting": "APPLICATION_ROOT",
+            "value": "\"/orchid\"",
+            "value_kind": "effective_snapshot",
+            "notice": "Invented fixture; not real application telemetry."
+          },
+          "provenance": {
+            "type": "original_synthetic_fixture",
+            "license": "MIT",
+            "statement": "Entirely invented app, timestamp and values, not observed from any user or service."
+          },
+          "source_url": "synthetic://matched-evidence-v1/snapshot",
+          "span_id": 2
+        }
+      ],
+      "generator_arm_order": [
+        "legacy",
+        "branched"
+      ]
+    },
+    {
+      "id": "d02-zh-insufficient",
+      "pair_id": "d02-zh",
+      "family": "d02",
+      "scope": "documentation",
+      "answer_kind": "nonnumeric",
+      "language": "zh",
+      "query": "根据文档说明，APPLICATION_ROOT 的默认值是什么？",
+      "condition": "insufficient",
+      "offered_sufficient": false,
+      "supporting_span_ids": [],
+      "assistant_expected_answer": null,
+      "assistant_evidence_basis": "The related note is for a different setting; the snapshot gives effective state, not the requested documented default.",
+      "spans": [
+        {
+          "text": "source_kind: documentation_note\nsubject: Flask 3.1.0 \nobserved_at: not_applicable\nsetting: PREFERRED_URL_SCHEME    \nvalue: \"http\"          \nvalue_kind: documented_default\nnotice: Source-derived note; not a runtime observation.\n",
+          "fields": {
+            "source_kind": "documentation_note",
+            "subject": "Flask 3.1.0",
+            "observed_at": "not_applicable",
+            "setting": "PREFERRED_URL_SCHEME",
+            "value": "\"http\"",
+            "value_kind": "documented_default",
+            "notice": "Source-derived note; not a runtime observation."
+          },
+          "provenance": {
+            "type": "original_structured_note_from_official_source",
+            "source_path": "data/corpus/flask/config.rst",
+            "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+            "anchors": [
+              {
+                "text": ".. py:data:: PREFERRED_URL_SCHEME",
+                "char_start": 10742,
+                "char_end": 10775,
+                "line_start": 311
+              },
+              {
+                "text": "Default: ``'http'``",
+                "char_start": 10862,
+                "char_end": 10881,
+                "line_start": 315
+              }
+            ],
+            "transformation": "Join setting header and Default from the same configuration section; normalize RST quotes and numeric underscores. Not a contiguous verbatim excerpt.",
+            "license": "BSD-3-Clause"
+          },
+          "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L311",
+          "span_id": 1
+        },
+        {
+          "text": "source_kind: synthetic_snapshot\nsubject: Willow      \nobserved_at: 2030-04-05T10:00:00Z\nsetting: APPLICATION_ROOT        \nvalue: \"/orchid\"       \nvalue_kind: effective_snapshot\nnotice: Invented fixture; not real application telemetry.\n",
+          "fields": {
+            "source_kind": "synthetic_snapshot",
+            "subject": "Willow",
+            "observed_at": "2030-04-05T10:00:00Z",
+            "setting": "APPLICATION_ROOT",
+            "value": "\"/orchid\"",
+            "value_kind": "effective_snapshot",
+            "notice": "Invented fixture; not real application telemetry."
+          },
+          "provenance": {
+            "type": "original_synthetic_fixture",
+            "license": "MIT",
+            "statement": "Entirely invented app, timestamp and values, not observed from any user or service."
+          },
+          "source_url": "synthetic://matched-evidence-v1/snapshot",
+          "span_id": 2
+        }
+      ],
+      "generator_arm_order": [
+        "branched",
+        "legacy"
+      ]
+    },
+    {
+      "id": "r01-en-sufficient",
+      "pair_id": "r01-en",
+      "family": "r01",
+      "scope": "synthetic_runtime",
+      "answer_kind": "numeric",
+      "language": "en",
+      "query": "In the invented snapshot, what is the effective MAX_FORM_PARTS value for app Orchid at 2030-04-05T10:00:00Z?",
+      "condition": "sufficient",
+      "offered_sufficient": true,
+      "supporting_span_ids": [
+        2
+      ],
+      "assistant_expected_answer": "7",
+      "assistant_evidence_basis": "The invented snapshot exactly matches the named app, timestamp and setting.",
+      "spans": [
+        {
+          "text": "source_kind: documentation_note\nsubject: Flask 3.1.0 \nobserved_at: not_applicable\nsetting: MAX_FORM_PARTS          \nvalue: 1000            \nvalue_kind: documented_default\nnotice: Source-derived note; not a runtime observation.\n",
+          "fields": {
+            "source_kind": "documentation_note",
+            "subject": "Flask 3.1.0",
+            "observed_at": "not_applicable",
+            "setting": "MAX_FORM_PARTS",
+            "value": "1000",
+            "value_kind": "documented_default",
+            "notice": "Source-derived note; not a runtime observation."
+          },
+          "provenance": {
+            "type": "original_structured_note_from_official_source",
+            "source_path": "data/corpus/flask/config.rst",
+            "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+            "anchors": [
+              {
+                "text": ".. py:data:: MAX_FORM_PARTS",
+                "char_start": 12303,
+                "char_end": 12330,
+                "line_start": 351
+              },
+              {
+                "text": "Default: ``1_000``",
+                "char_start": 12858,
+                "char_end": 12876,
+                "line_start": 363
+              }
+            ],
+            "transformation": "Join setting header and Default from the same configuration section; normalize RST quotes and numeric underscores. Not a contiguous verbatim excerpt.",
+            "license": "BSD-3-Clause"
+          },
+          "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L351",
+          "span_id": 1
+        },
+        {
+          "text": "source_kind: synthetic_snapshot\nsubject: Orchid      \nobserved_at: 2030-04-05T10:00:00Z\nsetting: MAX_FORM_PARTS          \nvalue: 7               \nvalue_kind: effective_snapshot\nnotice: Invented fixture; not real application telemetry.\n",
+          "fields": {
+            "source_kind": "synthetic_snapshot",
+            "subject": "Orchid",
+            "observed_at": "2030-04-05T10:00:00Z",
+            "setting": "MAX_FORM_PARTS",
+            "value": "7",
+            "value_kind": "effective_snapshot",
+            "notice": "Invented fixture; not real application telemetry."
+          },
+          "provenance": {
+            "type": "original_synthetic_fixture",
+            "license": "MIT",
+            "statement": "Entirely invented app, timestamp and values, not observed from any user or service."
+          },
+          "source_url": "synthetic://matched-evidence-v1/snapshot",
+          "span_id": 2
+        }
+      ],
+      "generator_arm_order": [
+        "legacy",
+        "branched"
+      ]
+    },
+    {
+      "id": "r01-en-insufficient",
+      "pair_id": "r01-en",
+      "family": "r01",
+      "scope": "synthetic_runtime",
+      "answer_kind": "numeric",
+      "language": "en",
+      "query": "In the invented snapshot, what is the effective MAX_FORM_PARTS value for app Orchid at 2030-04-05T10:00:00Z?",
+      "condition": "insufficient",
+      "offered_sufficient": false,
+      "supporting_span_ids": [],
+      "assistant_expected_answer": null,
+      "assistant_evidence_basis": "Only another app snapshot is supplied; general documented defaults do not establish the named app effective value.",
+      "spans": [
+        {
+          "text": "source_kind: documentation_note\nsubject: Flask 3.1.0 \nobserved_at: not_applicable\nsetting: MAX_FORM_PARTS          \nvalue: 1000            \nvalue_kind: documented_default\nnotice: Source-derived note; not a runtime observation.\n",
+          "fields": {
+            "source_kind": "documentation_note",
+            "subject": "Flask 3.1.0",
+            "observed_at": "not_applicable",
+            "setting": "MAX_FORM_PARTS",
+            "value": "1000",
+            "value_kind": "documented_default",
+            "notice": "Source-derived note; not a runtime observation."
+          },
+          "provenance": {
+            "type": "original_structured_note_from_official_source",
+            "source_path": "data/corpus/flask/config.rst",
+            "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+            "anchors": [
+              {
+                "text": ".. py:data:: MAX_FORM_PARTS",
+                "char_start": 12303,
+                "char_end": 12330,
+                "line_start": 351
+              },
+              {
+                "text": "Default: ``1_000``",
+                "char_start": 12858,
+                "char_end": 12876,
+                "line_start": 363
+              }
+            ],
+            "transformation": "Join setting header and Default from the same configuration section; normalize RST quotes and numeric underscores. Not a contiguous verbatim excerpt.",
+            "license": "BSD-3-Clause"
+          },
+          "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L351",
+          "span_id": 1
+        },
+        {
+          "text": "source_kind: synthetic_snapshot\nsubject: Willow      \nobserved_at: 2030-04-05T10:00:00Z\nsetting: MAX_FORM_PARTS          \nvalue: 7               \nvalue_kind: effective_snapshot\nnotice: Invented fixture; not real application telemetry.\n",
+          "fields": {
+            "source_kind": "synthetic_snapshot",
+            "subject": "Willow",
+            "observed_at": "2030-04-05T10:00:00Z",
+            "setting": "MAX_FORM_PARTS",
+            "value": "7",
+            "value_kind": "effective_snapshot",
+            "notice": "Invented fixture; not real application telemetry."
+          },
+          "provenance": {
+            "type": "original_synthetic_fixture",
+            "license": "MIT",
+            "statement": "Entirely invented app, timestamp and values, not observed from any user or service."
+          },
+          "source_url": "synthetic://matched-evidence-v1/snapshot",
+          "span_id": 2
+        }
+      ],
+      "generator_arm_order": [
+        "branched",
+        "legacy"
+      ]
+    },
+    {
+      "id": "r01-zh-insufficient",
+      "pair_id": "r01-zh",
+      "family": "r01",
+      "scope": "synthetic_runtime",
+      "answer_kind": "numeric",
+      "language": "zh",
+      "query": "在虚构快照中，应用 Orchid 在 2030-04-05T10:00:00Z 的 MAX_FORM_PARTS 有效配置值是多少？",
+      "condition": "insufficient",
+      "offered_sufficient": false,
+      "supporting_span_ids": [],
+      "assistant_expected_answer": null,
+      "assistant_evidence_basis": "Only another app snapshot is supplied; general documented defaults do not establish the named app effective value.",
+      "spans": [
+        {
+          "text": "source_kind: documentation_note\nsubject: Flask 3.1.0 \nobserved_at: not_applicable\nsetting: MAX_FORM_PARTS          \nvalue: 1000            \nvalue_kind: documented_default\nnotice: Source-derived note; not a runtime observation.\n",
+          "fields": {
+            "source_kind": "documentation_note",
+            "subject": "Flask 3.1.0",
+            "observed_at": "not_applicable",
+            "setting": "MAX_FORM_PARTS",
+            "value": "1000",
+            "value_kind": "documented_default",
+            "notice": "Source-derived note; not a runtime observation."
+          },
+          "provenance": {
+            "type": "original_structured_note_from_official_source",
+            "source_path": "data/corpus/flask/config.rst",
+            "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+            "anchors": [
+              {
+                "text": ".. py:data:: MAX_FORM_PARTS",
+                "char_start": 12303,
+                "char_end": 12330,
+                "line_start": 351
+              },
+              {
+                "text": "Default: ``1_000``",
+                "char_start": 12858,
+                "char_end": 12876,
+                "line_start": 363
+              }
+            ],
+            "transformation": "Join setting header and Default from the same configuration section; normalize RST quotes and numeric underscores. Not a contiguous verbatim excerpt.",
+            "license": "BSD-3-Clause"
+          },
+          "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L351",
+          "span_id": 1
+        },
+        {
+          "text": "source_kind: synthetic_snapshot\nsubject: Willow      \nobserved_at: 2030-04-05T10:00:00Z\nsetting: MAX_FORM_PARTS          \nvalue: 7               \nvalue_kind: effective_snapshot\nnotice: Invented fixture; not real application telemetry.\n",
+          "fields": {
+            "source_kind": "synthetic_snapshot",
+            "subject": "Willow",
+            "observed_at": "2030-04-05T10:00:00Z",
+            "setting": "MAX_FORM_PARTS",
+            "value": "7",
+            "value_kind": "effective_snapshot",
+            "notice": "Invented fixture; not real application telemetry."
+          },
+          "provenance": {
+            "type": "original_synthetic_fixture",
+            "license": "MIT",
+            "statement": "Entirely invented app, timestamp and values, not observed from any user or service."
+          },
+          "source_url": "synthetic://matched-evidence-v1/snapshot",
+          "span_id": 2
+        }
+      ],
+      "generator_arm_order": [
+        "legacy",
+        "branched"
+      ]
+    },
+    {
+      "id": "r01-zh-sufficient",
+      "pair_id": "r01-zh",
+      "family": "r01",
+      "scope": "synthetic_runtime",
+      "answer_kind": "numeric",
+      "language": "zh",
+      "query": "在虚构快照中，应用 Orchid 在 2030-04-05T10:00:00Z 的 MAX_FORM_PARTS 有效配置值是多少？",
+      "condition": "sufficient",
+      "offered_sufficient": true,
+      "supporting_span_ids": [
+        2
+      ],
+      "assistant_expected_answer": "7",
+      "assistant_evidence_basis": "The invented snapshot exactly matches the named app, timestamp and setting.",
+      "spans": [
+        {
+          "text": "source_kind: documentation_note\nsubject: Flask 3.1.0 \nobserved_at: not_applicable\nsetting: MAX_FORM_PARTS          \nvalue: 1000            \nvalue_kind: documented_default\nnotice: Source-derived note; not a runtime observation.\n",
+          "fields": {
+            "source_kind": "documentation_note",
+            "subject": "Flask 3.1.0",
+            "observed_at": "not_applicable",
+            "setting": "MAX_FORM_PARTS",
+            "value": "1000",
+            "value_kind": "documented_default",
+            "notice": "Source-derived note; not a runtime observation."
+          },
+          "provenance": {
+            "type": "original_structured_note_from_official_source",
+            "source_path": "data/corpus/flask/config.rst",
+            "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+            "anchors": [
+              {
+                "text": ".. py:data:: MAX_FORM_PARTS",
+                "char_start": 12303,
+                "char_end": 12330,
+                "line_start": 351
+              },
+              {
+                "text": "Default: ``1_000``",
+                "char_start": 12858,
+                "char_end": 12876,
+                "line_start": 363
+              }
+            ],
+            "transformation": "Join setting header and Default from the same configuration section; normalize RST quotes and numeric underscores. Not a contiguous verbatim excerpt.",
+            "license": "BSD-3-Clause"
+          },
+          "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L351",
+          "span_id": 1
+        },
+        {
+          "text": "source_kind: synthetic_snapshot\nsubject: Orchid      \nobserved_at: 2030-04-05T10:00:00Z\nsetting: MAX_FORM_PARTS          \nvalue: 7               \nvalue_kind: effective_snapshot\nnotice: Invented fixture; not real application telemetry.\n",
+          "fields": {
+            "source_kind": "synthetic_snapshot",
+            "subject": "Orchid",
+            "observed_at": "2030-04-05T10:00:00Z",
+            "setting": "MAX_FORM_PARTS",
+            "value": "7",
+            "value_kind": "effective_snapshot",
+            "notice": "Invented fixture; not real application telemetry."
+          },
+          "provenance": {
+            "type": "original_synthetic_fixture",
+            "license": "MIT",
+            "statement": "Entirely invented app, timestamp and values, not observed from any user or service."
+          },
+          "source_url": "synthetic://matched-evidence-v1/snapshot",
+          "span_id": 2
+        }
+      ],
+      "generator_arm_order": [
+        "branched",
+        "legacy"
+      ]
+    },
+    {
+      "id": "r02-en-insufficient",
+      "pair_id": "r02-en",
+      "family": "r02",
+      "scope": "synthetic_runtime",
+      "answer_kind": "nonnumeric",
+      "language": "en",
+      "query": "In the invented snapshot, what is the effective APPLICATION_ROOT value for app Orchid at 2030-04-05T10:00:00Z?",
+      "condition": "insufficient",
+      "offered_sufficient": false,
+      "supporting_span_ids": [],
+      "assistant_expected_answer": null,
+      "assistant_evidence_basis": "Only another app snapshot is supplied; general documented defaults do not establish the named app effective value.",
+      "spans": [
+        {
+          "text": "source_kind: documentation_note\nsubject: Flask 3.1.0 \nobserved_at: not_applicable\nsetting: APPLICATION_ROOT        \nvalue: \"/\"             \nvalue_kind: documented_default\nnotice: Source-derived note; not a runtime observation.\n",
+          "fields": {
+            "source_kind": "documentation_note",
+            "subject": "Flask 3.1.0",
+            "observed_at": "not_applicable",
+            "setting": "APPLICATION_ROOT",
+            "value": "\"/\"",
+            "value_kind": "documented_default",
+            "notice": "Source-derived note; not a runtime observation."
+          },
+          "provenance": {
+            "type": "original_structured_note_from_official_source",
+            "source_path": "data/corpus/flask/config.rst",
+            "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+            "anchors": [
+              {
+                "text": ".. py:data:: APPLICATION_ROOT",
+                "char_start": 10266,
+                "char_end": 10295,
+                "line_start": 298
+              },
+              {
+                "text": "Default: ``'/'``",
+                "char_start": 10724,
+                "char_end": 10740,
+                "line_start": 309
+              }
+            ],
+            "transformation": "Join setting header and Default from the same configuration section; normalize RST quotes and numeric underscores. Not a contiguous verbatim excerpt.",
+            "license": "BSD-3-Clause"
+          },
+          "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L298",
+          "span_id": 1
+        },
+        {
+          "text": "source_kind: synthetic_snapshot\nsubject: Willow      \nobserved_at: 2030-04-05T10:00:00Z\nsetting: APPLICATION_ROOT        \nvalue: \"/orchid\"       \nvalue_kind: effective_snapshot\nnotice: Invented fixture; not real application telemetry.\n",
+          "fields": {
+            "source_kind": "synthetic_snapshot",
+            "subject": "Willow",
+            "observed_at": "2030-04-05T10:00:00Z",
+            "setting": "APPLICATION_ROOT",
+            "value": "\"/orchid\"",
+            "value_kind": "effective_snapshot",
+            "notice": "Invented fixture; not real application telemetry."
+          },
+          "provenance": {
+            "type": "original_synthetic_fixture",
+            "license": "MIT",
+            "statement": "Entirely invented app, timestamp and values, not observed from any user or service."
+          },
+          "source_url": "synthetic://matched-evidence-v1/snapshot",
+          "span_id": 2
+        }
+      ],
+      "generator_arm_order": [
+        "legacy",
+        "branched"
+      ]
+    },
+    {
+      "id": "r02-en-sufficient",
+      "pair_id": "r02-en",
+      "family": "r02",
+      "scope": "synthetic_runtime",
+      "answer_kind": "nonnumeric",
+      "language": "en",
+      "query": "In the invented snapshot, what is the effective APPLICATION_ROOT value for app Orchid at 2030-04-05T10:00:00Z?",
+      "condition": "sufficient",
+      "offered_sufficient": true,
+      "supporting_span_ids": [
+        2
+      ],
+      "assistant_expected_answer": "/orchid",
+      "assistant_evidence_basis": "The invented snapshot exactly matches the named app, timestamp and setting.",
+      "spans": [
+        {
+          "text": "source_kind: documentation_note\nsubject: Flask 3.1.0 \nobserved_at: not_applicable\nsetting: APPLICATION_ROOT        \nvalue: \"/\"             \nvalue_kind: documented_default\nnotice: Source-derived note; not a runtime observation.\n",
+          "fields": {
+            "source_kind": "documentation_note",
+            "subject": "Flask 3.1.0",
+            "observed_at": "not_applicable",
+            "setting": "APPLICATION_ROOT",
+            "value": "\"/\"",
+            "value_kind": "documented_default",
+            "notice": "Source-derived note; not a runtime observation."
+          },
+          "provenance": {
+            "type": "original_structured_note_from_official_source",
+            "source_path": "data/corpus/flask/config.rst",
+            "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+            "anchors": [
+              {
+                "text": ".. py:data:: APPLICATION_ROOT",
+                "char_start": 10266,
+                "char_end": 10295,
+                "line_start": 298
+              },
+              {
+                "text": "Default: ``'/'``",
+                "char_start": 10724,
+                "char_end": 10740,
+                "line_start": 309
+              }
+            ],
+            "transformation": "Join setting header and Default from the same configuration section; normalize RST quotes and numeric underscores. Not a contiguous verbatim excerpt.",
+            "license": "BSD-3-Clause"
+          },
+          "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L298",
+          "span_id": 1
+        },
+        {
+          "text": "source_kind: synthetic_snapshot\nsubject: Orchid      \nobserved_at: 2030-04-05T10:00:00Z\nsetting: APPLICATION_ROOT        \nvalue: \"/orchid\"       \nvalue_kind: effective_snapshot\nnotice: Invented fixture; not real application telemetry.\n",
+          "fields": {
+            "source_kind": "synthetic_snapshot",
+            "subject": "Orchid",
+            "observed_at": "2030-04-05T10:00:00Z",
+            "setting": "APPLICATION_ROOT",
+            "value": "\"/orchid\"",
+            "value_kind": "effective_snapshot",
+            "notice": "Invented fixture; not real application telemetry."
+          },
+          "provenance": {
+            "type": "original_synthetic_fixture",
+            "license": "MIT",
+            "statement": "Entirely invented app, timestamp and values, not observed from any user or service."
+          },
+          "source_url": "synthetic://matched-evidence-v1/snapshot",
+          "span_id": 2
+        }
+      ],
+      "generator_arm_order": [
+        "branched",
+        "legacy"
+      ]
+    },
+    {
+      "id": "r02-zh-sufficient",
+      "pair_id": "r02-zh",
+      "family": "r02",
+      "scope": "synthetic_runtime",
+      "answer_kind": "nonnumeric",
+      "language": "zh",
+      "query": "在虚构快照中，应用 Orchid 在 2030-04-05T10:00:00Z 的 APPLICATION_ROOT 有效配置值是什么？",
+      "condition": "sufficient",
+      "offered_sufficient": true,
+      "supporting_span_ids": [
+        2
+      ],
+      "assistant_expected_answer": "/orchid",
+      "assistant_evidence_basis": "The invented snapshot exactly matches the named app, timestamp and setting.",
+      "spans": [
+        {
+          "text": "source_kind: documentation_note\nsubject: Flask 3.1.0 \nobserved_at: not_applicable\nsetting: APPLICATION_ROOT        \nvalue: \"/\"             \nvalue_kind: documented_default\nnotice: Source-derived note; not a runtime observation.\n",
+          "fields": {
+            "source_kind": "documentation_note",
+            "subject": "Flask 3.1.0",
+            "observed_at": "not_applicable",
+            "setting": "APPLICATION_ROOT",
+            "value": "\"/\"",
+            "value_kind": "documented_default",
+            "notice": "Source-derived note; not a runtime observation."
+          },
+          "provenance": {
+            "type": "original_structured_note_from_official_source",
+            "source_path": "data/corpus/flask/config.rst",
+            "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+            "anchors": [
+              {
+                "text": ".. py:data:: APPLICATION_ROOT",
+                "char_start": 10266,
+                "char_end": 10295,
+                "line_start": 298
+              },
+              {
+                "text": "Default: ``'/'``",
+                "char_start": 10724,
+                "char_end": 10740,
+                "line_start": 309
+              }
+            ],
+            "transformation": "Join setting header and Default from the same configuration section; normalize RST quotes and numeric underscores. Not a contiguous verbatim excerpt.",
+            "license": "BSD-3-Clause"
+          },
+          "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L298",
+          "span_id": 1
+        },
+        {
+          "text": "source_kind: synthetic_snapshot\nsubject: Orchid      \nobserved_at: 2030-04-05T10:00:00Z\nsetting: APPLICATION_ROOT        \nvalue: \"/orchid\"       \nvalue_kind: effective_snapshot\nnotice: Invented fixture; not real application telemetry.\n",
+          "fields": {
+            "source_kind": "synthetic_snapshot",
+            "subject": "Orchid",
+            "observed_at": "2030-04-05T10:00:00Z",
+            "setting": "APPLICATION_ROOT",
+            "value": "\"/orchid\"",
+            "value_kind": "effective_snapshot",
+            "notice": "Invented fixture; not real application telemetry."
+          },
+          "provenance": {
+            "type": "original_synthetic_fixture",
+            "license": "MIT",
+            "statement": "Entirely invented app, timestamp and values, not observed from any user or service."
+          },
+          "source_url": "synthetic://matched-evidence-v1/snapshot",
+          "span_id": 2
+        }
+      ],
+      "generator_arm_order": [
+        "legacy",
+        "branched"
+      ]
+    },
+    {
+      "id": "r02-zh-insufficient",
+      "pair_id": "r02-zh",
+      "family": "r02",
+      "scope": "synthetic_runtime",
+      "answer_kind": "nonnumeric",
+      "language": "zh",
+      "query": "在虚构快照中，应用 Orchid 在 2030-04-05T10:00:00Z 的 APPLICATION_ROOT 有效配置值是什么？",
+      "condition": "insufficient",
+      "offered_sufficient": false,
+      "supporting_span_ids": [],
+      "assistant_expected_answer": null,
+      "assistant_evidence_basis": "Only another app snapshot is supplied; general documented defaults do not establish the named app effective value.",
+      "spans": [
+        {
+          "text": "source_kind: documentation_note\nsubject: Flask 3.1.0 \nobserved_at: not_applicable\nsetting: APPLICATION_ROOT        \nvalue: \"/\"             \nvalue_kind: documented_default\nnotice: Source-derived note; not a runtime observation.\n",
+          "fields": {
+            "source_kind": "documentation_note",
+            "subject": "Flask 3.1.0",
+            "observed_at": "not_applicable",
+            "setting": "APPLICATION_ROOT",
+            "value": "\"/\"",
+            "value_kind": "documented_default",
+            "notice": "Source-derived note; not a runtime observation."
+          },
+          "provenance": {
+            "type": "original_structured_note_from_official_source",
+            "source_path": "data/corpus/flask/config.rst",
+            "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+            "anchors": [
+              {
+                "text": ".. py:data:: APPLICATION_ROOT",
+                "char_start": 10266,
+                "char_end": 10295,
+                "line_start": 298
+              },
+              {
+                "text": "Default: ``'/'``",
+                "char_start": 10724,
+                "char_end": 10740,
+                "line_start": 309
+              }
+            ],
+            "transformation": "Join setting header and Default from the same configuration section; normalize RST quotes and numeric underscores. Not a contiguous verbatim excerpt.",
+            "license": "BSD-3-Clause"
+          },
+          "source_url": "https://github.com/pallets/flask/blob/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst#L298",
+          "span_id": 1
+        },
+        {
+          "text": "source_kind: synthetic_snapshot\nsubject: Willow      \nobserved_at: 2030-04-05T10:00:00Z\nsetting: APPLICATION_ROOT        \nvalue: \"/orchid\"       \nvalue_kind: effective_snapshot\nnotice: Invented fixture; not real application telemetry.\n",
+          "fields": {
+            "source_kind": "synthetic_snapshot",
+            "subject": "Willow",
+            "observed_at": "2030-04-05T10:00:00Z",
+            "setting": "APPLICATION_ROOT",
+            "value": "\"/orchid\"",
+            "value_kind": "effective_snapshot",
+            "notice": "Invented fixture; not real application telemetry."
+          },
+          "provenance": {
+            "type": "original_synthetic_fixture",
+            "license": "MIT",
+            "statement": "Entirely invented app, timestamp and values, not observed from any user or service."
+          },
+          "source_url": "synthetic://matched-evidence-v1/snapshot",
+          "span_id": 2
+        }
+      ],
+      "generator_arm_order": [
+        "branched",
+        "legacy"
+      ]
+    }
+  ]
+}

@@ -18,14 +18,15 @@ PYTHONPATH=src python -m rag_foundation query 'test client live server' -k 3
 ### 2. 审核已记录实验：不运行模型
 
 ```bash
-python experiments/numbered-spans-v1/audit_record.py
+python experiments/matched-evidence-v1/audit_record.py --check
 ```
 
 该命令复核冻结输入、原始记录和计数，不重新生成、不自动判定语义真值。
-[最新报告](experiments/numbered-spans-v1/REPORT.md) ·
-[汇总与逐题结果](experiments/numbered-spans-v1/summary.json) ·
-[AI 助理逐题判定依据](experiments/numbered-spans-v1/assistant-review.json)。
-旧的[证据门实验](experiments/evidence-sufficiency-v1/README.md)与
+[最新报告](experiments/matched-evidence-v1/REPORT.md) ·
+[汇总与逐题结果](experiments/matched-evidence-v1/summary.json) ·
+[AI 助理逐题判定依据](experiments/matched-evidence-v1/assistant-review.json)。
+旧的[编号选择实验](experiments/numbered-spans-v1/README.md)、
+[证据门实验](experiments/evidence-sufficiency-v1/README.md)与
 [生成实验审计](experiments/bilingual-generation-v1/README.md)保留为回归记录。
 
 ### 3. 可选真实 CPU 模型：显式下载与运行
@@ -35,12 +36,25 @@ Linux x86_64、Python 3.12，公开下载约586 MB，临时RAM建议至少5 GB�
 
 ```bash
 python3 experiments/evidence-sufficiency-v1/prepare_assets.py --directory /tmp/rag-local-assets
-python3 experiments/numbered-spans-v1/run_experiment.py \
-  --assets /tmp/rag-local-assets --output build/my-span-comparison
+python3 experiments/matched-evidence-v1/run_experiment.py \
+  --assets /tmp/rag-local-assets --output build/my-matched-evidence-run
 ```
 
-[环境、固定许可/来源、实验边界](experiments/numbered-spans-v1/README.md)。
+[环境、固定许可/来源、实验边界](experiments/matched-evidence-v1/README.md)。
 每次使用新的输出目录。通常测试和CI仅检索/审计，不下载或执行模型。
+
+## 2026-11-18：同题替换证据，格式通过仍可能引用错误对象
+
+8 个英中同题配对、16 行证据条件，文档默认值和明确虚构的运行快照都同时包含可答/不足条件。
+每对保持问题、片段数量/顺序/形状与字符长度，只换相关文档字段或虚构对象名。不是实际用户遥测。
+
+编号选择器命中全部 8 个可答证据，但误放 6 个不足条件，仅 **2/8 整对判断正确**。
+相同选中证据上，新的 answer/refusal 分支 schema 让 14/14 下游输出满足最终合同，
+交付正确有支持答案由旧 schema 的 1/8 增至 7/8；同时也放行了 **6 个无支持答案和 1 个错误路径值**。
+两臂原始答案字符串完全相同，不能把结构改善说成语义能力提升。虚构运行条件仍 0/4 整对正确。
+
+无默认行为更改，不自动补引用。新增模型外审计支持 `--check`，避免依赖 shell 编码和 `cmp`。
+[复现与边界](experiments/matched-evidence-v1/README.md) · [逐层结果](experiments/matched-evidence-v1/REPORT.md)。
 
 ## 2026-11-17：编号避免复制错误，不等于证据判断可靠
 

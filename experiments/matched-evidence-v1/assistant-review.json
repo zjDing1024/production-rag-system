@@ -1,0 +1,229 @@
+{
+  "reviewer": "AI assistant; source labels and paired design reviewed before calls by a second AI assistant. Outcome judgments are not human annotation or automatically proved semantics.",
+  "rows": [
+    {
+      "case_id": "d01-en-sufficient",
+      "arm": "legacy",
+      "accepted_supported_correct": true,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "The answer gives the requested exact default or matching synthetic snapshot value; the selected record matches setting and scope (and entity/time for runtime). It has a valid supplied citation and is accepted."
+    },
+    {
+      "case_id": "d01-en-sufficient",
+      "arm": "branched",
+      "accepted_supported_correct": true,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "The answer gives the requested exact default or matching synthetic snapshot value; the selected record matches setting and scope (and entity/time for runtime). It has a valid supplied citation and is accepted."
+    },
+    {
+      "case_id": "d01-en-insufficient",
+      "arm": "legacy",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "The selector legitimately refused: the documentation note is for another setting and the snapshot is effective state, not the requested documented default. No generation was called."
+    },
+    {
+      "case_id": "d01-en-insufficient",
+      "arm": "branched",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "The selector legitimately refused: the documentation note is for another setting and the snapshot is effective state, not the requested documented default. No generation was called."
+    },
+    {
+      "case_id": "d01-zh-insufficient",
+      "arm": "legacy",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "rationale": "500000 belongs to MAX_FORM_MEMORY_SIZE, not the requested MAX_FORM_PARTS. The selected note is about a different key. The output also omits citations, so its unsupported answer is contract-invalid."
+    },
+    {
+      "case_id": "d01-zh-insufficient",
+      "arm": "branched",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "rationale": "500000 belongs to MAX_FORM_MEMORY_SIZE, not the requested MAX_FORM_PARTS. The selected note is about a different key. The supplied citation is structurally valid but does not support this answer to this question."
+    },
+    {
+      "case_id": "d01-zh-sufficient",
+      "arm": "legacy",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "The answer gives the requested exact default or matching synthetic snapshot value; the selected record matches setting and scope (and entity/time for runtime). It omits citations and fails the unchanged Python contract, so raw correctness is not an accepted answer."
+    },
+    {
+      "case_id": "d01-zh-sufficient",
+      "arm": "branched",
+      "accepted_supported_correct": true,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "The answer gives the requested exact default or matching synthetic snapshot value; the selected record matches setting and scope (and entity/time for runtime). It has a valid supplied citation and is accepted."
+    },
+    {
+      "case_id": "d02-en-insufficient",
+      "arm": "legacy",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "The selector legitimately refused: the documentation note is for another setting and the snapshot is effective state, not the requested documented default. No generation was called."
+    },
+    {
+      "case_id": "d02-en-insufficient",
+      "arm": "branched",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "not_generated",
+      "rationale": "The selector legitimately refused: the documentation note is for another setting and the snapshot is effective state, not the requested documented default. No generation was called."
+    },
+    {
+      "case_id": "d02-en-sufficient",
+      "arm": "legacy",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "The answer gives the requested exact default or matching synthetic snapshot value; the selected record matches setting and scope (and entity/time for runtime). It omits citations and fails the unchanged Python contract, so raw correctness is not an accepted answer."
+    },
+    {
+      "case_id": "d02-en-sufficient",
+      "arm": "branched",
+      "accepted_supported_correct": true,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "The answer gives the requested exact default or matching synthetic snapshot value; the selected record matches setting and scope (and entity/time for runtime). It has a valid supplied citation and is accepted."
+    },
+    {
+      "case_id": "d02-zh-sufficient",
+      "arm": "legacy",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "The answer gives the requested exact default or matching synthetic snapshot value; the selected record matches setting and scope (and entity/time for runtime). It omits citations and fails the unchanged Python contract, so raw correctness is not an accepted answer."
+    },
+    {
+      "case_id": "d02-zh-sufficient",
+      "arm": "branched",
+      "accepted_supported_correct": true,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "The answer gives the requested exact default or matching synthetic snapshot value; the selected record matches setting and scope (and entity/time for runtime). It has a valid supplied citation and is accepted."
+    },
+    {
+      "case_id": "d02-zh-insufficient",
+      "arm": "legacy",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "rationale": "/orchid is a synthetic effective configuration value, not a documented APPLICATION_ROOT default. The selected snapshot cannot answer the documentation-scope question. The output also omits citations, so its unsupported answer is contract-invalid."
+    },
+    {
+      "case_id": "d02-zh-insufficient",
+      "arm": "branched",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "rationale": "/orchid is a synthetic effective configuration value, not a documented APPLICATION_ROOT default. The selected snapshot cannot answer the documentation-scope question. The supplied citation is structurally valid but does not support this answer to this question."
+    },
+    {
+      "case_id": "r01-en-sufficient",
+      "arm": "legacy",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "The answer gives the requested exact default or matching synthetic snapshot value; the selected record matches setting and scope (and entity/time for runtime). It omits citations and fails the unchanged Python contract, so raw correctness is not an accepted answer."
+    },
+    {
+      "case_id": "r01-en-sufficient",
+      "arm": "branched",
+      "accepted_supported_correct": true,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "The answer gives the requested exact default or matching synthetic snapshot value; the selected record matches setting and scope (and entity/time for runtime). It has a valid supplied citation and is accepted."
+    },
+    {
+      "case_id": "r01-en-insufficient",
+      "arm": "legacy",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "rationale": "The question names synthetic app Orchid, but the selected snapshot belongs to Willow. Even an identical expected value string cannot establish the requested entity-bound fact. The output also omits citations, so its unsupported answer is contract-invalid."
+    },
+    {
+      "case_id": "r01-en-insufficient",
+      "arm": "branched",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "rationale": "The question names synthetic app Orchid, but the selected snapshot belongs to Willow. Even an identical expected value string cannot establish the requested entity-bound fact. The supplied citation is structurally valid but does not support this answer to this question."
+    },
+    {
+      "case_id": "r01-zh-insufficient",
+      "arm": "legacy",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "rationale": "The question names synthetic app Orchid, but the selected snapshot belongs to Willow. Even an identical expected value string cannot establish the requested entity-bound fact. The output also omits citations, so its unsupported answer is contract-invalid."
+    },
+    {
+      "case_id": "r01-zh-insufficient",
+      "arm": "branched",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "rationale": "The question names synthetic app Orchid, but the selected snapshot belongs to Willow. Even an identical expected value string cannot establish the requested entity-bound fact. The supplied citation is structurally valid but does not support this answer to this question."
+    },
+    {
+      "case_id": "r01-zh-sufficient",
+      "arm": "legacy",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "The answer gives the requested exact default or matching synthetic snapshot value; the selected record matches setting and scope (and entity/time for runtime). It omits citations and fails the unchanged Python contract, so raw correctness is not an accepted answer."
+    },
+    {
+      "case_id": "r01-zh-sufficient",
+      "arm": "branched",
+      "accepted_supported_correct": true,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "The answer gives the requested exact default or matching synthetic snapshot value; the selected record matches setting and scope (and entity/time for runtime). It has a valid supplied citation and is accepted."
+    },
+    {
+      "case_id": "r02-en-insufficient",
+      "arm": "legacy",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "rationale": "The question names synthetic app Orchid, but the selected snapshot belongs to Willow. Even an identical expected value string cannot establish the requested entity-bound fact. The output also omits citations, so its unsupported answer is contract-invalid."
+    },
+    {
+      "case_id": "r02-en-insufficient",
+      "arm": "branched",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "rationale": "The question names synthetic app Orchid, but the selected snapshot belongs to Willow. Even an identical expected value string cannot establish the requested entity-bound fact. The supplied citation is structurally valid but does not support this answer to this question."
+    },
+    {
+      "case_id": "r02-en-sufficient",
+      "arm": "legacy",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "rationale": "The selected snapshot supports /orchid but the answer is orchid, omitting the leading slash. These are different configuration string values, so it is incorrect despite correct selected evidence. The legacy answer also omits citations and is contract-invalid."
+    },
+    {
+      "case_id": "r02-en-sufficient",
+      "arm": "branched",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "rationale": "The selected snapshot supports /orchid but the answer is orchid, omitting the leading slash. These are different configuration string values, so it is incorrect despite correct selected evidence. The branched answer has a valid citation but remains wrong."
+    },
+    {
+      "case_id": "r02-zh-sufficient",
+      "arm": "legacy",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "The answer gives the requested exact default or matching synthetic snapshot value; the selected record matches setting and scope (and entity/time for runtime). It omits citations and fails the unchanged Python contract, so raw correctness is not an accepted answer."
+    },
+    {
+      "case_id": "r02-zh-sufficient",
+      "arm": "branched",
+      "accepted_supported_correct": true,
+      "raw_answer_assessment": "supported_correct",
+      "rationale": "The answer gives the requested exact default or matching synthetic snapshot value; the selected record matches setting and scope (and entity/time for runtime). It has a valid supplied citation and is accepted."
+    },
+    {
+      "case_id": "r02-zh-insufficient",
+      "arm": "legacy",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "rationale": "The question names synthetic app Orchid, but the selected snapshot belongs to Willow. Even an identical expected value string cannot establish the requested entity-bound fact. The output also omits citations, so its unsupported answer is contract-invalid."
+    },
+    {
+      "case_id": "r02-zh-insufficient",
+      "arm": "branched",
+      "accepted_supported_correct": false,
+      "raw_answer_assessment": "unsupported_or_wrong",
+      "rationale": "The question names synthetic app Orchid, but the selected snapshot belongs to Willow. Even an identical expected value string cannot establish the requested entity-bound fact. The supplied citation is structurally valid but does not support this answer to this question."
+    }
+  ]
+}
