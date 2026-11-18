@@ -1,0 +1,52 @@
+[
+  {
+    "version": "1.1.4",
+    "revision": "1ca199f9b38b70a4e97cb47a4252ffd7fccc008c",
+    "source_url": "https://raw.githubusercontent.com/pallets/flask/1ca199f9b38b70a4e97cb47a4252ffd7fccc008c/docs/config.rst",
+    "source_sha256": "0a97b13e433f2f5c897330cdcf99dcfc54178052a69f1cc23ab4f5a92bc18ffb",
+    "excerpt_sha256": "f9c9e9e54daa61ca724b57f7421c1adcdae1d056984f946150209ed09146b414",
+    "char_start": 8482,
+    "char_end": 8856,
+    "line_start": 249,
+    "line_end": 257,
+    "license": "BSD-3-Clause",
+    "license_url": "https://raw.githubusercontent.com/pallets/flask/1ca199f9b38b70a4e97cb47a4252ffd7fccc008c/LICENSE.rst",
+    "license_sha256": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea",
+    "license_notice": "data/licenses/Flask-BSD-3-Clause.txt",
+    "verified_documented_value": "43200",
+    "verification": "Fetched exact pinned public bytes before fixture freeze; whole-source/excerpt/license hashes verified. Offline audits do not refetch upstream."
+  },
+  {
+    "version": "3.1.2",
+    "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+    "source_url": "https://raw.githubusercontent.com/pallets/flask/2c1b30d0503cfb064f1cb252e6614a06915a362a/docs/config.rst",
+    "source_sha256": "096ba095a405c0cc9e6c65f2e0374812a42160703d43445d53879ee8411d02e6",
+    "excerpt_sha256": "6ebdc20b5a6a506f9e6e48a879626287d3db085fdcee660ca08af64ddc081640",
+    "char_start": 8717,
+    "char_end": 9206,
+    "line_start": 250,
+    "line_end": 263,
+    "license": "BSD-3-Clause",
+    "license_url": "https://raw.githubusercontent.com/pallets/flask/2c1b30d0503cfb064f1cb252e6614a06915a362a/LICENSE.txt",
+    "license_sha256": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea",
+    "license_notice": "data/licenses/Flask-BSD-3-Clause.txt",
+    "verified_documented_value": "None",
+    "verification": "Fetched exact pinned public bytes before fixture freeze; whole-source/excerpt/license hashes verified. Offline audits do not refetch upstream."
+  },
+  {
+    "version": "3.1.0",
+    "revision": "ab8149664182b662453a563161aa89013c806dc9",
+    "source_url": "https://raw.githubusercontent.com/pallets/flask/ab8149664182b662453a563161aa89013c806dc9/docs/config.rst",
+    "local_source": "data/corpus/flask/config.rst",
+    "source_sha256": "d5c195ea912e2e83038f69dcdb5a4f3dcb76a7e1fe0902567515200ef90b5966",
+    "excerpt_sha256": "6ebdc20b5a6a506f9e6e48a879626287d3db085fdcee660ca08af64ddc081640",
+    "char_start": 8579,
+    "char_end": 9068,
+    "line_start": 247,
+    "line_end": 260,
+    "license": "BSD-3-Clause",
+    "license_notice": "data/licenses/Flask-BSD-3-Clause.txt",
+    "verified_documented_value": "None",
+    "verification": "Existing pinned repository corpus; checked before freeze."
+  }
+]

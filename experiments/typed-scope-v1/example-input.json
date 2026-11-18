@@ -1,0 +1,36 @@
+{
+  "query": "According to Flask 1.1.4 documentation, what is the default SEND_FILE_MAX_AGE_DEFAULT in seconds?",
+  "scope": {
+    "kind": "documentation",
+    "subject": "Flask",
+    "key": "SEND_FILE_MAX_AGE_DEFAULT",
+    "version": "1.1.4",
+    "observed_at": null
+  },
+  "records": [
+    {
+      "record_id": "q7",
+      "scope": {
+        "kind": "documentation",
+        "subject": "Flask",
+        "key": "SEND_FILE_MAX_AGE_DEFAULT",
+        "version": "1.1.4",
+        "observed_at": null
+      },
+      "text": "Original documentation summary\nProject: Flask\nVersion: 1.1.4\nSetting: SEND_FILE_MAX_AGE_DEFAULT\nDocumented default: 43200\nNumeric values are in seconds; None is a literal configuration value.\nThis is a documented default, not an observed application state.\n",
+      "citation": "https://github.com/pallets/flask/blob/1ca199f9b38b70a4e97cb47a4252ffd7fccc008c/docs/config.rst#L249"
+    },
+    {
+      "record_id": "m2",
+      "scope": {
+        "kind": "documentation",
+        "subject": "Flask",
+        "key": "SEND_FILE_MAX_AGE_DEFAULT",
+        "version": "3.1.2",
+        "observed_at": null
+      },
+      "text": "Original documentation summary\nProject: Flask\nVersion: 3.1.2\nSetting: SEND_FILE_MAX_AGE_DEFAULT\nDocumented default: None \nNumeric values are in seconds; None is a literal configuration value.\nThis is a documented default, not an observed application state.\n",
+      "citation": "https://github.com/pallets/flask/blob/2c1b30d0503cfb064f1cb252e6614a06915a362a/docs/config.rst#L250"
+    }
+  ]
+}

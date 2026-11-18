@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_execution",
+  "frozen_utc": "2026-11-18T16:12:40.369700+00:00",
+  "cases_sha256": "f8adcf4c31a26707ae3cbc58b7fc82b517c231d3e0db3eca9fc507755086bdbe",
+  "file_sha256": {
+    "experiments/typed-scope-v1/adapter.py": "71c32be7ab0acc5ddf660e48ae33f9adef4e2bdff4ba5127121b7bfd09ce41f6",
+    "experiments/typed-scope-v1/build_fixture.py": "b8bb4722eef338ce585fb4294719b6b15bfa7dc05807cbe9c6bafe05d3e9333a",
+    "experiments/typed-scope-v1/run_experiment.py": "60cfacd780c41b6b5f7c2a93d51588b1150ecf129ef77345988195304a4d3a8a",
+    "experiments/typed-scope-v1/PROTOCOL.md": "0eb14db7a4f6cddce708b944b4b780cd9583496bee80fa8082d70f7af79a4622",
+    "experiments/typed-scope-v1/preflight.json": "6f323bb5d30aaf933949a918986e6f070f509ff68d63e208ca83706af9c70cfc",
+    "experiments/typed-scope-v1/sources/manifest.json": "87b42709a06bcf47abe10b91d5bcaf2e1f8640b6ef4a0c0cefc1ab829b7fa697",
+    "src/rag_foundation/scope_gate.py": "7818a34214dbbb8c41ef8f468b26c7417a70237cd99a4bae39ca8a5283c87e83",
+    "src/rag_foundation/generation.py": "a3aa8cde0881f86ec1a8b48cf823fbc39a0f194d4cc093f0585318b0126e7532",
+    "experiments/matched-evidence-v1/protocol.py": "25bd4a0f66c68967fb31d3ca65ff33d18df7c3ec92937d1bec2691abde10e651",
+    "experiments/numbered-spans-v1/mechanics.py": "a559e13b1f7b6762a1e5ad1e149dd1f1c8ab2e083afb5154f6190e6f2a8b6a88"
+  },
+  "review": "AI-authored fixture with second-AI source/label/order/ID/runner review before calls. No human annotation or external preregistration."
+}

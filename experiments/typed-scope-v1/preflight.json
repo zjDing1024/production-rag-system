@@ -1,0 +1,519 @@
+{
+  "scope": "No model called. Caller metadata matching and planned callback counts only.",
+  "rows": [
+    {
+      "case_id": "v_old-en-o0i0-sufficient",
+      "matched_ids": [
+        "q7"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_old-en-o0i0-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_old-en-o0i1-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_old-en-o0i1-sufficient",
+      "matched_ids": [
+        "m2"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_old-en-o1i0-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_old-en-o1i0-sufficient",
+      "matched_ids": [
+        "q7"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_old-en-o1i1-sufficient",
+      "matched_ids": [
+        "m2"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_old-en-o1i1-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_old-zh-o0i0-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_old-zh-o0i0-sufficient",
+      "matched_ids": [
+        "q7"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_old-zh-o0i1-sufficient",
+      "matched_ids": [
+        "m2"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_old-zh-o0i1-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_old-zh-o1i0-sufficient",
+      "matched_ids": [
+        "q7"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_old-zh-o1i0-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_old-zh-o1i1-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_old-zh-o1i1-sufficient",
+      "matched_ids": [
+        "m2"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_new-en-o0i0-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_new-en-o0i0-sufficient",
+      "matched_ids": [
+        "m2"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_new-en-o0i1-sufficient",
+      "matched_ids": [
+        "q7"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_new-en-o0i1-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_new-en-o1i0-sufficient",
+      "matched_ids": [
+        "m2"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_new-en-o1i0-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_new-en-o1i1-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_new-en-o1i1-sufficient",
+      "matched_ids": [
+        "q7"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_new-zh-o0i0-sufficient",
+      "matched_ids": [
+        "m2"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_new-zh-o0i0-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_new-zh-o0i1-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_new-zh-o0i1-sufficient",
+      "matched_ids": [
+        "q7"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_new-zh-o1i0-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_new-zh-o1i0-sufficient",
+      "matched_ids": [
+        "m2"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_new-zh-o1i1-sufficient",
+      "matched_ids": [
+        "q7"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "v_new-zh-o1i1-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "entity-en-o0i0-sufficient",
+      "matched_ids": [
+        "q7"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "entity-en-o0i0-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "entity-en-o0i1-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "entity-en-o0i1-sufficient",
+      "matched_ids": [
+        "m2"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "entity-en-o1i0-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "entity-en-o1i0-sufficient",
+      "matched_ids": [
+        "q7"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "entity-en-o1i1-sufficient",
+      "matched_ids": [
+        "m2"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "entity-en-o1i1-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "entity-zh-o0i0-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "entity-zh-o0i0-sufficient",
+      "matched_ids": [
+        "q7"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "entity-zh-o0i1-sufficient",
+      "matched_ids": [
+        "m2"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "entity-zh-o0i1-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "entity-zh-o1i0-sufficient",
+      "matched_ids": [
+        "q7"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "entity-zh-o1i0-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "entity-zh-o1i1-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "entity-zh-o1i1-sufficient",
+      "matched_ids": [
+        "m2"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "time-en-o0i0-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "time-en-o0i0-sufficient",
+      "matched_ids": [
+        "m2"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "time-en-o0i1-sufficient",
+      "matched_ids": [
+        "q7"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "time-en-o0i1-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "time-en-o1i0-sufficient",
+      "matched_ids": [
+        "m2"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "time-en-o1i0-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "time-en-o1i1-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "time-en-o1i1-sufficient",
+      "matched_ids": [
+        "q7"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "time-zh-o0i0-sufficient",
+      "matched_ids": [
+        "m2"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "time-zh-o0i0-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "time-zh-o0i1-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "time-zh-o0i1-sufficient",
+      "matched_ids": [
+        "q7"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "time-zh-o1i0-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "time-zh-o1i0-sufficient",
+      "matched_ids": [
+        "m2"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "time-zh-o1i1-sufficient",
+      "matched_ids": [
+        "q7"
+      ],
+      "planned_status": "planned",
+      "gated_expected_call": true,
+      "ungated_expected_call": true
+    },
+    {
+      "case_id": "time-zh-o1i1-insufficient",
+      "matched_ids": [],
+      "planned_status": "not_run",
+      "gated_expected_call": false,
+      "ungated_expected_call": true
+    }
+  ],
+  "expected_model_calls": 96,
+  "expected_gated_no_runs": 32
+}
