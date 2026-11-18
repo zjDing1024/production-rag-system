@@ -58,3 +58,7 @@ jobs:
         run: |
           python -m unittest discover -s experiments/matched-evidence-v1 -p 'test_*.py' -v
           python experiments/matched-evidence-v1/audit_record.py --check
+      - name: Verify typed scope comparison without a model
+        run: |
+          python -m unittest discover -s experiments/typed-scope-v1 -p 'test_*.py' -v
+          python experiments/typed-scope-v1/audit_record.py --check

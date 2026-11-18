@@ -18,14 +18,14 @@ PYTHONPATH=src python -m rag_foundation query 'test client live server' -k 3
 ### 2. 审核已记录实验：不运行模型
 
 ```bash
-python experiments/matched-evidence-v1/audit_record.py --check
+python experiments/typed-scope-v1/audit_record.py --check
 ```
 
 该命令复核冻结输入、原始记录和计数，不重新生成、不自动判定语义真值。
-[最新报告](experiments/matched-evidence-v1/REPORT.md) ·
-[汇总与逐题结果](experiments/matched-evidence-v1/summary.json) ·
-[AI 助理逐题判定依据](experiments/matched-evidence-v1/assistant-review.json)。
-旧的[编号选择实验](experiments/numbered-spans-v1/README.md)、
+[最新报告](experiments/typed-scope-v1/REPORT.md) ·
+[汇总与逐题结果](experiments/typed-scope-v1/summary.json) ·
+[AI 助理逐题判定依据](experiments/typed-scope-v1/assistant-review.json)。
+旧的[同题证据替换实验](experiments/matched-evidence-v1/README.md)、[编号选择实验](experiments/numbered-spans-v1/README.md)、
 [证据门实验](experiments/evidence-sufficiency-v1/README.md)与
 [生成实验审计](experiments/bilingual-generation-v1/README.md)保留为回归记录。
 
@@ -36,12 +36,34 @@ Linux x86_64、Python 3.12，公开下载约586 MB，临时RAM建议至少5 GB�
 
 ```bash
 python3 experiments/evidence-sufficiency-v1/prepare_assets.py --directory /tmp/rag-local-assets
-python3 experiments/matched-evidence-v1/run_experiment.py \
-  --assets /tmp/rag-local-assets --output build/my-matched-evidence-run
+python3 experiments/typed-scope-v1/run_experiment.py \
+  --assets /tmp/rag-local-assets --output build/my-typed-scope-run
 ```
 
-[环境、固定许可/来源、实验边界](experiments/matched-evidence-v1/README.md)。
+[环境、固定许可/来源、实验边界](experiments/typed-scope-v1/README.md)。
 每次使用新的输出目录。通常测试和CI仅检索/审计，不下载或执行模型。
+
+## 2026-11-19：显式版本 / 对象 / 时间过滤，不冒充语义理解
+
+新增默认关闭的 typed scope 过滤器，调用方明确提供版本或对象与时间；不从问题推断，
+不读答案值，不验证元数据真假，也不是权限控制。无匹配时 `not_run`，不调用模型。
+
+64 行新开发条件、32 个同题证据配对，跨英中、同类双记录、独立 ID / 顺序重排。
+相同分支生成器实测：未过滤的可答题 **23/32** 给出正确值且全部引用在所问范围内，
+32 个无所问证据条件全部错误放行；过滤后为 **32/32 正确答案 + 32 次确定性不运行**。
+这不是 64 个模型正确答案，也不是模型学会拒答。若整个答案必须仅等于字面量，未过滤为21/32。
+
+过滤同时改变上下文长度和可选引用集；小型已知事实与重复布局不证明泛化能力。
+`None` 是 Flask 新版本的有效配置值，和“无匹配记录”分开。旧默认生成/检索流程不变。
+[接口和信任边界](docs/typed-scope-gate.md) · [复现](experiments/typed-scope-v1/README.md) ·
+[分层结果](experiments/typed-scope-v1/REPORT.md)。
+
+无需模型即可看筛选结果：
+
+```bash
+PYTHONPATH=src python -m rag_foundation.scope_gate \
+  experiments/typed-scope-v1/example-input.json --gate
+```
 
 ## 2026-11-18：同题替换证据，格式通过仍可能引用错误对象
 

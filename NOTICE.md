@@ -20,3 +20,16 @@ All retrieval implementation and tests were written for this project, with AI
 assistance, without copying an existing RAG or BM25 package implementation.
 The Lucene source study in `docs/design.md` is a conceptual comparison only;
 Lucene code is not distributed in this repository.
+
+## Additional versioned fact summaries
+
+`experiments/typed-scope-v1/` contains original summaries of the documented
+`SEND_FILE_MAX_AGE_DEFAULT` value in Flask 1.1.4 and 3.1.2, with exact upstream
+commits, source/license hashes and offsets in its `sources/manifest.json`.
+No additional upstream documentation files are distributed. The upstream docs
+are BSD-3-Clause; the existing Pallets copyright/license above is retained.
+All apparent application snapshots in this experiment are original synthetic
+fixtures, not actual user or production telemetry.
+
+The Qdrant reference in `docs/typed-scope-gate.md` is a conceptual source study
+only, with its pinned Apache-2.0 license linked there. No Qdrant code is included.

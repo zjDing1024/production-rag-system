@@ -1,0 +1,774 @@
+{
+  "reviewer": "AI author; all 96 raw outputs read after execution; independent AI review agreed",
+  "method": "Question-scoped exact-value correctness, separate from citation scope and structural acceptance. No external human calibration. Sentences explicitly giving the unmodified exact route count as value-correct; whole-answer literal equality is additionally reported as a post-execution sensitivity measure because the frozen protocol did not specify whole-string matching. Wrong case, missing slash, timestamp in place of route, wrong-version or missing requested evidence are not repaired.",
+  "rows": [
+    {
+      "case_id": "v_old-en-o0i0-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Exact numeric value for the requested version/entity/time; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_old-en-o0i0-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_old-en-o0i0-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "v_old-en-o0i0-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "v_old-en-o0i1-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "v_old-en-o0i1-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "v_old-en-o0i1-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Exact numeric value for the requested version/entity/time; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_old-en-o0i1-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_old-en-o1i0-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "v_old-en-o1i0-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "v_old-en-o1i0-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Exact numeric value for the requested version/entity/time; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_old-en-o1i0-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_old-en-o1i1-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Exact numeric value for the requested version/entity/time; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_old-en-o1i1-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_old-en-o1i1-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "v_old-en-o1i1-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "v_old-zh-o0i0-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "v_old-zh-o0i0-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "v_old-zh-o0i0-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Exact numeric value for the requested version/entity/time; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_old-zh-o0i0-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_old-zh-o0i1-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Exact numeric value for the requested version/entity/time; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_old-zh-o0i1-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_old-zh-o0i1-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "v_old-zh-o0i1-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "v_old-zh-o1i0-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Exact numeric value for the requested version/entity/time; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_old-zh-o1i0-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_old-zh-o1i0-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "v_old-zh-o1i0-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "v_old-zh-o1i1-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "v_old-zh-o1i1-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "v_old-zh-o1i1-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Exact numeric value for the requested version/entity/time; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_old-zh-o1i1-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_new-en-o0i0-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "v_new-en-o0i0-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "v_new-en-o0i0-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "None is the documented literal configuration value for the requested version, not a refusal."
+    },
+    {
+      "case_id": "v_new-en-o0i0-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_new-en-o0i1-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "None is the documented literal configuration value for the requested version, not a refusal."
+    },
+    {
+      "case_id": "v_new-en-o0i1-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_new-en-o0i1-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "v_new-en-o0i1-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "v_new-en-o1i0-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "None is the documented literal configuration value for the requested version, not a refusal."
+    },
+    {
+      "case_id": "v_new-en-o1i0-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_new-en-o1i0-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "v_new-en-o1i0-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "v_new-en-o1i1-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "v_new-en-o1i1-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "v_new-en-o1i1-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "43200 is the other version default, not the requested 3.1.2 literal None."
+    },
+    {
+      "case_id": "v_new-en-o1i1-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_new-zh-o0i0-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "None is the documented literal configuration value for the requested version, not a refusal."
+    },
+    {
+      "case_id": "v_new-zh-o0i0-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_new-zh-o0i0-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "v_new-zh-o0i0-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "v_new-zh-o0i1-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "v_new-zh-o0i1-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "v_new-zh-o0i1-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "None is the documented literal configuration value for the requested version, not a refusal."
+    },
+    {
+      "case_id": "v_new-zh-o0i1-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_new-zh-o1i0-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "v_new-zh-o1i0-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "v_new-zh-o1i0-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "43200 is the other version default, not the requested 3.1.2 literal None."
+    },
+    {
+      "case_id": "v_new-zh-o1i0-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_new-zh-o1i1-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "43200 is the other version default, not the requested 3.1.2 literal None."
+    },
+    {
+      "case_id": "v_new-zh-o1i1-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "v_new-zh-o1i1-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "v_new-zh-o1i1-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "entity-en-o0i0-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Exact numeric value for the requested version/entity/time; citation scope is checked separately."
+    },
+    {
+      "case_id": "entity-en-o0i0-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "entity-en-o0i0-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "entity-en-o0i0-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "entity-en-o0i1-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "entity-en-o0i1-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "entity-en-o0i1-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Exact numeric value for the requested version/entity/time; citation scope is checked separately."
+    },
+    {
+      "case_id": "entity-en-o0i1-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "entity-en-o1i0-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "entity-en-o1i0-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "entity-en-o1i0-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Exact numeric value for the requested version/entity/time; citation scope is checked separately."
+    },
+    {
+      "case_id": "entity-en-o1i0-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "entity-en-o1i1-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Exact numeric value for the requested version/entity/time; citation scope is checked separately."
+    },
+    {
+      "case_id": "entity-en-o1i1-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "entity-en-o1i1-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "entity-en-o1i1-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "entity-zh-o0i0-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "entity-zh-o0i0-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "entity-zh-o0i0-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Exact numeric value for the requested version/entity/time; citation scope is checked separately."
+    },
+    {
+      "case_id": "entity-zh-o0i0-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "entity-zh-o0i1-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Exact numeric value for the requested version/entity/time; citation scope is checked separately."
+    },
+    {
+      "case_id": "entity-zh-o0i1-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "entity-zh-o0i1-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "entity-zh-o0i1-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "entity-zh-o1i0-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Exact numeric value for the requested version/entity/time; citation scope is checked separately."
+    },
+    {
+      "case_id": "entity-zh-o1i0-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "entity-zh-o1i0-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "entity-zh-o1i0-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "entity-zh-o1i1-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "entity-zh-o1i1-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "entity-zh-o1i1-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Exact numeric value for the requested version/entity/time; citation scope is checked separately."
+    },
+    {
+      "case_id": "entity-zh-o1i1-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "time-en-o0i0-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "time-en-o0i0-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "time-en-o0i0-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "Ready-old is the wrong route and omits its leading slash; it is not /ready-new."
+    },
+    {
+      "case_id": "time-en-o0i0-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "time-en-o0i1-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Full sentence explicitly gives the exact case-sensitive route /ready-new, with leading slash. The entire-answer literal sensitivity metric marks this sentence non-exact."
+    },
+    {
+      "case_id": "time-en-o0i1-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "time-en-o0i1-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "time-en-o0i1-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "time-en-o1i0-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": true,
+      "rationale": "Full sentence explicitly gives the exact case-sensitive route /ready-new, with leading slash. The entire-answer literal sensitivity metric marks this sentence non-exact."
+    },
+    {
+      "case_id": "time-en-o1i0-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "time-en-o1i0-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "time-en-o1i0-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "time-en-o1i1-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "time-en-o1i1-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "time-en-o1i1-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "Ready-New omits the leading slash and changes case; it is not /ready-new. No normalization repair is allowed."
+    },
+    {
+      "case_id": "time-en-o1i1-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "time-zh-o0i0-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "The answer gives a timestamp, not the requested route value; a correct citation alone does not make the answer correct."
+    },
+    {
+      "case_id": "time-zh-o0i0-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "time-zh-o0i0-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "time-zh-o0i0-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "time-zh-o0i1-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "time-zh-o0i1-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "time-zh-o0i1-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "The answer gives a timestamp, not the requested route value; a correct citation alone does not make the answer correct."
+    },
+    {
+      "case_id": "time-zh-o0i1-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "time-zh-o1i0-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "time-zh-o1i0-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    },
+    {
+      "case_id": "time-zh-o1i0-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "The answer gives a timestamp, not the requested route value; a correct citation alone does not make the answer correct."
+    },
+    {
+      "case_id": "time-zh-o1i0-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "time-zh-o1i1-sufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "The answer gives a timestamp, not the requested route value; a correct citation alone does not make the answer correct."
+    },
+    {
+      "case_id": "time-zh-o1i1-sufficient",
+      "arm": "gated",
+      "answer_value_correct": true,
+      "rationale": "The answer gives the exact requested value from the matching record; citation scope is checked separately."
+    },
+    {
+      "case_id": "time-zh-o1i1-insufficient",
+      "arm": "ungated",
+      "answer_value_correct": false,
+      "rationale": "No supplied record matches the requested scope. An incidental value string from another version/entity/time is not a supported answer to this question."
+    },
+    {
+      "case_id": "time-zh-o1i1-insufficient",
+      "arm": "gated",
+      "answer_value_correct": false,
+      "rationale": "Deterministic no-run, not a model answer or refusal."
+    }
+  ]
+}
