@@ -1,0 +1,344 @@
+{
+  "execution": "real_project_BM25_and_pipeline_with_non_model_spy",
+  "freeze_sha256": "6c0db3bb5bd5d77ef6883227bbd2fd91fe384a6fdc3496f299543ffe571d278c",
+  "frozen_files": {
+    "experiments/indexed-scope-v1/PROTOCOL.md": "7d6b43fa442822040a2cd37bfb53e045c8acb2741c83399c0323e4250c1e7be1",
+    "experiments/indexed-scope-v1/build_english_correction.py": "33b929f54682759cfd98c102ec546086e0b4bfef0d1141d245c90e9305b8e7ad",
+    "experiments/indexed-scope-v1/build_fixture.py": "657ec923d9f4c395fcf0d732efdb4bdbcafa880a5b886ebda7cd997a6ad49afa",
+    "experiments/indexed-scope-v1/cases.json": "fd3d79cc1d6ed07b98f3ce04ccd20d671bf64d0174b638288aa741674a106ba7",
+    "experiments/indexed-scope-v1/english-correction/PROTOCOL.md": "75b16064e7d41f1e829a72f138c04fa38434c0b18daf99047dbd0dd0f052f7ee",
+    "experiments/indexed-scope-v1/english-correction/cases.json": "29e907263b39b074a728d15573bb8a1780e9925b8fbb36fa7e0e139da261ba62",
+    "experiments/indexed-scope-v1/english-correction/example-index/catalog.json": "b538f1dd7d24480fe56899948412de469e204f7245cf1873d91c3a7dd3eb6448",
+    "experiments/indexed-scope-v1/english-correction/example-index/chunks.jsonl": "55beaa5db65c0a2c6b69b99e30f163e54766c346da94e5fab11e8c8212d3963f",
+    "experiments/indexed-scope-v1/english-correction/example-index/request.json": "0e19845dd11290453e7394b95316324e33a62151991665063078b309cf018014",
+    "experiments/indexed-scope-v1/example-index/catalog.json": "6f9b972a5cdd62425ad11f096e80c41804fec87577b5cc391f10c8c08197f6b4",
+    "experiments/indexed-scope-v1/example-index/chunks.jsonl": "1c7d9c1964cbee79910e0b0411cb785e4c7a48ab0d3b9a771cacc29614445261",
+    "experiments/indexed-scope-v1/example-index/request.json": "0e19845dd11290453e7394b95316324e33a62151991665063078b309cf018014",
+    "experiments/indexed-scope-v1/initial-input-check.json": "2d0fae0072db3a2f26f3a3328a5028489663da42fee2e2ebbd7250e2cfc0a093",
+    "experiments/indexed-scope-v1/run_correction.py": "b2f5e7c24fb9d125c568fc58a2a6f8b1e971906d0893232ee53d8fa15e415d10",
+    "experiments/indexed-scope-v1/run_experiment.py": "57ab917a375402288452460a40cdfb310b6c80c1343ef701be8091b479f6ec37",
+    "src/rag_foundation/generation.py": "a3aa8cde0881f86ec1a8b48cf823fbc39a0f194d4cc093f0585318b0126e7532",
+    "src/rag_foundation/retrieval.py": "d62b2aa753f701dc6e51be077bd292a277b5985cf8fa3a9c6c5d7d9e181776f5",
+    "src/rag_foundation/scope_gate.py": "7818a34214dbbb8c41ef8f468b26c7417a70237cd99a4bae39ca8a5283c87e83",
+    "src/rag_foundation/scoped_pipeline.py": "a469d11f1fd6f198b123ccd4344d6b9c2d5cf35a6db708b9e900216e558eeaef"
+  },
+  "real_model_calls": 0,
+  "rows": [
+    {
+      "all_filtered_scores_exact": true,
+      "arms": {
+        "scoped": {
+          "real_model_calls": 0,
+          "result": {
+            "catalog_sha256": "cd1ac5411ef92938271538d4317c03bd7f873e5c1c723715308c0d3606a275ab",
+            "context": [
+              {
+                "chunk_id": "h7",
+                "citation": "synthetic://indexed-scope-v1/h7#L1-L1",
+                "document_id": "invented-h7",
+                "score": 2.5436593782016343,
+                "text": "Cedar cache timeout policy: 30 seconds."
+              }
+            ],
+            "generation": {
+              "answer": "CONTRACT FIXTURE ONLY; NO MODEL INFERENCE",
+              "citation_ids": [
+                "h7"
+              ],
+              "producer": "deterministic_recording_spy_not_a_model",
+              "raw_response": null,
+              "reason": "contract_valid",
+              "status": "answered"
+            },
+            "generator_called": true,
+            "index_sha256": "813c7c7bd091f109fa445281dda7d0060a9ce68fe1cdf12283dbace9b69a0e6a",
+            "limits": {
+              "context_characters": 12000,
+              "k": 1,
+              "scan_limit": 128
+            },
+            "mode": "indexed-scope-opt-in",
+            "preflight": {
+              "distinct_value_count": 1,
+              "matched_count": 2,
+              "matched_ids": [
+                "h7",
+                "z2"
+              ],
+              "reason": "reviewed_values_agree",
+              "reviewed_count": 2,
+              "scope_scan_complete": true,
+              "semantic_support": "unverified",
+              "status": "consistent",
+              "trust_boundary": "operator_reviewed_catalog",
+              "unassigned_ids": []
+            },
+            "query": "What is Cedar cache timeout policy at 2032-07-08T09:00:00Z?",
+            "ranking": {
+              "budget_omitted_ids": [],
+              "corpus_count": 2,
+              "eligible_count": 2,
+              "lexical_candidate_count": 1,
+              "ranked_hits": [
+                {
+                  "chunk_id": "h7",
+                  "citation": "synthetic://indexed-scope-v1/h7#L1-L1",
+                  "document_id": "invented-h7",
+                  "score": 2.5436593782016343,
+                  "text": "Cedar cache timeout policy: 30 seconds."
+                }
+              ],
+              "statistics": "full_index",
+              "top_k_omitted_ids": [],
+              "zero_overlap_count": 1
+            },
+            "reason": "contract_valid",
+            "requested_scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            },
+            "scope_gate": true,
+            "semantic_support": "unverified",
+            "status": "answered"
+          },
+          "spy_calls": [
+            {
+              "chunk_ids": [
+                "h7"
+              ],
+              "query": "What is Cedar cache timeout policy at 2032-07-08T09:00:00Z?"
+            }
+          ]
+        },
+        "ungated": {
+          "real_model_calls": 0,
+          "result": {
+            "catalog_sha256": "cd1ac5411ef92938271538d4317c03bd7f873e5c1c723715308c0d3606a275ab",
+            "context": [
+              {
+                "chunk_id": "h7",
+                "citation": "synthetic://indexed-scope-v1/h7#L1-L1",
+                "document_id": "invented-h7",
+                "score": 2.5436593782016343,
+                "text": "Cedar cache timeout policy: 30 seconds."
+              }
+            ],
+            "generation": {
+              "answer": "CONTRACT FIXTURE ONLY; NO MODEL INFERENCE",
+              "citation_ids": [
+                "h7"
+              ],
+              "producer": "deterministic_recording_spy_not_a_model",
+              "raw_response": null,
+              "reason": "contract_valid",
+              "status": "answered"
+            },
+            "generator_called": true,
+            "index_sha256": "813c7c7bd091f109fa445281dda7d0060a9ce68fe1cdf12283dbace9b69a0e6a",
+            "limits": {
+              "context_characters": 12000,
+              "k": 1,
+              "scan_limit": 128
+            },
+            "mode": "indexed-scope-opt-in",
+            "preflight": null,
+            "query": "What is Cedar cache timeout policy at 2032-07-08T09:00:00Z?",
+            "ranking": {
+              "budget_omitted_ids": [],
+              "corpus_count": 2,
+              "eligible_count": 2,
+              "lexical_candidate_count": 1,
+              "ranked_hits": [
+                {
+                  "chunk_id": "h7",
+                  "citation": "synthetic://indexed-scope-v1/h7#L1-L1",
+                  "document_id": "invented-h7",
+                  "score": 2.5436593782016343,
+                  "text": "Cedar cache timeout policy: 30 seconds."
+                }
+              ],
+              "statistics": "full_index",
+              "top_k_omitted_ids": [],
+              "zero_overlap_count": 1
+            },
+            "reason": "contract_valid",
+            "requested_scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            },
+            "scope_gate": false,
+            "semantic_support": "unverified",
+            "status": "answered"
+          },
+          "spy_calls": [
+            {
+              "chunk_ids": [
+                "h7"
+              ],
+              "query": "What is Cedar cache timeout policy at 2032-07-08T09:00:00Z?"
+            }
+          ]
+        }
+      },
+      "case_id": "corrected-en-agreement",
+      "diagnostic_full_scores": [
+        {
+          "chunk_id": "h7",
+          "score": 2.5436593782016343
+        }
+      ],
+      "eligible_before_topk_ids": [
+        "h7"
+      ],
+      "eligible_score_comparisons": 1,
+      "expected_route_matched": true,
+      "post_topk_scope_ids": [
+        "h7"
+      ]
+    },
+    {
+      "all_filtered_scores_exact": true,
+      "arms": {
+        "scoped": {
+          "real_model_calls": 0,
+          "result": {
+            "catalog_sha256": "b538f1dd7d24480fe56899948412de469e204f7245cf1873d91c3a7dd3eb6448",
+            "context": [],
+            "generation": null,
+            "generator_called": false,
+            "index_sha256": "062cde27ad23a52694c340375049afc7e1161cf77baf88f74eee441e0504090f",
+            "limits": {
+              "context_characters": 12000,
+              "k": 1,
+              "scan_limit": 128
+            },
+            "mode": "indexed-scope-opt-in",
+            "preflight": {
+              "distinct_value_count": 2,
+              "matched_count": 2,
+              "matched_ids": [
+                "h7",
+                "z2"
+              ],
+              "reason": "reviewed_value_conflict",
+              "reviewed_count": 2,
+              "scope_scan_complete": true,
+              "semantic_support": "unverified",
+              "status": "conflict",
+              "trust_boundary": "operator_reviewed_catalog",
+              "unassigned_ids": []
+            },
+            "query": "What is Cedar cache timeout policy at 2032-07-08T09:00:00Z?",
+            "ranking": null,
+            "reason": "reviewed_value_conflict",
+            "requested_scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            },
+            "scope_gate": true,
+            "semantic_support": "unverified",
+            "status": "not_run"
+          },
+          "spy_calls": []
+        },
+        "ungated": {
+          "real_model_calls": 0,
+          "result": {
+            "catalog_sha256": "b538f1dd7d24480fe56899948412de469e204f7245cf1873d91c3a7dd3eb6448",
+            "context": [
+              {
+                "chunk_id": "h7",
+                "citation": "synthetic://indexed-scope-v1/h7#L1-L1",
+                "document_id": "invented-h7",
+                "score": 2.5436593782016343,
+                "text": "Cedar cache timeout policy: 30 seconds."
+              }
+            ],
+            "generation": {
+              "answer": "CONTRACT FIXTURE ONLY; NO MODEL INFERENCE",
+              "citation_ids": [
+                "h7"
+              ],
+              "producer": "deterministic_recording_spy_not_a_model",
+              "raw_response": null,
+              "reason": "contract_valid",
+              "status": "answered"
+            },
+            "generator_called": true,
+            "index_sha256": "062cde27ad23a52694c340375049afc7e1161cf77baf88f74eee441e0504090f",
+            "limits": {
+              "context_characters": 12000,
+              "k": 1,
+              "scan_limit": 128
+            },
+            "mode": "indexed-scope-opt-in",
+            "preflight": null,
+            "query": "What is Cedar cache timeout policy at 2032-07-08T09:00:00Z?",
+            "ranking": {
+              "budget_omitted_ids": [],
+              "corpus_count": 2,
+              "eligible_count": 2,
+              "lexical_candidate_count": 1,
+              "ranked_hits": [
+                {
+                  "chunk_id": "h7",
+                  "citation": "synthetic://indexed-scope-v1/h7#L1-L1",
+                  "document_id": "invented-h7",
+                  "score": 2.5436593782016343,
+                  "text": "Cedar cache timeout policy: 30 seconds."
+                }
+              ],
+              "statistics": "full_index",
+              "top_k_omitted_ids": [],
+              "zero_overlap_count": 1
+            },
+            "reason": "contract_valid",
+            "requested_scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            },
+            "scope_gate": false,
+            "semantic_support": "unverified",
+            "status": "answered"
+          },
+          "spy_calls": [
+            {
+              "chunk_ids": [
+                "h7"
+              ],
+              "query": "What is Cedar cache timeout policy at 2032-07-08T09:00:00Z?"
+            }
+          ]
+        }
+      },
+      "case_id": "corrected-en-conflict",
+      "diagnostic_full_scores": [
+        {
+          "chunk_id": "h7",
+          "score": 2.5436593782016343
+        }
+      ],
+      "eligible_before_topk_ids": [
+        "h7"
+      ],
+      "eligible_score_comparisons": 1,
+      "expected_route_matched": true,
+      "post_topk_scope_ids": [
+        "h7"
+      ]
+    }
+  ],
+  "schema_version": 1
+}

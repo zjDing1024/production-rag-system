@@ -1,0 +1,9 @@
+{
+  "stage": "first full experiment test run after original 22-case recording",
+  "passed_tests": 8,
+  "failed_tests": 1,
+  "failed_test": "test_paired_zero_overlap_and_no_topk_visibility",
+  "observed_failure": "AssertionError: {'is'} is not false",
+  "interpretation": "The original English pair has lexical overlap on is. Its low-rank/top-1 omission is real, but the original protocol's zero-overlap label is wrong. Chinese and path pairs have empty intersections.",
+  "resolution": "Original frozen code, cases, protocol and recorded outputs preserved. An explicitly separate English correction is frozen after this discovery, before its own execution. Final tests assert both the original known discrepancy and the repaired zero-overlap invariant. No model or threshold is changed."
+}

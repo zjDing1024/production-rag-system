@@ -18,13 +18,14 @@ PYTHONPATH=src python -m rag_foundation query 'test client live server' -k 3
 ### 2. 审核已记录实验：不运行模型
 
 ```bash
-python experiments/typed-scope-v1/audit_record.py --check
+python experiments/indexed-scope-v1/audit_record.py --check
 ```
 
 该命令复核冻结输入、原始记录和计数，不重新生成、不自动判定语义真值。
-[最新报告](experiments/typed-scope-v1/REPORT.md) ·
-[汇总与逐题结果](experiments/typed-scope-v1/summary.json) ·
-[AI 助理逐题判定依据](experiments/typed-scope-v1/assistant-review.json)。
+[最新机制报告](experiments/indexed-scope-v1/REPORT.md) ·
+[计数](experiments/indexed-scope-v1/summary.json) ·
+[原始管线回放记录](experiments/indexed-scope-v1/recorded.json)。本轮不调用模型，不能从spy的固定输出计算回答准确率。
+旧的[typed scope实测与语义注释](experiments/typed-scope-v1/README.md)保留。
 旧的[同题证据替换实验](experiments/matched-evidence-v1/README.md)、[编号选择实验](experiments/numbered-spans-v1/README.md)、
 [证据门实验](experiments/evidence-sufficiency-v1/README.md)与
 [生成实验审计](experiments/bilingual-generation-v1/README.md)保留为回归记录。
@@ -42,6 +43,22 @@ python3 experiments/typed-scope-v1/run_experiment.py \
 
 [环境、固定许可/来源、实验边界](experiments/typed-scope-v1/README.md)。
 每次使用新的输出目录。通常测试和CI仅检索/审计，不下载或执行模型。
+
+## 2026-11-20：接入真实 BM25，检索不到的冲突也必须先查
+
+新增默认关闭的索引自有 scope / reviewed单值目录管线。先完整检查同scope记录的
+冲突、未知和审查数量上限，再用原BM25全索引分数筛选eligible候选、取top-k、打包。
+因此不能靠增加k解决的“零词面重叠冲突”也不会被漏检。历史源码、默认流程和结果保持不变。
+
+22个构造控制包含英中数值/路径冲突与同值、ID/顺序重排、错版本、显式null、缺元数据、
+缺review、scan cap、packing cap、无匹配和top-1筛除反例。使用真实BM25与完整新管线，
+生成端仅用明确标注的spy及本地HTTP合同fixture，**不是模型正确率实验**。
+首轮英文“零重叠”标签因共享is失败，原记录保留；另冻结两条修正输入验证，未修改旧输出。
+
+这依赖可信的一chunk一scope及人工结构化单值声明。原文hash/quote只能绑定字节，不能
+证明手工值的语义或真实性，也不是权限控制。完整目录以外的冲突仍不在保证范围。
+[接口/离线CLI](docs/indexed-scope-pipeline.md) · [复现](experiments/indexed-scope-v1/README.md) ·
+[判据与实测](experiments/indexed-scope-v1/REPORT.md)。
 
 ## 2026-11-19：显式版本 / 对象 / 时间过滤，不冒充语义理解
 

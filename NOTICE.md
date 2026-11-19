@@ -33,3 +33,12 @@ fixtures, not actual user or production telemetry.
 
 The Qdrant reference in `docs/typed-scope-gate.md` is a conceptual source study
 only, with its pinned Apache-2.0 license linked there. No Qdrant code is included.
+
+## Indexed-scope integration references
+
+`experiments/indexed-scope-v1/` uses original synthetic review records and original
+paraphrases of the same pinned Flask version facts described above. No additional
+upstream text is included. Indexed quote/hash bindings refer to those fixture
+texts, not verbatim upstream bytes. The Lucene 10.3.1 source/license links in
+`docs/indexed-scope-pipeline.md` are conceptual references only; no Lucene source
+or binary is distributed or required.

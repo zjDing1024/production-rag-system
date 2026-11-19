@@ -1,0 +1,44 @@
+{
+  "arms": {
+    "scoped": {
+      "offered_cases": 22,
+      "real_model_calls": 0,
+      "reason_counts": {
+        "catalog_incomplete": 2,
+        "context_budget_exhausted": 1,
+        "contract_valid": 7,
+        "incomparable_claims": 1,
+        "missing_reviewed_claim": 1,
+        "no_lexical_candidates": 1,
+        "no_matching_scope": 1,
+        "reviewed_value_conflict": 7,
+        "scope_scan_limit": 1
+      },
+      "spy_calls": 7,
+      "status_counts": {
+        "answered": 7,
+        "not_run": 15
+      }
+    },
+    "ungated": {
+      "offered_cases": 22,
+      "real_model_calls": 0,
+      "reason_counts": {
+        "context_budget_exhausted": 1,
+        "contract_valid": 20,
+        "no_lexical_candidates": 1
+      },
+      "spy_calls": 20,
+      "status_counts": {
+        "answered": 20,
+        "not_run": 2
+      }
+    }
+  },
+  "expected_routing_matches": 22,
+  "individual_exact_score_comparisons": 27,
+  "nonempty_score_equality_cases": 20,
+  "scope": "mechanism evidence, not model answer accuracy",
+  "score_equality_cases": 22,
+  "study": "indexed-scope-v1"
+}

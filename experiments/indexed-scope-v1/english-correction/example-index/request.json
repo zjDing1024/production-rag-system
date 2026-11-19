@@ -1,0 +1,10 @@
+{
+  "query": "What is Cedar cache timeout policy at 2032-07-08T09:00:00Z?",
+  "scope": {
+    "key": "timeout_seconds",
+    "kind": "runtime",
+    "observed_at": "2032-07-08T09:00:00Z",
+    "subject": "Cedar",
+    "version": null
+  }
+}

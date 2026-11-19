@@ -1,0 +1,34 @@
+{
+  "arms": {
+    "scoped": {
+      "offered_cases": 2,
+      "real_model_calls": 0,
+      "reason_counts": {
+        "contract_valid": 1,
+        "reviewed_value_conflict": 1
+      },
+      "spy_calls": 1,
+      "status_counts": {
+        "answered": 1,
+        "not_run": 1
+      }
+    },
+    "ungated": {
+      "offered_cases": 2,
+      "real_model_calls": 0,
+      "reason_counts": {
+        "contract_valid": 2
+      },
+      "spy_calls": 2,
+      "status_counts": {
+        "answered": 2
+      }
+    }
+  },
+  "expected_routing_matches": 2,
+  "individual_exact_score_comparisons": 2,
+  "nonempty_score_equality_cases": 2,
+  "scope": "mechanism evidence, not model answer accuracy",
+  "score_equality_cases": 2,
+  "study": "indexed-scope-v1"
+}

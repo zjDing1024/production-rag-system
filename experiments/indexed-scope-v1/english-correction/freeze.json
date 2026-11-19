@@ -1,0 +1,26 @@
+{
+  "status": "frozen_before_recorded_run",
+  "frozen_utc": "2026-11-19T16:19:14.780197+00:00",
+  "reason": "Separate corrected English input after documented original token-is invariant failure; no original file or threshold changed.",
+  "sha256": {
+    "src/rag_foundation/scoped_pipeline.py": "a469d11f1fd6f198b123ccd4344d6b9c2d5cf35a6db708b9e900216e558eeaef",
+    "src/rag_foundation/retrieval.py": "d62b2aa753f701dc6e51be077bd292a277b5985cf8fa3a9c6c5d7d9e181776f5",
+    "src/rag_foundation/generation.py": "a3aa8cde0881f86ec1a8b48cf823fbc39a0f194d4cc093f0585318b0126e7532",
+    "src/rag_foundation/scope_gate.py": "7818a34214dbbb8c41ef8f468b26c7417a70237cd99a4bae39ca8a5283c87e83",
+    "experiments/indexed-scope-v1/build_fixture.py": "657ec923d9f4c395fcf0d732efdb4bdbcafa880a5b886ebda7cd997a6ad49afa",
+    "experiments/indexed-scope-v1/cases.json": "fd3d79cc1d6ed07b98f3ce04ccd20d671bf64d0174b638288aa741674a106ba7",
+    "experiments/indexed-scope-v1/PROTOCOL.md": "7d6b43fa442822040a2cd37bfb53e045c8acb2741c83399c0323e4250c1e7be1",
+    "experiments/indexed-scope-v1/run_experiment.py": "57ab917a375402288452460a40cdfb310b6c80c1343ef701be8091b479f6ec37",
+    "experiments/indexed-scope-v1/example-index/chunks.jsonl": "1c7d9c1964cbee79910e0b0411cb785e4c7a48ab0d3b9a771cacc29614445261",
+    "experiments/indexed-scope-v1/example-index/catalog.json": "6f9b972a5cdd62425ad11f096e80c41804fec87577b5cc391f10c8c08197f6b4",
+    "experiments/indexed-scope-v1/example-index/request.json": "0e19845dd11290453e7394b95316324e33a62151991665063078b309cf018014",
+    "experiments/indexed-scope-v1/build_english_correction.py": "33b929f54682759cfd98c102ec546086e0b4bfef0d1141d245c90e9305b8e7ad",
+    "experiments/indexed-scope-v1/run_correction.py": "b2f5e7c24fb9d125c568fc58a2a6f8b1e971906d0893232ee53d8fa15e415d10",
+    "experiments/indexed-scope-v1/initial-input-check.json": "2d0fae0072db3a2f26f3a3328a5028489663da42fee2e2ebbd7250e2cfc0a093",
+    "experiments/indexed-scope-v1/english-correction/cases.json": "29e907263b39b074a728d15573bb8a1780e9925b8fbb36fa7e0e139da261ba62",
+    "experiments/indexed-scope-v1/english-correction/PROTOCOL.md": "75b16064e7d41f1e829a72f138c04fa38434c0b18daf99047dbd0dd0f052f7ee",
+    "experiments/indexed-scope-v1/english-correction/example-index/chunks.jsonl": "55beaa5db65c0a2c6b69b99e30f163e54766c346da94e5fab11e8c8212d3963f",
+    "experiments/indexed-scope-v1/english-correction/example-index/catalog.json": "b538f1dd7d24480fe56899948412de469e204f7245cf1873d91c3a7dd3eb6448",
+    "experiments/indexed-scope-v1/english-correction/example-index/request.json": "0e19845dd11290453e7394b95316324e33a62151991665063078b309cf018014"
+  }
+}
