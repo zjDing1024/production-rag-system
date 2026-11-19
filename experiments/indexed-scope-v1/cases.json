@@ -1,0 +1,2081 @@
+{
+  "cases": [
+    {
+      "catalog": {
+        "chunks_sha256": "53c27d50a427c8af4bd3ed8315e747a9cb53c3a338ac28098d396027217b15ef",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "h7",
+            "claim": {
+              "chunk_text_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+              "end_char": 39,
+              "quote": "Cedar cache timeout policy: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "z2",
+            "claim": {
+              "chunk_text_sha256": "e408c29745eb48e1de56709d74563256e35e1c1e288258f7f84bc692e2c9d05f",
+              "end_char": 42,
+              "quote": "The configured duration is thirty seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-h7",
+          "end_char": 39,
+          "end_line": 1,
+          "id": "h7",
+          "license": "MIT",
+          "source_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+          "source_url": "synthetic://indexed-scope-v1/h7",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Cedar cache timeout policy: 30 seconds.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-z2",
+          "end_char": 42,
+          "end_line": 1,
+          "id": "z2",
+          "license": "MIT",
+          "source_sha256": "e408c29745eb48e1de56709d74563256e35e1c1e288258f7f84bc692e2c9d05f",
+          "source_url": "synthetic://indexed-scope-v1/z2",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "The configured duration is thirty seconds.",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": true,
+        "scoped_reason": "contract_valid"
+      },
+      "id": "zero-en-agreement",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "What is Cedar cache timeout policy at 2032-07-08T09:00:00Z?",
+        "scope": {
+          "key": "timeout_seconds",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "936007aef029f89a8cc4423df8353b852f7746ffd04f2a8bb5b5111b8ceae7ea",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "h7",
+            "claim": {
+              "chunk_text_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+              "end_char": 39,
+              "quote": "Cedar cache timeout policy: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "z2",
+            "claim": {
+              "chunk_text_sha256": "689d17fa3c43a6bb099eeb846c54f72a1d3294bddacbfe066eff365cea2e4098",
+              "end_char": 42,
+              "quote": "The configured duration is ninety seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 90,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-h7",
+          "end_char": 39,
+          "end_line": 1,
+          "id": "h7",
+          "license": "MIT",
+          "source_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+          "source_url": "synthetic://indexed-scope-v1/h7",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Cedar cache timeout policy: 30 seconds.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-z2",
+          "end_char": 42,
+          "end_line": 1,
+          "id": "z2",
+          "license": "MIT",
+          "source_sha256": "689d17fa3c43a6bb099eeb846c54f72a1d3294bddacbfe066eff365cea2e4098",
+          "source_url": "synthetic://indexed-scope-v1/z2",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "The configured duration is ninety seconds.",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": false,
+        "scoped_reason": "reviewed_value_conflict"
+      },
+      "id": "zero-en-conflict",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "What is Cedar cache timeout policy at 2032-07-08T09:00:00Z?",
+        "scope": {
+          "key": "timeout_seconds",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "89b6e048c4fed19574b0b510a27f97e8e32ce10ffb564d85cd554e409581ad5c",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "h7",
+            "claim": {
+              "chunk_text_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+              "end_char": 39,
+              "quote": "Cedar cache timeout policy: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "z2",
+            "claim": {
+              "chunk_text_sha256": "0d82da92d1ce62893ec44eb3dfd739bac103f5325e83b9b54b1c9257e5a36acd",
+              "end_char": 9,
+              "quote": "等待时长为三十秒。",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-h7",
+          "end_char": 39,
+          "end_line": 1,
+          "id": "h7",
+          "license": "MIT",
+          "source_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+          "source_url": "synthetic://indexed-scope-v1/h7",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Cedar cache timeout policy: 30 seconds.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-z2",
+          "end_char": 9,
+          "end_line": 1,
+          "id": "z2",
+          "license": "MIT",
+          "source_sha256": "0d82da92d1ce62893ec44eb3dfd739bac103f5325e83b9b54b1c9257e5a36acd",
+          "source_url": "synthetic://indexed-scope-v1/z2",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "等待时长为三十秒。",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": true,
+        "scoped_reason": "contract_valid"
+      },
+      "id": "zero-zh-agreement",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "Cedar 在 2032-07-08T09:00:00Z 的 timeout policy 是多少秒？",
+        "scope": {
+          "key": "timeout_seconds",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "ca2a131260f230d8c548cc043f6e6bdb9a23dcc24d2efdb10d7d05732ebb8ee0",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "h7",
+            "claim": {
+              "chunk_text_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+              "end_char": 39,
+              "quote": "Cedar cache timeout policy: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "z2",
+            "claim": {
+              "chunk_text_sha256": "fc341a6fbd1d08d6644251bb5c1927e09d1984b3872d95d9771303043c8a54d0",
+              "end_char": 9,
+              "quote": "等待时长为九十秒。",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 90,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-h7",
+          "end_char": 39,
+          "end_line": 1,
+          "id": "h7",
+          "license": "MIT",
+          "source_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+          "source_url": "synthetic://indexed-scope-v1/h7",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Cedar cache timeout policy: 30 seconds.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-z2",
+          "end_char": 9,
+          "end_line": 1,
+          "id": "z2",
+          "license": "MIT",
+          "source_sha256": "fc341a6fbd1d08d6644251bb5c1927e09d1984b3872d95d9771303043c8a54d0",
+          "source_url": "synthetic://indexed-scope-v1/z2",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "等待时长为九十秒。",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": false,
+        "scoped_reason": "reviewed_value_conflict"
+      },
+      "id": "zero-zh-conflict",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "Cedar 在 2032-07-08T09:00:00Z 的 timeout policy 是多少秒？",
+        "scope": {
+          "key": "timeout_seconds",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "a70d7031848cdac41763bbbe03d4e3a8feb3dc78be70bd43b2b4c9311930bed5",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "h7",
+            "claim": {
+              "chunk_text_sha256": "b6565549670a3992c50872838dd3315f1a4a4fbe853660905ada9e4f1787e979",
+              "end_char": 38,
+              "quote": "Cedar health route status: /ready-new.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "path",
+              "value": "/ready-new",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "health_route",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "z2",
+            "claim": {
+              "chunk_text_sha256": "acc47c98c19df638b5ac8b84277eeb1029eb63f148b23d64c710930942f3e088",
+              "end_char": 17,
+              "quote": "入口配置为 /ready-new。",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "path",
+              "value": "/ready-new",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "health_route",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-h7",
+          "end_char": 38,
+          "end_line": 1,
+          "id": "h7",
+          "license": "MIT",
+          "source_sha256": "b6565549670a3992c50872838dd3315f1a4a4fbe853660905ada9e4f1787e979",
+          "source_url": "synthetic://indexed-scope-v1/h7",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Cedar health route status: /ready-new.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-z2",
+          "end_char": 17,
+          "end_line": 1,
+          "id": "z2",
+          "license": "MIT",
+          "source_sha256": "acc47c98c19df638b5ac8b84277eeb1029eb63f148b23d64c710930942f3e088",
+          "source_url": "synthetic://indexed-scope-v1/z2",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "入口配置为 /ready-new。",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": true,
+        "scoped_reason": "contract_valid"
+      },
+      "id": "path-agreement",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "What is Cedar health route status at 2032-07-08T09:00:00Z?",
+        "scope": {
+          "key": "health_route",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "3312aad045ca3bb318190ad077753de5623ca17076c9164e8261072114f5fa2b",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "h7",
+            "claim": {
+              "chunk_text_sha256": "b6565549670a3992c50872838dd3315f1a4a4fbe853660905ada9e4f1787e979",
+              "end_char": 38,
+              "quote": "Cedar health route status: /ready-new.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "path",
+              "value": "/ready-new",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "health_route",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "z2",
+            "claim": {
+              "chunk_text_sha256": "01740c5c7de56c9645a2539690cea0645620d83e7884a6bbb4db7baff5ab3192",
+              "end_char": 17,
+              "quote": "入口配置为 /ready-old。",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "path",
+              "value": "/ready-old",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "health_route",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-h7",
+          "end_char": 38,
+          "end_line": 1,
+          "id": "h7",
+          "license": "MIT",
+          "source_sha256": "b6565549670a3992c50872838dd3315f1a4a4fbe853660905ada9e4f1787e979",
+          "source_url": "synthetic://indexed-scope-v1/h7",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Cedar health route status: /ready-new.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-z2",
+          "end_char": 17,
+          "end_line": 1,
+          "id": "z2",
+          "license": "MIT",
+          "source_sha256": "01740c5c7de56c9645a2539690cea0645620d83e7884a6bbb4db7baff5ab3192",
+          "source_url": "synthetic://indexed-scope-v1/z2",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "入口配置为 /ready-old。",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": false,
+        "scoped_reason": "reviewed_value_conflict"
+      },
+      "id": "path-conflict",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "What is Cedar health route status at 2032-07-08T09:00:00Z?",
+        "scope": {
+          "key": "health_route",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "cf47753c09554d8638600bbbf49e76812927169de0b90ff56df03ae94b2fffc6",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "a1",
+            "claim": {
+              "chunk_text_sha256": "0bbc40c3dc19c50059f201e66d38c408d3839d66deef1b7f3ac8e99fb75af874",
+              "end_char": 26,
+              "quote": "cache timeout: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "b9",
+            "claim": {
+              "chunk_text_sha256": "d9ecc6dd85c2bd377148986fcdf33f33f1c50db72e5fd270db9478f7972108d2",
+              "end_char": 26,
+              "quote": "cache timeout: 90 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 90,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-a1",
+          "end_char": 26,
+          "end_line": 1,
+          "id": "a1",
+          "license": "MIT",
+          "source_sha256": "0bbc40c3dc19c50059f201e66d38c408d3839d66deef1b7f3ac8e99fb75af874",
+          "source_url": "synthetic://indexed-scope-v1/a1",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "cache timeout: 30 seconds.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-b9",
+          "end_char": 26,
+          "end_line": 1,
+          "id": "b9",
+          "license": "MIT",
+          "source_sha256": "d9ecc6dd85c2bd377148986fcdf33f33f1c50db72e5fd270db9478f7972108d2",
+          "source_url": "synthetic://indexed-scope-v1/b9",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "cache timeout: 90 seconds.",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": false,
+        "scoped_reason": "reviewed_value_conflict"
+      },
+      "id": "tie-o0i0",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "cache timeout",
+        "scope": {
+          "key": "timeout_seconds",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "5842ccf931a79380ca52de3a29a40f402d81ce54910810207436dfd68009aaf8",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "b9",
+            "claim": {
+              "chunk_text_sha256": "0bbc40c3dc19c50059f201e66d38c408d3839d66deef1b7f3ac8e99fb75af874",
+              "end_char": 26,
+              "quote": "cache timeout: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "a1",
+            "claim": {
+              "chunk_text_sha256": "d9ecc6dd85c2bd377148986fcdf33f33f1c50db72e5fd270db9478f7972108d2",
+              "end_char": 26,
+              "quote": "cache timeout: 90 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 90,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-b9",
+          "end_char": 26,
+          "end_line": 1,
+          "id": "b9",
+          "license": "MIT",
+          "source_sha256": "0bbc40c3dc19c50059f201e66d38c408d3839d66deef1b7f3ac8e99fb75af874",
+          "source_url": "synthetic://indexed-scope-v1/b9",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "cache timeout: 30 seconds.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-a1",
+          "end_char": 26,
+          "end_line": 1,
+          "id": "a1",
+          "license": "MIT",
+          "source_sha256": "d9ecc6dd85c2bd377148986fcdf33f33f1c50db72e5fd270db9478f7972108d2",
+          "source_url": "synthetic://indexed-scope-v1/a1",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "cache timeout: 90 seconds.",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": false,
+        "scoped_reason": "reviewed_value_conflict"
+      },
+      "id": "tie-o0i1",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "cache timeout",
+        "scope": {
+          "key": "timeout_seconds",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "d448544a2b6623aafb848ad2afdd82bf158696467be7870dcafef04f01e9ecbf",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "b9",
+            "claim": {
+              "chunk_text_sha256": "d9ecc6dd85c2bd377148986fcdf33f33f1c50db72e5fd270db9478f7972108d2",
+              "end_char": 26,
+              "quote": "cache timeout: 90 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 90,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "a1",
+            "claim": {
+              "chunk_text_sha256": "0bbc40c3dc19c50059f201e66d38c408d3839d66deef1b7f3ac8e99fb75af874",
+              "end_char": 26,
+              "quote": "cache timeout: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-b9",
+          "end_char": 26,
+          "end_line": 1,
+          "id": "b9",
+          "license": "MIT",
+          "source_sha256": "d9ecc6dd85c2bd377148986fcdf33f33f1c50db72e5fd270db9478f7972108d2",
+          "source_url": "synthetic://indexed-scope-v1/b9",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "cache timeout: 90 seconds.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-a1",
+          "end_char": 26,
+          "end_line": 1,
+          "id": "a1",
+          "license": "MIT",
+          "source_sha256": "0bbc40c3dc19c50059f201e66d38c408d3839d66deef1b7f3ac8e99fb75af874",
+          "source_url": "synthetic://indexed-scope-v1/a1",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "cache timeout: 30 seconds.",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": false,
+        "scoped_reason": "reviewed_value_conflict"
+      },
+      "id": "tie-o1i0",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "cache timeout",
+        "scope": {
+          "key": "timeout_seconds",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "d8e208c60a1b7758d54ac295f56bc9989536eae16dea1466510beb8c30b72746",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "a1",
+            "claim": {
+              "chunk_text_sha256": "d9ecc6dd85c2bd377148986fcdf33f33f1c50db72e5fd270db9478f7972108d2",
+              "end_char": 26,
+              "quote": "cache timeout: 90 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 90,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "b9",
+            "claim": {
+              "chunk_text_sha256": "0bbc40c3dc19c50059f201e66d38c408d3839d66deef1b7f3ac8e99fb75af874",
+              "end_char": 26,
+              "quote": "cache timeout: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-a1",
+          "end_char": 26,
+          "end_line": 1,
+          "id": "a1",
+          "license": "MIT",
+          "source_sha256": "d9ecc6dd85c2bd377148986fcdf33f33f1c50db72e5fd270db9478f7972108d2",
+          "source_url": "synthetic://indexed-scope-v1/a1",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "cache timeout: 90 seconds.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-b9",
+          "end_char": 26,
+          "end_line": 1,
+          "id": "b9",
+          "license": "MIT",
+          "source_sha256": "0bbc40c3dc19c50059f201e66d38c408d3839d66deef1b7f3ac8e99fb75af874",
+          "source_url": "synthetic://indexed-scope-v1/b9",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "cache timeout: 30 seconds.",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": false,
+        "scoped_reason": "reviewed_value_conflict"
+      },
+      "id": "tie-o1i1",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "cache timeout",
+        "scope": {
+          "key": "timeout_seconds",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "37d3dd67e717f01419a469a5ebb584d80b42c415ee09321ad3406554494a0098",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "h7",
+            "claim": {
+              "chunk_text_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+              "end_char": 39,
+              "quote": "Cedar cache timeout policy: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "z2",
+            "claim": null,
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-h7",
+          "end_char": 39,
+          "end_line": 1,
+          "id": "h7",
+          "license": "MIT",
+          "source_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+          "source_url": "synthetic://indexed-scope-v1/h7",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Cedar cache timeout policy: 30 seconds.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-z2",
+          "end_char": 26,
+          "end_line": 1,
+          "id": "z2",
+          "license": "MIT",
+          "source_sha256": "d68f8cb69d46ea68905572e66d9f884d58f5d926927408137a166c60aa4bd016",
+          "source_url": "synthetic://indexed-scope-v1/z2",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "The duration is uncertain.",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": false,
+        "scoped_reason": "missing_reviewed_claim"
+      },
+      "id": "missing-review",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "cache timeout policy",
+        "scope": {
+          "key": "timeout_seconds",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "682346242039c35bde424b3f9ac46fe0e2328a5adacde436168df3885cea30cd",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "h7",
+            "claim": {
+              "chunk_text_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+              "end_char": 39,
+              "quote": "Cedar cache timeout policy: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "z2",
+            "claim": {
+              "chunk_text_sha256": "622b946064b705cf3ad8256f74b912c646aec1834a313f308506dba9c38ade73",
+              "end_char": 30,
+              "quote": "Thirty minutes are configured.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "minutes",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-h7",
+          "end_char": 39,
+          "end_line": 1,
+          "id": "h7",
+          "license": "MIT",
+          "source_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+          "source_url": "synthetic://indexed-scope-v1/h7",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Cedar cache timeout policy: 30 seconds.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-z2",
+          "end_char": 30,
+          "end_line": 1,
+          "id": "z2",
+          "license": "MIT",
+          "source_sha256": "622b946064b705cf3ad8256f74b912c646aec1834a313f308506dba9c38ade73",
+          "source_url": "synthetic://indexed-scope-v1/z2",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Thirty minutes are configured.",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": false,
+        "scoped_reason": "incomparable_claims"
+      },
+      "id": "incomparable-unit",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "cache timeout policy",
+        "scope": {
+          "key": "timeout_seconds",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "98bfded9d6b3d3d16f89ef97c85c0b826a2503575bce6654067f51adbbb05541",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "h7",
+            "claim": {
+              "chunk_text_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+              "end_char": 39,
+              "quote": "Cedar cache timeout policy: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "z2",
+            "claim": {
+              "chunk_text_sha256": "d5827f233790f9fe7e58ff08f345b3c12a25f5dfc0d8003e35536c6e796cb0db",
+              "end_char": 31,
+              "quote": "The duration is ninety seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 90,
+              "value_type": "integer"
+            },
+            "scope": null
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-h7",
+          "end_char": 39,
+          "end_line": 1,
+          "id": "h7",
+          "license": "MIT",
+          "source_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+          "source_url": "synthetic://indexed-scope-v1/h7",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Cedar cache timeout policy: 30 seconds.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-z2",
+          "end_char": 31,
+          "end_line": 1,
+          "id": "z2",
+          "license": "MIT",
+          "source_sha256": "d5827f233790f9fe7e58ff08f345b3c12a25f5dfc0d8003e35536c6e796cb0db",
+          "source_url": "synthetic://indexed-scope-v1/z2",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "The duration is ninety seconds.",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": false,
+        "scoped_reason": "catalog_incomplete"
+      },
+      "id": "unassigned-scope",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "cache timeout policy",
+        "scope": {
+          "key": "timeout_seconds",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "cdf5a869d5675df4ce4839712d5532d6e6761acf0fa9c0f4c1b4600155447083",
+        "complete": false,
+        "entries": [
+          {
+            "chunk_id": "h7",
+            "claim": {
+              "chunk_text_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+              "end_char": 39,
+              "quote": "Cedar cache timeout policy: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-h7",
+          "end_char": 39,
+          "end_line": 1,
+          "id": "h7",
+          "license": "MIT",
+          "source_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+          "source_url": "synthetic://indexed-scope-v1/h7",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Cedar cache timeout policy: 30 seconds.",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": false,
+        "scoped_reason": "catalog_incomplete"
+      },
+      "id": "declared-incomplete",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "cache timeout policy",
+        "scope": {
+          "key": "timeout_seconds",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "ee1533f631e7af9c586e7d73074fdbe0f0dd8be6463cc37c761d6c80199318bb",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "h7",
+            "claim": {
+              "chunk_text_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+              "end_char": 39,
+              "quote": "Cedar cache timeout policy: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "z2",
+            "claim": {
+              "chunk_text_sha256": "36c61e10e503a2b44d3beaee36a809f37fe5aa3fba130b8ce2964766ec5056dd",
+              "end_char": 31,
+              "quote": "The duration is thirty seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-h7",
+          "end_char": 39,
+          "end_line": 1,
+          "id": "h7",
+          "license": "MIT",
+          "source_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+          "source_url": "synthetic://indexed-scope-v1/h7",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Cedar cache timeout policy: 30 seconds.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-z2",
+          "end_char": 31,
+          "end_line": 1,
+          "id": "z2",
+          "license": "MIT",
+          "source_sha256": "36c61e10e503a2b44d3beaee36a809f37fe5aa3fba130b8ce2964766ec5056dd",
+          "source_url": "synthetic://indexed-scope-v1/z2",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "The duration is thirty seconds.",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": false,
+        "scoped_reason": "scope_scan_limit"
+      },
+      "id": "scan-limit",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 1
+      },
+      "request": {
+        "query": "cache timeout policy",
+        "scope": {
+          "key": "timeout_seconds",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "cdf5a869d5675df4ce4839712d5532d6e6761acf0fa9c0f4c1b4600155447083",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "h7",
+            "claim": {
+              "chunk_text_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+              "end_char": 39,
+              "quote": "Cedar cache timeout policy: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-h7",
+          "end_char": 39,
+          "end_line": 1,
+          "id": "h7",
+          "license": "MIT",
+          "source_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+          "source_url": "synthetic://indexed-scope-v1/h7",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Cedar cache timeout policy: 30 seconds.",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": false,
+        "scoped_reason": "context_budget_exhausted"
+      },
+      "id": "context-budget",
+      "options": {
+        "context_characters": 1,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "cache timeout policy",
+        "scope": {
+          "key": "timeout_seconds",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "cdf5a869d5675df4ce4839712d5532d6e6761acf0fa9c0f4c1b4600155447083",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "h7",
+            "claim": {
+              "chunk_text_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+              "end_char": 39,
+              "quote": "Cedar cache timeout policy: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-h7",
+          "end_char": 39,
+          "end_line": 1,
+          "id": "h7",
+          "license": "MIT",
+          "source_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+          "source_url": "synthetic://indexed-scope-v1/h7",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Cedar cache timeout policy: 30 seconds.",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": false,
+        "scoped_reason": "no_matching_scope"
+      },
+      "id": "no-match",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "cache timeout policy",
+        "scope": {
+          "key": "health_route",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "cdf5a869d5675df4ce4839712d5532d6e6761acf0fa9c0f4c1b4600155447083",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "h7",
+            "claim": {
+              "chunk_text_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+              "end_char": 39,
+              "quote": "Cedar cache timeout policy: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-h7",
+          "end_char": 39,
+          "end_line": 1,
+          "id": "h7",
+          "license": "MIT",
+          "source_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+          "source_url": "synthetic://indexed-scope-v1/h7",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Cedar cache timeout policy: 30 seconds.",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": false,
+        "scoped_reason": "no_lexical_candidates"
+      },
+      "id": "no-lexical",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "unseen_token_x",
+        "scope": {
+          "key": "timeout_seconds",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "af7edeb15c45209bf856c9f47ee162e521ff0d797db6b3088a431bd8fbb3488b",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "h7",
+            "claim": {
+              "chunk_text_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+              "end_char": 39,
+              "quote": "Cedar cache timeout policy: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "z2",
+            "claim": {
+              "chunk_text_sha256": "790c43522d73db62acaaeae5bcf6c40cb0e071e8807628154d1c6f95a131c610",
+              "end_char": 42,
+              "quote": "cache timeout policy duration: 30 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-h7",
+          "end_char": 39,
+          "end_line": 1,
+          "id": "h7",
+          "license": "MIT",
+          "source_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+          "source_url": "synthetic://indexed-scope-v1/h7",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Cedar cache timeout policy: 30 seconds.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-z2",
+          "end_char": 42,
+          "end_line": 1,
+          "id": "z2",
+          "license": "MIT",
+          "source_sha256": "790c43522d73db62acaaeae5bcf6c40cb0e071e8807628154d1c6f95a131c610",
+          "source_url": "synthetic://indexed-scope-v1/z2",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "cache timeout policy duration: 30 seconds.",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": true,
+        "scoped_reason": "contract_valid"
+      },
+      "id": "partial-packing",
+      "options": {
+        "context_characters": 39,
+        "k": 2,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "cache timeout policy",
+        "scope": {
+          "key": "timeout_seconds",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "521cd7bd6b91b3a10d418a0378f0460cfcc81189858a70042332a366da06494e",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "wrong",
+            "claim": {
+              "chunk_text_sha256": "06f67dfb857aee2134862cc1f49dd964b8847c3c68406e62d877e6aa21a1d555",
+              "end_char": 72,
+              "quote": "SEND_FILE_MAX_AGE_DEFAULT default default default: None for Flask 3.1.2.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "configuration",
+              "value": null,
+              "value_type": "null"
+            },
+            "scope": {
+              "key": "SEND_FILE_MAX_AGE_DEFAULT",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Flask",
+              "version": "3.1.2"
+            }
+          },
+          {
+            "chunk_id": "good",
+            "claim": {
+              "chunk_text_sha256": "3c1a58820084e372051d3847c107e84b8826570c5967f00b5f7faa1136b6d071",
+              "end_char": 78,
+              "quote": "The Flask 1.1.4 documented SEND_FILE_MAX_AGE_DEFAULT default is 43200 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 43200,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "SEND_FILE_MAX_AGE_DEFAULT",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Flask",
+              "version": "1.1.4"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-wrong",
+          "end_char": 72,
+          "end_line": 1,
+          "id": "wrong",
+          "license": "MIT",
+          "source_sha256": "06f67dfb857aee2134862cc1f49dd964b8847c3c68406e62d877e6aa21a1d555",
+          "source_url": "synthetic://indexed-scope-v1/wrong",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "SEND_FILE_MAX_AGE_DEFAULT default default default: None for Flask 3.1.2.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-good",
+          "end_char": 78,
+          "end_line": 1,
+          "id": "good",
+          "license": "MIT",
+          "source_sha256": "3c1a58820084e372051d3847c107e84b8826570c5967f00b5f7faa1136b6d071",
+          "source_url": "synthetic://indexed-scope-v1/good",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "The Flask 1.1.4 documented SEND_FILE_MAX_AGE_DEFAULT default is 43200 seconds.",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": true,
+        "scoped_reason": "contract_valid"
+      },
+      "id": "wrong-version-before-topk",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "SEND_FILE_MAX_AGE_DEFAULT default",
+        "scope": {
+          "key": "SEND_FILE_MAX_AGE_DEFAULT",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "Flask",
+          "version": "1.1.4"
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "521cd7bd6b91b3a10d418a0378f0460cfcc81189858a70042332a366da06494e",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "wrong",
+            "claim": {
+              "chunk_text_sha256": "06f67dfb857aee2134862cc1f49dd964b8847c3c68406e62d877e6aa21a1d555",
+              "end_char": 72,
+              "quote": "SEND_FILE_MAX_AGE_DEFAULT default default default: None for Flask 3.1.2.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "configuration",
+              "value": null,
+              "value_type": "null"
+            },
+            "scope": {
+              "key": "SEND_FILE_MAX_AGE_DEFAULT",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Flask",
+              "version": "3.1.2"
+            }
+          },
+          {
+            "chunk_id": "good",
+            "claim": {
+              "chunk_text_sha256": "3c1a58820084e372051d3847c107e84b8826570c5967f00b5f7faa1136b6d071",
+              "end_char": 78,
+              "quote": "The Flask 1.1.4 documented SEND_FILE_MAX_AGE_DEFAULT default is 43200 seconds.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 43200,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "SEND_FILE_MAX_AGE_DEFAULT",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Flask",
+              "version": "1.1.4"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-wrong",
+          "end_char": 72,
+          "end_line": 1,
+          "id": "wrong",
+          "license": "MIT",
+          "source_sha256": "06f67dfb857aee2134862cc1f49dd964b8847c3c68406e62d877e6aa21a1d555",
+          "source_url": "synthetic://indexed-scope-v1/wrong",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "SEND_FILE_MAX_AGE_DEFAULT default default default: None for Flask 3.1.2.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-good",
+          "end_char": 78,
+          "end_line": 1,
+          "id": "good",
+          "license": "MIT",
+          "source_sha256": "3c1a58820084e372051d3847c107e84b8826570c5967f00b5f7faa1136b6d071",
+          "source_url": "synthetic://indexed-scope-v1/good",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "The Flask 1.1.4 documented SEND_FILE_MAX_AGE_DEFAULT default is 43200 seconds.",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": true,
+        "scoped_reason": "contract_valid"
+      },
+      "id": "literal-null",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "SEND_FILE_MAX_AGE_DEFAULT default",
+        "scope": {
+          "key": "SEND_FILE_MAX_AGE_DEFAULT",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "Flask",
+          "version": "3.1.2"
+        }
+      }
+    },
+    {
+      "catalog": {
+        "chunks_sha256": "dea1c779eeb60cc2bfae37d7dec9f7fd4928fd429b64bfc689c22e16b72684dd",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "x1",
+            "claim": {
+              "chunk_text_sha256": "12c75ef4436778f93efebbb1512fcc9c2b74ef3b856ae6afc56747a82eb9867e",
+              "end_char": 39,
+              "quote": "cache timeout policy; health route: /a.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "path",
+              "value": "/a",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "health_route",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "x2",
+            "claim": {
+              "chunk_text_sha256": "0454f79c548115d08735508c2fc01bbeab6923f0ab53c0d417b83c621e2074ca",
+              "end_char": 60,
+              "quote": "cache timeout policy cache timeout policy; health route: /a.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "path",
+              "value": "/a",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "health_route",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "x3",
+            "claim": {
+              "chunk_text_sha256": "9de2c3104c118bec3a8193b24900415f556f707134d2db4bf5e7e02c6fb29a5c",
+              "end_char": 81,
+              "quote": "cache timeout policy cache timeout policy cache timeout policy; health route: /a.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "path",
+              "value": "/a",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "health_route",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          },
+          {
+            "chunk_id": "ok",
+            "claim": {
+              "chunk_text_sha256": "aaf8cf13b1f45caa7658d2a018a62a5191bc49b7064c523682e36c39af6ccd33",
+              "end_char": 194,
+              "quote": "cache timeout policy: 30 seconds. neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral ",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "seconds",
+              "value": 30,
+              "value_type": "integer"
+            },
+            "scope": {
+              "key": "timeout_seconds",
+              "kind": "runtime",
+              "observed_at": "2032-07-08T09:00:00Z",
+              "subject": "Cedar",
+              "version": null
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "invented-x1",
+          "end_char": 39,
+          "end_line": 1,
+          "id": "x1",
+          "license": "MIT",
+          "source_sha256": "12c75ef4436778f93efebbb1512fcc9c2b74ef3b856ae6afc56747a82eb9867e",
+          "source_url": "synthetic://indexed-scope-v1/x1",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "cache timeout policy; health route: /a.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-x2",
+          "end_char": 60,
+          "end_line": 1,
+          "id": "x2",
+          "license": "MIT",
+          "source_sha256": "0454f79c548115d08735508c2fc01bbeab6923f0ab53c0d417b83c621e2074ca",
+          "source_url": "synthetic://indexed-scope-v1/x2",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "cache timeout policy cache timeout policy; health route: /a.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-x3",
+          "end_char": 81,
+          "end_line": 1,
+          "id": "x3",
+          "license": "MIT",
+          "source_sha256": "9de2c3104c118bec3a8193b24900415f556f707134d2db4bf5e7e02c6fb29a5c",
+          "source_url": "synthetic://indexed-scope-v1/x3",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "cache timeout policy cache timeout policy cache timeout policy; health route: /a.",
+          "title": "Original invented review fixture"
+        },
+        {
+          "document_id": "invented-ok",
+          "end_char": 194,
+          "end_line": 1,
+          "id": "ok",
+          "license": "MIT",
+          "source_sha256": "aaf8cf13b1f45caa7658d2a018a62a5191bc49b7064c523682e36c39af6ccd33",
+          "source_url": "synthetic://indexed-scope-v1/ok",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "cache timeout policy: 30 seconds. neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral neutral ",
+          "title": "Original invented review fixture"
+        }
+      ],
+      "data_boundary": "Original synthetic review fixtures; no real runtime telemetry; doc facts are original paraphrases of pinned public sources.",
+      "expected": {
+        "scoped_generator_called": true,
+        "scoped_reason": "contract_valid"
+      },
+      "id": "eligibility-before-topk",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "request": {
+        "query": "cache timeout policy",
+        "scope": {
+          "key": "timeout_seconds",
+          "kind": "runtime",
+          "observed_at": "2032-07-08T09:00:00Z",
+          "subject": "Cedar",
+          "version": null
+        }
+      }
+    }
+  ],
+  "schema_version": 1,
+  "study": "indexed-scope-v1"
+}

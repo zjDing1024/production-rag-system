@@ -1,0 +1,47 @@
+{
+  "chunks_sha256": "936007aef029f89a8cc4423df8353b852f7746ffd04f2a8bb5b5111b8ceae7ea",
+  "complete": true,
+  "entries": [
+    {
+      "chunk_id": "h7",
+      "claim": {
+        "chunk_text_sha256": "b70329fe06eab0dd2254a4ecfbe173c279ed2f288b4d80204695668d13137263",
+        "end_char": 39,
+        "quote": "Cedar cache timeout policy: 30 seconds.",
+        "reviewed": true,
+        "start_char": 0,
+        "unit": "seconds",
+        "value": 30,
+        "value_type": "integer"
+      },
+      "scope": {
+        "key": "timeout_seconds",
+        "kind": "runtime",
+        "observed_at": "2032-07-08T09:00:00Z",
+        "subject": "Cedar",
+        "version": null
+      }
+    },
+    {
+      "chunk_id": "z2",
+      "claim": {
+        "chunk_text_sha256": "689d17fa3c43a6bb099eeb846c54f72a1d3294bddacbfe066eff365cea2e4098",
+        "end_char": 42,
+        "quote": "The configured duration is ninety seconds.",
+        "reviewed": true,
+        "start_char": 0,
+        "unit": "seconds",
+        "value": 90,
+        "value_type": "integer"
+      },
+      "scope": {
+        "key": "timeout_seconds",
+        "kind": "runtime",
+        "observed_at": "2032-07-08T09:00:00Z",
+        "subject": "Cedar",
+        "version": null
+      }
+    }
+  ],
+  "schema_version": 1
+}
