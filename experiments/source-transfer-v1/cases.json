@@ -1,0 +1,2351 @@
+{
+  "cases": [
+    {
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "catalog": {
+        "chunks_sha256": "2556cfd44552bbed125360e5a7a0ad7dbcdbd2a257c86941d65809f585daf312",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "p14explicit",
+            "claim": {
+              "chunk_text_sha256": "1ae25ae43957b9dd039fc5b6efd2b5ce9c2244e8509c63516fc44163abd9bd17",
+              "end_char": 174,
+              "quote": "CPython 3.14.0: a usage test explicitly constructs ArgumentParser with suggest_on_error=True. This is an explicit example setting, not a statement of the constructor default.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "True",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.suggest_on_error.explicit_example",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.14.0"
+            }
+          },
+          {
+            "chunk_id": "p14default",
+            "claim": {
+              "chunk_text_sha256": "630d9a58f9f40bb5db79d608c7bf18c5c445ebb8a1aae55050bba173b1f779b0",
+              "end_char": 96,
+              "quote": "CPython 3.14.0: the ArgumentParser constructor parameter suggest_on_error has the default False.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "False",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.suggest_on_error.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.14.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-p14explicit",
+          "end_char": 174,
+          "end_line": 1,
+          "id": "p14explicit",
+          "license": "MIT",
+          "source_sha256": "1ae25ae43957b9dd039fc5b6efd2b5ce9c2244e8509c63516fc44163abd9bd17",
+          "source_url": "authored-summary://source-transfer-v1/p14explicit",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.14.0: a usage test explicitly constructs ArgumentParser with suggest_on_error=True. This is an explicit example setting, not a statement of the constructor default.",
+          "title": "Original source summary"
+        },
+        {
+          "document_id": "authored-p14default",
+          "end_char": 96,
+          "end_line": 1,
+          "id": "p14default",
+          "license": "MIT",
+          "source_sha256": "630d9a58f9f40bb5db79d608c7bf18c5c445ebb8a1aae55050bba173b1f779b0",
+          "source_url": "authored-summary://source-transfer-v1/p14default",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.14.0: the ArgumentParser constructor parameter suggest_on_error has the default False.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "py-default-supported",
+      "fact_family": "argparse.suggest_on_error",
+      "id": "py-default-supported-en",
+      "language": "en",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "py314-suggest-default",
+      "request": {
+        "query": "In CPython 3.14.0, what is the ArgumentParser constructor default for suggest_on_error?",
+        "scope": {
+          "key": "ArgumentParser.suggest_on_error.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "CPython",
+          "version": "3.14.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "False",
+        "literal_forms": [
+          "False",
+          "false"
+        ],
+        "offered_sufficient": true,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [
+          "p14default"
+        ],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "CPython",
+      "source_refs": {
+        "p14default": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython314-Lib_argparse.py",
+          "upstream_sha256": "c2cd895b117dbc4d55439773e3f11e57b833b1e20f05d311c4465b794b044898",
+          "upstream_url": "https://github.com/python/cpython/blob/ebf955df7a89ed0c7968f79faec1de49f61ed7cb/Lib/argparse.py#L1880-L1880"
+        },
+        "p14explicit": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython314-Lib_test_test_argparse.py",
+          "upstream_sha256": "cd8ca7ba56df283e3512278aa32538260ad6763ea58c98e5104733bf7dbcdbd5",
+          "upstream_url": "https://github.com/python/cpython/blob/ebf955df7a89ed0c7968f79faec1de49f61ed7cb/Lib/test/test_argparse.py#L2288-L2296"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "catalog": {
+        "chunks_sha256": "2556cfd44552bbed125360e5a7a0ad7dbcdbd2a257c86941d65809f585daf312",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "p14explicit",
+            "claim": {
+              "chunk_text_sha256": "1ae25ae43957b9dd039fc5b6efd2b5ce9c2244e8509c63516fc44163abd9bd17",
+              "end_char": 174,
+              "quote": "CPython 3.14.0: a usage test explicitly constructs ArgumentParser with suggest_on_error=True. This is an explicit example setting, not a statement of the constructor default.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "True",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.suggest_on_error.explicit_example",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.14.0"
+            }
+          },
+          {
+            "chunk_id": "p14default",
+            "claim": {
+              "chunk_text_sha256": "630d9a58f9f40bb5db79d608c7bf18c5c445ebb8a1aae55050bba173b1f779b0",
+              "end_char": 96,
+              "quote": "CPython 3.14.0: the ArgumentParser constructor parameter suggest_on_error has the default False.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "False",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.suggest_on_error.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.14.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-p14explicit",
+          "end_char": 174,
+          "end_line": 1,
+          "id": "p14explicit",
+          "license": "MIT",
+          "source_sha256": "1ae25ae43957b9dd039fc5b6efd2b5ce9c2244e8509c63516fc44163abd9bd17",
+          "source_url": "authored-summary://source-transfer-v1/p14explicit",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.14.0: a usage test explicitly constructs ArgumentParser with suggest_on_error=True. This is an explicit example setting, not a statement of the constructor default.",
+          "title": "Original source summary"
+        },
+        {
+          "document_id": "authored-p14default",
+          "end_char": 96,
+          "end_line": 1,
+          "id": "p14default",
+          "license": "MIT",
+          "source_sha256": "630d9a58f9f40bb5db79d608c7bf18c5c445ebb8a1aae55050bba173b1f779b0",
+          "source_url": "authored-summary://source-transfer-v1/p14default",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.14.0: the ArgumentParser constructor parameter suggest_on_error has the default False.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "py-default-supported",
+      "fact_family": "argparse.suggest_on_error",
+      "id": "py-default-supported-zh",
+      "language": "zh",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "py314-suggest-default",
+      "request": {
+        "query": "在 CPython 3.14.0 中， ArgumentParser 构造函数的 suggest_on_error 默认值是什么？",
+        "scope": {
+          "key": "ArgumentParser.suggest_on_error.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "CPython",
+          "version": "3.14.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "False",
+        "literal_forms": [
+          "False",
+          "false"
+        ],
+        "offered_sufficient": true,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [
+          "p14default"
+        ],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "CPython",
+      "source_refs": {
+        "p14default": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython314-Lib_argparse.py",
+          "upstream_sha256": "c2cd895b117dbc4d55439773e3f11e57b833b1e20f05d311c4465b794b044898",
+          "upstream_url": "https://github.com/python/cpython/blob/ebf955df7a89ed0c7968f79faec1de49f61ed7cb/Lib/argparse.py#L1880-L1880"
+        },
+        "p14explicit": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython314-Lib_test_test_argparse.py",
+          "upstream_sha256": "cd8ca7ba56df283e3512278aa32538260ad6763ea58c98e5104733bf7dbcdbd5",
+          "upstream_url": "https://github.com/python/cpython/blob/ebf955df7a89ed0c7968f79faec1de49f61ed7cb/Lib/test/test_argparse.py#L2288-L2296"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "catalog": {
+        "chunks_sha256": "e278fd364671b64468e544bf867bbf9de9269cdcc7e7a3e920ada7299c5524f2",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "p13presence",
+            "claim": {
+              "chunk_text_sha256": "c2e70c6f90ec99edc1d5bfc768f146af09dfb1b9b44c2ca20f63d23030944aea",
+              "end_char": 175,
+              "quote": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "absent",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.suggest_on_error.parameter_presence",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.13.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-p13presence",
+          "end_char": 175,
+          "end_line": 1,
+          "id": "p13presence",
+          "license": "MIT",
+          "source_sha256": "c2e70c6f90ec99edc1d5bfc768f146af09dfb1b9b44c2ca20f63d23030944aea",
+          "source_url": "authored-summary://source-transfer-v1/p13presence",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "py-default-older-only",
+      "fact_family": "argparse.suggest_on_error",
+      "id": "py-default-older-only-en",
+      "language": "en",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "py314-suggest-default",
+      "request": {
+        "query": "In CPython 3.14.0, what is the ArgumentParser constructor default for suggest_on_error?",
+        "scope": {
+          "key": "ArgumentParser.suggest_on_error.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "CPython",
+          "version": "3.14.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "False",
+        "literal_forms": [
+          "False",
+          "false"
+        ],
+        "offered_sufficient": false,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "CPython",
+      "source_refs": {
+        "p13presence": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython313-Lib_argparse.py",
+          "upstream_sha256": "67267741eccb30cfa2a03e76b0c2e3f70641c944b0240ee600cca22cd6ef0a34",
+          "upstream_url": "https://github.com/python/cpython/blob/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Lib/argparse.py#L1750-L1765"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "catalog": {
+        "chunks_sha256": "e278fd364671b64468e544bf867bbf9de9269cdcc7e7a3e920ada7299c5524f2",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "p13presence",
+            "claim": {
+              "chunk_text_sha256": "c2e70c6f90ec99edc1d5bfc768f146af09dfb1b9b44c2ca20f63d23030944aea",
+              "end_char": 175,
+              "quote": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "absent",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.suggest_on_error.parameter_presence",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.13.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-p13presence",
+          "end_char": 175,
+          "end_line": 1,
+          "id": "p13presence",
+          "license": "MIT",
+          "source_sha256": "c2e70c6f90ec99edc1d5bfc768f146af09dfb1b9b44c2ca20f63d23030944aea",
+          "source_url": "authored-summary://source-transfer-v1/p13presence",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "py-default-older-only",
+      "fact_family": "argparse.suggest_on_error",
+      "id": "py-default-older-only-zh",
+      "language": "zh",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "py314-suggest-default",
+      "request": {
+        "query": "在 CPython 3.14.0 中， ArgumentParser 构造函数的 suggest_on_error 默认值是什么？",
+        "scope": {
+          "key": "ArgumentParser.suggest_on_error.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "CPython",
+          "version": "3.14.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "False",
+        "literal_forms": [
+          "False",
+          "false"
+        ],
+        "offered_sufficient": false,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "CPython",
+      "source_refs": {
+        "p13presence": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython313-Lib_argparse.py",
+          "upstream_sha256": "67267741eccb30cfa2a03e76b0c2e3f70641c944b0240ee600cca22cd6ef0a34",
+          "upstream_url": "https://github.com/python/cpython/blob/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Lib/argparse.py#L1750-L1765"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "catalog": {
+        "chunks_sha256": "d163304537d4c82ce0c6644b39911920495ac10a538aa2d7484841c656e59b05",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "p14explicit",
+            "claim": {
+              "chunk_text_sha256": "1ae25ae43957b9dd039fc5b6efd2b5ce9c2244e8509c63516fc44163abd9bd17",
+              "end_char": 174,
+              "quote": "CPython 3.14.0: a usage test explicitly constructs ArgumentParser with suggest_on_error=True. This is an explicit example setting, not a statement of the constructor default.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "True",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.suggest_on_error.explicit_example",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.14.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-p14explicit",
+          "end_char": 174,
+          "end_line": 1,
+          "id": "p14explicit",
+          "license": "MIT",
+          "source_sha256": "1ae25ae43957b9dd039fc5b6efd2b5ce9c2244e8509c63516fc44163abd9bd17",
+          "source_url": "authored-summary://source-transfer-v1/p14explicit",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.14.0: a usage test explicitly constructs ArgumentParser with suggest_on_error=True. This is an explicit example setting, not a statement of the constructor default.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "py-default-explicit-only",
+      "fact_family": "argparse.suggest_on_error",
+      "id": "py-default-explicit-only-en",
+      "language": "en",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "py314-suggest-default",
+      "request": {
+        "query": "In CPython 3.14.0, what is the ArgumentParser constructor default for suggest_on_error?",
+        "scope": {
+          "key": "ArgumentParser.suggest_on_error.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "CPython",
+          "version": "3.14.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "False",
+        "literal_forms": [
+          "False",
+          "false"
+        ],
+        "offered_sufficient": false,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "CPython",
+      "source_refs": {
+        "p14explicit": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython314-Lib_test_test_argparse.py",
+          "upstream_sha256": "cd8ca7ba56df283e3512278aa32538260ad6763ea58c98e5104733bf7dbcdbd5",
+          "upstream_url": "https://github.com/python/cpython/blob/ebf955df7a89ed0c7968f79faec1de49f61ed7cb/Lib/test/test_argparse.py#L2288-L2296"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "catalog": {
+        "chunks_sha256": "d163304537d4c82ce0c6644b39911920495ac10a538aa2d7484841c656e59b05",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "p14explicit",
+            "claim": {
+              "chunk_text_sha256": "1ae25ae43957b9dd039fc5b6efd2b5ce9c2244e8509c63516fc44163abd9bd17",
+              "end_char": 174,
+              "quote": "CPython 3.14.0: a usage test explicitly constructs ArgumentParser with suggest_on_error=True. This is an explicit example setting, not a statement of the constructor default.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "True",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.suggest_on_error.explicit_example",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.14.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-p14explicit",
+          "end_char": 174,
+          "end_line": 1,
+          "id": "p14explicit",
+          "license": "MIT",
+          "source_sha256": "1ae25ae43957b9dd039fc5b6efd2b5ce9c2244e8509c63516fc44163abd9bd17",
+          "source_url": "authored-summary://source-transfer-v1/p14explicit",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.14.0: a usage test explicitly constructs ArgumentParser with suggest_on_error=True. This is an explicit example setting, not a statement of the constructor default.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "py-default-explicit-only",
+      "fact_family": "argparse.suggest_on_error",
+      "id": "py-default-explicit-only-zh",
+      "language": "zh",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "py314-suggest-default",
+      "request": {
+        "query": "在 CPython 3.14.0 中， ArgumentParser 构造函数的 suggest_on_error 默认值是什么？",
+        "scope": {
+          "key": "ArgumentParser.suggest_on_error.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "CPython",
+          "version": "3.14.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "False",
+        "literal_forms": [
+          "False",
+          "false"
+        ],
+        "offered_sufficient": false,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "CPython",
+      "source_refs": {
+        "p14explicit": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython314-Lib_test_test_argparse.py",
+          "upstream_sha256": "cd8ca7ba56df283e3512278aa32538260ad6763ea58c98e5104733bf7dbcdbd5",
+          "upstream_url": "https://github.com/python/cpython/blob/ebf955df7a89ed0c7968f79faec1de49f61ed7cb/Lib/test/test_argparse.py#L2288-L2296"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "catalog": {
+        "chunks_sha256": "dec06cbbfd9e344b5818f9a15c754b0ad2174ac3378b42f36db006a9789c4a23",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "p14color",
+            "claim": {
+              "chunk_text_sha256": "b050bf60a04adb2fc90889af87906beb9bba04f839c63b6d6e27696c001ff97b",
+              "end_char": 84,
+              "quote": "CPython 3.14.0: the ArgumentParser constructor parameter color has the default True.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "True",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.color.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.14.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-p14color",
+          "end_char": 84,
+          "end_line": 1,
+          "id": "p14color",
+          "license": "MIT",
+          "source_sha256": "b050bf60a04adb2fc90889af87906beb9bba04f839c63b6d6e27696c001ff97b",
+          "source_url": "authored-summary://source-transfer-v1/p14color",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.14.0: the ArgumentParser constructor parameter color has the default True.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "py-default-near-field",
+      "fact_family": "argparse.suggest_on_error",
+      "id": "py-default-near-field-en",
+      "language": "en",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "py314-suggest-default",
+      "request": {
+        "query": "In CPython 3.14.0, what is the ArgumentParser constructor default for suggest_on_error?",
+        "scope": {
+          "key": "ArgumentParser.suggest_on_error.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "CPython",
+          "version": "3.14.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "False",
+        "literal_forms": [
+          "False",
+          "false"
+        ],
+        "offered_sufficient": false,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "CPython",
+      "source_refs": {
+        "p14color": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython314-Lib_argparse.py",
+          "upstream_sha256": "c2cd895b117dbc4d55439773e3f11e57b833b1e20f05d311c4465b794b044898",
+          "upstream_url": "https://github.com/python/cpython/blob/ebf955df7a89ed0c7968f79faec1de49f61ed7cb/Lib/argparse.py#L1881-L1881"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "catalog": {
+        "chunks_sha256": "dec06cbbfd9e344b5818f9a15c754b0ad2174ac3378b42f36db006a9789c4a23",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "p14color",
+            "claim": {
+              "chunk_text_sha256": "b050bf60a04adb2fc90889af87906beb9bba04f839c63b6d6e27696c001ff97b",
+              "end_char": 84,
+              "quote": "CPython 3.14.0: the ArgumentParser constructor parameter color has the default True.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "True",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.color.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.14.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-p14color",
+          "end_char": 84,
+          "end_line": 1,
+          "id": "p14color",
+          "license": "MIT",
+          "source_sha256": "b050bf60a04adb2fc90889af87906beb9bba04f839c63b6d6e27696c001ff97b",
+          "source_url": "authored-summary://source-transfer-v1/p14color",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.14.0: the ArgumentParser constructor parameter color has the default True.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "py-default-near-field",
+      "fact_family": "argparse.suggest_on_error",
+      "id": "py-default-near-field-zh",
+      "language": "zh",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "py314-suggest-default",
+      "request": {
+        "query": "在 CPython 3.14.0 中， ArgumentParser 构造函数的 suggest_on_error 默认值是什么？",
+        "scope": {
+          "key": "ArgumentParser.suggest_on_error.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "CPython",
+          "version": "3.14.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "False",
+        "literal_forms": [
+          "False",
+          "false"
+        ],
+        "offered_sufficient": false,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "CPython",
+      "source_refs": {
+        "p14color": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython314-Lib_argparse.py",
+          "upstream_sha256": "c2cd895b117dbc4d55439773e3f11e57b833b1e20f05d311c4465b794b044898",
+          "upstream_url": "https://github.com/python/cpython/blob/ebf955df7a89ed0c7968f79faec1de49f61ed7cb/Lib/argparse.py#L1881-L1881"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "catalog": {
+        "chunks_sha256": "be9a61964d68fb7f7fecb078ccf0a4622133d0c2da9d9de80e03ad88caf20b60",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "p14presence",
+            "claim": {
+              "chunk_text_sha256": "da66a99ff2c4e138d242402e9feed7433c063baea73be85ec46e8ff4b73ca1b2",
+              "end_char": 127,
+              "quote": "CPython 3.14.0: suggest_on_error is present as a named ArgumentParser constructor parameter. This summary states presence only.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "present",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.suggest_on_error.parameter_presence",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.14.0"
+            }
+          },
+          {
+            "chunk_id": "p13presence",
+            "claim": {
+              "chunk_text_sha256": "c2e70c6f90ec99edc1d5bfc768f146af09dfb1b9b44c2ca20f63d23030944aea",
+              "end_char": 175,
+              "quote": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "absent",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.suggest_on_error.parameter_presence",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.13.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-p14presence",
+          "end_char": 127,
+          "end_line": 1,
+          "id": "p14presence",
+          "license": "MIT",
+          "source_sha256": "da66a99ff2c4e138d242402e9feed7433c063baea73be85ec46e8ff4b73ca1b2",
+          "source_url": "authored-summary://source-transfer-v1/p14presence",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.14.0: suggest_on_error is present as a named ArgumentParser constructor parameter. This summary states presence only.",
+          "title": "Original source summary"
+        },
+        {
+          "document_id": "authored-p13presence",
+          "end_char": 175,
+          "end_line": 1,
+          "id": "p13presence",
+          "license": "MIT",
+          "source_sha256": "c2e70c6f90ec99edc1d5bfc768f146af09dfb1b9b44c2ca20f63d23030944aea",
+          "source_url": "authored-summary://source-transfer-v1/p13presence",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "py-absence-supported",
+      "fact_family": "argparse.suggest_on_error",
+      "id": "py-absence-supported-en",
+      "language": "en",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "py313-suggest-presence",
+      "request": {
+        "query": "In CPython 3.13.0, is suggest_on_error present or absent in the complete ArgumentParser constructor signature?",
+        "scope": {
+          "key": "ArgumentParser.suggest_on_error.parameter_presence",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "CPython",
+          "version": "3.13.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "absent",
+        "literal_forms": [
+          "absent"
+        ],
+        "offered_sufficient": true,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [
+          "p13presence"
+        ],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "CPython",
+      "source_refs": {
+        "p13presence": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython313-Lib_argparse.py",
+          "upstream_sha256": "67267741eccb30cfa2a03e76b0c2e3f70641c944b0240ee600cca22cd6ef0a34",
+          "upstream_url": "https://github.com/python/cpython/blob/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Lib/argparse.py#L1750-L1765"
+        },
+        "p14presence": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython314-Lib_argparse.py",
+          "upstream_sha256": "c2cd895b117dbc4d55439773e3f11e57b833b1e20f05d311c4465b794b044898",
+          "upstream_url": "https://github.com/python/cpython/blob/ebf955df7a89ed0c7968f79faec1de49f61ed7cb/Lib/argparse.py#L1877-L1881"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "catalog": {
+        "chunks_sha256": "be9a61964d68fb7f7fecb078ccf0a4622133d0c2da9d9de80e03ad88caf20b60",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "p14presence",
+            "claim": {
+              "chunk_text_sha256": "da66a99ff2c4e138d242402e9feed7433c063baea73be85ec46e8ff4b73ca1b2",
+              "end_char": 127,
+              "quote": "CPython 3.14.0: suggest_on_error is present as a named ArgumentParser constructor parameter. This summary states presence only.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "present",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.suggest_on_error.parameter_presence",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.14.0"
+            }
+          },
+          {
+            "chunk_id": "p13presence",
+            "claim": {
+              "chunk_text_sha256": "c2e70c6f90ec99edc1d5bfc768f146af09dfb1b9b44c2ca20f63d23030944aea",
+              "end_char": 175,
+              "quote": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "absent",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.suggest_on_error.parameter_presence",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.13.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-p14presence",
+          "end_char": 127,
+          "end_line": 1,
+          "id": "p14presence",
+          "license": "MIT",
+          "source_sha256": "da66a99ff2c4e138d242402e9feed7433c063baea73be85ec46e8ff4b73ca1b2",
+          "source_url": "authored-summary://source-transfer-v1/p14presence",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.14.0: suggest_on_error is present as a named ArgumentParser constructor parameter. This summary states presence only.",
+          "title": "Original source summary"
+        },
+        {
+          "document_id": "authored-p13presence",
+          "end_char": 175,
+          "end_line": 1,
+          "id": "p13presence",
+          "license": "MIT",
+          "source_sha256": "c2e70c6f90ec99edc1d5bfc768f146af09dfb1b9b44c2ca20f63d23030944aea",
+          "source_url": "authored-summary://source-transfer-v1/p13presence",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "py-absence-supported",
+      "fact_family": "argparse.suggest_on_error",
+      "id": "py-absence-supported-zh",
+      "language": "zh",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "py313-suggest-presence",
+      "request": {
+        "query": "在 CPython 3.13.0 的完整 ArgumentParser 构造函数签名中， suggest_on_error 参数是 present 还是 absent？",
+        "scope": {
+          "key": "ArgumentParser.suggest_on_error.parameter_presence",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "CPython",
+          "version": "3.13.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "absent",
+        "literal_forms": [
+          "absent"
+        ],
+        "offered_sufficient": true,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [
+          "p13presence"
+        ],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "CPython",
+      "source_refs": {
+        "p13presence": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython313-Lib_argparse.py",
+          "upstream_sha256": "67267741eccb30cfa2a03e76b0c2e3f70641c944b0240ee600cca22cd6ef0a34",
+          "upstream_url": "https://github.com/python/cpython/blob/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Lib/argparse.py#L1750-L1765"
+        },
+        "p14presence": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython314-Lib_argparse.py",
+          "upstream_sha256": "c2cd895b117dbc4d55439773e3f11e57b833b1e20f05d311c4465b794b044898",
+          "upstream_url": "https://github.com/python/cpython/blob/ebf955df7a89ed0c7968f79faec1de49f61ed7cb/Lib/argparse.py#L1877-L1881"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "catalog": {
+        "chunks_sha256": "db4dee30f0f6713e40a9d18f1b7d48a46a3966265a9f575546e11e9fa35392a8",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "p14default",
+            "claim": {
+              "chunk_text_sha256": "630d9a58f9f40bb5db79d608c7bf18c5c445ebb8a1aae55050bba173b1f779b0",
+              "end_char": 96,
+              "quote": "CPython 3.14.0: the ArgumentParser constructor parameter suggest_on_error has the default False.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "False",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.suggest_on_error.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.14.0"
+            }
+          },
+          {
+            "chunk_id": "p13abbrev",
+            "claim": {
+              "chunk_text_sha256": "3ed7aafc356672f071ba3b695c235518e23096cdbaa61b0b5072d2e0add37b6b",
+              "end_char": 91,
+              "quote": "CPython 3.13.0: the ArgumentParser constructor parameter allow_abbrev has the default True.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "True",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.allow_abbrev.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.13.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-p14default",
+          "end_char": 96,
+          "end_line": 1,
+          "id": "p14default",
+          "license": "MIT",
+          "source_sha256": "630d9a58f9f40bb5db79d608c7bf18c5c445ebb8a1aae55050bba173b1f779b0",
+          "source_url": "authored-summary://source-transfer-v1/p14default",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.14.0: the ArgumentParser constructor parameter suggest_on_error has the default False.",
+          "title": "Original source summary"
+        },
+        {
+          "document_id": "authored-p13abbrev",
+          "end_char": 91,
+          "end_line": 1,
+          "id": "p13abbrev",
+          "license": "MIT",
+          "source_sha256": "3ed7aafc356672f071ba3b695c235518e23096cdbaa61b0b5072d2e0add37b6b",
+          "source_url": "authored-summary://source-transfer-v1/p13abbrev",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.13.0: the ArgumentParser constructor parameter allow_abbrev has the default True.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "py-abbrev-supported",
+      "fact_family": "argparse.allow_abbrev",
+      "id": "py-abbrev-supported-en",
+      "language": "en",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "py313-abbrev-default",
+      "request": {
+        "query": "In CPython 3.13.0, what is the ArgumentParser constructor default for allow_abbrev?",
+        "scope": {
+          "key": "ArgumentParser.allow_abbrev.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "CPython",
+          "version": "3.13.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "True",
+        "literal_forms": [
+          "True",
+          "true"
+        ],
+        "offered_sufficient": true,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [
+          "p13abbrev"
+        ],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "CPython",
+      "source_refs": {
+        "p13abbrev": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython313-Lib_argparse.py",
+          "upstream_sha256": "67267741eccb30cfa2a03e76b0c2e3f70641c944b0240ee600cca22cd6ef0a34",
+          "upstream_url": "https://github.com/python/cpython/blob/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Lib/argparse.py#L1762-L1765"
+        },
+        "p14default": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython314-Lib_argparse.py",
+          "upstream_sha256": "c2cd895b117dbc4d55439773e3f11e57b833b1e20f05d311c4465b794b044898",
+          "upstream_url": "https://github.com/python/cpython/blob/ebf955df7a89ed0c7968f79faec1de49f61ed7cb/Lib/argparse.py#L1880-L1880"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "catalog": {
+        "chunks_sha256": "db4dee30f0f6713e40a9d18f1b7d48a46a3966265a9f575546e11e9fa35392a8",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "p14default",
+            "claim": {
+              "chunk_text_sha256": "630d9a58f9f40bb5db79d608c7bf18c5c445ebb8a1aae55050bba173b1f779b0",
+              "end_char": 96,
+              "quote": "CPython 3.14.0: the ArgumentParser constructor parameter suggest_on_error has the default False.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "False",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.suggest_on_error.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.14.0"
+            }
+          },
+          {
+            "chunk_id": "p13abbrev",
+            "claim": {
+              "chunk_text_sha256": "3ed7aafc356672f071ba3b695c235518e23096cdbaa61b0b5072d2e0add37b6b",
+              "end_char": 91,
+              "quote": "CPython 3.13.0: the ArgumentParser constructor parameter allow_abbrev has the default True.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "True",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "ArgumentParser.allow_abbrev.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.13.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-p14default",
+          "end_char": 96,
+          "end_line": 1,
+          "id": "p14default",
+          "license": "MIT",
+          "source_sha256": "630d9a58f9f40bb5db79d608c7bf18c5c445ebb8a1aae55050bba173b1f779b0",
+          "source_url": "authored-summary://source-transfer-v1/p14default",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.14.0: the ArgumentParser constructor parameter suggest_on_error has the default False.",
+          "title": "Original source summary"
+        },
+        {
+          "document_id": "authored-p13abbrev",
+          "end_char": 91,
+          "end_line": 1,
+          "id": "p13abbrev",
+          "license": "MIT",
+          "source_sha256": "3ed7aafc356672f071ba3b695c235518e23096cdbaa61b0b5072d2e0add37b6b",
+          "source_url": "authored-summary://source-transfer-v1/p13abbrev",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "CPython 3.13.0: the ArgumentParser constructor parameter allow_abbrev has the default True.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "py-abbrev-supported",
+      "fact_family": "argparse.allow_abbrev",
+      "id": "py-abbrev-supported-zh",
+      "language": "zh",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "py313-abbrev-default",
+      "request": {
+        "query": "在 CPython 3.13.0 中， ArgumentParser 构造函数的 allow_abbrev 默认值是什么？",
+        "scope": {
+          "key": "ArgumentParser.allow_abbrev.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "CPython",
+          "version": "3.13.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "True",
+        "literal_forms": [
+          "True",
+          "true"
+        ],
+        "offered_sufficient": true,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [
+          "p13abbrev"
+        ],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "CPython",
+      "source_refs": {
+        "p13abbrev": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython313-Lib_argparse.py",
+          "upstream_sha256": "67267741eccb30cfa2a03e76b0c2e3f70641c944b0240ee600cca22cd6ef0a34",
+          "upstream_url": "https://github.com/python/cpython/blob/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Lib/argparse.py#L1762-L1765"
+        },
+        "p14default": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "cpython314-Lib_argparse.py",
+          "upstream_sha256": "c2cd895b117dbc4d55439773e3f11e57b833b1e20f05d311c4465b794b044898",
+          "upstream_url": "https://github.com/python/cpython/blob/ebf955df7a89ed0c7968f79faec1de49f61ed7cb/Lib/argparse.py#L1880-L1880"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "catalog": {
+        "chunks_sha256": "0990c4bda72423445c6fd5a66f17f687a142f423ca7ae332fb25fa67697f989a",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "e5default",
+            "claim": {
+              "chunk_text_sha256": "7b6e466cb832a147dc8d99a7b5f5921418422cd56276cfb1a89068fe9dd87cdc",
+              "end_char": 84,
+              "quote": "Express 5.1.0 initializes the query parser application setting to simple by default.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "simple",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "query parser.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Express",
+              "version": "5.1.0"
+            }
+          },
+          {
+            "chunk_id": "e4default",
+            "claim": {
+              "chunk_text_sha256": "e16d9dcdcd52f8503868e9bed786e80095bacbccca7993ba42338f1fe7f433b5",
+              "end_char": 87,
+              "quote": "Express 4.21.2 initializes the query parser application setting to extended by default.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "extended",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "query parser.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Express",
+              "version": "4.21.2"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-e5default",
+          "end_char": 84,
+          "end_line": 1,
+          "id": "e5default",
+          "license": "MIT",
+          "source_sha256": "7b6e466cb832a147dc8d99a7b5f5921418422cd56276cfb1a89068fe9dd87cdc",
+          "source_url": "authored-summary://source-transfer-v1/e5default",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Express 5.1.0 initializes the query parser application setting to simple by default.",
+          "title": "Original source summary"
+        },
+        {
+          "document_id": "authored-e4default",
+          "end_char": 87,
+          "end_line": 1,
+          "id": "e4default",
+          "license": "MIT",
+          "source_sha256": "e16d9dcdcd52f8503868e9bed786e80095bacbccca7993ba42338f1fe7f433b5",
+          "source_url": "authored-summary://source-transfer-v1/e4default",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Express 4.21.2 initializes the query parser application setting to extended by default.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "express-old-supported",
+      "fact_family": "express.query_parser",
+      "id": "express-old-supported-en",
+      "language": "en",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "express421-query-default",
+      "request": {
+        "query": "In Express 4.21.2, what is the exact default value of the query parser application setting?",
+        "scope": {
+          "key": "query parser.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "Express",
+          "version": "4.21.2"
+        }
+      },
+      "rubric": {
+        "external_gold": "extended",
+        "literal_forms": [
+          "extended"
+        ],
+        "offered_sufficient": true,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [
+          "e4default"
+        ],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "Express",
+      "source_refs": {
+        "e4default": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "express421-lib_application.js",
+          "upstream_sha256": "5901b32f609ba349351bf7406dbdc0c4c57b77ce6f7215ea67ccca5ac2a28e88",
+          "upstream_url": "https://github.com/expressjs/express/blob/1faf228935aa0a13111f92c28ee795be64ce3f0f/lib/application.js#L80-L86"
+        },
+        "e5default": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "express510-lib_application.js",
+          "upstream_sha256": "f907fbf24306e0a5ed9d526c7804903d556b51e91c295e6ec65842a8343c9644",
+          "upstream_url": "https://github.com/expressjs/express/blob/cd7d4397c398a3f3ecadeaf9ef6ac1377bd414c4/lib/application.js#L93-L100"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "catalog": {
+        "chunks_sha256": "0990c4bda72423445c6fd5a66f17f687a142f423ca7ae332fb25fa67697f989a",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "e5default",
+            "claim": {
+              "chunk_text_sha256": "7b6e466cb832a147dc8d99a7b5f5921418422cd56276cfb1a89068fe9dd87cdc",
+              "end_char": 84,
+              "quote": "Express 5.1.0 initializes the query parser application setting to simple by default.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "simple",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "query parser.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Express",
+              "version": "5.1.0"
+            }
+          },
+          {
+            "chunk_id": "e4default",
+            "claim": {
+              "chunk_text_sha256": "e16d9dcdcd52f8503868e9bed786e80095bacbccca7993ba42338f1fe7f433b5",
+              "end_char": 87,
+              "quote": "Express 4.21.2 initializes the query parser application setting to extended by default.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "extended",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "query parser.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Express",
+              "version": "4.21.2"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-e5default",
+          "end_char": 84,
+          "end_line": 1,
+          "id": "e5default",
+          "license": "MIT",
+          "source_sha256": "7b6e466cb832a147dc8d99a7b5f5921418422cd56276cfb1a89068fe9dd87cdc",
+          "source_url": "authored-summary://source-transfer-v1/e5default",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Express 5.1.0 initializes the query parser application setting to simple by default.",
+          "title": "Original source summary"
+        },
+        {
+          "document_id": "authored-e4default",
+          "end_char": 87,
+          "end_line": 1,
+          "id": "e4default",
+          "license": "MIT",
+          "source_sha256": "e16d9dcdcd52f8503868e9bed786e80095bacbccca7993ba42338f1fe7f433b5",
+          "source_url": "authored-summary://source-transfer-v1/e4default",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Express 4.21.2 initializes the query parser application setting to extended by default.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "express-old-supported",
+      "fact_family": "express.query_parser",
+      "id": "express-old-supported-zh",
+      "language": "zh",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "express421-query-default",
+      "request": {
+        "query": "在 Express 4.21.2 中， query parser 应用设置的确切默认值是什么？",
+        "scope": {
+          "key": "query parser.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "Express",
+          "version": "4.21.2"
+        }
+      },
+      "rubric": {
+        "external_gold": "extended",
+        "literal_forms": [
+          "extended"
+        ],
+        "offered_sufficient": true,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [
+          "e4default"
+        ],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "Express",
+      "source_refs": {
+        "e4default": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "express421-lib_application.js",
+          "upstream_sha256": "5901b32f609ba349351bf7406dbdc0c4c57b77ce6f7215ea67ccca5ac2a28e88",
+          "upstream_url": "https://github.com/expressjs/express/blob/1faf228935aa0a13111f92c28ee795be64ce3f0f/lib/application.js#L80-L86"
+        },
+        "e5default": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "express510-lib_application.js",
+          "upstream_sha256": "f907fbf24306e0a5ed9d526c7804903d556b51e91c295e6ec65842a8343c9644",
+          "upstream_url": "https://github.com/expressjs/express/blob/cd7d4397c398a3f3ecadeaf9ef6ac1377bd414c4/lib/application.js#L93-L100"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "catalog": {
+        "chunks_sha256": "a668caf7206bd55b45e06f77631a1d897168bcc162e10077ebe190efd8c75fe3",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "e4default",
+            "claim": {
+              "chunk_text_sha256": "e16d9dcdcd52f8503868e9bed786e80095bacbccca7993ba42338f1fe7f433b5",
+              "end_char": 87,
+              "quote": "Express 4.21.2 initializes the query parser application setting to extended by default.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "extended",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "query parser.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Express",
+              "version": "4.21.2"
+            }
+          },
+          {
+            "chunk_id": "e5default",
+            "claim": {
+              "chunk_text_sha256": "7b6e466cb832a147dc8d99a7b5f5921418422cd56276cfb1a89068fe9dd87cdc",
+              "end_char": 84,
+              "quote": "Express 5.1.0 initializes the query parser application setting to simple by default.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "simple",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "query parser.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Express",
+              "version": "5.1.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-e4default",
+          "end_char": 87,
+          "end_line": 1,
+          "id": "e4default",
+          "license": "MIT",
+          "source_sha256": "e16d9dcdcd52f8503868e9bed786e80095bacbccca7993ba42338f1fe7f433b5",
+          "source_url": "authored-summary://source-transfer-v1/e4default",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Express 4.21.2 initializes the query parser application setting to extended by default.",
+          "title": "Original source summary"
+        },
+        {
+          "document_id": "authored-e5default",
+          "end_char": 84,
+          "end_line": 1,
+          "id": "e5default",
+          "license": "MIT",
+          "source_sha256": "7b6e466cb832a147dc8d99a7b5f5921418422cd56276cfb1a89068fe9dd87cdc",
+          "source_url": "authored-summary://source-transfer-v1/e5default",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Express 5.1.0 initializes the query parser application setting to simple by default.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "express-new-supported",
+      "fact_family": "express.query_parser",
+      "id": "express-new-supported-en",
+      "language": "en",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "express510-query-default",
+      "request": {
+        "query": "In Express 5.1.0, what is the exact default value of the query parser application setting?",
+        "scope": {
+          "key": "query parser.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "Express",
+          "version": "5.1.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "simple",
+        "literal_forms": [
+          "simple"
+        ],
+        "offered_sufficient": true,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [
+          "e5default"
+        ],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "Express",
+      "source_refs": {
+        "e4default": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "express421-lib_application.js",
+          "upstream_sha256": "5901b32f609ba349351bf7406dbdc0c4c57b77ce6f7215ea67ccca5ac2a28e88",
+          "upstream_url": "https://github.com/expressjs/express/blob/1faf228935aa0a13111f92c28ee795be64ce3f0f/lib/application.js#L80-L86"
+        },
+        "e5default": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "express510-lib_application.js",
+          "upstream_sha256": "f907fbf24306e0a5ed9d526c7804903d556b51e91c295e6ec65842a8343c9644",
+          "upstream_url": "https://github.com/expressjs/express/blob/cd7d4397c398a3f3ecadeaf9ef6ac1377bd414c4/lib/application.js#L93-L100"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "catalog": {
+        "chunks_sha256": "a668caf7206bd55b45e06f77631a1d897168bcc162e10077ebe190efd8c75fe3",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "e4default",
+            "claim": {
+              "chunk_text_sha256": "e16d9dcdcd52f8503868e9bed786e80095bacbccca7993ba42338f1fe7f433b5",
+              "end_char": 87,
+              "quote": "Express 4.21.2 initializes the query parser application setting to extended by default.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "extended",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "query parser.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Express",
+              "version": "4.21.2"
+            }
+          },
+          {
+            "chunk_id": "e5default",
+            "claim": {
+              "chunk_text_sha256": "7b6e466cb832a147dc8d99a7b5f5921418422cd56276cfb1a89068fe9dd87cdc",
+              "end_char": 84,
+              "quote": "Express 5.1.0 initializes the query parser application setting to simple by default.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "simple",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "query parser.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Express",
+              "version": "5.1.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-e4default",
+          "end_char": 87,
+          "end_line": 1,
+          "id": "e4default",
+          "license": "MIT",
+          "source_sha256": "e16d9dcdcd52f8503868e9bed786e80095bacbccca7993ba42338f1fe7f433b5",
+          "source_url": "authored-summary://source-transfer-v1/e4default",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Express 4.21.2 initializes the query parser application setting to extended by default.",
+          "title": "Original source summary"
+        },
+        {
+          "document_id": "authored-e5default",
+          "end_char": 84,
+          "end_line": 1,
+          "id": "e5default",
+          "license": "MIT",
+          "source_sha256": "7b6e466cb832a147dc8d99a7b5f5921418422cd56276cfb1a89068fe9dd87cdc",
+          "source_url": "authored-summary://source-transfer-v1/e5default",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Express 5.1.0 initializes the query parser application setting to simple by default.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "express-new-supported",
+      "fact_family": "express.query_parser",
+      "id": "express-new-supported-zh",
+      "language": "zh",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "express510-query-default",
+      "request": {
+        "query": "在 Express 5.1.0 中， query parser 应用设置的确切默认值是什么？",
+        "scope": {
+          "key": "query parser.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "Express",
+          "version": "5.1.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "simple",
+        "literal_forms": [
+          "simple"
+        ],
+        "offered_sufficient": true,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [
+          "e5default"
+        ],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "Express",
+      "source_refs": {
+        "e4default": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "express421-lib_application.js",
+          "upstream_sha256": "5901b32f609ba349351bf7406dbdc0c4c57b77ce6f7215ea67ccca5ac2a28e88",
+          "upstream_url": "https://github.com/expressjs/express/blob/1faf228935aa0a13111f92c28ee795be64ce3f0f/lib/application.js#L80-L86"
+        },
+        "e5default": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "express510-lib_application.js",
+          "upstream_sha256": "f907fbf24306e0a5ed9d526c7804903d556b51e91c295e6ec65842a8343c9644",
+          "upstream_url": "https://github.com/expressjs/express/blob/cd7d4397c398a3f3ecadeaf9ef6ac1377bd414c4/lib/application.js#L93-L100"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "catalog": {
+        "chunks_sha256": "35f65b98b68790c55fa3b2e4ce1af3120fa87065abe14feba6977f5fe0c6116d",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "e4default",
+            "claim": {
+              "chunk_text_sha256": "e16d9dcdcd52f8503868e9bed786e80095bacbccca7993ba42338f1fe7f433b5",
+              "end_char": 87,
+              "quote": "Express 4.21.2 initializes the query parser application setting to extended by default.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "extended",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "query parser.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Express",
+              "version": "4.21.2"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-e4default",
+          "end_char": 87,
+          "end_line": 1,
+          "id": "e4default",
+          "license": "MIT",
+          "source_sha256": "e16d9dcdcd52f8503868e9bed786e80095bacbccca7993ba42338f1fe7f433b5",
+          "source_url": "authored-summary://source-transfer-v1/e4default",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Express 4.21.2 initializes the query parser application setting to extended by default.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "express-new-older-only",
+      "fact_family": "express.query_parser",
+      "id": "express-new-older-only-en",
+      "language": "en",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "express510-query-default",
+      "request": {
+        "query": "In Express 5.1.0, what is the exact default value of the query parser application setting?",
+        "scope": {
+          "key": "query parser.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "Express",
+          "version": "5.1.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "simple",
+        "literal_forms": [
+          "simple"
+        ],
+        "offered_sufficient": false,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "Express",
+      "source_refs": {
+        "e4default": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "express421-lib_application.js",
+          "upstream_sha256": "5901b32f609ba349351bf7406dbdc0c4c57b77ce6f7215ea67ccca5ac2a28e88",
+          "upstream_url": "https://github.com/expressjs/express/blob/1faf228935aa0a13111f92c28ee795be64ce3f0f/lib/application.js#L80-L86"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "catalog": {
+        "chunks_sha256": "35f65b98b68790c55fa3b2e4ce1af3120fa87065abe14feba6977f5fe0c6116d",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "e4default",
+            "claim": {
+              "chunk_text_sha256": "e16d9dcdcd52f8503868e9bed786e80095bacbccca7993ba42338f1fe7f433b5",
+              "end_char": 87,
+              "quote": "Express 4.21.2 initializes the query parser application setting to extended by default.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "extended",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "query parser.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Express",
+              "version": "4.21.2"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-e4default",
+          "end_char": 87,
+          "end_line": 1,
+          "id": "e4default",
+          "license": "MIT",
+          "source_sha256": "e16d9dcdcd52f8503868e9bed786e80095bacbccca7993ba42338f1fe7f433b5",
+          "source_url": "authored-summary://source-transfer-v1/e4default",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Express 4.21.2 initializes the query parser application setting to extended by default.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "express-new-older-only",
+      "fact_family": "express.query_parser",
+      "id": "express-new-older-only-zh",
+      "language": "zh",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "express510-query-default",
+      "request": {
+        "query": "在 Express 5.1.0 中， query parser 应用设置的确切默认值是什么？",
+        "scope": {
+          "key": "query parser.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "Express",
+          "version": "5.1.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "simple",
+        "literal_forms": [
+          "simple"
+        ],
+        "offered_sufficient": false,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "Express",
+      "source_refs": {
+        "e4default": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "express421-lib_application.js",
+          "upstream_sha256": "5901b32f609ba349351bf7406dbdc0c4c57b77ce6f7215ea67ccca5ac2a28e88",
+          "upstream_url": "https://github.com/expressjs/express/blob/1faf228935aa0a13111f92c28ee795be64ce3f0f/lib/application.js#L80-L86"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "catalog": {
+        "chunks_sha256": "c0509aafcbbe8646b68b636e16598cac64c87c93f4df2209d2ba198764376ea5",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "e5explicit",
+            "claim": {
+              "chunk_text_sha256": "dd347d027582339f4e793c28917357bef9fa05fee9eab2bc2339b717663bee9b",
+              "end_char": 156,
+              "quote": "Express 5.1.0: a test explicitly sets the query parser application setting to extended. This is an explicit example setting, not a statement of the default.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "extended",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "query parser.explicit_example",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Express",
+              "version": "5.1.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-e5explicit",
+          "end_char": 156,
+          "end_line": 1,
+          "id": "e5explicit",
+          "license": "MIT",
+          "source_sha256": "dd347d027582339f4e793c28917357bef9fa05fee9eab2bc2339b717663bee9b",
+          "source_url": "authored-summary://source-transfer-v1/e5explicit",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Express 5.1.0: a test explicitly sets the query parser application setting to extended. This is an explicit example setting, not a statement of the default.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "express-new-explicit-only",
+      "fact_family": "express.query_parser",
+      "id": "express-new-explicit-only-en",
+      "language": "en",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "express510-query-default",
+      "request": {
+        "query": "In Express 5.1.0, what is the exact default value of the query parser application setting?",
+        "scope": {
+          "key": "query parser.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "Express",
+          "version": "5.1.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "simple",
+        "literal_forms": [
+          "simple"
+        ],
+        "offered_sufficient": false,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "Express",
+      "source_refs": {
+        "e5explicit": {
+          "additional_upstream_urls": [
+            "https://github.com/expressjs/express/blob/cd7d4397c398a3f3ecadeaf9ef6ac1377bd414c4/test/req.query.js#L94-L99"
+          ],
+          "authored_summary_not_verbatim": true,
+          "source_id": "express510-test_req.query.js",
+          "upstream_sha256": "6d9feadd594e81f5ea9d9091152f50f6845a2bd4b9f6296baf188713f5deb40d",
+          "upstream_url": "https://github.com/expressjs/express/blob/cd7d4397c398a3f3ecadeaf9ef6ac1377bd414c4/test/req.query.js#L24-L31"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "catalog": {
+        "chunks_sha256": "c0509aafcbbe8646b68b636e16598cac64c87c93f4df2209d2ba198764376ea5",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "e5explicit",
+            "claim": {
+              "chunk_text_sha256": "dd347d027582339f4e793c28917357bef9fa05fee9eab2bc2339b717663bee9b",
+              "end_char": 156,
+              "quote": "Express 5.1.0: a test explicitly sets the query parser application setting to extended. This is an explicit example setting, not a statement of the default.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "extended",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "query parser.explicit_example",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Express",
+              "version": "5.1.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-e5explicit",
+          "end_char": 156,
+          "end_line": 1,
+          "id": "e5explicit",
+          "license": "MIT",
+          "source_sha256": "dd347d027582339f4e793c28917357bef9fa05fee9eab2bc2339b717663bee9b",
+          "source_url": "authored-summary://source-transfer-v1/e5explicit",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Express 5.1.0: a test explicitly sets the query parser application setting to extended. This is an explicit example setting, not a statement of the default.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "express-new-explicit-only",
+      "fact_family": "express.query_parser",
+      "id": "express-new-explicit-only-zh",
+      "language": "zh",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "express510-query-default",
+      "request": {
+        "query": "在 Express 5.1.0 中， query parser 应用设置的确切默认值是什么？",
+        "scope": {
+          "key": "query parser.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "Express",
+          "version": "5.1.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "simple",
+        "literal_forms": [
+          "simple"
+        ],
+        "offered_sufficient": false,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "Express",
+      "source_refs": {
+        "e5explicit": {
+          "additional_upstream_urls": [
+            "https://github.com/expressjs/express/blob/cd7d4397c398a3f3ecadeaf9ef6ac1377bd414c4/test/req.query.js#L94-L99"
+          ],
+          "authored_summary_not_verbatim": true,
+          "source_id": "express510-test_req.query.js",
+          "upstream_sha256": "6d9feadd594e81f5ea9d9091152f50f6845a2bd4b9f6296baf188713f5deb40d",
+          "upstream_url": "https://github.com/expressjs/express/blob/cd7d4397c398a3f3ecadeaf9ef6ac1377bd414c4/test/req.query.js#L24-L31"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "catalog": {
+        "chunks_sha256": "08842758b5d943dbfd4a2cc84b9c5b12774d562d481c3d84336eb46a07d1b23c",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "e5trust",
+            "claim": {
+              "chunk_text_sha256": "4c523f451a69d53b5201ae6312c3f841de31b4532169a8d65010441215f924d3",
+              "end_char": 122,
+              "quote": "Express 5.1.0 initializes the trust proxy application setting to false by default. This summary concerns trust proxy only.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "False",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "trust proxy.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Express",
+              "version": "5.1.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-e5trust",
+          "end_char": 122,
+          "end_line": 1,
+          "id": "e5trust",
+          "license": "MIT",
+          "source_sha256": "4c523f451a69d53b5201ae6312c3f841de31b4532169a8d65010441215f924d3",
+          "source_url": "authored-summary://source-transfer-v1/e5trust",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Express 5.1.0 initializes the trust proxy application setting to false by default. This summary concerns trust proxy only.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "express-new-near-field",
+      "fact_family": "express.query_parser",
+      "id": "express-new-near-field-en",
+      "language": "en",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "express510-query-default",
+      "request": {
+        "query": "In Express 5.1.0, what is the exact default value of the query parser application setting?",
+        "scope": {
+          "key": "query parser.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "Express",
+          "version": "5.1.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "simple",
+        "literal_forms": [
+          "simple"
+        ],
+        "offered_sufficient": false,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "Express",
+      "source_refs": {
+        "e5trust": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "express510-lib_application.js",
+          "upstream_sha256": "f907fbf24306e0a5ed9d526c7804903d556b51e91c295e6ec65842a8343c9644",
+          "upstream_url": "https://github.com/expressjs/express/blob/cd7d4397c398a3f3ecadeaf9ef6ac1377bd414c4/lib/application.js#L99-L99"
+        }
+      }
+    },
+    {
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "catalog": {
+        "chunks_sha256": "08842758b5d943dbfd4a2cc84b9c5b12774d562d481c3d84336eb46a07d1b23c",
+        "complete": true,
+        "entries": [
+          {
+            "chunk_id": "e5trust",
+            "claim": {
+              "chunk_text_sha256": "4c523f451a69d53b5201ae6312c3f841de31b4532169a8d65010441215f924d3",
+              "end_char": 122,
+              "quote": "Express 5.1.0 initializes the trust proxy application setting to false by default. This summary concerns trust proxy only.",
+              "reviewed": true,
+              "start_char": 0,
+              "unit": "canonical_literal",
+              "value": "False",
+              "value_type": "string"
+            },
+            "scope": {
+              "key": "trust proxy.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Express",
+              "version": "5.1.0"
+            }
+          }
+        ],
+        "schema_version": 1
+      },
+      "chunks": [
+        {
+          "document_id": "authored-e5trust",
+          "end_char": 122,
+          "end_line": 1,
+          "id": "e5trust",
+          "license": "MIT",
+          "source_sha256": "4c523f451a69d53b5201ae6312c3f841de31b4532169a8d65010441215f924d3",
+          "source_url": "authored-summary://source-transfer-v1/e5trust",
+          "start_char": 0,
+          "start_line": 1,
+          "text": "Express 5.1.0 initializes the trust proxy application setting to false by default. This summary concerns trust proxy only.",
+          "title": "Original source summary"
+        }
+      ],
+      "condition_id": "express-new-near-field",
+      "fact_family": "express.query_parser",
+      "id": "express-new-near-field-zh",
+      "language": "zh",
+      "options": {
+        "context_characters": 12000,
+        "k": 1,
+        "scan_limit": 128
+      },
+      "release_specific_target": "express510-query-default",
+      "request": {
+        "query": "在 Express 5.1.0 中， query parser 应用设置的确切默认值是什么？",
+        "scope": {
+          "key": "query parser.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "Express",
+          "version": "5.1.0"
+        }
+      },
+      "rubric": {
+        "external_gold": "simple",
+        "literal_forms": [
+          "simple"
+        ],
+        "offered_sufficient": false,
+        "scope_query_agreement": "AI reviewed fixture invariant, not a product scope inference capability",
+        "supporting_ids": [],
+        "typed_requirement": "Canonical string for the requested predicate. False is neither 0, null nor absent; explicit setting is not default."
+      },
+      "source_family": "Express",
+      "source_refs": {
+        "e5trust": {
+          "authored_summary_not_verbatim": true,
+          "source_id": "express510-lib_application.js",
+          "upstream_sha256": "f907fbf24306e0a5ed9d526c7804903d556b51e91c295e6ec65842a8343c9644",
+          "upstream_url": "https://github.com/expressjs/express/blob/cd7d4397c398a3f3ecadeaf9ef6ac1377bd414c4/lib/application.js#L99-L99"
+        }
+      }
+    }
+  ],
+  "conditions": 11,
+  "release_specific_targets": 5,
+  "rows": 22,
+  "schema_version": 1,
+  "setting_fact_families": 3,
+  "source_families": 2,
+  "study": "source-transfer-v1"
+}

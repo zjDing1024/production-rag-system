@@ -1,0 +1,2668 @@
+{
+  "expected_model_calls": 32,
+  "rows": [
+    {
+      "case_id": "py-default-supported-en",
+      "full_scores": [
+        {
+          "chunk_id": "p14explicit",
+          "score": 2.029601036265684
+        },
+        {
+          "chunk_id": "p14default",
+          "score": 2.0076820842251943
+        }
+      ],
+      "offered_sufficient": true,
+      "packed_support": {
+        "scoped": true,
+        "ungated": false
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "5ee07dee7de53cf37d49032e2c7906a7e8c7d80e6f4337989e4300f4e314574c",
+          "context": [
+            {
+              "chunk_id": "p14default",
+              "citation": "authored-summary://source-transfer-v1/p14default#L1-L1",
+              "document_id": "authored-p14default",
+              "score": 2.0076820842251943,
+              "text": "CPython 3.14.0: the ArgumentParser constructor parameter suggest_on_error has the default False."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "2556cfd44552bbed125360e5a7a0ad7dbcdbd2a257c86941d65809f585daf312",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": 1,
+            "matched_count": 1,
+            "matched_ids": [
+              "p14default"
+            ],
+            "reason": "reviewed_values_agree",
+            "reviewed_count": 1,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "consistent",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "In CPython 3.14.0, what is the ArgumentParser constructor default for suggest_on_error?",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "p14default",
+                "citation": "authored-summary://source-transfer-v1/p14default#L1-L1",
+                "document_id": "authored-p14default",
+                "score": 2.0076820842251943,
+                "text": "CPython 3.14.0: the ArgumentParser constructor parameter suggest_on_error has the default False."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.14.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "planned"
+        },
+        "ungated": {
+          "catalog_sha256": "5ee07dee7de53cf37d49032e2c7906a7e8c7d80e6f4337989e4300f4e314574c",
+          "context": [
+            {
+              "chunk_id": "p14explicit",
+              "citation": "authored-summary://source-transfer-v1/p14explicit#L1-L1",
+              "document_id": "authored-p14explicit",
+              "score": 2.029601036265684,
+              "text": "CPython 3.14.0: a usage test explicitly constructs ArgumentParser with suggest_on_error=True. This is an explicit example setting, not a statement of the constructor default."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "2556cfd44552bbed125360e5a7a0ad7dbcdbd2a257c86941d65809f585daf312",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "In CPython 3.14.0, what is the ArgumentParser constructor default for suggest_on_error?",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 2,
+            "lexical_candidate_count": 2,
+            "ranked_hits": [
+              {
+                "chunk_id": "p14explicit",
+                "citation": "authored-summary://source-transfer-v1/p14explicit#L1-L1",
+                "document_id": "authored-p14explicit",
+                "score": 2.029601036265684,
+                "text": "CPython 3.14.0: a usage test explicitly constructs ArgumentParser with suggest_on_error=True. This is an explicit example setting, not a statement of the constructor default."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [
+              "p14default"
+            ],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.14.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "py-default-supported-zh",
+      "full_scores": [
+        {
+          "chunk_id": "p14default",
+          "score": 1.2869756950161502
+        },
+        {
+          "chunk_id": "p14explicit",
+          "score": 0.9512429050119372
+        }
+      ],
+      "offered_sufficient": true,
+      "packed_support": {
+        "scoped": true,
+        "ungated": true
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "5ee07dee7de53cf37d49032e2c7906a7e8c7d80e6f4337989e4300f4e314574c",
+          "context": [
+            {
+              "chunk_id": "p14default",
+              "citation": "authored-summary://source-transfer-v1/p14default#L1-L1",
+              "document_id": "authored-p14default",
+              "score": 1.2869756950161502,
+              "text": "CPython 3.14.0: the ArgumentParser constructor parameter suggest_on_error has the default False."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "2556cfd44552bbed125360e5a7a0ad7dbcdbd2a257c86941d65809f585daf312",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": 1,
+            "matched_count": 1,
+            "matched_ids": [
+              "p14default"
+            ],
+            "reason": "reviewed_values_agree",
+            "reviewed_count": 1,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "consistent",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "在 CPython 3.14.0 中， ArgumentParser 构造函数的 suggest_on_error 默认值是什么？",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "p14default",
+                "citation": "authored-summary://source-transfer-v1/p14default#L1-L1",
+                "document_id": "authored-p14default",
+                "score": 1.2869756950161502,
+                "text": "CPython 3.14.0: the ArgumentParser constructor parameter suggest_on_error has the default False."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.14.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "planned"
+        },
+        "ungated": {
+          "catalog_sha256": "5ee07dee7de53cf37d49032e2c7906a7e8c7d80e6f4337989e4300f4e314574c",
+          "context": [
+            {
+              "chunk_id": "p14default",
+              "citation": "authored-summary://source-transfer-v1/p14default#L1-L1",
+              "document_id": "authored-p14default",
+              "score": 1.2869756950161502,
+              "text": "CPython 3.14.0: the ArgumentParser constructor parameter suggest_on_error has the default False."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "2556cfd44552bbed125360e5a7a0ad7dbcdbd2a257c86941d65809f585daf312",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "在 CPython 3.14.0 中， ArgumentParser 构造函数的 suggest_on_error 默认值是什么？",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 2,
+            "lexical_candidate_count": 2,
+            "ranked_hits": [
+              {
+                "chunk_id": "p14default",
+                "citation": "authored-summary://source-transfer-v1/p14default#L1-L1",
+                "document_id": "authored-p14default",
+                "score": 1.2869756950161502,
+                "text": "CPython 3.14.0: the ArgumentParser constructor parameter suggest_on_error has the default False."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [
+              "p14explicit"
+            ],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.14.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "py-default-older-only-en",
+      "full_scores": [
+        {
+          "chunk_id": "p13presence",
+          "score": 2.5891386520660276
+        }
+      ],
+      "offered_sufficient": false,
+      "packed_support": {
+        "scoped": false,
+        "ungated": false
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "7968d0373e29c8f7746fb930090cab6c694249a3731e9c84b5665ab9b61586b0",
+          "context": [],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "e278fd364671b64468e544bf867bbf9de9269cdcc7e7a3e920ada7299c5524f2",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": null,
+            "matched_count": 0,
+            "matched_ids": [],
+            "reason": "no_matching_scope",
+            "reviewed_count": 0,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "no_match",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "In CPython 3.14.0, what is the ArgumentParser constructor default for suggest_on_error?",
+          "ranking": null,
+          "reason": "no_matching_scope",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.14.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "not_run"
+        },
+        "ungated": {
+          "catalog_sha256": "7968d0373e29c8f7746fb930090cab6c694249a3731e9c84b5665ab9b61586b0",
+          "context": [
+            {
+              "chunk_id": "p13presence",
+              "citation": "authored-summary://source-transfer-v1/p13presence#L1-L1",
+              "document_id": "authored-p13presence",
+              "score": 2.5891386520660276,
+              "text": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "e278fd364671b64468e544bf867bbf9de9269cdcc7e7a3e920ada7299c5524f2",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "In CPython 3.14.0, what is the ArgumentParser constructor default for suggest_on_error?",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 1,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "p13presence",
+                "citation": "authored-summary://source-transfer-v1/p13presence#L1-L1",
+                "document_id": "authored-p13presence",
+                "score": 2.5891386520660276,
+                "text": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.14.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "py-default-older-only-zh",
+      "full_scores": [
+        {
+          "chunk_id": "p13presence",
+          "score": 1.4384103622589044
+        }
+      ],
+      "offered_sufficient": false,
+      "packed_support": {
+        "scoped": false,
+        "ungated": false
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "7968d0373e29c8f7746fb930090cab6c694249a3731e9c84b5665ab9b61586b0",
+          "context": [],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "e278fd364671b64468e544bf867bbf9de9269cdcc7e7a3e920ada7299c5524f2",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": null,
+            "matched_count": 0,
+            "matched_ids": [],
+            "reason": "no_matching_scope",
+            "reviewed_count": 0,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "no_match",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "在 CPython 3.14.0 中， ArgumentParser 构造函数的 suggest_on_error 默认值是什么？",
+          "ranking": null,
+          "reason": "no_matching_scope",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.14.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "not_run"
+        },
+        "ungated": {
+          "catalog_sha256": "7968d0373e29c8f7746fb930090cab6c694249a3731e9c84b5665ab9b61586b0",
+          "context": [
+            {
+              "chunk_id": "p13presence",
+              "citation": "authored-summary://source-transfer-v1/p13presence#L1-L1",
+              "document_id": "authored-p13presence",
+              "score": 1.4384103622589044,
+              "text": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "e278fd364671b64468e544bf867bbf9de9269cdcc7e7a3e920ada7299c5524f2",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "在 CPython 3.14.0 中， ArgumentParser 构造函数的 suggest_on_error 默认值是什么？",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 1,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "p13presence",
+                "citation": "authored-summary://source-transfer-v1/p13presence#L1-L1",
+                "document_id": "authored-p13presence",
+                "score": 1.4384103622589044,
+                "text": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.14.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "py-default-explicit-only-en",
+      "full_scores": [
+        {
+          "chunk_id": "p14explicit",
+          "score": 2.8768207245178083
+        }
+      ],
+      "offered_sufficient": false,
+      "packed_support": {
+        "scoped": false,
+        "ungated": false
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "5615c2da2d1dcc3f1162a547a03b1dd1a92966f95cf0ba9a39624447795f0d36",
+          "context": [],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "d163304537d4c82ce0c6644b39911920495ac10a538aa2d7484841c656e59b05",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": null,
+            "matched_count": 0,
+            "matched_ids": [],
+            "reason": "no_matching_scope",
+            "reviewed_count": 0,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "no_match",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "In CPython 3.14.0, what is the ArgumentParser constructor default for suggest_on_error?",
+          "ranking": null,
+          "reason": "no_matching_scope",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.14.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "not_run"
+        },
+        "ungated": {
+          "catalog_sha256": "5615c2da2d1dcc3f1162a547a03b1dd1a92966f95cf0ba9a39624447795f0d36",
+          "context": [
+            {
+              "chunk_id": "p14explicit",
+              "citation": "authored-summary://source-transfer-v1/p14explicit#L1-L1",
+              "document_id": "authored-p14explicit",
+              "score": 2.8768207245178083,
+              "text": "CPython 3.14.0: a usage test explicitly constructs ArgumentParser with suggest_on_error=True. This is an explicit example setting, not a statement of the constructor default."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "d163304537d4c82ce0c6644b39911920495ac10a538aa2d7484841c656e59b05",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "In CPython 3.14.0, what is the ArgumentParser constructor default for suggest_on_error?",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 1,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "p14explicit",
+                "citation": "authored-summary://source-transfer-v1/p14explicit#L1-L1",
+                "document_id": "authored-p14explicit",
+                "score": 2.8768207245178083,
+                "text": "CPython 3.14.0: a usage test explicitly constructs ArgumentParser with suggest_on_error=True. This is an explicit example setting, not a statement of the constructor default."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.14.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "py-default-explicit-only-zh",
+      "full_scores": [
+        {
+          "chunk_id": "p14explicit",
+          "score": 1.7260924347106852
+        }
+      ],
+      "offered_sufficient": false,
+      "packed_support": {
+        "scoped": false,
+        "ungated": false
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "5615c2da2d1dcc3f1162a547a03b1dd1a92966f95cf0ba9a39624447795f0d36",
+          "context": [],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "d163304537d4c82ce0c6644b39911920495ac10a538aa2d7484841c656e59b05",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": null,
+            "matched_count": 0,
+            "matched_ids": [],
+            "reason": "no_matching_scope",
+            "reviewed_count": 0,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "no_match",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "在 CPython 3.14.0 中， ArgumentParser 构造函数的 suggest_on_error 默认值是什么？",
+          "ranking": null,
+          "reason": "no_matching_scope",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.14.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "not_run"
+        },
+        "ungated": {
+          "catalog_sha256": "5615c2da2d1dcc3f1162a547a03b1dd1a92966f95cf0ba9a39624447795f0d36",
+          "context": [
+            {
+              "chunk_id": "p14explicit",
+              "citation": "authored-summary://source-transfer-v1/p14explicit#L1-L1",
+              "document_id": "authored-p14explicit",
+              "score": 1.7260924347106852,
+              "text": "CPython 3.14.0: a usage test explicitly constructs ArgumentParser with suggest_on_error=True. This is an explicit example setting, not a statement of the constructor default."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "d163304537d4c82ce0c6644b39911920495ac10a538aa2d7484841c656e59b05",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "在 CPython 3.14.0 中， ArgumentParser 构造函数的 suggest_on_error 默认值是什么？",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 1,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "p14explicit",
+                "citation": "authored-summary://source-transfer-v1/p14explicit#L1-L1",
+                "document_id": "authored-p14explicit",
+                "score": 1.7260924347106852,
+                "text": "CPython 3.14.0: a usage test explicitly constructs ArgumentParser with suggest_on_error=True. This is an explicit example setting, not a statement of the constructor default."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.14.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "py-default-near-field-en",
+      "full_scores": [
+        {
+          "chunk_id": "p14color",
+          "score": 2.424748896379296
+        }
+      ],
+      "offered_sufficient": false,
+      "packed_support": {
+        "scoped": false,
+        "ungated": false
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "28b094751f8d61966bc6ab6b0826555dd877b33462621d348187a70b314412dc",
+          "context": [],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "dec06cbbfd9e344b5818f9a15c754b0ad2174ac3378b42f36db006a9789c4a23",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": null,
+            "matched_count": 0,
+            "matched_ids": [],
+            "reason": "no_matching_scope",
+            "reviewed_count": 0,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "no_match",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "In CPython 3.14.0, what is the ArgumentParser constructor default for suggest_on_error?",
+          "ranking": null,
+          "reason": "no_matching_scope",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.14.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "not_run"
+        },
+        "ungated": {
+          "catalog_sha256": "28b094751f8d61966bc6ab6b0826555dd877b33462621d348187a70b314412dc",
+          "context": [
+            {
+              "chunk_id": "p14color",
+              "citation": "authored-summary://source-transfer-v1/p14color#L1-L1",
+              "document_id": "authored-p14color",
+              "score": 2.424748896379296,
+              "text": "CPython 3.14.0: the ArgumentParser constructor parameter color has the default True."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "dec06cbbfd9e344b5818f9a15c754b0ad2174ac3378b42f36db006a9789c4a23",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "In CPython 3.14.0, what is the ArgumentParser constructor default for suggest_on_error?",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 1,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "p14color",
+                "citation": "authored-summary://source-transfer-v1/p14color#L1-L1",
+                "document_id": "authored-p14color",
+                "score": 2.424748896379296,
+                "text": "CPython 3.14.0: the ArgumentParser constructor parameter color has the default True."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.14.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "py-default-near-field-zh",
+      "full_scores": [
+        {
+          "chunk_id": "p14color",
+          "score": 1.4384103622589044
+        }
+      ],
+      "offered_sufficient": false,
+      "packed_support": {
+        "scoped": false,
+        "ungated": false
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "28b094751f8d61966bc6ab6b0826555dd877b33462621d348187a70b314412dc",
+          "context": [],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "dec06cbbfd9e344b5818f9a15c754b0ad2174ac3378b42f36db006a9789c4a23",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": null,
+            "matched_count": 0,
+            "matched_ids": [],
+            "reason": "no_matching_scope",
+            "reviewed_count": 0,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "no_match",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "在 CPython 3.14.0 中， ArgumentParser 构造函数的 suggest_on_error 默认值是什么？",
+          "ranking": null,
+          "reason": "no_matching_scope",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.14.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "not_run"
+        },
+        "ungated": {
+          "catalog_sha256": "28b094751f8d61966bc6ab6b0826555dd877b33462621d348187a70b314412dc",
+          "context": [
+            {
+              "chunk_id": "p14color",
+              "citation": "authored-summary://source-transfer-v1/p14color#L1-L1",
+              "document_id": "authored-p14color",
+              "score": 1.4384103622589044,
+              "text": "CPython 3.14.0: the ArgumentParser constructor parameter color has the default True."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "dec06cbbfd9e344b5818f9a15c754b0ad2174ac3378b42f36db006a9789c4a23",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "在 CPython 3.14.0 中， ArgumentParser 构造函数的 suggest_on_error 默认值是什么？",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 1,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "p14color",
+                "citation": "authored-summary://source-transfer-v1/p14color#L1-L1",
+                "document_id": "authored-p14color",
+                "score": 1.4384103622589044,
+                "text": "CPython 3.14.0: the ArgumentParser constructor parameter color has the default True."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.14.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "py-absence-supported-en",
+      "full_scores": [
+        {
+          "chunk_id": "p13presence",
+          "score": 4.418319228935397
+        },
+        {
+          "chunk_id": "p14presence",
+          "score": 2.125071953803212
+        }
+      ],
+      "offered_sufficient": true,
+      "packed_support": {
+        "scoped": true,
+        "ungated": true
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "47c25ce484de90793d474b84d0e9985265a92e1b11af508a5a275db7f0987909",
+          "context": [
+            {
+              "chunk_id": "p13presence",
+              "citation": "authored-summary://source-transfer-v1/p13presence#L1-L1",
+              "document_id": "authored-p13presence",
+              "score": 4.418319228935397,
+              "text": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "be9a61964d68fb7f7fecb078ccf0a4622133d0c2da9d9de80e03ad88caf20b60",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": 1,
+            "matched_count": 1,
+            "matched_ids": [
+              "p13presence"
+            ],
+            "reason": "reviewed_values_agree",
+            "reviewed_count": 1,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "consistent",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "In CPython 3.13.0, is suggest_on_error present or absent in the complete ArgumentParser constructor signature?",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "p13presence",
+                "citation": "authored-summary://source-transfer-v1/p13presence#L1-L1",
+                "document_id": "authored-p13presence",
+                "score": 4.418319228935397,
+                "text": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.parameter_presence",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.13.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "planned"
+        },
+        "ungated": {
+          "catalog_sha256": "47c25ce484de90793d474b84d0e9985265a92e1b11af508a5a275db7f0987909",
+          "context": [
+            {
+              "chunk_id": "p13presence",
+              "citation": "authored-summary://source-transfer-v1/p13presence#L1-L1",
+              "document_id": "authored-p13presence",
+              "score": 4.418319228935397,
+              "text": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "be9a61964d68fb7f7fecb078ccf0a4622133d0c2da9d9de80e03ad88caf20b60",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "In CPython 3.13.0, is suggest_on_error present or absent in the complete ArgumentParser constructor signature?",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 2,
+            "lexical_candidate_count": 2,
+            "ranked_hits": [
+              {
+                "chunk_id": "p13presence",
+                "citation": "authored-summary://source-transfer-v1/p13presence#L1-L1",
+                "document_id": "authored-p13presence",
+                "score": 4.418319228935397,
+                "text": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [
+              "p14presence"
+            ],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.parameter_presence",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.13.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "py-absence-supported-zh",
+      "full_scores": [
+        {
+          "chunk_id": "p13presence",
+          "score": 2.1410572532796435
+        },
+        {
+          "chunk_id": "p14presence",
+          "score": 1.7316051060170115
+        }
+      ],
+      "offered_sufficient": true,
+      "packed_support": {
+        "scoped": true,
+        "ungated": true
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "47c25ce484de90793d474b84d0e9985265a92e1b11af508a5a275db7f0987909",
+          "context": [
+            {
+              "chunk_id": "p13presence",
+              "citation": "authored-summary://source-transfer-v1/p13presence#L1-L1",
+              "document_id": "authored-p13presence",
+              "score": 2.1410572532796435,
+              "text": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "be9a61964d68fb7f7fecb078ccf0a4622133d0c2da9d9de80e03ad88caf20b60",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": 1,
+            "matched_count": 1,
+            "matched_ids": [
+              "p13presence"
+            ],
+            "reason": "reviewed_values_agree",
+            "reviewed_count": 1,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "consistent",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "在 CPython 3.13.0 的完整 ArgumentParser 构造函数签名中， suggest_on_error 参数是 present 还是 absent？",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "p13presence",
+                "citation": "authored-summary://source-transfer-v1/p13presence#L1-L1",
+                "document_id": "authored-p13presence",
+                "score": 2.1410572532796435,
+                "text": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.parameter_presence",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.13.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "planned"
+        },
+        "ungated": {
+          "catalog_sha256": "47c25ce484de90793d474b84d0e9985265a92e1b11af508a5a275db7f0987909",
+          "context": [
+            {
+              "chunk_id": "p13presence",
+              "citation": "authored-summary://source-transfer-v1/p13presence#L1-L1",
+              "document_id": "authored-p13presence",
+              "score": 2.1410572532796435,
+              "text": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "be9a61964d68fb7f7fecb078ccf0a4622133d0c2da9d9de80e03ad88caf20b60",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "在 CPython 3.13.0 的完整 ArgumentParser 构造函数签名中， suggest_on_error 参数是 present 还是 absent？",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 2,
+            "lexical_candidate_count": 2,
+            "ranked_hits": [
+              {
+                "chunk_id": "p13presence",
+                "citation": "authored-summary://source-transfer-v1/p13presence#L1-L1",
+                "document_id": "authored-p13presence",
+                "score": 2.1410572532796435,
+                "text": "CPython 3.13.0: the complete ArgumentParser constructor signature does not contain a suggest_on_error parameter. Its parameter presence is absent, not a Boolean default value."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [
+              "p14presence"
+            ],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.suggest_on_error.parameter_presence",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.13.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "py-abbrev-supported-en",
+      "full_scores": [
+        {
+          "chunk_id": "p13abbrev",
+          "score": 2.7406830687321246
+        },
+        {
+          "chunk_id": "p14default",
+          "score": 1.3543887076122345
+        }
+      ],
+      "offered_sufficient": true,
+      "packed_support": {
+        "scoped": true,
+        "ungated": true
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "7ab40327b9bf2bbd5fa045709112e8c149104393becb9f93d69d8e53d4c7074f",
+          "context": [
+            {
+              "chunk_id": "p13abbrev",
+              "citation": "authored-summary://source-transfer-v1/p13abbrev#L1-L1",
+              "document_id": "authored-p13abbrev",
+              "score": 2.7406830687321246,
+              "text": "CPython 3.13.0: the ArgumentParser constructor parameter allow_abbrev has the default True."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "db4dee30f0f6713e40a9d18f1b7d48a46a3966265a9f575546e11e9fa35392a8",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": 1,
+            "matched_count": 1,
+            "matched_ids": [
+              "p13abbrev"
+            ],
+            "reason": "reviewed_values_agree",
+            "reviewed_count": 1,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "consistent",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "In CPython 3.13.0, what is the ArgumentParser constructor default for allow_abbrev?",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "p13abbrev",
+                "citation": "authored-summary://source-transfer-v1/p13abbrev#L1-L1",
+                "document_id": "authored-p13abbrev",
+                "score": 2.7406830687321246,
+                "text": "CPython 3.13.0: the ArgumentParser constructor parameter allow_abbrev has the default True."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.allow_abbrev.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.13.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "planned"
+        },
+        "ungated": {
+          "catalog_sha256": "7ab40327b9bf2bbd5fa045709112e8c149104393becb9f93d69d8e53d4c7074f",
+          "context": [
+            {
+              "chunk_id": "p13abbrev",
+              "citation": "authored-summary://source-transfer-v1/p13abbrev#L1-L1",
+              "document_id": "authored-p13abbrev",
+              "score": 2.7406830687321246,
+              "text": "CPython 3.13.0: the ArgumentParser constructor parameter allow_abbrev has the default True."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "db4dee30f0f6713e40a9d18f1b7d48a46a3966265a9f575546e11e9fa35392a8",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "In CPython 3.13.0, what is the ArgumentParser constructor default for allow_abbrev?",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 2,
+            "lexical_candidate_count": 2,
+            "ranked_hits": [
+              {
+                "chunk_id": "p13abbrev",
+                "citation": "authored-summary://source-transfer-v1/p13abbrev#L1-L1",
+                "document_id": "authored-p13abbrev",
+                "score": 2.7406830687321246,
+                "text": "CPython 3.13.0: the ArgumentParser constructor parameter allow_abbrev has the default True."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [
+              "p14default"
+            ],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.allow_abbrev.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.13.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "py-abbrev-supported-zh",
+      "full_scores": [
+        {
+          "chunk_id": "p13abbrev",
+          "score": 2.115580588295709
+        },
+        {
+          "chunk_id": "p14default",
+          "score": 0.7292862271758185
+        }
+      ],
+      "offered_sufficient": true,
+      "packed_support": {
+        "scoped": true,
+        "ungated": true
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "7ab40327b9bf2bbd5fa045709112e8c149104393becb9f93d69d8e53d4c7074f",
+          "context": [
+            {
+              "chunk_id": "p13abbrev",
+              "citation": "authored-summary://source-transfer-v1/p13abbrev#L1-L1",
+              "document_id": "authored-p13abbrev",
+              "score": 2.115580588295709,
+              "text": "CPython 3.13.0: the ArgumentParser constructor parameter allow_abbrev has the default True."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "db4dee30f0f6713e40a9d18f1b7d48a46a3966265a9f575546e11e9fa35392a8",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": 1,
+            "matched_count": 1,
+            "matched_ids": [
+              "p13abbrev"
+            ],
+            "reason": "reviewed_values_agree",
+            "reviewed_count": 1,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "consistent",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "在 CPython 3.13.0 中， ArgumentParser 构造函数的 allow_abbrev 默认值是什么？",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "p13abbrev",
+                "citation": "authored-summary://source-transfer-v1/p13abbrev#L1-L1",
+                "document_id": "authored-p13abbrev",
+                "score": 2.115580588295709,
+                "text": "CPython 3.13.0: the ArgumentParser constructor parameter allow_abbrev has the default True."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.allow_abbrev.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.13.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "planned"
+        },
+        "ungated": {
+          "catalog_sha256": "7ab40327b9bf2bbd5fa045709112e8c149104393becb9f93d69d8e53d4c7074f",
+          "context": [
+            {
+              "chunk_id": "p13abbrev",
+              "citation": "authored-summary://source-transfer-v1/p13abbrev#L1-L1",
+              "document_id": "authored-p13abbrev",
+              "score": 2.115580588295709,
+              "text": "CPython 3.13.0: the ArgumentParser constructor parameter allow_abbrev has the default True."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "db4dee30f0f6713e40a9d18f1b7d48a46a3966265a9f575546e11e9fa35392a8",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "在 CPython 3.13.0 中， ArgumentParser 构造函数的 allow_abbrev 默认值是什么？",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 2,
+            "lexical_candidate_count": 2,
+            "ranked_hits": [
+              {
+                "chunk_id": "p13abbrev",
+                "citation": "authored-summary://source-transfer-v1/p13abbrev#L1-L1",
+                "document_id": "authored-p13abbrev",
+                "score": 2.115580588295709,
+                "text": "CPython 3.13.0: the ArgumentParser constructor parameter allow_abbrev has the default True."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [
+              "p14default"
+            ],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "ArgumentParser.allow_abbrev.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "CPython",
+            "version": "3.13.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "express-old-supported-en",
+      "full_scores": [
+        {
+          "chunk_id": "e4default",
+          "score": 3.355692439237517
+        },
+        {
+          "chunk_id": "e5default",
+          "score": 1.2762508975576825
+        }
+      ],
+      "offered_sufficient": true,
+      "packed_support": {
+        "scoped": true,
+        "ungated": true
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "9eef0fd86e2f861a5033bd475599e857408db80a400f8de7db2880171c3ceccd",
+          "context": [
+            {
+              "chunk_id": "e4default",
+              "citation": "authored-summary://source-transfer-v1/e4default#L1-L1",
+              "document_id": "authored-e4default",
+              "score": 3.355692439237517,
+              "text": "Express 4.21.2 initializes the query parser application setting to extended by default."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "0990c4bda72423445c6fd5a66f17f687a142f423ca7ae332fb25fa67697f989a",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": 1,
+            "matched_count": 1,
+            "matched_ids": [
+              "e4default"
+            ],
+            "reason": "reviewed_values_agree",
+            "reviewed_count": 1,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "consistent",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "In Express 4.21.2, what is the exact default value of the query parser application setting?",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "e4default",
+                "citation": "authored-summary://source-transfer-v1/e4default#L1-L1",
+                "document_id": "authored-e4default",
+                "score": 3.355692439237517,
+                "text": "Express 4.21.2 initializes the query parser application setting to extended by default."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "4.21.2"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "planned"
+        },
+        "ungated": {
+          "catalog_sha256": "9eef0fd86e2f861a5033bd475599e857408db80a400f8de7db2880171c3ceccd",
+          "context": [
+            {
+              "chunk_id": "e4default",
+              "citation": "authored-summary://source-transfer-v1/e4default#L1-L1",
+              "document_id": "authored-e4default",
+              "score": 3.355692439237517,
+              "text": "Express 4.21.2 initializes the query parser application setting to extended by default."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "0990c4bda72423445c6fd5a66f17f687a142f423ca7ae332fb25fa67697f989a",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "In Express 4.21.2, what is the exact default value of the query parser application setting?",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 2,
+            "lexical_candidate_count": 2,
+            "ranked_hits": [
+              {
+                "chunk_id": "e4default",
+                "citation": "authored-summary://source-transfer-v1/e4default#L1-L1",
+                "document_id": "authored-e4default",
+                "score": 3.355692439237517,
+                "text": "Express 4.21.2 initializes the query parser application setting to extended by default."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [
+              "e5default"
+            ],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "4.21.2"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "express-old-supported-zh",
+      "full_scores": [
+        {
+          "chunk_id": "e4default",
+          "score": 2.626406212061699
+        },
+        {
+          "chunk_id": "e5default",
+          "score": 0.5469646703818638
+        }
+      ],
+      "offered_sufficient": true,
+      "packed_support": {
+        "scoped": true,
+        "ungated": true
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "9eef0fd86e2f861a5033bd475599e857408db80a400f8de7db2880171c3ceccd",
+          "context": [
+            {
+              "chunk_id": "e4default",
+              "citation": "authored-summary://source-transfer-v1/e4default#L1-L1",
+              "document_id": "authored-e4default",
+              "score": 2.626406212061699,
+              "text": "Express 4.21.2 initializes the query parser application setting to extended by default."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "0990c4bda72423445c6fd5a66f17f687a142f423ca7ae332fb25fa67697f989a",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": 1,
+            "matched_count": 1,
+            "matched_ids": [
+              "e4default"
+            ],
+            "reason": "reviewed_values_agree",
+            "reviewed_count": 1,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "consistent",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "在 Express 4.21.2 中， query parser 应用设置的确切默认值是什么？",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "e4default",
+                "citation": "authored-summary://source-transfer-v1/e4default#L1-L1",
+                "document_id": "authored-e4default",
+                "score": 2.626406212061699,
+                "text": "Express 4.21.2 initializes the query parser application setting to extended by default."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "4.21.2"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "planned"
+        },
+        "ungated": {
+          "catalog_sha256": "9eef0fd86e2f861a5033bd475599e857408db80a400f8de7db2880171c3ceccd",
+          "context": [
+            {
+              "chunk_id": "e4default",
+              "citation": "authored-summary://source-transfer-v1/e4default#L1-L1",
+              "document_id": "authored-e4default",
+              "score": 2.626406212061699,
+              "text": "Express 4.21.2 initializes the query parser application setting to extended by default."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "0990c4bda72423445c6fd5a66f17f687a142f423ca7ae332fb25fa67697f989a",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "在 Express 4.21.2 中， query parser 应用设置的确切默认值是什么？",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 2,
+            "lexical_candidate_count": 2,
+            "ranked_hits": [
+              {
+                "chunk_id": "e4default",
+                "citation": "authored-summary://source-transfer-v1/e4default#L1-L1",
+                "document_id": "authored-e4default",
+                "score": 2.626406212061699,
+                "text": "Express 4.21.2 initializes the query parser application setting to extended by default."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [
+              "e5default"
+            ],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "4.21.2"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "express-new-supported-en",
+      "full_scores": [
+        {
+          "chunk_id": "e5default",
+          "score": 3.355692439237517
+        },
+        {
+          "chunk_id": "e4default",
+          "score": 1.2762508975576825
+        }
+      ],
+      "offered_sufficient": true,
+      "packed_support": {
+        "scoped": true,
+        "ungated": true
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "4a47cd8670046665f0b48ddb80db1cf2c497ef83a14cac182ef5039dd98650d4",
+          "context": [
+            {
+              "chunk_id": "e5default",
+              "citation": "authored-summary://source-transfer-v1/e5default#L1-L1",
+              "document_id": "authored-e5default",
+              "score": 3.355692439237517,
+              "text": "Express 5.1.0 initializes the query parser application setting to simple by default."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "a668caf7206bd55b45e06f77631a1d897168bcc162e10077ebe190efd8c75fe3",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": 1,
+            "matched_count": 1,
+            "matched_ids": [
+              "e5default"
+            ],
+            "reason": "reviewed_values_agree",
+            "reviewed_count": 1,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "consistent",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "In Express 5.1.0, what is the exact default value of the query parser application setting?",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "e5default",
+                "citation": "authored-summary://source-transfer-v1/e5default#L1-L1",
+                "document_id": "authored-e5default",
+                "score": 3.355692439237517,
+                "text": "Express 5.1.0 initializes the query parser application setting to simple by default."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "5.1.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "planned"
+        },
+        "ungated": {
+          "catalog_sha256": "4a47cd8670046665f0b48ddb80db1cf2c497ef83a14cac182ef5039dd98650d4",
+          "context": [
+            {
+              "chunk_id": "e5default",
+              "citation": "authored-summary://source-transfer-v1/e5default#L1-L1",
+              "document_id": "authored-e5default",
+              "score": 3.355692439237517,
+              "text": "Express 5.1.0 initializes the query parser application setting to simple by default."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "a668caf7206bd55b45e06f77631a1d897168bcc162e10077ebe190efd8c75fe3",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "In Express 5.1.0, what is the exact default value of the query parser application setting?",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 2,
+            "lexical_candidate_count": 2,
+            "ranked_hits": [
+              {
+                "chunk_id": "e5default",
+                "citation": "authored-summary://source-transfer-v1/e5default#L1-L1",
+                "document_id": "authored-e5default",
+                "score": 3.355692439237517,
+                "text": "Express 5.1.0 initializes the query parser application setting to simple by default."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [
+              "e4default"
+            ],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "5.1.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "express-new-supported-zh",
+      "full_scores": [
+        {
+          "chunk_id": "e5default",
+          "score": 2.626406212061699
+        },
+        {
+          "chunk_id": "e4default",
+          "score": 0.5469646703818638
+        }
+      ],
+      "offered_sufficient": true,
+      "packed_support": {
+        "scoped": true,
+        "ungated": true
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "4a47cd8670046665f0b48ddb80db1cf2c497ef83a14cac182ef5039dd98650d4",
+          "context": [
+            {
+              "chunk_id": "e5default",
+              "citation": "authored-summary://source-transfer-v1/e5default#L1-L1",
+              "document_id": "authored-e5default",
+              "score": 2.626406212061699,
+              "text": "Express 5.1.0 initializes the query parser application setting to simple by default."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "a668caf7206bd55b45e06f77631a1d897168bcc162e10077ebe190efd8c75fe3",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": 1,
+            "matched_count": 1,
+            "matched_ids": [
+              "e5default"
+            ],
+            "reason": "reviewed_values_agree",
+            "reviewed_count": 1,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "consistent",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "在 Express 5.1.0 中， query parser 应用设置的确切默认值是什么？",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "e5default",
+                "citation": "authored-summary://source-transfer-v1/e5default#L1-L1",
+                "document_id": "authored-e5default",
+                "score": 2.626406212061699,
+                "text": "Express 5.1.0 initializes the query parser application setting to simple by default."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "5.1.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "planned"
+        },
+        "ungated": {
+          "catalog_sha256": "4a47cd8670046665f0b48ddb80db1cf2c497ef83a14cac182ef5039dd98650d4",
+          "context": [
+            {
+              "chunk_id": "e5default",
+              "citation": "authored-summary://source-transfer-v1/e5default#L1-L1",
+              "document_id": "authored-e5default",
+              "score": 2.626406212061699,
+              "text": "Express 5.1.0 initializes the query parser application setting to simple by default."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "a668caf7206bd55b45e06f77631a1d897168bcc162e10077ebe190efd8c75fe3",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "在 Express 5.1.0 中， query parser 应用设置的确切默认值是什么？",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 2,
+            "eligible_count": 2,
+            "lexical_candidate_count": 2,
+            "ranked_hits": [
+              {
+                "chunk_id": "e5default",
+                "citation": "authored-summary://source-transfer-v1/e5default#L1-L1",
+                "document_id": "authored-e5default",
+                "score": 2.626406212061699,
+                "text": "Express 5.1.0 initializes the query parser application setting to simple by default."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [
+              "e4default"
+            ],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "5.1.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "express-new-older-only-en",
+      "full_scores": [
+        {
+          "chunk_id": "e4default",
+          "score": 2.013774507162466
+        }
+      ],
+      "offered_sufficient": false,
+      "packed_support": {
+        "scoped": false,
+        "ungated": false
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "a2c692dee502ab87ac6eb1bafa895bd8d992d466af122603ce5b1555ca017f07",
+          "context": [],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "35f65b98b68790c55fa3b2e4ce1af3120fa87065abe14feba6977f5fe0c6116d",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": null,
+            "matched_count": 0,
+            "matched_ids": [],
+            "reason": "no_matching_scope",
+            "reviewed_count": 0,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "no_match",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "In Express 5.1.0, what is the exact default value of the query parser application setting?",
+          "ranking": null,
+          "reason": "no_matching_scope",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "5.1.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "not_run"
+        },
+        "ungated": {
+          "catalog_sha256": "a2c692dee502ab87ac6eb1bafa895bd8d992d466af122603ce5b1555ca017f07",
+          "context": [
+            {
+              "chunk_id": "e4default",
+              "citation": "authored-summary://source-transfer-v1/e4default#L1-L1",
+              "document_id": "authored-e4default",
+              "score": 2.013774507162466,
+              "text": "Express 4.21.2 initializes the query parser application setting to extended by default."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "35f65b98b68790c55fa3b2e4ce1af3120fa87065abe14feba6977f5fe0c6116d",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "In Express 5.1.0, what is the exact default value of the query parser application setting?",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 1,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "e4default",
+                "citation": "authored-summary://source-transfer-v1/e4default#L1-L1",
+                "document_id": "authored-e4default",
+                "score": 2.013774507162466,
+                "text": "Express 4.21.2 initializes the query parser application setting to extended by default."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "5.1.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "express-new-older-only-zh",
+      "full_scores": [
+        {
+          "chunk_id": "e4default",
+          "score": 0.8630462173553427
+        }
+      ],
+      "offered_sufficient": false,
+      "packed_support": {
+        "scoped": false,
+        "ungated": false
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "a2c692dee502ab87ac6eb1bafa895bd8d992d466af122603ce5b1555ca017f07",
+          "context": [],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "35f65b98b68790c55fa3b2e4ce1af3120fa87065abe14feba6977f5fe0c6116d",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": null,
+            "matched_count": 0,
+            "matched_ids": [],
+            "reason": "no_matching_scope",
+            "reviewed_count": 0,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "no_match",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "在 Express 5.1.0 中， query parser 应用设置的确切默认值是什么？",
+          "ranking": null,
+          "reason": "no_matching_scope",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "5.1.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "not_run"
+        },
+        "ungated": {
+          "catalog_sha256": "a2c692dee502ab87ac6eb1bafa895bd8d992d466af122603ce5b1555ca017f07",
+          "context": [
+            {
+              "chunk_id": "e4default",
+              "citation": "authored-summary://source-transfer-v1/e4default#L1-L1",
+              "document_id": "authored-e4default",
+              "score": 0.8630462173553427,
+              "text": "Express 4.21.2 initializes the query parser application setting to extended by default."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "35f65b98b68790c55fa3b2e4ce1af3120fa87065abe14feba6977f5fe0c6116d",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "在 Express 5.1.0 中， query parser 应用设置的确切默认值是什么？",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 1,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "e4default",
+                "citation": "authored-summary://source-transfer-v1/e4default#L1-L1",
+                "document_id": "authored-e4default",
+                "score": 0.8630462173553427,
+                "text": "Express 4.21.2 initializes the query parser application setting to extended by default."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "5.1.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "express-new-explicit-only-en",
+      "full_scores": [
+        {
+          "chunk_id": "e5explicit",
+          "score": 3.698769502951468
+        }
+      ],
+      "offered_sufficient": false,
+      "packed_support": {
+        "scoped": false,
+        "ungated": false
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "1aaec148dd313ddea25a0827e237ba9d75401e314592135202b6d7f7175b9b88",
+          "context": [],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "c0509aafcbbe8646b68b636e16598cac64c87c93f4df2209d2ba198764376ea5",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": null,
+            "matched_count": 0,
+            "matched_ids": [],
+            "reason": "no_matching_scope",
+            "reviewed_count": 0,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "no_match",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "In Express 5.1.0, what is the exact default value of the query parser application setting?",
+          "ranking": null,
+          "reason": "no_matching_scope",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "5.1.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "not_run"
+        },
+        "ungated": {
+          "catalog_sha256": "1aaec148dd313ddea25a0827e237ba9d75401e314592135202b6d7f7175b9b88",
+          "context": [
+            {
+              "chunk_id": "e5explicit",
+              "citation": "authored-summary://source-transfer-v1/e5explicit#L1-L1",
+              "document_id": "authored-e5explicit",
+              "score": 3.698769502951468,
+              "text": "Express 5.1.0: a test explicitly sets the query parser application setting to extended. This is an explicit example setting, not a statement of the default."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "c0509aafcbbe8646b68b636e16598cac64c87c93f4df2209d2ba198764376ea5",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "In Express 5.1.0, what is the exact default value of the query parser application setting?",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 1,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "e5explicit",
+                "citation": "authored-summary://source-transfer-v1/e5explicit#L1-L1",
+                "document_id": "authored-e5explicit",
+                "score": 3.698769502951468,
+                "text": "Express 5.1.0: a test explicitly sets the query parser application setting to extended. This is an explicit example setting, not a statement of the default."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "5.1.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "express-new-explicit-only-zh",
+      "full_scores": [
+        {
+          "chunk_id": "e5explicit",
+          "score": 1.7260924347106852
+        }
+      ],
+      "offered_sufficient": false,
+      "packed_support": {
+        "scoped": false,
+        "ungated": false
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "1aaec148dd313ddea25a0827e237ba9d75401e314592135202b6d7f7175b9b88",
+          "context": [],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "c0509aafcbbe8646b68b636e16598cac64c87c93f4df2209d2ba198764376ea5",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": null,
+            "matched_count": 0,
+            "matched_ids": [],
+            "reason": "no_matching_scope",
+            "reviewed_count": 0,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "no_match",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "在 Express 5.1.0 中， query parser 应用设置的确切默认值是什么？",
+          "ranking": null,
+          "reason": "no_matching_scope",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "5.1.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "not_run"
+        },
+        "ungated": {
+          "catalog_sha256": "1aaec148dd313ddea25a0827e237ba9d75401e314592135202b6d7f7175b9b88",
+          "context": [
+            {
+              "chunk_id": "e5explicit",
+              "citation": "authored-summary://source-transfer-v1/e5explicit#L1-L1",
+              "document_id": "authored-e5explicit",
+              "score": 1.7260924347106852,
+              "text": "Express 5.1.0: a test explicitly sets the query parser application setting to extended. This is an explicit example setting, not a statement of the default."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "c0509aafcbbe8646b68b636e16598cac64c87c93f4df2209d2ba198764376ea5",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "在 Express 5.1.0 中， query parser 应用设置的确切默认值是什么？",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 1,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "e5explicit",
+                "citation": "authored-summary://source-transfer-v1/e5explicit#L1-L1",
+                "document_id": "authored-e5explicit",
+                "score": 1.7260924347106852,
+                "text": "Express 5.1.0: a test explicitly sets the query parser application setting to extended. This is an explicit example setting, not a statement of the default."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "5.1.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "express-new-near-field-en",
+      "full_scores": [
+        {
+          "chunk_id": "e5trust",
+          "score": 2.3014565796142468
+        }
+      ],
+      "offered_sufficient": false,
+      "packed_support": {
+        "scoped": false,
+        "ungated": false
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "0e326edaac7e94727fe38855f9f51fb19cf0f640bfa273264ab8cddfd9514047",
+          "context": [],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "08842758b5d943dbfd4a2cc84b9c5b12774d562d481c3d84336eb46a07d1b23c",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": null,
+            "matched_count": 0,
+            "matched_ids": [],
+            "reason": "no_matching_scope",
+            "reviewed_count": 0,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "no_match",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "In Express 5.1.0, what is the exact default value of the query parser application setting?",
+          "ranking": null,
+          "reason": "no_matching_scope",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "5.1.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "not_run"
+        },
+        "ungated": {
+          "catalog_sha256": "0e326edaac7e94727fe38855f9f51fb19cf0f640bfa273264ab8cddfd9514047",
+          "context": [
+            {
+              "chunk_id": "e5trust",
+              "citation": "authored-summary://source-transfer-v1/e5trust#L1-L1",
+              "document_id": "authored-e5trust",
+              "score": 2.3014565796142468,
+              "text": "Express 5.1.0 initializes the trust proxy application setting to false by default. This summary concerns trust proxy only."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "08842758b5d943dbfd4a2cc84b9c5b12774d562d481c3d84336eb46a07d1b23c",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "In Express 5.1.0, what is the exact default value of the query parser application setting?",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 1,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "e5trust",
+                "citation": "authored-summary://source-transfer-v1/e5trust#L1-L1",
+                "document_id": "authored-e5trust",
+                "score": 2.3014565796142468,
+                "text": "Express 5.1.0 initializes the trust proxy application setting to false by default. This summary concerns trust proxy only."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "5.1.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    },
+    {
+      "case_id": "express-new-near-field-zh",
+      "full_scores": [
+        {
+          "chunk_id": "e5trust",
+          "score": 1.1507282898071236
+        }
+      ],
+      "offered_sufficient": false,
+      "packed_support": {
+        "scoped": false,
+        "ungated": false
+      },
+      "plans": {
+        "scoped": {
+          "catalog_sha256": "0e326edaac7e94727fe38855f9f51fb19cf0f640bfa273264ab8cddfd9514047",
+          "context": [],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "08842758b5d943dbfd4a2cc84b9c5b12774d562d481c3d84336eb46a07d1b23c",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": {
+            "distinct_value_count": null,
+            "matched_count": 0,
+            "matched_ids": [],
+            "reason": "no_matching_scope",
+            "reviewed_count": 0,
+            "scope_scan_complete": true,
+            "semantic_support": "unverified",
+            "status": "no_match",
+            "trust_boundary": "operator_reviewed_catalog",
+            "unassigned_ids": []
+          },
+          "query": "在 Express 5.1.0 中， query parser 应用设置的确切默认值是什么？",
+          "ranking": null,
+          "reason": "no_matching_scope",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "5.1.0"
+          },
+          "scope_gate": true,
+          "semantic_support": "unverified",
+          "status": "not_run"
+        },
+        "ungated": {
+          "catalog_sha256": "0e326edaac7e94727fe38855f9f51fb19cf0f640bfa273264ab8cddfd9514047",
+          "context": [
+            {
+              "chunk_id": "e5trust",
+              "citation": "authored-summary://source-transfer-v1/e5trust#L1-L1",
+              "document_id": "authored-e5trust",
+              "score": 1.1507282898071236,
+              "text": "Express 5.1.0 initializes the trust proxy application setting to false by default. This summary concerns trust proxy only."
+            }
+          ],
+          "generation": null,
+          "generator_called": false,
+          "index_sha256": "08842758b5d943dbfd4a2cc84b9c5b12774d562d481c3d84336eb46a07d1b23c",
+          "limits": {
+            "context_characters": 12000,
+            "k": 1,
+            "scan_limit": 128
+          },
+          "mode": "indexed-scope-opt-in",
+          "preflight": null,
+          "query": "在 Express 5.1.0 中， query parser 应用设置的确切默认值是什么？",
+          "ranking": {
+            "budget_omitted_ids": [],
+            "corpus_count": 1,
+            "eligible_count": 1,
+            "lexical_candidate_count": 1,
+            "ranked_hits": [
+              {
+                "chunk_id": "e5trust",
+                "citation": "authored-summary://source-transfer-v1/e5trust#L1-L1",
+                "document_id": "authored-e5trust",
+                "score": 1.1507282898071236,
+                "text": "Express 5.1.0 initializes the trust proxy application setting to false by default. This summary concerns trust proxy only."
+              }
+            ],
+            "statistics": "full_index",
+            "top_k_omitted_ids": [],
+            "zero_overlap_count": 0
+          },
+          "reason": "generator_not_requested",
+          "requested_scope": {
+            "key": "query parser.default",
+            "kind": "documentation",
+            "observed_at": null,
+            "subject": "Express",
+            "version": "5.1.0"
+          },
+          "scope_gate": false,
+          "semantic_support": "unverified",
+          "status": "planned"
+        }
+      }
+    }
+  ],
+  "scope": "actual project BM25 and deterministic preflight, no model"
+}

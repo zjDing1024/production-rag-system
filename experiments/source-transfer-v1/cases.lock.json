@@ -1,0 +1,24 @@
+{
+  "status": "frozen_before_execution",
+  "frozen_utc": "2026-11-20T16:11:57.062366+00:00",
+  "base_commit": "b27f4c1a42313362f194d532282662ba18c77079",
+  "cases_sha256": "cbbeca3f328e9080ac54c7d403d5ca7cca535a288474296643d3ef7f700c294c",
+  "file_sha256": {
+    "experiments/source-transfer-v1/build_fixture.py": "4af4bbf7b0ec47dff5a974487ec80ac78111811685a7f677f9d7ad069ad5ca7b",
+    "experiments/source-transfer-v1/cases.json": "cbbeca3f328e9080ac54c7d403d5ca7cca535a288474296643d3ef7f700c294c",
+    "experiments/source-transfer-v1/source-manifest.json": "f8f1101aa13304f1a079c9d0911bee1e9f3cae6245d50f838f6e244bdcd94745",
+    "experiments/source-transfer-v1/adapter.py": "b63484bc6c29ad0c7f4031195a09138ced56fbd179cd8f51ed186d0458019425",
+    "experiments/source-transfer-v1/preflight.py": "13bde87cec405f66ce455880d53cf8e59735904951e2b45166a3ff35becaa7da",
+    "experiments/source-transfer-v1/preflight.json": "174574b85451e36a8e3dcb958f8d19d03ad3d2cdcb770fba4dc0f80d2acfd009",
+    "experiments/source-transfer-v1/PROTOCOL.md": "9e1bb15d7334d16dc3b9b46977a8ab28a703bb1d0772b36ea55098de4eda1573",
+    "experiments/source-transfer-v1/run_experiment.py": "c716e56c574bf07599e0e9dc736269efe7f567b87b9b681d874abd17188d5e54",
+    "src/rag_foundation/scoped_pipeline.py": "a469d11f1fd6f198b123ccd4344d6b9c2d5cf35a6db708b9e900216e558eeaef",
+    "src/rag_foundation/retrieval.py": "d62b2aa753f701dc6e51be077bd292a277b5985cf8fa3a9c6c5d7d9e181776f5",
+    "src/rag_foundation/generation.py": "a3aa8cde0881f86ec1a8b48cf823fbc39a0f194d4cc093f0585318b0126e7532",
+    "src/rag_foundation/scope_gate.py": "7818a34214dbbb8c41ef8f468b26c7417a70237cd99a4bae39ca8a5283c87e83",
+    "experiments/typed-scope-v1/adapter.py": "71c32be7ab0acc5ddf660e48ae33f9adef4e2bdff4ba5127121b7bfd09ce41f6",
+    "experiments/matched-evidence-v1/protocol.py": "25bd4a0f66c68967fb31d3ca65ff33d18df7c3ec92937d1bec2691abde10e651",
+    "experiments/numbered-spans-v1/mechanics.py": "a559e13b1f7b6762a1e5ad1e149dd1f1c8ab2e083afb5154f6190e6f2a8b6a88"
+  },
+  "review": "Independent AI source/fixture/actual lexical coverage review before first live call; curated development pilot, not independent gold or public preregistration."
+}
