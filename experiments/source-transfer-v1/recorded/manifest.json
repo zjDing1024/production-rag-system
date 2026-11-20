@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-11-20T16:12:07.148703+00:00",
+  "cases_sha256": "cbbeca3f328e9080ac54c7d403d5ca7cca535a288474296643d3ef7f700c294c",
+  "file_sha256": {
+    "experiments/source-transfer-v1/build_fixture.py": "4af4bbf7b0ec47dff5a974487ec80ac78111811685a7f677f9d7ad069ad5ca7b",
+    "experiments/source-transfer-v1/cases.json": "cbbeca3f328e9080ac54c7d403d5ca7cca535a288474296643d3ef7f700c294c",
+    "experiments/source-transfer-v1/source-manifest.json": "f8f1101aa13304f1a079c9d0911bee1e9f3cae6245d50f838f6e244bdcd94745",
+    "experiments/source-transfer-v1/adapter.py": "b63484bc6c29ad0c7f4031195a09138ced56fbd179cd8f51ed186d0458019425",
+    "experiments/source-transfer-v1/preflight.py": "13bde87cec405f66ce455880d53cf8e59735904951e2b45166a3ff35becaa7da",
+    "experiments/source-transfer-v1/preflight.json": "174574b85451e36a8e3dcb958f8d19d03ad3d2cdcb770fba4dc0f80d2acfd009",
+    "experiments/source-transfer-v1/PROTOCOL.md": "9e1bb15d7334d16dc3b9b46977a8ab28a703bb1d0772b36ea55098de4eda1573",
+    "experiments/source-transfer-v1/run_experiment.py": "c716e56c574bf07599e0e9dc736269efe7f567b87b9b681d874abd17188d5e54",
+    "src/rag_foundation/scoped_pipeline.py": "a469d11f1fd6f198b123ccd4344d6b9c2d5cf35a6db708b9e900216e558eeaef",
+    "src/rag_foundation/retrieval.py": "d62b2aa753f701dc6e51be077bd292a277b5985cf8fa3a9c6c5d7d9e181776f5",
+    "src/rag_foundation/generation.py": "a3aa8cde0881f86ec1a8b48cf823fbc39a0f194d4cc093f0585318b0126e7532",
+    "src/rag_foundation/scope_gate.py": "7818a34214dbbb8c41ef8f468b26c7417a70237cd99a4bae39ca8a5283c87e83",
+    "experiments/typed-scope-v1/adapter.py": "71c32be7ab0acc5ddf660e48ae33f9adef4e2bdff4ba5127121b7bfd09ce41f6",
+    "experiments/matched-evidence-v1/protocol.py": "25bd4a0f66c68967fb31d3ca65ff33d18df7c3ec92937d1bec2691abde10e651",
+    "experiments/numbered-spans-v1/mechanics.py": "a559e13b1f7b6762a1e5ad1e149dd1f1c8ab2e083afb5154f6190e6f2a8b6a88"
+  },
+  "model_sha256": "57d1997790d1744fba5b40a7317df71ea5e2acee28c47e78f0cce39c0703f8cf",
+  "runtime_sha256": "cf07a7d6b6d2c61064105cc0a81360cb5830aacd3d1a949b80eaea3a96fa409f",
+  "server_flags": [
+    "--model",
+    "Qwen3.5-0.8B-Q4_0.gguf",
+    "--alias",
+    "local-model",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "<ephemeral>",
+    "--ctx-size",
+    "4096",
+    "--threads",
+    "4",
+    "--threads-batch",
+    "4",
+    "--parallel",
+    "1",
+    "--gpu-layers",
+    "0",
+    "--no-agent",
+    "--no-webui",
+    "--no-ui-mcp-proxy",
+    "--reasoning",
+    "off",
+    "--chat-template-kwargs",
+    "{\"enable_thinking\":false}"
+  ],
+  "attempts": [
+    {
+      "case_id": "py-default-supported-en",
+      "result_file": "py-default-supported-en.result.json",
+      "complete": true,
+      "result_sha256": "ed66d74b90785a0242dbcf5d0b7790f2de22cec4070aa58755c60e569eb2816e",
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "generator_calls": 2,
+      "seconds": 1.398945506999894
+    },
+    {
+      "case_id": "py-default-supported-zh",
+      "result_file": "py-default-supported-zh.result.json",
+      "complete": true,
+      "result_sha256": "f8e0a7d3c1a019a2b6eb3a4236ab03115e0047561575ea2b950800fe4d8b1adf",
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "generator_calls": 2,
+      "seconds": 1.0381245230000786
+    },
+    {
+      "case_id": "py-default-older-only-en",
+      "result_file": "py-default-older-only-en.result.json",
+      "complete": true,
+      "result_sha256": "9be3c082cf90b93e4f7aa67e372bdbb994978e60c9a2559990f243014aac3082",
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "generator_calls": 1,
+      "seconds": 0.622040057999925
+    },
+    {
+      "case_id": "py-default-older-only-zh",
+      "result_file": "py-default-older-only-zh.result.json",
+      "complete": true,
+      "result_sha256": "3c86f9afbf352bdadfdde23b76243a393a99a1c9e840946ec3003808bd43657e",
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "generator_calls": 1,
+      "seconds": 0.6840109360000497
+    },
+    {
+      "case_id": "py-default-explicit-only-en",
+      "result_file": "py-default-explicit-only-en.result.json",
+      "complete": true,
+      "result_sha256": "3704b6b18bc1c6977359431948352f9998ca8cb97051d0d1eebd22d5a420752d",
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "generator_calls": 1,
+      "seconds": 0.6108784029999015
+    },
+    {
+      "case_id": "py-default-explicit-only-zh",
+      "result_file": "py-default-explicit-only-zh.result.json",
+      "complete": true,
+      "result_sha256": "48d860622d8d44c3cac197a114a0bad1895f1cbec07e0c2a6695278f22b7cf2c",
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "generator_calls": 1,
+      "seconds": 0.6212950650000266
+    },
+    {
+      "case_id": "py-default-near-field-en",
+      "result_file": "py-default-near-field-en.result.json",
+      "complete": true,
+      "result_sha256": "97ba35a0a4a42ef222ff4f73df51649a94cecded1a54689e16323d453f80298f",
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "generator_calls": 1,
+      "seconds": 0.5706324849999191
+    },
+    {
+      "case_id": "py-default-near-field-zh",
+      "result_file": "py-default-near-field-zh.result.json",
+      "complete": true,
+      "result_sha256": "fbdef8dfefeef2c3dd5ce4483aeb243cd89e4d16b0ef29f762b6cd19be4aa2d4",
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "generator_calls": 1,
+      "seconds": 0.5768253610000329
+    },
+    {
+      "case_id": "py-absence-supported-en",
+      "result_file": "py-absence-supported-en.result.json",
+      "complete": true,
+      "result_sha256": "888ce09ce1714dadd6a528b6a107b29fdcd34378da0558f15a6151afb183f1c7",
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "generator_calls": 2,
+      "seconds": 1.010680609000019
+    },
+    {
+      "case_id": "py-absence-supported-zh",
+      "result_file": "py-absence-supported-zh.result.json",
+      "complete": true,
+      "result_sha256": "5fd0b1fbbf159d59b458df0eacf73baed6894ce703227c14b28a933d085d1235",
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "generator_calls": 2,
+      "seconds": 1.089498381999988
+    },
+    {
+      "case_id": "py-abbrev-supported-en",
+      "result_file": "py-abbrev-supported-en.result.json",
+      "complete": true,
+      "result_sha256": "6007268a7f012cd6cae8edb4d0349437f1714d5c17b9ad2443322792e8a78dda",
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "generator_calls": 2,
+      "seconds": 0.9470751279999376
+    },
+    {
+      "case_id": "py-abbrev-supported-zh",
+      "result_file": "py-abbrev-supported-zh.result.json",
+      "complete": true,
+      "result_sha256": "ce714d5f8961550bb5a2f3c400631d9c3dd849307fbc47143f1f5b2ed800a2ab",
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "generator_calls": 2,
+      "seconds": 0.9958648330000415
+    },
+    {
+      "case_id": "express-old-supported-en",
+      "result_file": "express-old-supported-en.result.json",
+      "complete": true,
+      "result_sha256": "1dcb4cbb5c6256e0bbca9c2dc8f25dff7bfd513325483a3a954657a235fcf306",
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "generator_calls": 2,
+      "seconds": 0.9680516340000622
+    },
+    {
+      "case_id": "express-old-supported-zh",
+      "result_file": "express-old-supported-zh.result.json",
+      "complete": true,
+      "result_sha256": "9755b1d128523e3e29a8f510acd93058f0eeb5d5aa2513ecc0e6275aabecf019",
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "generator_calls": 2,
+      "seconds": 0.9579871079999975
+    },
+    {
+      "case_id": "express-new-supported-en",
+      "result_file": "express-new-supported-en.result.json",
+      "complete": true,
+      "result_sha256": "4cd22462750bf30c011054d97aebc07390f82ffd38efa60637877e8923eae5f6",
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "generator_calls": 2,
+      "seconds": 1.0033515569999736
+    },
+    {
+      "case_id": "express-new-supported-zh",
+      "result_file": "express-new-supported-zh.result.json",
+      "complete": true,
+      "result_sha256": "63db7e0dc998cb8a4b3cc81c630fa92c8ada25dd4b5c051082074f05fc72e416",
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "generator_calls": 2,
+      "seconds": 1.003912999000022
+    },
+    {
+      "case_id": "express-new-older-only-en",
+      "result_file": "express-new-older-only-en.result.json",
+      "complete": true,
+      "result_sha256": "1a2192874cb9d5541b388ff11096293efdd94041acf69fa4522ca6ee8dc3f161",
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "generator_calls": 1,
+      "seconds": 0.5660016529999439
+    },
+    {
+      "case_id": "express-new-older-only-zh",
+      "result_file": "express-new-older-only-zh.result.json",
+      "complete": true,
+      "result_sha256": "e9387c551441bebe47c21b0a03f18bd62f7b3f60108ce227da2cf03bd5490cca",
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "generator_calls": 1,
+      "seconds": 0.5690345379999826
+    },
+    {
+      "case_id": "express-new-explicit-only-en",
+      "result_file": "express-new-explicit-only-en.result.json",
+      "complete": true,
+      "result_sha256": "633709e2c24ff4078f223d2cd5ec506f330ddd57419bc13c3d9a3c86f5f2508a",
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "generator_calls": 1,
+      "seconds": 0.5510822200000121
+    },
+    {
+      "case_id": "express-new-explicit-only-zh",
+      "result_file": "express-new-explicit-only-zh.result.json",
+      "complete": true,
+      "result_sha256": "64a3f5f10ec8e689381554387b2d9ea9adffbffe9b866683196ddf845f63d22e",
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "generator_calls": 1,
+      "seconds": 0.5319918129999905
+    },
+    {
+      "case_id": "express-new-near-field-en",
+      "result_file": "express-new-near-field-en.result.json",
+      "complete": true,
+      "result_sha256": "14c7aefc1cf6206c87ff1e93751f5e95c05b64ea31cf2b22f18bfc53a1f2dcaf",
+      "arm_order": [
+        "ungated",
+        "scoped"
+      ],
+      "generator_calls": 1,
+      "seconds": 0.5452019460000201
+    },
+    {
+      "case_id": "express-new-near-field-zh",
+      "result_file": "express-new-near-field-zh.result.json",
+      "complete": true,
+      "result_sha256": "abf10a986c99e09e0cd224566be9f7fe3a3c47d6d900ac019b1331b03e8acac4",
+      "arm_order": [
+        "scoped",
+        "ungated"
+      ],
+      "generator_calls": 1,
+      "seconds": 0.5456214920000093
+    }
+  ],
+  "startup_seconds": 1.6104469059999929,
+  "telemetry": {
+    "status": "observed",
+    "lines": [
+      "VmHWM:\t 1244044 kB",
+      "VmRSS:\t 1221792 kB"
+    ]
+  },
+  "server_stopped": true,
+  "server_returncode": 0,
+  "finished_utc": "2026-11-20T16:12:26.538584+00:00"
+}

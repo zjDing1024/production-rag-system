@@ -42,3 +42,14 @@ upstream text is included. Indexed quote/hash bindings refer to those fixture
 texts, not verbatim upstream bytes. The Lucene 10.3.1 source/license links in
 `docs/indexed-scope-pipeline.md` are conceptual references only; no Lucene source
 or binary is distributed or required.
+
+## CPython and Express source-transfer pilot
+
+`experiments/source-transfer-v1/` publishes original short factual summaries and
+pinned provenance receipts, not copied upstream source/test files. CPython 3.13.0
+and 3.14.0 sources use the PSF-2.0 license references at their exact commits; Express
+4.21.2 and 5.1.0 sources use MIT. Exact source and LICENSE URLs/hashes are retained
+in that experiment's `source-manifest.json`. Model/runtime licensing remains in
+`experiments/local-generation-smoke/sources.json`; no weights or binaries are included.
+Authored-summary quote/hash bindings are distinct from upstream source-byte hashes.
+No endorsement by Python, Pallets, Express, or their contributors is implied.

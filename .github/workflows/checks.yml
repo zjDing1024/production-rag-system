@@ -66,3 +66,7 @@ jobs:
         run: |
           python -m unittest discover -s experiments/indexed-scope-v1 -p 'test_*.py' -v
           python experiments/indexed-scope-v1/audit_record.py --check
+      - name: Verify two-source real generation evidence offline
+        run: |
+          python -m unittest discover -s experiments/source-transfer-v1 -p 'test_*.py' -v
+          python experiments/source-transfer-v1/audit_record.py --check

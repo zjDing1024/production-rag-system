@@ -1,0 +1,358 @@
+{
+  "reviewer": "AI author and independent AI source reviewer both read all 32 raw outputs and agreed on the classifications. Not human-calibrated entailment.",
+  "method": "Frozen rubric separates truth, cited packed support, strict literal form, output contract and no-run. Bare None is disclosed as an ambiguous null-like nonanswer after observing output, never relabeled a valid model abstention; all accepted unsupported answer branches remain in the denominator.",
+  "rows": [
+    {
+      "case_id": "py-default-supported-en",
+      "arm": "ungated",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "nonanswer",
+      "rationale": "Bare None in the accepted answer branch is ambiguous between a null-like wrong value and an absence/nonanswer. It does not supply the requested Boolean False and is not a valid abstention (abstain=false). No correctness, support or refusal credit; retained separately from concrete factual errors."
+    },
+    {
+      "case_id": "py-default-supported-en",
+      "arm": "scoped",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "py-default-supported-zh",
+      "arm": "ungated",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "py-default-supported-zh",
+      "arm": "scoped",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "py-default-older-only-en",
+      "arm": "ungated",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "nonanswer",
+      "rationale": "Bare None in the accepted answer branch is ambiguous between a null-like wrong value and an absence/nonanswer. It does not supply the requested Boolean False and is not a valid abstention (abstain=false). No correctness, support or refusal credit; retained separately from concrete factual errors."
+    },
+    {
+      "case_id": "py-default-older-only-en",
+      "arm": "scoped",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "no_output",
+      "rationale": "Deterministic no_matching_scope before ranking/generation. This is neither an answer nor a model refusal."
+    },
+    {
+      "case_id": "py-default-older-only-zh",
+      "arm": "ungated",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "factual",
+      "rationale": "The answer transfers a claim from a different release to the requested release. The cited older summary does not support this requested-version answer; external gold also differs."
+    },
+    {
+      "case_id": "py-default-older-only-zh",
+      "arm": "scoped",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "no_output",
+      "rationale": "Deterministic no_matching_scope before ranking/generation. This is neither an answer nor a model refusal."
+    },
+    {
+      "case_id": "py-default-explicit-only-en",
+      "arm": "ungated",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "nonanswer",
+      "rationale": "Bare None in the accepted answer branch is ambiguous between a null-like wrong value and an absence/nonanswer. It does not supply the requested Boolean False and is not a valid abstention (abstain=false). No correctness, support or refusal credit; retained separately from concrete factual errors."
+    },
+    {
+      "case_id": "py-default-explicit-only-en",
+      "arm": "scoped",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "no_output",
+      "rationale": "Deterministic no_matching_scope before ranking/generation. This is neither an answer nor a model refusal."
+    },
+    {
+      "case_id": "py-default-explicit-only-zh",
+      "arm": "ungated",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "nonanswer",
+      "rationale": "Bare None in the accepted answer branch is ambiguous between a null-like wrong value and an absence/nonanswer. It does not supply the requested Boolean False and is not a valid abstention (abstain=false). No correctness, support or refusal credit; retained separately from concrete factual errors."
+    },
+    {
+      "case_id": "py-default-explicit-only-zh",
+      "arm": "scoped",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "no_output",
+      "rationale": "Deterministic no_matching_scope before ranking/generation. This is neither an answer nor a model refusal."
+    },
+    {
+      "case_id": "py-default-near-field-en",
+      "arm": "ungated",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "factual",
+      "rationale": "The answer takes a neighboring setting value as the requested setting default. Citation membership is valid but the quoted field is wrong and the external target value differs."
+    },
+    {
+      "case_id": "py-default-near-field-en",
+      "arm": "scoped",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "no_output",
+      "rationale": "Deterministic no_matching_scope before ranking/generation. This is neither an answer nor a model refusal."
+    },
+    {
+      "case_id": "py-default-near-field-zh",
+      "arm": "ungated",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "factual",
+      "rationale": "The answer takes a neighboring setting value as the requested setting default. Citation membership is valid but the quoted field is wrong and the external target value differs."
+    },
+    {
+      "case_id": "py-default-near-field-zh",
+      "arm": "scoped",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "no_output",
+      "rationale": "Deterministic no_matching_scope before ranking/generation. This is neither an answer nor a model refusal."
+    },
+    {
+      "case_id": "py-absence-supported-en",
+      "arm": "ungated",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "py-absence-supported-en",
+      "arm": "scoped",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "py-absence-supported-zh",
+      "arm": "ungated",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "py-absence-supported-zh",
+      "arm": "scoped",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "py-abbrev-supported-en",
+      "arm": "ungated",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "py-abbrev-supported-en",
+      "arm": "scoped",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "py-abbrev-supported-zh",
+      "arm": "ungated",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "py-abbrev-supported-zh",
+      "arm": "scoped",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "express-old-supported-en",
+      "arm": "ungated",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "express-old-supported-en",
+      "arm": "scoped",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "express-old-supported-zh",
+      "arm": "ungated",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "express-old-supported-zh",
+      "arm": "scoped",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "express-new-supported-en",
+      "arm": "ungated",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "express-new-supported-en",
+      "arm": "scoped",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "express-new-supported-zh",
+      "arm": "ungated",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "express-new-supported-zh",
+      "arm": "scoped",
+      "truth_correct": true,
+      "cited_support": true,
+      "content_kind": "factual",
+      "rationale": "Exact requested canonical value, at the specified release and predicate, supported by the sole cited packed authored summary. Upstream pinned source oracle agrees; support judged from supplied summary, not external oracle text."
+    },
+    {
+      "case_id": "express-new-older-only-en",
+      "arm": "ungated",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "factual",
+      "rationale": "The answer transfers a claim from a different release to the requested release. The cited older summary does not support this requested-version answer; external gold also differs."
+    },
+    {
+      "case_id": "express-new-older-only-en",
+      "arm": "scoped",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "no_output",
+      "rationale": "Deterministic no_matching_scope before ranking/generation. This is neither an answer nor a model refusal."
+    },
+    {
+      "case_id": "express-new-older-only-zh",
+      "arm": "ungated",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "factual",
+      "rationale": "The answer transfers a claim from a different release to the requested release. The cited older summary does not support this requested-version answer; external gold also differs."
+    },
+    {
+      "case_id": "express-new-older-only-zh",
+      "arm": "scoped",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "no_output",
+      "rationale": "Deterministic no_matching_scope before ranking/generation. This is neither an answer nor a model refusal."
+    },
+    {
+      "case_id": "express-new-explicit-only-en",
+      "arm": "ungated",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "factual",
+      "rationale": "The answer reports an explicitly configured example value as the application default. The supplied usage summary does not establish the default, and the pinned default oracle differs."
+    },
+    {
+      "case_id": "express-new-explicit-only-en",
+      "arm": "scoped",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "no_output",
+      "rationale": "Deterministic no_matching_scope before ranking/generation. This is neither an answer nor a model refusal."
+    },
+    {
+      "case_id": "express-new-explicit-only-zh",
+      "arm": "ungated",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "factual",
+      "rationale": "The answer reports an explicitly configured example value as the application default. The supplied usage summary does not establish the default, and the pinned default oracle differs."
+    },
+    {
+      "case_id": "express-new-explicit-only-zh",
+      "arm": "scoped",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "no_output",
+      "rationale": "Deterministic no_matching_scope before ranking/generation. This is neither an answer nor a model refusal."
+    },
+    {
+      "case_id": "express-new-near-field-en",
+      "arm": "ungated",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "factual",
+      "rationale": "The answer takes a neighboring setting value as the requested setting default. Citation membership is valid but the quoted field is wrong and the external target value differs."
+    },
+    {
+      "case_id": "express-new-near-field-en",
+      "arm": "scoped",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "no_output",
+      "rationale": "Deterministic no_matching_scope before ranking/generation. This is neither an answer nor a model refusal."
+    },
+    {
+      "case_id": "express-new-near-field-zh",
+      "arm": "ungated",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "factual",
+      "rationale": "The answer takes a neighboring setting value as the requested setting default. Citation membership is valid but the quoted field is wrong and the external target value differs."
+    },
+    {
+      "case_id": "express-new-near-field-zh",
+      "arm": "scoped",
+      "truth_correct": false,
+      "cited_support": false,
+      "content_kind": "no_output",
+      "rationale": "Deterministic no_matching_scope before ranking/generation. This is neither an answer nor a model refusal."
+    }
+  ]
+}

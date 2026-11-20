@@ -18,13 +18,14 @@ PYTHONPATH=src python -m rag_foundation query 'test client live server' -k 3
 ### 2. 审核已记录实验：不运行模型
 
 ```bash
-python experiments/indexed-scope-v1/audit_record.py --check
+python experiments/source-transfer-v1/audit_record.py --check
 ```
 
 该命令复核冻结输入、原始记录和计数，不重新生成、不自动判定语义真值。
-[最新机制报告](experiments/indexed-scope-v1/REPORT.md) ·
-[计数](experiments/indexed-scope-v1/summary.json) ·
-[原始管线回放记录](experiments/indexed-scope-v1/recorded.json)。本轮不调用模型，不能从spy的固定输出计算回答准确率。
+[最新真实生成报告](experiments/source-transfer-v1/REPORT.md) ·
+[分层计数与逐题结果](experiments/source-transfer-v1/summary.json) ·
+[原始模型记录](experiments/source-transfer-v1/recorded/)。
+上一轮[索引冲突机制实验](experiments/indexed-scope-v1/README.md)仅使用spy，保持原记录，不与本轮模型结果混算。
 旧的[typed scope实测与语义注释](experiments/typed-scope-v1/README.md)保留。
 旧的[同题证据替换实验](experiments/matched-evidence-v1/README.md)、[编号选择实验](experiments/numbered-spans-v1/README.md)、
 [证据门实验](experiments/evidence-sufficiency-v1/README.md)与
@@ -37,12 +38,24 @@ Linux x86_64、Python 3.12，公开下载约586 MB，临时RAM建议至少5 GB�
 
 ```bash
 python3 experiments/evidence-sufficiency-v1/prepare_assets.py --directory /tmp/rag-local-assets
-python3 experiments/typed-scope-v1/run_experiment.py \
-  --assets /tmp/rag-local-assets --output build/my-typed-scope-run
+python3 experiments/source-transfer-v1/run_experiment.py \
+  --assets /tmp/rag-local-assets --output build/my-source-transfer-run
 ```
 
-[环境、固定许可/来源、实验边界](experiments/typed-scope-v1/README.md)。
+[环境、固定许可/来源、实验边界](experiments/source-transfer-v1/README.md)。
 每次使用新的输出目录。通常测试和CI仅检索/审计，不下载或执行模型。
+
+## 2026-11-21：在 CPython / Express 新来源上跑真实生成
+
+22行英中开发试验、两个来源族、三个设置事实族与五个release-specific目标，先冻结来源、
+逐题判据和实际BM25覆盖，再完成32次免费本地CPU生成。正确且有引用支持的可答结果为
+**9/10→10/10**；唯一修复来自scope在top-1前取回被explicit示例挤掉的默认值片段，非推理能力提升。
+
+未过滤的12个不足条件全部进入无支持的answer分支，其中9个明确错误事实、3个歧义`None`；
+过滤后12次确定性`no_matching_scope`不运行，**不是模型拒答**。`False`、`0`、参数不存在、
+显式设置与默认值严格区分。无传输/格式错误，旧默认与历史记录不变。
+这是已知来源的人工开发试验，不是独立盲测或生产可靠性证明。
+[复现与来源](experiments/source-transfer-v1/README.md) · [完整分层报告](experiments/source-transfer-v1/REPORT.md)。
 
 ## 2026-11-20：接入真实 BM25，检索不到的冲突也必须先查
 
