@@ -18,11 +18,13 @@ PYTHONPATH=src python -m rag_foundation query 'test client live server' -k 3
 ### 2. 审核已记录实验：不运行模型
 
 ```bash
-python experiments/source-transfer-v1/audit_record.py --check
+python experiments/version-binding-v1/replay.py --check
+python experiments/version-binding-v1/audit_live.py --check
 ```
 
 该命令复核冻结输入、原始记录和计数，不重新生成、不自动判定语义真值。
-[最新真实生成报告](experiments/source-transfer-v1/REPORT.md) ·
+[最新版本交叉与生成记录](experiments/version-binding-v1/README.md)。
+[上一轮真实生成报告](experiments/source-transfer-v1/REPORT.md) ·
 [分层计数与逐题结果](experiments/source-transfer-v1/summary.json) ·
 [原始模型记录](experiments/source-transfer-v1/recorded/)。
 上一轮[索引冲突机制实验](experiments/indexed-scope-v1/README.md)仅使用spy，保持原记录，不与本轮模型结果混算。
@@ -44,6 +46,15 @@ python3 experiments/source-transfer-v1/run_experiment.py \
 
 [环境、固定许可/来源、实验边界](experiments/source-transfer-v1/README.md)。
 每次使用新的输出目录。通常测试和CI仅检索/审计，不下载或执行模型。
+
+## 2026-11-22：范围匹配不代表问题版本与范围一致
+
+新增可选的字面版本一致性检查，不改旧入口或默认行为。用同一份 Express 目录交叉两条问题与
+两个版本范围：旧路径四条匹配请求均保留支持证据，四条错配请求却都打包了错误版本；
+新入口保留全部匹配请求，在单次查询执行前拦下四条错配。英中只是相关变体。
+其中英语四对实跑 6 次本地 CPU 生成：两条匹配请求两臂皆正确，旧路径两条错配都给出格式合法
+但版本错误且无所需证据的回答，新入口两条均不调用模型。版本匹配后仍运行原目录检查；附加未登记的无关记录，仍可阻止原本可答的请求。
+[复现、结果和适用边界](experiments/version-binding-v1/README.md)。
 
 ## 2026-11-21：在 CPython / Express 新来源上跑真实生成
 

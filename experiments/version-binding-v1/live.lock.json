@@ -1,0 +1,15 @@
+{
+  "sha256": {
+    "experiments/local-generation-smoke/sources.json": "2a05c2d85b391f55b26434d77a886e96e5daaab16abe483ce409d1992cf5a750",
+    "experiments/matched-evidence-v1/protocol.py": "25bd4a0f66c68967fb31d3ca65ff33d18df7c3ec92937d1bec2691abde10e651",
+    "experiments/source-transfer-v1/cases.json": "cbbeca3f328e9080ac54c7d403d5ca7cca535a288474296643d3ef7f700c294c",
+    "experiments/typed-scope-v1/adapter.py": "71c32be7ab0acc5ddf660e48ae33f9adef4e2bdff4ba5127121b7bfd09ce41f6",
+    "experiments/version-binding-v1/LIVE-PROTOCOL.md": "3befcb3e9885ff7acafdd4c750789e4e417b96582cec9ef2aa34ed0380b43485",
+    "experiments/version-binding-v1/live.py": "76308ba635b46ddfce4e75dfd589e27a7f6eed68a13f9965181fd08e60889407",
+    "experiments/version-binding-v1/replay.py": "00546e6005234370263d5a5ac89b7c810869e4d980969b0560bee1bf8673c9fd",
+    "experiments/version-binding-v1/report.json": "40a9bc13d4ffef1778b25cf234e7c7d7f7464f9de5300346774df3ff62e5a84e",
+    "src/rag_foundation/retrieval.py": "d62b2aa753f701dc6e51be077bd292a277b5985cf8fa3a9c6c5d7d9e181776f5",
+    "src/rag_foundation/scoped_pipeline.py": "a469d11f1fd6f198b123ccd4344d6b9c2d5cf35a6db708b9e900216e558eeaef",
+    "src/rag_foundation/version_bound.py": "db93f313d09b215c7a3c6f267df94440e231d3b666255f864cd0cee53edefbe6"
+  }
+}

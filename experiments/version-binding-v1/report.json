@@ -1,0 +1,457 @@
+{
+  "catalog_control_rows": [
+    {
+      "assignment": "complete",
+      "bound": {
+        "generator_called": false,
+        "packed_ids": [
+          "e5default"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "status": "planned"
+      },
+      "control": "positive",
+      "observations": [
+        {
+          "end": 16,
+          "start": 11,
+          "token": "5.1.0"
+        }
+      ],
+      "unbound": {
+        "generator_called": false,
+        "packed_ids": [
+          "e5default"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "status": "planned"
+      }
+    },
+    {
+      "assignment": "extra_assigned",
+      "bound": {
+        "generator_called": false,
+        "packed_ids": [
+          "e5default"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "status": "planned"
+      },
+      "control": "positive",
+      "observations": [
+        {
+          "end": 16,
+          "start": 11,
+          "token": "5.1.0"
+        }
+      ],
+      "unbound": {
+        "generator_called": false,
+        "packed_ids": [
+          "e5default"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "status": "planned"
+      }
+    },
+    {
+      "assignment": "extra_unassigned",
+      "bound": {
+        "generator_called": false,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "catalog_incomplete",
+        "status": "not_run"
+      },
+      "control": "positive",
+      "observations": [
+        {
+          "end": 16,
+          "start": 11,
+          "token": "5.1.0"
+        }
+      ],
+      "unbound": {
+        "generator_called": false,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "catalog_incomplete",
+        "status": "not_run"
+      }
+    },
+    {
+      "assignment": "complete",
+      "bound": {
+        "generator_called": false,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "no_matching_scope",
+        "status": "not_run"
+      },
+      "control": "older_only",
+      "observations": [
+        {
+          "end": 16,
+          "start": 11,
+          "token": "5.1.0"
+        }
+      ],
+      "unbound": {
+        "generator_called": false,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "no_matching_scope",
+        "status": "not_run"
+      }
+    },
+    {
+      "assignment": "extra_assigned",
+      "bound": {
+        "generator_called": false,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "no_matching_scope",
+        "status": "not_run"
+      },
+      "control": "older_only",
+      "observations": [
+        {
+          "end": 16,
+          "start": 11,
+          "token": "5.1.0"
+        }
+      ],
+      "unbound": {
+        "generator_called": false,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "no_matching_scope",
+        "status": "not_run"
+      }
+    },
+    {
+      "assignment": "extra_unassigned",
+      "bound": {
+        "generator_called": false,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "catalog_incomplete",
+        "status": "not_run"
+      },
+      "control": "older_only",
+      "observations": [
+        {
+          "end": 16,
+          "start": 11,
+          "token": "5.1.0"
+        }
+      ],
+      "unbound": {
+        "generator_called": false,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "catalog_incomplete",
+        "status": "not_run"
+      }
+    },
+    {
+      "assignment": "complete",
+      "bound": {
+        "generator_called": false,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "no_matching_scope",
+        "status": "not_run"
+      },
+      "control": "explicit_only",
+      "observations": [
+        {
+          "end": 16,
+          "start": 11,
+          "token": "5.1.0"
+        }
+      ],
+      "unbound": {
+        "generator_called": false,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "no_matching_scope",
+        "status": "not_run"
+      }
+    }
+  ],
+  "crossed_rows": [
+    {
+      "bound": {
+        "generator_called": false,
+        "packed_ids": [
+          "e4default"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "status": "planned"
+      },
+      "language": "en",
+      "matched_release": true,
+      "observations": [
+        {
+          "end": 17,
+          "start": 11,
+          "token": "4.21.2"
+        }
+      ],
+      "question": "In Express 4.21.2, what is the exact default value of the query parser application setting?",
+      "question_release": "4.21.2",
+      "scope_release": "4.21.2",
+      "supporting_id": "e4default",
+      "unbound": {
+        "generator_called": false,
+        "packed_ids": [
+          "e4default"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "status": "planned"
+      }
+    },
+    {
+      "bound": {
+        "generator_called": false,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "question_scope_release_mismatch",
+        "status": "not_run"
+      },
+      "language": "en",
+      "matched_release": false,
+      "observations": [
+        {
+          "end": 17,
+          "start": 11,
+          "token": "4.21.2"
+        }
+      ],
+      "question": "In Express 4.21.2, what is the exact default value of the query parser application setting?",
+      "question_release": "4.21.2",
+      "scope_release": "5.1.0",
+      "supporting_id": "e4default",
+      "unbound": {
+        "generator_called": false,
+        "packed_ids": [
+          "e5default"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "status": "planned"
+      }
+    },
+    {
+      "bound": {
+        "generator_called": false,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "question_scope_release_mismatch",
+        "status": "not_run"
+      },
+      "language": "en",
+      "matched_release": false,
+      "observations": [
+        {
+          "end": 16,
+          "start": 11,
+          "token": "5.1.0"
+        }
+      ],
+      "question": "In Express 5.1.0, what is the exact default value of the query parser application setting?",
+      "question_release": "5.1.0",
+      "scope_release": "4.21.2",
+      "supporting_id": "e5default",
+      "unbound": {
+        "generator_called": false,
+        "packed_ids": [
+          "e4default"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "status": "planned"
+      }
+    },
+    {
+      "bound": {
+        "generator_called": false,
+        "packed_ids": [
+          "e5default"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "status": "planned"
+      },
+      "language": "en",
+      "matched_release": true,
+      "observations": [
+        {
+          "end": 16,
+          "start": 11,
+          "token": "5.1.0"
+        }
+      ],
+      "question": "In Express 5.1.0, what is the exact default value of the query parser application setting?",
+      "question_release": "5.1.0",
+      "scope_release": "5.1.0",
+      "supporting_id": "e5default",
+      "unbound": {
+        "generator_called": false,
+        "packed_ids": [
+          "e5default"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "status": "planned"
+      }
+    },
+    {
+      "bound": {
+        "generator_called": false,
+        "packed_ids": [
+          "e4default"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "status": "planned"
+      },
+      "language": "zh",
+      "matched_release": true,
+      "observations": [
+        {
+          "end": 16,
+          "start": 10,
+          "token": "4.21.2"
+        }
+      ],
+      "question": "在 Express 4.21.2 中， query parser 应用设置的确切默认值是什么？",
+      "question_release": "4.21.2",
+      "scope_release": "4.21.2",
+      "supporting_id": "e4default",
+      "unbound": {
+        "generator_called": false,
+        "packed_ids": [
+          "e4default"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "status": "planned"
+      }
+    },
+    {
+      "bound": {
+        "generator_called": false,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "question_scope_release_mismatch",
+        "status": "not_run"
+      },
+      "language": "zh",
+      "matched_release": false,
+      "observations": [
+        {
+          "end": 16,
+          "start": 10,
+          "token": "4.21.2"
+        }
+      ],
+      "question": "在 Express 4.21.2 中， query parser 应用设置的确切默认值是什么？",
+      "question_release": "4.21.2",
+      "scope_release": "5.1.0",
+      "supporting_id": "e4default",
+      "unbound": {
+        "generator_called": false,
+        "packed_ids": [
+          "e5default"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "status": "planned"
+      }
+    },
+    {
+      "bound": {
+        "generator_called": false,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "question_scope_release_mismatch",
+        "status": "not_run"
+      },
+      "language": "zh",
+      "matched_release": false,
+      "observations": [
+        {
+          "end": 15,
+          "start": 10,
+          "token": "5.1.0"
+        }
+      ],
+      "question": "在 Express 5.1.0 中， query parser 应用设置的确切默认值是什么？",
+      "question_release": "5.1.0",
+      "scope_release": "4.21.2",
+      "supporting_id": "e5default",
+      "unbound": {
+        "generator_called": false,
+        "packed_ids": [
+          "e4default"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "status": "planned"
+      }
+    },
+    {
+      "bound": {
+        "generator_called": false,
+        "packed_ids": [
+          "e5default"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "status": "planned"
+      },
+      "language": "zh",
+      "matched_release": true,
+      "observations": [
+        {
+          "end": 15,
+          "start": 10,
+          "token": "5.1.0"
+        }
+      ],
+      "question": "在 Express 5.1.0 中， query parser 应用设置的确切默认值是什么？",
+      "question_release": "5.1.0",
+      "scope_release": "5.1.0",
+      "supporting_id": "e5default",
+      "unbound": {
+        "generator_called": false,
+        "packed_ids": [
+          "e5default"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "status": "planned"
+      }
+    }
+  ],
+  "historical_input": "experiments/source-transfer-v1/cases.json",
+  "metrics": {
+    "crossed_release_rows": 4,
+    "crossed_stopped_by_binding": 4,
+    "crossed_wrong_release_packed_unbound": 4,
+    "matched_release_rows": 4,
+    "matched_supported_bound": 4,
+    "matched_supported_unbound": 4,
+    "model_calls": 0
+  },
+  "mode": "actual_bm25_and_index_no_model",
+  "request_top_k": 1
+}

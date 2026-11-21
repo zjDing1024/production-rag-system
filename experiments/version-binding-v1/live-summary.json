@@ -1,0 +1,137 @@
+{
+  "arms": {
+    "bound": {
+      "crossed_false_and_unsupported": 0,
+      "crossed_no_run": 2,
+      "diagonal_exact_supported": 2,
+      "model_calls": 2
+    },
+    "unbound": {
+      "crossed_false_and_unsupported": 2,
+      "crossed_no_run": 0,
+      "diagonal_exact_supported": 2,
+      "model_calls": 4
+    }
+  },
+  "method": "finite exact-value and required-source rubric; not general semantic judging",
+  "pairs": 4,
+  "rows": [
+    {
+      "answer": "extended",
+      "arm": "unbound",
+      "citation_ids": [
+        "e4default"
+      ],
+      "cited_support_for_question": true,
+      "exact_truth_for_question": true,
+      "matched_release": true,
+      "model_called": true,
+      "question_release": "4.21.2",
+      "reason": "contract_valid",
+      "scope_release": "4.21.2",
+      "status": "answered"
+    },
+    {
+      "answer": "extended",
+      "arm": "bound",
+      "citation_ids": [
+        "e4default"
+      ],
+      "cited_support_for_question": true,
+      "exact_truth_for_question": true,
+      "matched_release": true,
+      "model_called": true,
+      "question_release": "4.21.2",
+      "reason": "contract_valid",
+      "scope_release": "4.21.2",
+      "status": "answered"
+    },
+    {
+      "answer": null,
+      "arm": "bound",
+      "citation_ids": [],
+      "cited_support_for_question": null,
+      "exact_truth_for_question": null,
+      "matched_release": false,
+      "model_called": false,
+      "question_release": "4.21.2",
+      "reason": "question_scope_release_mismatch",
+      "scope_release": "5.1.0",
+      "status": "not_run"
+    },
+    {
+      "answer": "simple",
+      "arm": "unbound",
+      "citation_ids": [
+        "e5default"
+      ],
+      "cited_support_for_question": false,
+      "exact_truth_for_question": false,
+      "matched_release": false,
+      "model_called": true,
+      "question_release": "4.21.2",
+      "reason": "contract_valid",
+      "scope_release": "5.1.0",
+      "status": "answered"
+    },
+    {
+      "answer": "extended",
+      "arm": "unbound",
+      "citation_ids": [
+        "e4default"
+      ],
+      "cited_support_for_question": false,
+      "exact_truth_for_question": false,
+      "matched_release": false,
+      "model_called": true,
+      "question_release": "5.1.0",
+      "reason": "contract_valid",
+      "scope_release": "4.21.2",
+      "status": "answered"
+    },
+    {
+      "answer": null,
+      "arm": "bound",
+      "citation_ids": [],
+      "cited_support_for_question": null,
+      "exact_truth_for_question": null,
+      "matched_release": false,
+      "model_called": false,
+      "question_release": "5.1.0",
+      "reason": "question_scope_release_mismatch",
+      "scope_release": "4.21.2",
+      "status": "not_run"
+    },
+    {
+      "answer": "simple",
+      "arm": "bound",
+      "citation_ids": [
+        "e5default"
+      ],
+      "cited_support_for_question": true,
+      "exact_truth_for_question": true,
+      "matched_release": true,
+      "model_called": true,
+      "question_release": "5.1.0",
+      "reason": "contract_valid",
+      "scope_release": "5.1.0",
+      "status": "answered"
+    },
+    {
+      "answer": "simple",
+      "arm": "unbound",
+      "citation_ids": [
+        "e5default"
+      ],
+      "cited_support_for_question": true,
+      "exact_truth_for_question": true,
+      "matched_release": true,
+      "model_called": true,
+      "question_release": "5.1.0",
+      "reason": "contract_valid",
+      "scope_release": "5.1.0",
+      "status": "answered"
+    }
+  ],
+  "source_fact_families": 1
+}
