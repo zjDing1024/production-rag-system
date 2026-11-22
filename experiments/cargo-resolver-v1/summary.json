@@ -1,0 +1,44 @@
+{
+  "grounded_rows": 4,
+  "rows": [
+    {
+      "accepted_grounded": true,
+      "gold": "2",
+      "id": "root-2021",
+      "supported": true
+    },
+    {
+      "accepted_grounded": true,
+      "gold": "3",
+      "id": "root-2024",
+      "supported": true
+    },
+    {
+      "accepted_grounded": true,
+      "gold": "1",
+      "id": "virtual-member-2024",
+      "supported": true
+    },
+    {
+      "accepted_grounded": true,
+      "gold": "3",
+      "id": "virtual-explicit-3",
+      "supported": true
+    },
+    {
+      "accepted_grounded": false,
+      "gold": "1",
+      "id": "wrong-member-scope",
+      "supported": false
+    },
+    {
+      "accepted_grounded": false,
+      "gold": "1",
+      "id": "partial-virtual",
+      "supported": false
+    }
+  ],
+  "source_commit": "d73d2caf9e41a39daf2a8d6ce60ec80bf354d2a7",
+  "supported_rows": 4,
+  "unsupported_rows": 2
+}

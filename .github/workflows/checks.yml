@@ -74,3 +74,5 @@ jobs:
         run: |
           python experiments/version-binding-v1/replay.py --check
           python experiments/version-binding-v1/audit_live.py --check
+      - name: Verify Cargo resolver scope pilot offline
+        run: python experiments/cargo-resolver-v1/audit.py --check
