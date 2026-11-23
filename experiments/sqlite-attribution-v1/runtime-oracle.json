@@ -1,0 +1,97 @@
+{
+  "ddl": [
+    "CREATE TABLE main.measurement(raw INTEGER, aux1 INTEGER, aux2 INTEGER, derived INTEGER GENERATED ALWAYS AS (raw + 1) STORED)",
+    "CREATE TABLE temp.measurement(raw INTEGER, aux1 INTEGER, aux2 INTEGER, derived INTEGER GENERATED ALWAYS AS (raw + 1) STORED)",
+    "CREATE TABLE main.virtual_measurement(raw INTEGER, aux1 INTEGER, aux2 INTEGER, derived INTEGER GENERATED ALWAYS AS (raw + 1) VIRTUAL)"
+  ],
+  "queries": {
+    "main_info": "PRAGMA main.table_info(measurement)",
+    "main_xinfo": "PRAGMA main.table_xinfo(measurement)",
+    "temp_xinfo": "PRAGMA temp.table_xinfo(measurement)",
+    "virtual_xinfo": "PRAGMA main.table_xinfo(virtual_measurement)"
+  },
+  "rows": {
+    "main_info": [
+      {
+        "cid": 0,
+        "name": "raw"
+      },
+      {
+        "cid": 1,
+        "name": "aux1"
+      },
+      {
+        "cid": 2,
+        "name": "aux2"
+      }
+    ],
+    "main_xinfo": [
+      {
+        "cid": 0,
+        "hidden": 0,
+        "name": "raw"
+      },
+      {
+        "cid": 1,
+        "hidden": 0,
+        "name": "aux1"
+      },
+      {
+        "cid": 2,
+        "hidden": 0,
+        "name": "aux2"
+      },
+      {
+        "cid": 3,
+        "hidden": 3,
+        "name": "derived"
+      }
+    ],
+    "temp_xinfo": [
+      {
+        "cid": 0,
+        "hidden": 0,
+        "name": "raw"
+      },
+      {
+        "cid": 1,
+        "hidden": 0,
+        "name": "aux1"
+      },
+      {
+        "cid": 2,
+        "hidden": 0,
+        "name": "aux2"
+      },
+      {
+        "cid": 3,
+        "hidden": 3,
+        "name": "derived"
+      }
+    ],
+    "virtual_xinfo": [
+      {
+        "cid": 0,
+        "hidden": 0,
+        "name": "raw"
+      },
+      {
+        "cid": 1,
+        "hidden": 0,
+        "name": "aux1"
+      },
+      {
+        "cid": 2,
+        "hidden": 0,
+        "name": "aux2"
+      },
+      {
+        "cid": 3,
+        "hidden": 2,
+        "name": "derived"
+      }
+    ]
+  },
+  "source_id": "2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4de77658ce58143a1af0e3785e4e6475127e9",
+  "version": "3.53.1"
+}

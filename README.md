@@ -47,6 +47,13 @@ python3 experiments/source-transfer-v1/run_experiment.py \
 [环境、固定许可/来源、实验边界](experiments/source-transfer-v1/README.md)。
 每次使用新的输出目录。通常测试和CI仅检索/审计，不下载或执行模型。
 
+## 2026-11-24：SQLite 同值不等于同证据
+
+用一条 SQLite 问题做四组离线对照。两个错配的候选值都是 3，但分别引用了错对象和错字段。
+真实 BM25 都命中并打包了相应片段；可信夹具绑定保留正确项，在排序前拦下两个错配。
+缺字段仍由原管线返回无匹配范围。没有模型调用或默认路径改动。
+[实验说明、运行时来源和复现](experiments/sqlite-attribution-v1/README.md)。
+
 ## 2026-11-22：范围匹配不代表问题版本与范围一致
 
 新增可选的字面版本一致性检查，不改旧入口或默认行为。用同一份 Express 目录交叉两条问题与

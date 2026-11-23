@@ -1,0 +1,221 @@
+{
+  "expected_value": 3,
+  "fixture_id": "sqlite-generated-column-v1",
+  "method": "actual BM25, no model; numeric score applies to candidate metadata, not an answer",
+  "metrics": {
+    "baseline": {
+      "correct_with_support": 1,
+      "fixture_blocks": 0,
+      "generator_calls": 0,
+      "missing_scope_stops": 1,
+      "numeric_match_without_support": 2
+    },
+    "fixture_bound": {
+      "correct_with_support": 1,
+      "fixture_blocks": 2,
+      "generator_calls": 0,
+      "missing_scope_stops": 1,
+      "numeric_match_without_support": 0
+    }
+  },
+  "question": "In SQLite 3.46.1, what is the table_xinfo hidden field for main.measurement.derived?",
+  "rows": [
+    {
+      "baseline": {
+        "candidate_value": 3,
+        "citation_support": true,
+        "citation_tuple": {
+          "column": "derived",
+          "field": "hidden",
+          "operation": "table_xinfo",
+          "schema": "main",
+          "table": "measurement"
+        },
+        "generator_called": false,
+        "numeric_exact_match": true,
+        "packed_ids": [
+          "main-hidden"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "scope_lexical_hits": 1,
+        "status": "planned"
+      },
+      "caller": {
+        "column": "derived",
+        "field": "hidden",
+        "operation": "table_xinfo",
+        "schema": "main",
+        "table": "measurement"
+      },
+      "case": "supported",
+      "catalog_ids": [
+        "main-hidden",
+        "temp-hidden",
+        "main-cid"
+      ],
+      "fixture_bound": {
+        "candidate_value": 3,
+        "citation_support": true,
+        "citation_tuple": {
+          "column": "derived",
+          "field": "hidden",
+          "operation": "table_xinfo",
+          "schema": "main",
+          "table": "measurement"
+        },
+        "generator_called": false,
+        "numeric_exact_match": true,
+        "packed_ids": [
+          "main-hidden"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "scope_lexical_hits": 1,
+        "status": "planned"
+      },
+      "version_check": "literal_release_matches"
+    },
+    {
+      "baseline": {
+        "candidate_value": 3,
+        "citation_support": false,
+        "citation_tuple": {
+          "column": "derived",
+          "field": "hidden",
+          "operation": "table_xinfo",
+          "schema": "temp",
+          "table": "measurement"
+        },
+        "generator_called": false,
+        "numeric_exact_match": true,
+        "packed_ids": [
+          "temp-hidden"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "scope_lexical_hits": 1,
+        "status": "planned"
+      },
+      "caller": {
+        "column": "derived",
+        "field": "hidden",
+        "operation": "table_xinfo",
+        "schema": "temp",
+        "table": "measurement"
+      },
+      "case": "wrong_object_same_value",
+      "catalog_ids": [
+        "main-hidden",
+        "temp-hidden",
+        "main-cid"
+      ],
+      "fixture_bound": {
+        "candidate_value": null,
+        "citation_support": null,
+        "citation_tuple": null,
+        "generator_called": false,
+        "numeric_exact_match": null,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "fixture_scope_mismatch",
+        "scope_lexical_hits": null,
+        "status": "not_run"
+      },
+      "version_check": "literal_release_matches"
+    },
+    {
+      "baseline": {
+        "candidate_value": 3,
+        "citation_support": false,
+        "citation_tuple": {
+          "column": "derived",
+          "field": "cid",
+          "operation": "table_xinfo",
+          "schema": "main",
+          "table": "measurement"
+        },
+        "generator_called": false,
+        "numeric_exact_match": true,
+        "packed_ids": [
+          "main-cid"
+        ],
+        "ranking_performed": true,
+        "reason": "generator_not_requested",
+        "scope_lexical_hits": 1,
+        "status": "planned"
+      },
+      "caller": {
+        "column": "derived",
+        "field": "cid",
+        "operation": "table_xinfo",
+        "schema": "main",
+        "table": "measurement"
+      },
+      "case": "wrong_field_same_value",
+      "catalog_ids": [
+        "main-hidden",
+        "temp-hidden",
+        "main-cid"
+      ],
+      "fixture_bound": {
+        "candidate_value": null,
+        "citation_support": null,
+        "citation_tuple": null,
+        "generator_called": false,
+        "numeric_exact_match": null,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "fixture_scope_mismatch",
+        "scope_lexical_hits": null,
+        "status": "not_run"
+      },
+      "version_check": "literal_release_matches"
+    },
+    {
+      "baseline": {
+        "candidate_value": null,
+        "citation_support": null,
+        "citation_tuple": null,
+        "generator_called": false,
+        "numeric_exact_match": null,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "no_matching_scope",
+        "scope_lexical_hits": null,
+        "status": "not_run"
+      },
+      "caller": {
+        "column": "derived",
+        "field": "hidden",
+        "operation": "table_xinfo",
+        "schema": "main",
+        "table": "measurement"
+      },
+      "case": "missing_field",
+      "catalog_ids": [
+        "table-info"
+      ],
+      "fixture_bound": {
+        "candidate_value": null,
+        "citation_support": null,
+        "citation_tuple": null,
+        "generator_called": false,
+        "numeric_exact_match": null,
+        "packed_ids": [],
+        "ranking_performed": false,
+        "reason": "no_matching_scope",
+        "scope_lexical_hits": null,
+        "status": "not_run"
+      },
+      "version_check": "literal_release_matches"
+    }
+  ],
+  "target": {
+    "column": "derived",
+    "field": "hidden",
+    "operation": "table_xinfo",
+    "schema": "main",
+    "table": "measurement"
+  }
+}
