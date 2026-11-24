@@ -1,0 +1,665 @@
+{
+  "method": "actual CLI + real local BM25, no generated answers",
+  "metrics": {
+    "cases": 10,
+    "cited_answers": 3,
+    "explicit_stops": 7,
+    "max_retrievals_seen": 2,
+    "model_calls": 0,
+    "ranking_attempts": 6,
+    "retrieval_attempts": 9
+  },
+  "rows": [
+    {
+      "arguments": [
+        "express-4-default"
+      ],
+      "case": "old_release",
+      "result": {
+        "answer": {
+          "unit": "parser_mode",
+          "value": "extended",
+          "value_type": "string"
+        },
+        "bound_scope": {
+          "key": "query parser.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "Express",
+          "version": "4.21.2"
+        },
+        "catalog": {
+          "chunks": 6,
+          "sha256": "d3700696b1ead13bd99b07e1ca1c1df2749399f62686c5262e3b085669b456b6"
+        },
+        "citations": [
+          {
+            "chunk_id": "express-4",
+            "end_char": 57,
+            "quote": "Express 4.21.2 sets the query parser default to extended.",
+            "source": "https://github.com/expressjs/express/blob/1faf228935aa0a13111f92c28ee795be64ce3f0f/lib/application.js#L80-L86#L1-L1",
+            "start_char": 0,
+            "summary_sha256": "7ca0d7febd6802e34c7dbe7dd5b9f1cff9345010cd2b9499fdc30877f7809539"
+          }
+        ],
+        "intent_id": "express-4-default",
+        "limits": {
+          "context_characters": 512,
+          "retrievals": 2,
+          "top_k": 1
+        },
+        "mode": "bounded_read_only_document_agent",
+        "model_calls": 0,
+        "ranking_attempts": 1,
+        "reason": "reviewed_claim_cited",
+        "retrieval_attempts": 1,
+        "semantic_entailment_checked": false,
+        "status": "answered",
+        "trace": [
+          {
+            "event": "scope_bound",
+            "scope": {
+              "key": "query parser.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Express",
+              "version": "4.21.2"
+            }
+          },
+          {
+            "event": "retrieve",
+            "lexical_hits": 1,
+            "matched_ids": [
+              "express-4"
+            ],
+            "packed_ids": [
+              "express-4"
+            ],
+            "query": "Express query parser default",
+            "reason": "generator_not_requested",
+            "scope_preflight": "reviewed_values_agree",
+            "step": 1,
+            "strategy": "primary"
+          },
+          {
+            "chunk_id": "express-4",
+            "event": "cite"
+          }
+        ],
+        "trust_boundary": "operator_reviewed_catalog_and_fixed_intent_map"
+      }
+    },
+    {
+      "arguments": [
+        "express-5-default"
+      ],
+      "case": "new_release",
+      "result": {
+        "answer": {
+          "unit": "parser_mode",
+          "value": "simple",
+          "value_type": "string"
+        },
+        "bound_scope": {
+          "key": "query parser.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "Express",
+          "version": "5.1.0"
+        },
+        "catalog": {
+          "chunks": 6,
+          "sha256": "d3700696b1ead13bd99b07e1ca1c1df2749399f62686c5262e3b085669b456b6"
+        },
+        "citations": [
+          {
+            "chunk_id": "express-5",
+            "end_char": 54,
+            "quote": "Express 5.1.0 sets the query parser default to simple.",
+            "source": "https://github.com/expressjs/express/blob/cd7d4397c398a3f3ecadeaf9ef6ac1377bd414c4/lib/application.js#L93-L100#L1-L1",
+            "start_char": 0,
+            "summary_sha256": "109531ef58f82ef725f9d0391377b37e896e2dcae168a49527d0429c9e5d639c"
+          }
+        ],
+        "intent_id": "express-5-default",
+        "limits": {
+          "context_characters": 512,
+          "retrievals": 2,
+          "top_k": 1
+        },
+        "mode": "bounded_read_only_document_agent",
+        "model_calls": 0,
+        "ranking_attempts": 1,
+        "reason": "reviewed_claim_cited",
+        "retrieval_attempts": 1,
+        "semantic_entailment_checked": false,
+        "status": "answered",
+        "trace": [
+          {
+            "event": "scope_bound",
+            "scope": {
+              "key": "query parser.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Express",
+              "version": "5.1.0"
+            }
+          },
+          {
+            "event": "retrieve",
+            "lexical_hits": 1,
+            "matched_ids": [
+              "express-5"
+            ],
+            "packed_ids": [
+              "express-5"
+            ],
+            "query": "Express query parser default",
+            "reason": "generator_not_requested",
+            "scope_preflight": "reviewed_values_agree",
+            "step": 1,
+            "strategy": "primary"
+          },
+          {
+            "chunk_id": "express-5",
+            "event": "cite"
+          }
+        ],
+        "trust_boundary": "operator_reviewed_catalog_and_fixed_intent_map"
+      }
+    },
+    {
+      "arguments": [
+        "cpython-color-retry"
+      ],
+      "case": "retry_rescues",
+      "result": {
+        "answer": {
+          "unit": "canonical_boolean_string",
+          "value": "True",
+          "value_type": "string"
+        },
+        "bound_scope": {
+          "key": "ArgumentParser.color.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "CPython",
+          "version": "3.14.0"
+        },
+        "catalog": {
+          "chunks": 6,
+          "sha256": "d3700696b1ead13bd99b07e1ca1c1df2749399f62686c5262e3b085669b456b6"
+        },
+        "citations": [
+          {
+            "chunk_id": "cpython-color",
+            "end_char": 71,
+            "quote": "In CPython 3.14.0, the ArgumentParser color parameter defaults to True.",
+            "source": "https://github.com/python/cpython/blob/ebf955df7a89ed0c7968f79faec1de49f61ed7cb/Lib/argparse.py#L1877-L1881#L1-L1",
+            "start_char": 0,
+            "summary_sha256": "f3fa52995cdac408c3e1b9146d39c8eb5ff85cb1b8f9fea264bd852aa9961c3b"
+          }
+        ],
+        "intent_id": "cpython-color-retry",
+        "limits": {
+          "context_characters": 512,
+          "retrievals": 2,
+          "top_k": 1
+        },
+        "mode": "bounded_read_only_document_agent",
+        "model_calls": 0,
+        "ranking_attempts": 2,
+        "reason": "reviewed_claim_cited",
+        "retrieval_attempts": 2,
+        "semantic_entailment_checked": false,
+        "status": "answered",
+        "trace": [
+          {
+            "event": "scope_bound",
+            "scope": {
+              "key": "ArgumentParser.color.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.14.0"
+            }
+          },
+          {
+            "event": "retrieve",
+            "lexical_hits": 0,
+            "matched_ids": [
+              "cpython-color"
+            ],
+            "packed_ids": [],
+            "query": "颜色默认值",
+            "reason": "no_lexical_candidates",
+            "scope_preflight": "reviewed_values_agree",
+            "step": 1,
+            "strategy": "primary"
+          },
+          {
+            "event": "retrieve",
+            "lexical_hits": 1,
+            "matched_ids": [
+              "cpython-color"
+            ],
+            "packed_ids": [
+              "cpython-color"
+            ],
+            "query": "ArgumentParser color default",
+            "reason": "generator_not_requested",
+            "scope_preflight": "reviewed_values_agree",
+            "step": 2,
+            "strategy": "reviewed_alias"
+          },
+          {
+            "chunk_id": "cpython-color",
+            "event": "cite"
+          }
+        ],
+        "trust_boundary": "operator_reviewed_catalog_and_fixed_intent_map"
+      }
+    },
+    {
+      "arguments": [
+        "cpython-color-retry",
+        "--max-retrievals",
+        "1"
+      ],
+      "case": "retry_budget",
+      "result": {
+        "answer": null,
+        "bound_scope": {
+          "key": "ArgumentParser.color.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "CPython",
+          "version": "3.14.0"
+        },
+        "catalog": {
+          "chunks": 6,
+          "sha256": "d3700696b1ead13bd99b07e1ca1c1df2749399f62686c5262e3b085669b456b6"
+        },
+        "citations": [],
+        "intent_id": "cpython-color-retry",
+        "limits": {
+          "context_characters": 512,
+          "retrievals": 1,
+          "top_k": 1
+        },
+        "mode": "bounded_read_only_document_agent",
+        "model_calls": 0,
+        "ranking_attempts": 1,
+        "reason": "retrieval_budget_exhausted",
+        "retrieval_attempts": 1,
+        "semantic_entailment_checked": false,
+        "status": "stopped",
+        "trace": [
+          {
+            "event": "scope_bound",
+            "scope": {
+              "key": "ArgumentParser.color.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "CPython",
+              "version": "3.14.0"
+            }
+          },
+          {
+            "event": "retrieve",
+            "lexical_hits": 0,
+            "matched_ids": [
+              "cpython-color"
+            ],
+            "packed_ids": [],
+            "query": "颜色默认值",
+            "reason": "no_lexical_candidates",
+            "scope_preflight": "reviewed_values_agree",
+            "step": 1,
+            "strategy": "primary"
+          },
+          {
+            "event": "stop",
+            "reason": "retrieval_budget_exhausted"
+          }
+        ],
+        "trust_boundary": "operator_reviewed_catalog_and_fixed_intent_map"
+      }
+    },
+    {
+      "arguments": [
+        "express-5-default",
+        "--context-characters",
+        "12"
+      ],
+      "case": "packing_budget",
+      "result": {
+        "answer": null,
+        "bound_scope": {
+          "key": "query parser.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "Express",
+          "version": "5.1.0"
+        },
+        "catalog": {
+          "chunks": 6,
+          "sha256": "d3700696b1ead13bd99b07e1ca1c1df2749399f62686c5262e3b085669b456b6"
+        },
+        "citations": [],
+        "intent_id": "express-5-default",
+        "limits": {
+          "context_characters": 12,
+          "retrievals": 2,
+          "top_k": 1
+        },
+        "mode": "bounded_read_only_document_agent",
+        "model_calls": 0,
+        "ranking_attempts": 1,
+        "reason": "context_budget_exhausted",
+        "retrieval_attempts": 1,
+        "semantic_entailment_checked": false,
+        "status": "stopped",
+        "trace": [
+          {
+            "event": "scope_bound",
+            "scope": {
+              "key": "query parser.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "Express",
+              "version": "5.1.0"
+            }
+          },
+          {
+            "event": "retrieve",
+            "lexical_hits": 1,
+            "matched_ids": [
+              "express-5"
+            ],
+            "packed_ids": [],
+            "query": "Express query parser default",
+            "reason": "context_budget_exhausted",
+            "scope_preflight": "reviewed_values_agree",
+            "step": 1,
+            "strategy": "primary"
+          },
+          {
+            "event": "stop",
+            "reason": "context_budget_exhausted"
+          }
+        ],
+        "trust_boundary": "operator_reviewed_catalog_and_fixed_intent_map"
+      }
+    },
+    {
+      "arguments": [
+        "demo-timeout-conflict"
+      ],
+      "case": "conflicting_value",
+      "result": {
+        "answer": null,
+        "bound_scope": {
+          "key": "timeout.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "DemoBox",
+          "version": "1.0.0"
+        },
+        "catalog": {
+          "chunks": 6,
+          "sha256": "d3700696b1ead13bd99b07e1ca1c1df2749399f62686c5262e3b085669b456b6"
+        },
+        "citations": [],
+        "intent_id": "demo-timeout-conflict",
+        "limits": {
+          "context_characters": 512,
+          "retrievals": 2,
+          "top_k": 1
+        },
+        "mode": "bounded_read_only_document_agent",
+        "model_calls": 0,
+        "ranking_attempts": 0,
+        "reason": "reviewed_value_conflict",
+        "retrieval_attempts": 1,
+        "semantic_entailment_checked": false,
+        "status": "stopped",
+        "trace": [
+          {
+            "event": "scope_bound",
+            "scope": {
+              "key": "timeout.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "DemoBox",
+              "version": "1.0.0"
+            }
+          },
+          {
+            "event": "retrieve",
+            "lexical_hits": null,
+            "matched_ids": [
+              "demo-timeout-a",
+              "demo-timeout-b"
+            ],
+            "packed_ids": [],
+            "query": "DemoBox timeout",
+            "reason": "reviewed_value_conflict",
+            "scope_preflight": "reviewed_value_conflict",
+            "step": 1,
+            "strategy": "primary"
+          },
+          {
+            "event": "stop",
+            "reason": "reviewed_value_conflict"
+          }
+        ],
+        "trust_boundary": "operator_reviewed_catalog_and_fixed_intent_map"
+      }
+    },
+    {
+      "arguments": [
+        "demo-retries-missing"
+      ],
+      "case": "missing_scope",
+      "result": {
+        "answer": null,
+        "bound_scope": {
+          "key": "retry_limit.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "DemoBox",
+          "version": "1.0.0"
+        },
+        "catalog": {
+          "chunks": 6,
+          "sha256": "d3700696b1ead13bd99b07e1ca1c1df2749399f62686c5262e3b085669b456b6"
+        },
+        "citations": [],
+        "intent_id": "demo-retries-missing",
+        "limits": {
+          "context_characters": 512,
+          "retrievals": 2,
+          "top_k": 1
+        },
+        "mode": "bounded_read_only_document_agent",
+        "model_calls": 0,
+        "ranking_attempts": 0,
+        "reason": "no_matching_scope",
+        "retrieval_attempts": 1,
+        "semantic_entailment_checked": false,
+        "status": "stopped",
+        "trace": [
+          {
+            "event": "scope_bound",
+            "scope": {
+              "key": "retry_limit.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "DemoBox",
+              "version": "1.0.0"
+            }
+          },
+          {
+            "event": "retrieve",
+            "lexical_hits": null,
+            "matched_ids": [],
+            "packed_ids": [],
+            "query": "DemoBox retry limit",
+            "reason": "no_matching_scope",
+            "scope_preflight": "no_matching_scope",
+            "step": 1,
+            "strategy": "primary"
+          },
+          {
+            "event": "stop",
+            "reason": "no_matching_scope"
+          }
+        ],
+        "trust_boundary": "operator_reviewed_catalog_and_fixed_intent_map"
+      }
+    },
+    {
+      "arguments": [
+        "demo-queue-unreviewed"
+      ],
+      "case": "unreviewed_claim",
+      "result": {
+        "answer": null,
+        "bound_scope": {
+          "key": "queue_size.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "DemoBox",
+          "version": "1.0.0"
+        },
+        "catalog": {
+          "chunks": 6,
+          "sha256": "d3700696b1ead13bd99b07e1ca1c1df2749399f62686c5262e3b085669b456b6"
+        },
+        "citations": [],
+        "intent_id": "demo-queue-unreviewed",
+        "limits": {
+          "context_characters": 512,
+          "retrievals": 2,
+          "top_k": 1
+        },
+        "mode": "bounded_read_only_document_agent",
+        "model_calls": 0,
+        "ranking_attempts": 0,
+        "reason": "missing_reviewed_claim",
+        "retrieval_attempts": 1,
+        "semantic_entailment_checked": false,
+        "status": "stopped",
+        "trace": [
+          {
+            "event": "scope_bound",
+            "scope": {
+              "key": "queue_size.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "DemoBox",
+              "version": "1.0.0"
+            }
+          },
+          {
+            "event": "retrieve",
+            "lexical_hits": null,
+            "matched_ids": [
+              "demo-queue"
+            ],
+            "packed_ids": [],
+            "query": "DemoBox queue size",
+            "reason": "missing_reviewed_claim",
+            "scope_preflight": "missing_reviewed_claim",
+            "step": 1,
+            "strategy": "primary"
+          },
+          {
+            "event": "stop",
+            "reason": "missing_reviewed_claim"
+          }
+        ],
+        "trust_boundary": "operator_reviewed_catalog_and_fixed_intent_map"
+      }
+    },
+    {
+      "arguments": [
+        "express-5-default",
+        "--expect-scope-of",
+        "express-4-default"
+      ],
+      "case": "misbound_release",
+      "result": {
+        "answer": null,
+        "bound_scope": {
+          "key": "query parser.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "Express",
+          "version": "5.1.0"
+        },
+        "catalog": {
+          "chunks": 6,
+          "sha256": "d3700696b1ead13bd99b07e1ca1c1df2749399f62686c5262e3b085669b456b6"
+        },
+        "citations": [],
+        "intent_id": "express-5-default",
+        "limits": {
+          "context_characters": 512,
+          "retrievals": 2,
+          "top_k": 1
+        },
+        "mode": "bounded_read_only_document_agent",
+        "model_calls": 0,
+        "ranking_attempts": 0,
+        "reason": "intent_scope_mismatch",
+        "retrieval_attempts": 0,
+        "semantic_entailment_checked": false,
+        "status": "stopped",
+        "trace": [
+          {
+            "event": "stop",
+            "reason": "intent_scope_mismatch"
+          }
+        ],
+        "trust_boundary": "operator_reviewed_catalog_and_fixed_intent_map"
+      }
+    },
+    {
+      "arguments": [
+        "unregistered"
+      ],
+      "case": "unknown_intent",
+      "result": {
+        "answer": null,
+        "bound_scope": null,
+        "catalog": {
+          "chunks": 6,
+          "sha256": "d3700696b1ead13bd99b07e1ca1c1df2749399f62686c5262e3b085669b456b6"
+        },
+        "citations": [],
+        "intent_id": "unregistered",
+        "limits": {
+          "context_characters": 512,
+          "retrievals": 2,
+          "top_k": 1
+        },
+        "mode": "bounded_read_only_document_agent",
+        "model_calls": 0,
+        "ranking_attempts": 0,
+        "reason": "unknown_intent",
+        "retrieval_attempts": 0,
+        "semantic_entailment_checked": false,
+        "status": "stopped",
+        "trace": [
+          {
+            "event": "stop",
+            "reason": "unknown_intent"
+          }
+        ],
+        "trust_boundary": "operator_reviewed_catalog_and_fixed_intent_map"
+      }
+    }
+  ]
+}

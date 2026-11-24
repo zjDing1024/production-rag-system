@@ -80,3 +80,5 @@ jobs:
         run: |
           python -m unittest discover -s experiments/sqlite-attribution-v1 -p 'test_*.py' -v
           python experiments/sqlite-attribution-v1/replay.py --check
+      - name: Reproduce bounded read-only document agent offline
+        run: python -B experiments/read-only-agent-v1/replay.py --check
