@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "license": "PostgreSQL License",
+  "source_license": "https://www.postgresql.org/about/licence/",
+  "cases": {
+    "pg17-transaction": {
+      "status": "answered", "reason": "reviewed_claim_cited", "retrieval_attempts": 1, "ranking_attempts": 1,
+      "answer": {"value_type": "integer", "value": 0, "unit": "milliseconds"},
+      "citation": {"chunk_id": "pg17-transaction-default", "source": "https://github.com/postgres/postgres/blob/d7ec59a63d745ba74fba0e280bbf85dc6d1caa3e/doc/src/sgml/config.sgml#L9368-L9382"}
+    },
+    "pg17-statement": {
+      "status": "answered", "reason": "reviewed_claim_cited", "retrieval_attempts": 1, "ranking_attempts": 1,
+      "answer": {"value_type": "integer", "value": 0, "unit": "milliseconds"},
+      "citation": {"chunk_id": "pg17-statement-default", "source": "https://github.com/postgres/postgres/blob/d7ec59a63d745ba74fba0e280bbf85dc6d1caa3e/doc/src/sgml/config.sgml#L9332-L9346"}
+    },
+    "pg17-neighbors-only": {
+      "status": "stopped", "reason": "no_matching_scope", "retrieval_attempts": 1, "ranking_attempts": 0,
+      "answer": null, "citation": null
+    },
+    "pg16-neighbors-only": {
+      "status": "stopped", "reason": "no_matching_scope", "retrieval_attempts": 1, "ranking_attempts": 0,
+      "answer": null, "citation": null
+    },
+    "pg17-exception-only": {
+      "status": "stopped", "reason": "no_matching_scope", "retrieval_attempts": 1, "ranking_attempts": 0,
+      "answer": null, "citation": null
+    }
+  }
+}

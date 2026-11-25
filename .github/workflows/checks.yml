@@ -82,3 +82,7 @@ jobs:
           python experiments/sqlite-attribution-v1/replay.py --check
       - name: Reproduce bounded read-only document agent offline
         run: python -B experiments/read-only-agent-v1/replay.py --check
+      - name: Verify PostgreSQL Agent citation transfer offline
+        run: |
+          python -B -m unittest discover -s experiments/postgres-agent-transfer-v1 -p 'test_*.py' -v
+          python -B experiments/postgres-agent-transfer-v1/replay.py --check

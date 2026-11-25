@@ -70,11 +70,11 @@ RECORDS = (
 )
 
 
-def build_index():
-    if len(RECORDS) > MAX_CHUNKS or sum(len(record.summary) for record in RECORDS) > MAX_CORPUS_CHARACTERS:
+def _build_index(records):
+    if len(records) > MAX_CHUNKS or sum(len(record.summary) for record in records) > MAX_CORPUS_CHARACTERS:
         raise ValueError("offline catalog exceeds its bound")
     chunks, entries = [], []
-    for record in RECORDS:
+    for record in records:
         h = digest(record.summary.encode("utf-8"))
         cid = record.chunk_id
         chunks.append(Chunk(cid, cid, "Original reviewed summary", record.summary, record.source,
@@ -93,13 +93,23 @@ def build_index():
     })
 
 
+def build_index():
+    return _build_index(RECORDS)
+
+
 class DocumentAgent:
     """No open-ended tools: resolve intent, inspect scope, retrieve, cite or stop."""
 
+    _intents = INTENTS
+    _records = RECORDS
+
     def __init__(self):
-        self._index = build_index()
+        self._index = _build_index(self._records)
         # This path always plans offline; there is no adapter injection or model API.
         self._retriever = ScopedGenerationPipeline(self._index)
+
+    def _citation_source(self, owner):
+        return owner.citation
 
     def answer(self, request_id, *, expected_scope=None, max_retrievals=2, context_characters=512):
         bounded_int(max_retrievals, "max_retrievals", MAX_RETRIEVALS)
@@ -123,7 +133,7 @@ class DocumentAgent:
             result["trace"].append({"event": "stop", "reason": reason})
             return result
 
-        intent = INTENTS.get(request_id)
+        intent = self._intents.get(request_id)
         if intent is None:
             return stop("unknown_intent")
         result["bound_scope"] = asdict(intent.scope)
@@ -167,7 +177,7 @@ class DocumentAgent:
                 return stop("citation_quote_mismatch")
             result.update(status="answered", reason="reviewed_claim_cited",
                           answer={"value": claim.value, "value_type": claim.value_type, "unit": claim.unit},
-                          citations=[{"chunk_id": cid, "source": hit["citation"], "quote": claim.quote,
+                          citations=[{"chunk_id": cid, "source": self._citation_source(owner), "quote": claim.quote,
                                       "start_char": claim.start_char, "end_char": claim.end_char,
                                       "summary_sha256": digest(hit["text"].encode("utf-8"))}])
             result["trace"].append({"event": "cite", "chunk_id": cid})

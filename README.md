@@ -47,6 +47,12 @@ python3 experiments/source-transfer-v1/run_experiment.py \
 [环境、固定许可/来源、实验边界](experiments/source-transfer-v1/README.md)。
 每次使用新的输出目录。通常测试和CI仅检索/审计，不下载或执行模型。
 
+## 2026-11-26：PostgreSQL 同值引用迁移对照
+
+用 PostgreSQL 16.0／17.0 文档新增五案离线验证：两条正确定位并引用整数 0 毫秒，三条仅有近邻或例外说明的请求均在范围预检停止。
+无范围过滤的独立诊断中，三条停止案均能命中词法候选，因此不能把命中误当证据。无数据库或模型调用，原入口不变。
+[复现、冻结判据与证据](experiments/postgres-agent-transfer-v1/README.md)。
+
 ## 2026-11-25：有预算的只读文档问答 Agent
 
 新增可选离线入口：从已审核请求绑定范围，用真实 BM25 找证据，只返回有引用的已审阅值，或给出明确停止原因。

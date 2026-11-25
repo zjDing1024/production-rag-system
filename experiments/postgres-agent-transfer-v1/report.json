@@ -1,0 +1,375 @@
+{
+  "accepted_negative_plans": 0,
+  "agent_ranking_attempts": 2,
+  "agent_retrieval_attempts": 5,
+  "model_calls": 0,
+  "no_matching_scope_stops": 3,
+  "oracle_sha256": "bc272fa94f58fe78f07e2c72b8cd3e6e0181d987632ea5745c8954843c3ef1bf",
+  "rows": [
+    {
+      "case": "pg17-transaction",
+      "catalog_locators": {
+        "pg17-idle-default": "https://github.com/postgres/postgres/blob/d7ec59a63d745ba74fba0e280bbf85dc6d1caa3e/doc/src/sgml/config.sgml#L9441-L9454",
+        "pg17-statement-default": "https://github.com/postgres/postgres/blob/d7ec59a63d745ba74fba0e280bbf85dc6d1caa3e/doc/src/sgml/config.sgml#L9332-L9346",
+        "pg17-transaction-default": "https://github.com/postgres/postgres/blob/d7ec59a63d745ba74fba0e280bbf85dc6d1caa3e/doc/src/sgml/config.sgml#L9368-L9382"
+      },
+      "result": {
+        "answer": {
+          "unit": "milliseconds",
+          "value": 0,
+          "value_type": "integer"
+        },
+        "bound_scope": {
+          "key": "transaction_timeout.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "PostgreSQL",
+          "version": "17.0"
+        },
+        "catalog": {
+          "chunks": 3,
+          "sha256": "ac9d0c4a6b6244823dc96a59465ccb38525e9337a0481f78b79cf6d6ea9a5665"
+        },
+        "citations": [
+          {
+            "chunk_id": "pg17-transaction-default",
+            "end_char": 105,
+            "quote": "PostgreSQL 17.0: the documented default for transaction_timeout is 0 milliseconds, disabling the timeout.",
+            "source": "https://github.com/postgres/postgres/blob/d7ec59a63d745ba74fba0e280bbf85dc6d1caa3e/doc/src/sgml/config.sgml#L9368-L9382",
+            "start_char": 0,
+            "summary_sha256": "2a4b554181e381057285f47cd4d5a29de7b706ac8ea0cbc301e310e8e074f280"
+          }
+        ],
+        "intent_id": "pg17-transaction",
+        "limits": {
+          "context_characters": 512,
+          "retrievals": 2,
+          "top_k": 1
+        },
+        "mode": "bounded_read_only_document_agent",
+        "model_calls": 0,
+        "ranking_attempts": 1,
+        "reason": "reviewed_claim_cited",
+        "retrieval_attempts": 1,
+        "semantic_entailment_checked": false,
+        "status": "answered",
+        "trace": [
+          {
+            "event": "scope_bound",
+            "scope": {
+              "key": "transaction_timeout.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "PostgreSQL",
+              "version": "17.0"
+            }
+          },
+          {
+            "event": "retrieve",
+            "lexical_hits": 1,
+            "matched_ids": [
+              "pg17-transaction-default"
+            ],
+            "packed_ids": [
+              "pg17-transaction-default"
+            ],
+            "query": "PostgreSQL 17.0 transaction_timeout default",
+            "reason": "generator_not_requested",
+            "scope_preflight": "reviewed_values_agree",
+            "step": 1,
+            "strategy": "primary"
+          },
+          {
+            "chunk_id": "pg17-transaction-default",
+            "event": "cite"
+          }
+        ],
+        "trust_boundary": "operator_reviewed_catalog_and_fixed_intent_map"
+      },
+      "unscoped_diagnostic_hits": []
+    },
+    {
+      "case": "pg17-statement",
+      "catalog_locators": {
+        "pg17-idle-default": "https://github.com/postgres/postgres/blob/d7ec59a63d745ba74fba0e280bbf85dc6d1caa3e/doc/src/sgml/config.sgml#L9441-L9454",
+        "pg17-statement-default": "https://github.com/postgres/postgres/blob/d7ec59a63d745ba74fba0e280bbf85dc6d1caa3e/doc/src/sgml/config.sgml#L9332-L9346",
+        "pg17-transaction-default": "https://github.com/postgres/postgres/blob/d7ec59a63d745ba74fba0e280bbf85dc6d1caa3e/doc/src/sgml/config.sgml#L9368-L9382"
+      },
+      "result": {
+        "answer": {
+          "unit": "milliseconds",
+          "value": 0,
+          "value_type": "integer"
+        },
+        "bound_scope": {
+          "key": "statement_timeout.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "PostgreSQL",
+          "version": "17.0"
+        },
+        "catalog": {
+          "chunks": 3,
+          "sha256": "ac9d0c4a6b6244823dc96a59465ccb38525e9337a0481f78b79cf6d6ea9a5665"
+        },
+        "citations": [
+          {
+            "chunk_id": "pg17-statement-default",
+            "end_char": 103,
+            "quote": "PostgreSQL 17.0: the documented default for statement_timeout is 0 milliseconds, disabling the timeout.",
+            "source": "https://github.com/postgres/postgres/blob/d7ec59a63d745ba74fba0e280bbf85dc6d1caa3e/doc/src/sgml/config.sgml#L9332-L9346",
+            "start_char": 0,
+            "summary_sha256": "85faccff888dc7f11d9e7684a5c18d4bdf8695879eb397f01e0a71c6e213378d"
+          }
+        ],
+        "intent_id": "pg17-statement",
+        "limits": {
+          "context_characters": 512,
+          "retrievals": 2,
+          "top_k": 1
+        },
+        "mode": "bounded_read_only_document_agent",
+        "model_calls": 0,
+        "ranking_attempts": 1,
+        "reason": "reviewed_claim_cited",
+        "retrieval_attempts": 1,
+        "semantic_entailment_checked": false,
+        "status": "answered",
+        "trace": [
+          {
+            "event": "scope_bound",
+            "scope": {
+              "key": "statement_timeout.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "PostgreSQL",
+              "version": "17.0"
+            }
+          },
+          {
+            "event": "retrieve",
+            "lexical_hits": 1,
+            "matched_ids": [
+              "pg17-statement-default"
+            ],
+            "packed_ids": [
+              "pg17-statement-default"
+            ],
+            "query": "PostgreSQL 17.0 statement_timeout default",
+            "reason": "generator_not_requested",
+            "scope_preflight": "reviewed_values_agree",
+            "step": 1,
+            "strategy": "primary"
+          },
+          {
+            "chunk_id": "pg17-statement-default",
+            "event": "cite"
+          }
+        ],
+        "trust_boundary": "operator_reviewed_catalog_and_fixed_intent_map"
+      },
+      "unscoped_diagnostic_hits": []
+    },
+    {
+      "case": "pg17-neighbors-only",
+      "catalog_locators": {
+        "pg17-idle-default": "https://github.com/postgres/postgres/blob/d7ec59a63d745ba74fba0e280bbf85dc6d1caa3e/doc/src/sgml/config.sgml#L9441-L9454",
+        "pg17-statement-default": "https://github.com/postgres/postgres/blob/d7ec59a63d745ba74fba0e280bbf85dc6d1caa3e/doc/src/sgml/config.sgml#L9332-L9346"
+      },
+      "result": {
+        "answer": null,
+        "bound_scope": {
+          "key": "transaction_timeout.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "PostgreSQL",
+          "version": "17.0"
+        },
+        "catalog": {
+          "chunks": 2,
+          "sha256": "99552f9a037098c68e67d2f14cce82a86ee1328296eea006a3f88e0f585a715d"
+        },
+        "citations": [],
+        "intent_id": "pg17-neighbors-only",
+        "limits": {
+          "context_characters": 512,
+          "retrievals": 2,
+          "top_k": 1
+        },
+        "mode": "bounded_read_only_document_agent",
+        "model_calls": 0,
+        "ranking_attempts": 0,
+        "reason": "no_matching_scope",
+        "retrieval_attempts": 1,
+        "semantic_entailment_checked": false,
+        "status": "stopped",
+        "trace": [
+          {
+            "event": "scope_bound",
+            "scope": {
+              "key": "transaction_timeout.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "PostgreSQL",
+              "version": "17.0"
+            }
+          },
+          {
+            "event": "retrieve",
+            "lexical_hits": null,
+            "matched_ids": [],
+            "packed_ids": [],
+            "query": "PostgreSQL 17.0 transaction_timeout default",
+            "reason": "no_matching_scope",
+            "scope_preflight": "no_matching_scope",
+            "step": 1,
+            "strategy": "primary"
+          },
+          {
+            "event": "stop",
+            "reason": "no_matching_scope"
+          }
+        ],
+        "trust_boundary": "operator_reviewed_catalog_and_fixed_intent_map"
+      },
+      "unscoped_diagnostic_hits": [
+        "pg17-idle-default",
+        "pg17-statement-default"
+      ]
+    },
+    {
+      "case": "pg16-neighbors-only",
+      "catalog_locators": {
+        "pg16-idle-default": "https://github.com/postgres/postgres/blob/c372fbbd8e911f2412b80a8c39d7079366565d67/doc/src/sgml/config.sgml#L9191-L9204",
+        "pg16-statement-default": "https://github.com/postgres/postgres/blob/c372fbbd8e911f2412b80a8c39d7079366565d67/doc/src/sgml/config.sgml#L9118-L9132"
+      },
+      "result": {
+        "answer": null,
+        "bound_scope": {
+          "key": "transaction_timeout.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "PostgreSQL",
+          "version": "16.0"
+        },
+        "catalog": {
+          "chunks": 2,
+          "sha256": "1d73112e58f26ce31576aac5b15e2c16df4ff9cb3d69fb4717fd6bc6c0ffcecb"
+        },
+        "citations": [],
+        "intent_id": "pg16-neighbors-only",
+        "limits": {
+          "context_characters": 512,
+          "retrievals": 2,
+          "top_k": 1
+        },
+        "mode": "bounded_read_only_document_agent",
+        "model_calls": 0,
+        "ranking_attempts": 0,
+        "reason": "no_matching_scope",
+        "retrieval_attempts": 1,
+        "semantic_entailment_checked": false,
+        "status": "stopped",
+        "trace": [
+          {
+            "event": "scope_bound",
+            "scope": {
+              "key": "transaction_timeout.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "PostgreSQL",
+              "version": "16.0"
+            }
+          },
+          {
+            "event": "retrieve",
+            "lexical_hits": null,
+            "matched_ids": [],
+            "packed_ids": [],
+            "query": "PostgreSQL 16.0 transaction_timeout default",
+            "reason": "no_matching_scope",
+            "scope_preflight": "no_matching_scope",
+            "step": 1,
+            "strategy": "primary"
+          },
+          {
+            "event": "stop",
+            "reason": "no_matching_scope"
+          }
+        ],
+        "trust_boundary": "operator_reviewed_catalog_and_fixed_intent_map"
+      },
+      "unscoped_diagnostic_hits": [
+        "pg16-idle-default",
+        "pg16-statement-default"
+      ]
+    },
+    {
+      "case": "pg17-exception-only",
+      "catalog_locators": {
+        "pg17-transaction-exception": "https://github.com/postgres/postgres/blob/d7ec59a63d745ba74fba0e280bbf85dc6d1caa3e/doc/src/sgml/config.sgml#L9396-L9400"
+      },
+      "result": {
+        "answer": null,
+        "bound_scope": {
+          "key": "transaction_timeout.default",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "PostgreSQL",
+          "version": "17.0"
+        },
+        "catalog": {
+          "chunks": 1,
+          "sha256": "90414daf4d19f74f1d2947b62b4a7c8272578e8ed7e18740e6464b5bb62223e5"
+        },
+        "citations": [],
+        "intent_id": "pg17-exception-only",
+        "limits": {
+          "context_characters": 512,
+          "retrievals": 2,
+          "top_k": 1
+        },
+        "mode": "bounded_read_only_document_agent",
+        "model_calls": 0,
+        "ranking_attempts": 0,
+        "reason": "no_matching_scope",
+        "retrieval_attempts": 1,
+        "semantic_entailment_checked": false,
+        "status": "stopped",
+        "trace": [
+          {
+            "event": "scope_bound",
+            "scope": {
+              "key": "transaction_timeout.default",
+              "kind": "documentation",
+              "observed_at": null,
+              "subject": "PostgreSQL",
+              "version": "17.0"
+            }
+          },
+          {
+            "event": "retrieve",
+            "lexical_hits": null,
+            "matched_ids": [],
+            "packed_ids": [],
+            "query": "PostgreSQL 17.0 transaction_timeout default",
+            "reason": "no_matching_scope",
+            "scope_preflight": "no_matching_scope",
+            "step": 1,
+            "strategy": "primary"
+          },
+          {
+            "event": "stop",
+            "reason": "no_matching_scope"
+          }
+        ],
+        "trust_boundary": "operator_reviewed_catalog_and_fixed_intent_map"
+      },
+      "unscoped_diagnostic_hits": [
+        "pg17-transaction-exception"
+      ]
+    }
+  ],
+  "separate_unscoped_diagnostic_passes": 3,
+  "supported_positive_plans": 2
+}
