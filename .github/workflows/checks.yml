@@ -86,3 +86,5 @@ jobs:
         run: |
           python -B -m unittest discover -s experiments/postgres-agent-transfer-v1 -p 'test_*.py' -v
           python -B experiments/postgres-agent-transfer-v1/replay.py --check
+      - name: Audit real PostgreSQL CPU comparison without rerunning model
+        run: python -B experiments/postgres-agent-transfer-v1/compare_live.py --check

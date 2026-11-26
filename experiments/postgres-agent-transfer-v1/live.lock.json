@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "server_flags": [
+    "--alias",
+    "local-model",
+    "--host",
+    "127.0.0.1",
+    "--ctx-size",
+    "4096",
+    "--threads",
+    "4",
+    "--threads-batch",
+    "4",
+    "--parallel",
+    "1",
+    "--gpu-layers",
+    "0",
+    "--no-agent",
+    "--no-webui",
+    "--no-ui-mcp-proxy",
+    "--reasoning",
+    "off",
+    "--chat-template-kwargs",
+    "{\"enable_thinking\":false}"
+  ],
+  "inputs": {
+    "experiments/postgres-agent-transfer-v1/compare_live.py": "638b5a96e968f3379a9792f4dd04b72c5b37378801e16fdc06273d973079e863",
+    "experiments/postgres-agent-transfer-v1/LIVE-PROTOCOL.md": "a2e53cfe8ad3232df5069ab8ea262c6cc346006e4e5ef55d20a618a900f9a311",
+    "experiments/postgres-agent-transfer-v1/replay.py": "cc4ca289fd094d36ac8669c5842d8a77a4f4415987a9c0f2e13861a1969ea04a",
+    "experiments/postgres-agent-transfer-v1/oracle.json": "bc272fa94f58fe78f07e2c72b8cd3e6e0181d987632ea5745c8954843c3ef1bf",
+    "experiments/local-generation-smoke/sources.json": "2a05c2d85b391f55b26434d77a886e96e5daaab16abe483ce409d1992cf5a750",
+    "experiments/typed-scope-v1/adapter.py": "71c32be7ab0acc5ddf660e48ae33f9adef4e2bdff4ba5127121b7bfd09ce41f6",
+    "experiments/matched-evidence-v1/protocol.py": "25bd4a0f66c68967fb31d3ca65ff33d18df7c3ec92937d1bec2691abde10e651",
+    "experiments/numbered-spans-v1/mechanics.py": "a559e13b1f7b6762a1e5ad1e149dd1f1c8ab2e083afb5154f6190e6f2a8b6a88",
+    "src/rag_foundation/corpus.py": "7c40082a0eb354ec2e7543f75f49b8eb900d1d23b1d50e5ccdd41219b1adc0c9",
+    "src/rag_foundation/generation.py": "a3aa8cde0881f86ec1a8b48cf823fbc39a0f194d4cc093f0585318b0126e7532",
+    "src/rag_foundation/scope_gate.py": "7818a34214dbbb8c41ef8f468b26c7417a70237cd99a4bae39ca8a5283c87e83",
+    "src/rag_foundation/safe_document_agent.py": "a169fd2888f958613eb5c9881d336d01b9fd057b55859df3f5e01dca57e39f57",
+    "src/rag_foundation/scoped_pipeline.py": "a469d11f1fd6f198b123ccd4344d6b9c2d5cf35a6db708b9e900216e558eeaef",
+    "src/rag_foundation/retrieval.py": "d62b2aa753f701dc6e51be077bd292a277b5985cf8fa3a9c6c5d7d9e181776f5"
+  }
+}

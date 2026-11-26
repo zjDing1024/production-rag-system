@@ -47,6 +47,19 @@ python3 experiments/source-transfer-v1/run_experiment.py \
 [环境、固定许可/来源、实验边界](experiments/source-transfer-v1/README.md)。
 每次使用新的输出目录。通常测试和CI仅检索/审计，不下载或执行模型。
 
+## 2026-11-27：实际 CPU 生成的同题证据对照
+
+先用只读入口复现：相同的 PostgreSQL 17.0 问题，有正确证据时返回整数 0 毫秒并引用固定源码位置；只有邻近设置时，排序前返回 `no_matching_scope`。
+
+```bash
+python -B experiments/postgres-agent-transfer-v1/replay.py --case pg17-transaction
+python -B experiments/postgres-agent-transfer-v1/replay.py --case pg17-neighbors-only
+python -B experiments/postgres-agent-transfer-v1/compare_live.py --check
+```
+
+另用同一批五案实跑 7 次免费本地 CPU 生成：未过滤组 3/3 不足证据仍进入无支持的回答分支；范围组 3/3 在排序前停止，未调用模型。两个可答案在两组都引用了正确来源，人工复核陈述值正确；因输出为完整句，冻结的裸值格式判据两组均为 0/2，不改判据。不把模型拒答、确定性停止和引用支持混为一谈。
+[命令、结果与原始记录](experiments/postgres-agent-transfer-v1/README.md)。
+
 ## 2026-11-26：PostgreSQL 同值引用迁移对照
 
 用 PostgreSQL 16.0／17.0 文档新增五案离线验证：两条正确定位并引用整数 0 毫秒，三条仅有近邻或例外说明的请求均在范围预检停止。
