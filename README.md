@@ -47,6 +47,19 @@ python3 experiments/source-transfer-v1/run_experiment.py \
 [环境、固定许可/来源、实验边界](experiments/source-transfer-v1/README.md)。
 每次使用新的输出目录。通常测试和CI仅检索/审计，不下载或执行模型。
 
+## 2026-11-28：CPython 文档证据的范围、单位与精确链接
+
+新增可选来源渲染入口。保留已有上游锚点，将本地分块坐标单列；从排名结果到模型引用用同一来源定位，不改历史入口和冻结记录。
+
+```bash
+python -B experiments/cpython-timeout-provenance-v1/audit.py --case py311-connection-shutdown
+python -B experiments/cpython-timeout-provenance-v1/audit.py --case py311-connection-shutdown-removed
+python -B experiments/cpython-timeout-provenance-v1/live.py --check
+```
+
+五案离线验证：三个有证据的计划匹配整数、秒单位与精确来源，两案在排序前停止。可选 CPU 路径实际调用三次，引用和数字都匹配，但三次均未输出要求的秒单位，冻结完整判据 **0/3**。没有把裸数字或确定性停止当成完整回答。
+[完整对照、源码许可及原始记录](experiments/cpython-timeout-provenance-v1/README.md)。
+
 ## 2026-11-27：实际 CPU 生成的同题证据对照
 
 先用只读入口复现：相同的 PostgreSQL 17.0 问题，有正确证据时返回整数 0 毫秒并引用固定源码位置；只有邻近设置时，排序前返回 `no_matching_scope`。

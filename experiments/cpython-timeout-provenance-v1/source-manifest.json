@@ -1,0 +1,107 @@
+{
+  "documented_license": "PSF-2.0",
+  "license_policy_url": "https://docs.python.org/3.11/license.html#terms-and-conditions-for-accessing-or-otherwise-using-python",
+  "oracle_limits": "Manual documented effective-duration labels. No TLS runtime test and no model result. The 3.10 signature absence does not assert a zero, null, or numeric duration.",
+  "releases": {
+    "3.10.0": {
+      "commit": "b494f5935c92951e75597bfe1c8b1f3112fec270",
+      "documentation": {
+        "path": "Doc/library/asyncio-eventloop.rst",
+        "raw_url": "https://raw.githubusercontent.com/python/cpython/b494f5935c92951e75597bfe1c8b1f3112fec270/Doc/library/asyncio-eventloop.rst",
+        "sha256": "5985ed0088bd363804ce44189b8b93912bf63cde07302c2d39f8f7069227515e",
+        "size_bytes": 57995,
+        "url": "https://github.com/python/cpython/blob/b494f5935c92951e75597bfe1c8b1f3112fec270/Doc/library/asyncio-eventloop.rst"
+      },
+      "license": {
+        "path": "LICENSE",
+        "raw_url": "https://raw.githubusercontent.com/python/cpython/b494f5935c92951e75597bfe1c8b1f3112fec270/LICENSE",
+        "sha256": "d0285b61e1a8e420c7deb95836738a5d4a0d26463138b17601f5971212684c4b",
+        "size_bytes": 13925,
+        "url": "https://github.com/python/cpython/blob/b494f5935c92951e75597bfe1c8b1f3112fec270/LICENSE"
+      },
+      "tag": "v3.10.0",
+      "tag_object": "bfb376ffcc4260feb9bf1b9a110559b1ff31da80"
+    },
+    "3.11.0": {
+      "commit": "deaf509e8fc6e0363bd6f26d52ad42f976ec42f2",
+      "documentation": {
+        "path": "Doc/library/asyncio-eventloop.rst",
+        "raw_url": "https://raw.githubusercontent.com/python/cpython/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/Doc/library/asyncio-eventloop.rst",
+        "sha256": "f8ae4e59fcd843f754666ca5938f7978ef86789f7f4bb8a198d30a6c0d34165b",
+        "size_bytes": 62340,
+        "url": "https://github.com/python/cpython/blob/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/Doc/library/asyncio-eventloop.rst"
+      },
+      "license": {
+        "path": "LICENSE",
+        "raw_url": "https://raw.githubusercontent.com/python/cpython/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/LICENSE",
+        "sha256": "f03e17cd594c2085f66a454e695c7ebe5b4d3c0eff534f4f194abc2fd164621b",
+        "size_bytes": 13931,
+        "url": "https://github.com/python/cpython/blob/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/LICENSE"
+      },
+      "tag": "v3.11.0",
+      "tag_object": "968953dcd8930880a3e9c5302b6892a5a0836c14"
+    }
+  },
+  "repository": "https://github.com/python/cpython",
+  "schema_version": 1,
+  "spans": {
+    "py310-connection-handshake": {
+      "end_line": 457,
+      "interpretation": "older client handshake duration, not shutdown",
+      "sha256": "33929099f36674ed619c5be565005ef35dbcee2fc1b4f9c79a3bf5fecdf73d41",
+      "source_url": "https://github.com/python/cpython/blob/b494f5935c92951e75597bfe1c8b1f3112fec270/Doc/library/asyncio-eventloop.rst#L455-L457",
+      "start_line": 455,
+      "version": "3.10.0"
+    },
+    "py310-connection-signature": {
+      "end_line": 372,
+      "interpretation": "complete client signature includes handshake but not a shutdown keyword; oracle only, never supplied to retrieval",
+      "sha256": "f4216f46bbe40e7f53d870b2d7718266664b8d29279cf4235950f43ecf970f3b",
+      "source_url": "https://github.com/python/cpython/blob/b494f5935c92951e75597bfe1c8b1f3112fec270/Doc/library/asyncio-eventloop.rst#L367-L372",
+      "start_line": 367,
+      "version": "3.10.0"
+    },
+    "py311-connection-handshake": {
+      "end_line": 473,
+      "interpretation": "client effective TLS handshake duration when the option is omitted",
+      "sha256": "33929099f36674ed619c5be565005ef35dbcee2fc1b4f9c79a3bf5fecdf73d41",
+      "source_url": "https://github.com/python/cpython/blob/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/Doc/library/asyncio-eventloop.rst#L471-L473",
+      "start_line": 471,
+      "version": "3.11.0"
+    },
+    "py311-connection-shutdown": {
+      "end_line": 477,
+      "interpretation": "client effective TLS shutdown duration when the option is omitted",
+      "sha256": "7ac04af2d96ae01b8740545b37b2db3e51a0bbeed05a5b154604457b76802300",
+      "source_url": "https://github.com/python/cpython/blob/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/Doc/library/asyncio-eventloop.rst#L475-L477",
+      "start_line": 475,
+      "version": "3.11.0"
+    },
+    "py311-connection-signature": {
+      "end_line": 382,
+      "interpretation": "client signature uses None; the 30 and 60 are effective durations from prose, not argument literals; oracle only",
+      "sha256": "2829d8d4ffb54eadf38e04519bd017f2d91a75f2bc21429402e347bb640a703e",
+      "source_url": "https://github.com/python/cpython/blob/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/Doc/library/asyncio-eventloop.rst#L376-L382",
+      "start_line": 376,
+      "version": "3.11.0"
+    },
+    "py311-server-shutdown": {
+      "end_line": 710,
+      "interpretation": "server effective TLS shutdown duration when the option is omitted",
+      "sha256": "7ac04af2d96ae01b8740545b37b2db3e51a0bbeed05a5b154604457b76802300",
+      "source_url": "https://github.com/python/cpython/blob/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/Doc/library/asyncio-eventloop.rst#L708-L710",
+      "start_line": 708,
+      "version": "3.11.0"
+    },
+    "py311-server-signature": {
+      "end_line": 642,
+      "interpretation": "server signature uses None for the shutdown option; oracle only",
+      "sha256": "9242bc7c9227143db7529a3b488c879523114a74f7ac5cf8b82b76c1612ac75c",
+      "source_url": "https://github.com/python/cpython/blob/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/Doc/library/asyncio-eventloop.rst#L634-L642",
+      "start_line": 634,
+      "version": "3.11.0"
+    }
+  },
+  "upstream_project": "CPython",
+  "usage": "Original factual paraphrases only. This packet does not copy upstream documentation or license files."
+}

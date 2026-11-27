@@ -1,0 +1,114 @@
+{
+  "control_type": "Manually annotated synthetic answer prose; no generator involved",
+  "controls": [
+    {
+      "answer": "The documented TLS shutdown timeout for asyncio loop.create_server in CPython 3.11.0 is 30 seconds.",
+      "asserted_claim": {
+        "scope": {
+          "key": "ssl_shutdown_timeout.default_when_omitted",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "asyncio.loop.create_server",
+          "version": "3.11.0"
+        },
+        "unit": "seconds",
+        "value": 30,
+        "value_type": "integer"
+      },
+      "case_id": "py311-connection-shutdown",
+      "citations": [
+        {
+          "chunk_id": "py311-server-shutdown",
+          "source_url": "https://github.com/python/cpython/blob/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/Doc/library/asyncio-eventloop.rst#L708-L710"
+        }
+      ],
+      "expected": {
+        "citation_id_correct": false,
+        "claim_scope_matches": false,
+        "claim_unit_correct": true,
+        "claim_value_correct": false,
+        "grounded_answer": false,
+        "literal_value_unit_present": true,
+        "source_url_correct": false
+      },
+      "id": "wrong-method-same-value",
+      "rationale": "Correct-looking numeric value and a real citation for the server, but the question asks about the client."
+    },
+    {
+      "answer": "For asyncio loop.create_connection in CPython 3.11.0, the TLS shutdown default is not 30 seconds; it is 45 seconds.",
+      "asserted_claim": {
+        "scope": {
+          "key": "ssl_shutdown_timeout.default_when_omitted",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "asyncio.loop.create_connection",
+          "version": "3.11.0"
+        },
+        "unit": "seconds",
+        "value": 45,
+        "value_type": "integer"
+      },
+      "case_id": "py311-connection-shutdown",
+      "citations": [
+        {
+          "chunk_id": "py311-connection-shutdown",
+          "source_url": "https://github.com/python/cpython/blob/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/Doc/library/asyncio-eventloop.rst#L475-L477"
+        }
+      ],
+      "expected": {
+        "citation_id_correct": true,
+        "claim_scope_matches": true,
+        "claim_unit_correct": true,
+        "claim_value_correct": false,
+        "grounded_answer": false,
+        "literal_value_unit_present": true,
+        "source_url_correct": true
+      },
+      "id": "negated-correct-value",
+      "rationale": "The answer negates the gold duration and asserts 45 seconds; the correct locator cannot make the claim true."
+    },
+    {
+      "answer": "For asyncio loop.create_connection in CPython 3.11.0, 30 seconds is an example of an explicit TLS shutdown timeout. If the option is omitted, the default is 90 seconds.",
+      "asserted_claim": {
+        "scope": {
+          "key": "ssl_shutdown_timeout.default_when_omitted",
+          "kind": "documentation",
+          "observed_at": null,
+          "subject": "asyncio.loop.create_connection",
+          "version": "3.11.0"
+        },
+        "unit": "seconds",
+        "value": 90,
+        "value_type": "integer"
+      },
+      "case_id": "py311-connection-shutdown",
+      "citations": [
+        {
+          "chunk_id": "py311-connection-shutdown",
+          "source_url": "https://github.com/python/cpython/blob/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/Doc/library/asyncio-eventloop.rst#L475-L477"
+        }
+      ],
+      "expected": {
+        "citation_id_correct": true,
+        "claim_scope_matches": true,
+        "claim_unit_correct": true,
+        "claim_value_correct": false,
+        "grounded_answer": false,
+        "literal_value_unit_present": true,
+        "source_url_correct": true
+      },
+      "id": "example-value-not-default",
+      "rationale": "A gold-looking example is not the answer; the prose asserts the wrong omitted-option duration."
+    }
+  ],
+  "rubric": {
+    "citation_id_correct": "The cited ID equals the case gold ID, independently of what the answer asserts.",
+    "claim_scope_matches": "The asserted default concerns the requested version, method, parameter, and omitted-value predicate.",
+    "claim_unit_correct": "The duration under assertion is expressed in the canonical requested unit; does not imply claim scope or value correctness.",
+    "claim_value_correct": "The prose affirmatively asserts the requested default value, not a different method, negated value, or example.",
+    "grounded_answer": "Requires claim scope, value, unit, ID, and URL all correct; true support is a human label for these prose controls.",
+    "literal_value_unit_present": "A naive substring matcher finds the gold value and unit; diagnostic only.",
+    "source_url_correct": "The cited URL equals the exact pinned source locator, independently of the ID and claim."
+  },
+  "schema_version": 1
+}

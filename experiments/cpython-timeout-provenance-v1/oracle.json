@@ -1,0 +1,176 @@
+{
+  "cases": [
+    {
+      "expected_answer": {
+        "unit": "seconds",
+        "value": 30,
+        "value_type": "integer"
+      },
+      "expected_citation": {
+        "chunk_id": "py311-connection-shutdown",
+        "source_url": "https://github.com/python/cpython/blob/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/Doc/library/asyncio-eventloop.rst#L475-L477"
+      },
+      "expected_reason": "generator_not_requested",
+      "expected_status": "planned",
+      "id": "py311-connection-shutdown",
+      "query": "In CPython 3.11.0, what is the documented effective TLS shutdown timeout, in seconds, for asyncio loop.create_connection when ssl_shutdown_timeout is omitted?",
+      "record_ids": [
+        "py311-connection-shutdown",
+        "py311-server-shutdown",
+        "py311-connection-handshake"
+      ],
+      "scope": {
+        "key": "ssl_shutdown_timeout.default_when_omitted",
+        "kind": "documentation",
+        "observed_at": null,
+        "subject": "asyncio.loop.create_connection",
+        "version": "3.11.0"
+      }
+    },
+    {
+      "expected_answer": {
+        "unit": "seconds",
+        "value": 30,
+        "value_type": "integer"
+      },
+      "expected_citation": {
+        "chunk_id": "py311-server-shutdown",
+        "source_url": "https://github.com/python/cpython/blob/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/Doc/library/asyncio-eventloop.rst#L708-L710"
+      },
+      "expected_reason": "generator_not_requested",
+      "expected_status": "planned",
+      "id": "py311-server-shutdown",
+      "query": "In CPython 3.11.0, what is the documented effective TLS shutdown timeout, in seconds, for asyncio loop.create_server when ssl_shutdown_timeout is omitted?",
+      "record_ids": [
+        "py311-connection-shutdown",
+        "py311-server-shutdown",
+        "py311-connection-handshake"
+      ],
+      "scope": {
+        "key": "ssl_shutdown_timeout.default_when_omitted",
+        "kind": "documentation",
+        "observed_at": null,
+        "subject": "asyncio.loop.create_server",
+        "version": "3.11.0"
+      }
+    },
+    {
+      "expected_answer": {
+        "unit": "seconds",
+        "value": 60,
+        "value_type": "integer"
+      },
+      "expected_citation": {
+        "chunk_id": "py311-connection-handshake",
+        "source_url": "https://github.com/python/cpython/blob/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/Doc/library/asyncio-eventloop.rst#L471-L473"
+      },
+      "expected_reason": "generator_not_requested",
+      "expected_status": "planned",
+      "id": "py311-connection-handshake",
+      "query": "In CPython 3.11.0, what is the documented effective TLS handshake timeout, in seconds, for asyncio loop.create_connection when ssl_handshake_timeout is omitted?",
+      "record_ids": [
+        "py311-connection-shutdown",
+        "py311-server-shutdown",
+        "py311-connection-handshake"
+      ],
+      "scope": {
+        "key": "ssl_handshake_timeout.default_when_omitted",
+        "kind": "documentation",
+        "observed_at": null,
+        "subject": "asyncio.loop.create_connection",
+        "version": "3.11.0"
+      }
+    },
+    {
+      "expected_answer": null,
+      "expected_citation": null,
+      "expected_reason": "no_matching_scope",
+      "expected_status": "not_run",
+      "id": "py311-connection-shutdown-removed",
+      "query": "In CPython 3.11.0, what is the documented effective TLS shutdown timeout, in seconds, for asyncio loop.create_connection when ssl_shutdown_timeout is omitted?",
+      "record_ids": [
+        "py311-server-shutdown",
+        "py311-connection-handshake"
+      ],
+      "scope": {
+        "key": "ssl_shutdown_timeout.default_when_omitted",
+        "kind": "documentation",
+        "observed_at": null,
+        "subject": "asyncio.loop.create_connection",
+        "version": "3.11.0"
+      }
+    },
+    {
+      "expected_answer": null,
+      "expected_citation": null,
+      "expected_reason": "no_matching_scope",
+      "expected_status": "not_run",
+      "id": "py310-connection-shutdown",
+      "query": "In CPython 3.10.0, what is the documented effective TLS shutdown timeout, in seconds, for asyncio loop.create_connection when ssl_shutdown_timeout is omitted?",
+      "record_ids": [
+        "py310-connection-handshake"
+      ],
+      "scope": {
+        "key": "ssl_shutdown_timeout.default_when_omitted",
+        "kind": "documentation",
+        "observed_at": null,
+        "subject": "asyncio.loop.create_connection",
+        "version": "3.10.0"
+      }
+    }
+  ],
+  "records": {
+    "py310-connection-handshake": {
+      "scope": {
+        "key": "ssl_handshake_timeout.default_when_omitted",
+        "kind": "documentation",
+        "observed_at": null,
+        "subject": "asyncio.loop.create_connection",
+        "version": "3.10.0"
+      },
+      "source": "https://github.com/python/cpython/blob/b494f5935c92951e75597bfe1c8b1f3112fec270/Doc/library/asyncio-eventloop.rst#L455-L457",
+      "text": "CPython 3.10.0: without ssl_handshake_timeout, asyncio loop.create_connection allows 60 seconds for the TLS handshake.",
+      "unit": "seconds",
+      "value": 60
+    },
+    "py311-connection-handshake": {
+      "scope": {
+        "key": "ssl_handshake_timeout.default_when_omitted",
+        "kind": "documentation",
+        "observed_at": null,
+        "subject": "asyncio.loop.create_connection",
+        "version": "3.11.0"
+      },
+      "source": "https://github.com/python/cpython/blob/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/Doc/library/asyncio-eventloop.rst#L471-L473",
+      "text": "CPython 3.11.0: the TLS handshake limit for asyncio loop.create_connection is 60 seconds unless ssl_handshake_timeout is set.",
+      "unit": "seconds",
+      "value": 60
+    },
+    "py311-connection-shutdown": {
+      "scope": {
+        "key": "ssl_shutdown_timeout.default_when_omitted",
+        "kind": "documentation",
+        "observed_at": null,
+        "subject": "asyncio.loop.create_connection",
+        "version": "3.11.0"
+      },
+      "source": "https://github.com/python/cpython/blob/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/Doc/library/asyncio-eventloop.rst#L475-L477",
+      "text": "CPython 3.11.0: leaving ssl_shutdown_timeout unset for asyncio loop.create_connection gives TLS shutdown a 30-second limit.",
+      "unit": "seconds",
+      "value": 30
+    },
+    "py311-server-shutdown": {
+      "scope": {
+        "key": "ssl_shutdown_timeout.default_when_omitted",
+        "kind": "documentation",
+        "observed_at": null,
+        "subject": "asyncio.loop.create_server",
+        "version": "3.11.0"
+      },
+      "source": "https://github.com/python/cpython/blob/deaf509e8fc6e0363bd6f26d52ad42f976ec42f2/Doc/library/asyncio-eventloop.rst#L708-L710",
+      "text": "CPython 3.11.0: asyncio loop.create_server uses a 30-second TLS shutdown limit when ssl_shutdown_timeout is omitted.",
+      "unit": "seconds",
+      "value": 30
+    }
+  }
+}

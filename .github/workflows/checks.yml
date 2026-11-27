@@ -88,3 +88,8 @@ jobs:
           python -B experiments/postgres-agent-transfer-v1/replay.py --check
       - name: Audit real PostgreSQL CPU comparison without rerunning model
         run: python -B experiments/postgres-agent-transfer-v1/compare_live.py --check
+      - name: Verify CPython timeout provenance and CPU evidence offline
+        run: |
+          python -B -m unittest discover -s experiments/cpython-timeout-provenance-v1 -p 'test_*.py' -v
+          python -B experiments/cpython-timeout-provenance-v1/audit.py --check
+          python -B experiments/cpython-timeout-provenance-v1/live.py --check
